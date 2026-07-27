@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import Countdown from '../components/Countdown.astro';
 import StatusBadge from '../components/StatusBadge.astro';
 import MediaFigure from '../components/MediaFigure.astro';
+import FaqBlock from '../components/FaqBlock.astro';
 import { isReleased } from '../data/site';
 import { ASSETS } from '../data/assets';
 import { OFFICIAL_FACTS } from '../data/official';
@@ -27,6 +28,12 @@ const startHere = [
     title: 'Characters & Story',
     desc: 'Sophia, the Minotaur myth, and the Macula legacy — sourced from official Steam text.',
     cover: ASSETS.sophiaCombat.src,
+  },
+  {
+    href: '/romance-guide/',
+    title: 'Romance Guide',
+    desc: 'Does Resonance have romance or dating? The honest, source-backed answer before launch.',
+    cover: ASSETS.creatureShadow.src,
   },
   {
     href: '/collectibles/',
@@ -70,6 +77,34 @@ const categories = [
     desc: 'Chapter framework going live, filled with real routes on release day.',
     count: null,
     countLabel: '',
+  },
+];
+
+const faqs = [
+  {
+    question: 'When does Resonance: A Plague Tale Legacy release?',
+    answer:
+      'Resonance: A Plague Tale Legacy launches on August 27, 2026, according to its official Steam store page. It is a prequel set roughly 15 years before A Plague Tale: Requiem. Focus Entertainment is publishing and Asobo Studio is developing, the same team behind Innocence and Requiem. We track the date live and will flag any confirmed change the moment it appears on an official channel.',
+  },
+  {
+    question: 'Is A Plague Tale Legacy on Game Pass?',
+    answer:
+      'Game Pass availability has not been confirmed by Microsoft, Focus Entertainment, or Asobo Studio. We mark this as unconfirmed. For context, A Plague Tale: Requiem launched day one on Game Pass in 2022, so there is precedent, but precedent is not a promise. Until an official announcement lands, treat any Game Pass claim for the prequel as speculation rather than fact.',
+  },
+  {
+    question: 'Who is Sophia in A Plague Tale Legacy?',
+    answer:
+      'Sophia is the playable protagonist of Resonance. Requiem players will recognise her as the sailor and treasure hunter who helped Amicia and Hugo. This prequel follows her earlier journey to the Minotaur’s Island, where the Minoan myth and the origins of the Macula curse intersect. Everything we publish about her arc is drawn from official Steam text and clearly tagged when it moves into inference.',
+  },
+  {
+    question: 'Is A Plague Tale Legacy a prequel or a sequel?',
+    answer:
+      'It is a prequel. Resonance takes place about 15 years before the events of A Plague Tale: Requiem, centring on Sophia rather than Amicia and Hugo. You do not need to have finished Innocence or Requiem to follow the story, though returning players will catch extra connections to the wider Macula lore and the fate that links the series’ heroes.',
+  },
+  {
+    question: 'Is A Plague Tale Legacy on PS5 and Xbox?',
+    answer:
+      'The Steam store page confirms a PC release. Console versions for PlayStation 5 and Xbox Series X|S have not been officially announced yet, so we list them as unconfirmed. Both previous games shipped on current-gen consoles, which makes console ports likely, but we will only mark PS5 and Xbox as confirmed once Focus Entertainment states it directly.',
   },
 ];
 ---
@@ -225,6 +260,19 @@ const categories = [
         <MediaFigure {...ASSETS.minoanRuins} />
         <MediaFigure {...ASSETS.lightPuzzle} />
         <MediaFigure {...ASSETS.enemyEncounter} />
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mt-16">
+      <p class="section-kicker">Common questions</p>
+      <h2 class="section-title">Resonance: A Plague Tale Legacy FAQ</h2>
+      <p class="mt-3 max-w-3xl text-fog">
+        The questions players ask most before launch, answered from official sources and clearly
+        flagged when the answer is still unconfirmed.
+      </p>
+      <div class="mt-6">
+        <FaqBlock items={faqs} />
       </div>
     </section>
   </div>

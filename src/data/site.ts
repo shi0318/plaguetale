@@ -7,7 +7,7 @@ export const SITE = {
   url: 'https://plaguetaleguide.com',
   // Official release date (Steam store page, App 2713000)
   releaseDate: '2026-08-27',
-  tagline: 'Verified Pre-release Guides',
+  tagline: 'Verified Pre-release Guide',
   description:
     'Independent Resonance: A Plague Tale Legacy guide with source-tracked pages for the story, characters, collectibles, combat, and skills. Every fact carries a confirmation status.',
   locale: 'en',
@@ -34,7 +34,9 @@ export const SITE = {
 export const NAV = [
   { label: 'Guide', href: '/guide/' },
   { label: 'Characters', href: '/characters/' },
+  { label: 'Romance Guide', href: '/romance-guide/' },
   { label: 'Collectibles', href: '/collectibles/' },
+  { label: 'Platforms', href: '/platforms/' },
   { label: 'Skills', href: '/skills/' },
   { label: 'Walkthrough', href: '/walkthrough/' },
   { label: 'Release Date', href: '/release-date/' },
