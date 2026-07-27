@@ -39,6 +39,14 @@ const organization = {
   '@id': `${SITE.url}/#organization`,
   name: SITE.name,
   url: `${SITE.url}/`,
+  logo: {
+    '@type': 'ImageObject',
+    '@id': `${SITE.url}/#logo`,
+    url: `${SITE.url}/logo-512.png`,
+    width: 512,
+    height: 512,
+    caption: SITE.name,
+  },
 };
 
 const videoGame = {
@@ -122,6 +130,8 @@ const schema = {
     <meta name="twitter:image" content={imageUrl} />
     <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-96.png" sizes="96x96" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
