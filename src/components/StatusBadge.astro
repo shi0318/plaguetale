@@ -1,0 +1,21 @@
+---
+// Confidence badge — the site's core differentiator: every fact's reliability is visible at a glance.
+import { STATUS_META, type ConfidenceStatus } from '../data/confidence';
+
+interface Props {
+  status: ConfidenceStatus;
+  size?: 'sm' | 'md';
+}
+
+const { status, size = 'md' } = Astro.props;
+const meta = STATUS_META[status];
+const pad = size === 'sm' ? 'px-1.5 py-0.5 text-[11px]' : 'px-2 py-0.5 text-xs';
+---
+
+<span
+  class={`inline-flex items-center gap-1 rounded border font-bold whitespace-nowrap ${pad} ${meta.classes}`}
+  title={meta.description}
+>
+  <span aria-hidden="true">{meta.icon}</span>
+  <span>{meta.label}</span>
+</span>

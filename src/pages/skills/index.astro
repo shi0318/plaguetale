@@ -1,0 +1,143 @@
+---
+// Skills & Combat hub — CollectionPage. Combat and progression facts from official Steam text,
+// with series-based inference clearly labelled.
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import PreReleaseNotice from '../../components/PreReleaseNotice.astro';
+import StatusBadge from '../../components/StatusBadge.astro';
+import MediaFigure from '../../components/MediaFigure.astro';
+import SourcePanel from '../../components/SourcePanel.astro';
+import { ASSETS } from '../../data/assets';
+import { SOURCES } from '../../data/sources';
+
+const title = 'Resonance: A Plague Tale Legacy Skills & Combat — What We Know';
+const description =
+  'Combat and skills breakdown for Resonance: A Plague Tale Legacy. Official melee, parry, and Minoan-sphere light mechanics, plus series-based inference on upgrades — every fact tagged.';
+
+const crumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Skills', url: '/skills/' },
+];
+
+// Officially confirmed combat facts (Steam description)
+const confirmed = [
+  {
+    title: 'Dynamic, violent melee',
+    body:
+      'Sophia engages in dynamic and violent melee combat. This is a clear shift from the earlier games, where Amicia relied mainly on a sling and stealth. Sophia is described as a skilled, agile, strong-willed fighter.',
+  },
+  {
+    title: 'Parries and powerful strikes',
+    body:
+      'Official text tells you to “perfect your parries, and unleash powerful strikes to survive deadly encounters.” Timing-based defence appears to be a core combat pillar.',
+  },
+  {
+    title: 'Agility, tricks and reflexes',
+    body:
+      'Rather than standing toe-to-toe, you “rely on your agility, tricks and sharp reflexes to outsmart enemies.” Expect evasion and repositioning to matter as much as raw damage.',
+  },
+  {
+    title: 'The stolen Minoan sphere (light manipulation)',
+    body:
+      'Sophia uses a stolen Minoan sphere to solve ingenious puzzles by manipulating light — a force woven by Daedalus into the island’s heart. This is the signature tool mechanic and likely doubles as a combat and traversal aid.',
+  },
+  {
+    title: 'Hide and outsmart the Presence',
+    body:
+      'Against the creature hunting you, official text is explicit: “You can’t stop, only hide, outsmart, and push forward.” Some encounters are about evasion, not fighting.',
+  },
+  {
+    title: 'The notebook',
+    body:
+      'You are “guided by the knowledge safeguarded in your notebook,” following your crew’s footsteps. This mirrors the series’ habit of tracking lore, objectives, and upgrades in a journal.',
+  },
+];
+
+// Series-based inference (Innocence / Requiem)
+const seriesBased = [
+  'A Plague Tale games use a workbench-style upgrade system: you gather crafting materials (tools, leather, etc.) and spend them to improve your gear and capacity.',
+  'Skill progression in Requiem was tied to your playstyle — using stealth, aggression, or opportunism more often levelled up matching skill branches. Whether Legacy reuses this exact system is unconfirmed.',
+  'Alchemical ammunition (Ignifer, Extinguis, Tar, etc.) defined earlier combat. Legacy’s melee focus suggests the toolkit will differ, so we will not assume specific ammo types until launch.',
+];
+---
+
+<Layout title={title} description={description} pageType="collection" breadcrumbs={crumbs}>
+  <div class="container py-10">
+    <Breadcrumb items={crumbs} />
+
+    <div class="mt-4"><PreReleaseNotice /></div>
+
+    <header class="mt-6 max-w-3xl">
+      <p class="section-kicker">Skills &amp; combat</p>
+      <h1 class="section-title">Combat and skills in A Plague Tale Legacy</h1>
+      <p class="mt-3 text-lg text-fog">
+        Legacy makes Sophia a melee fighter — a real departure for the series. Below is what the
+        official Steam description confirms about combat, separated from what we can only infer
+        from <em>Innocence</em> and <em>Requiem</em>.
+      </p>
+    </header>
+
+    <div class="mt-8">
+      <MediaFigure {...ASSETS.sophiaCombat} />
+    </div>
+
+    <!-- Confirmed combat -->
+    <section class="mt-12">
+      <div class="mb-4 flex items-center gap-3">
+        <h2 class="text-2xl font-black text-bone">Officially confirmed</h2>
+        <StatusBadge status="official" size="sm" />
+      </div>
+      <div class="grid gap-4 md:grid-cols-2">
+        {
+          confirmed.map((c) => (
+            <div class="surface p-5">
+              <h3 class="text-lg font-black text-bone">{c.title}</h3>
+              <p class="mt-2 text-sm leading-relaxed text-fog">{c.body}</p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- Series-based -->
+    <section class="mt-12">
+      <div class="mb-4 flex items-center gap-3">
+        <h2 class="text-2xl font-black text-bone">Series-based inference</h2>
+        <StatusBadge status="prequel" size="sm" />
+      </div>
+      <p class="max-w-3xl text-fog">
+        These points come from how skills and upgrades worked in the earlier A Plague Tale games.
+        They are educated expectations, not confirmed features, and will be verified on release day.
+      </p>
+      <ul class="mt-5 space-y-3">
+        {
+          seriesBased.map((point) => (
+            <li class="surface-muted flex gap-3 p-4 text-sm leading-relaxed text-fog">
+              <span class="text-wheat">❖</span>
+              <span>{point}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <!-- Launch plan -->
+    <section class="mt-12 surface p-6 md:p-8">
+      <p class="section-kicker">On release day</p>
+      <h2 class="mt-2 text-2xl font-black text-bone">What this page becomes</h2>
+      <p class="mt-3 max-w-3xl text-fog">
+        Once the game is out, this page turns into a full skills and combat guide: the real upgrade
+        tree, best early skills to prioritise, parry timing notes, boss-by-boss tactics, and how the
+        Minoan sphere is used in combat and puzzles. Everything currently tagged as inference gets
+        replaced with tested, sourced detail.
+      </p>
+      <div class="mt-5 flex flex-wrap gap-3">
+        <a href="/characters/" class="btn-secondary">Characters &amp; story</a>
+        <a href="/collectibles/" class="btn-secondary">Collectibles</a>
+        <a href="/walkthrough/" class="btn-secondary">Walkthrough</a>
+      </div>
+    </section>
+
+    <SourcePanel sources={[SOURCES.steam, SOURCES.steamMedia]} />
+  </div>
+</Layout>

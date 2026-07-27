@@ -1,0 +1,180 @@
+---
+// Guide hub — CollectionPage aggregating every markdown guide plus the main topic hubs.
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import PreReleaseNotice from '../../components/PreReleaseNotice.astro';
+import StatusBadge from '../../components/StatusBadge.astro';
+import { getCollection } from 'astro:content';
+import { ASSETS } from '../../data/assets';
+
+const title = 'Resonance: A Plague Tale Legacy Guides — Every Page';
+const description =
+  'Browse every Resonance: A Plague Tale Legacy guide: release date, story, characters, collectibles, combat, skills, and the walkthrough plan — each tagged with a confirmation status.';
+
+const crumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Guide', url: '/guide/' },
+];
+
+const CATEGORY_LABEL: Record<string, string> = {
+  guide: 'Overview',
+  characters: 'Characters',
+  collectibles: 'Collectibles',
+  skills: 'Skills & Combat',
+  walkthrough: 'Walkthrough',
+  romance: 'Romance',
+  news: 'News',
+};
+
+const FALLBACK_COVER: Record<string, string> = {
+  guide: ASSETS.islandTrail.src,
+  characters: ASSETS.sophiaCombat.src,
+  collectibles: ASSETS.minoanRuins.src,
+  skills: ASSETS.lightPuzzle.src,
+  walkthrough: ASSETS.enemyEncounter.src,
+  romance: ASSETS.creatureShadow.src,
+  news: ASSETS.hero.src,
+};
+
+const guides = (await getCollection('guides', ({ data }) => !data.draft)).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+
+// Static topic hubs that aren't markdown-driven
+const hubs = [
+  {
+    href: '/release-date/',
+    label: 'Overview',
+    title: 'Release date, price & platform',
+    desc: 'August 27, 2026 on Steam at USD 49.99. Confirmed facts, system requirements, and pre-purchase details.',
+    cover: ASSETS.islandTrail.src,
+    status: 'official' as const,
+  },
+  {
+    href: '/characters/',
+    label: 'Characters',
+    title: 'Characters & story',
+    desc: 'Sophia, the fate-linked second hero, the Presence behind the Minotaur myth, and Daedalus.',
+    cover: ASSETS.sophiaCombat.src,
+    status: 'official' as const,
+  },
+  {
+    href: '/collectibles/',
+    label: 'Collectibles',
+    title: 'Collectibles guide',
+    desc: 'How collectibles worked across the series and our launch-day plan for full chapter maps.',
+    cover: ASSETS.minoanRuins.src,
+    status: 'prequel' as const,
+  },
+  {
+    href: '/skills/',
+    label: 'Skills & Combat',
+    title: 'Combat & skills',
+    desc: 'Dynamic melee, parries, tools, and the Minoan-sphere light puzzles.',
+    cover: ASSETS.lightPuzzle.src,
+    status: 'trailer' as const,
+  },
+  {
+    href: '/walkthrough/',
+    label: 'Walkthrough',
+    title: 'Walkthrough plan',
+    desc: 'Confirmed story beats now, full chapter routes on release day.',
+    cover: ASSETS.enemyEncounter.src,
+    status: 'official' as const,
+  },
+];
+
+function coverOf(g: (typeof guides)[number]) {
+  return g.data.cover ?? FALLBACK_COVER[g.data.category] ?? ASSETS.islandTrail.src;
+}
+---
+
+<Layout title={title} description={description} pageType="collection" breadcrumbs={crumbs}>
+  <div class="container py-10">
+    <Breadcrumb items={crumbs} />
+
+    <header class="mb-8 max-w-3xl">
+      <p class="section-kicker">Start here</p>
+      <h1 class="section-title">Every A Plague Tale Legacy guide</h1>
+      <p class="mt-3 text-lg text-fog">
+        Pre-release pages only. Every card shows a confirmation status so you can tell official
+        Steam facts from series-based inference or preview clues.
+      </p>
+    </header>
+
+    <div class="mb-8"><PreReleaseNotice /></div>
+
+    <!-- Topic hubs -->
+    <section aria-label="Main topics">
+      <ul class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          hubs.map((h) => (
+            <li>
+              <a href={h.href} class="surface group flex h-full flex-col overflow-hidden">
+                <div class="aspect-[16/10] overflow-hidden bg-ink">
+                  <img
+                    src={h.cover}
+                    alt={`${h.title} cover`}
+                    width="640"
+                    height="400"
+                    loading="lazy"
+                    decoding="async"
+                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                  />
+                </div>
+                <div class="flex flex-1 flex-col p-4">
+                  <div class="mb-2 flex items-center justify-between gap-2">
+                    <span class="text-[11px] font-black uppercase tracking-[0.12em] text-wheat">{h.label}</span>
+                    <StatusBadge status={h.status} size="sm" />
+                  </div>
+                  <h2 class="text-base font-black text-bone group-hover:text-wheat md:text-lg">{h.title}</h2>
+                  <p class="mt-2 flex-1 text-sm leading-relaxed text-fog">{h.desc}</p>
+                  <span class="mt-4 text-sm font-bold text-wheat">Open →</span>
+                </div>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    {
+      guides.length > 0 && (
+        <section class="mt-12" aria-label="All articles">
+          <p class="section-kicker">Browse by article</p>
+          <h2 class="mt-2 mb-5 text-2xl font-black text-bone">In-depth articles</h2>
+          <ul class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {guides.map((g) => (
+              <li>
+                <a href={`/${g.id}/`} class="surface group flex h-full flex-col overflow-hidden">
+                  <div class="aspect-[16/10] overflow-hidden bg-ink">
+                    <img
+                      src={coverOf(g)}
+                      alt={`${g.data.heading ?? g.data.title} cover`}
+                      width="640"
+                      height="400"
+                      loading="lazy"
+                      decoding="async"
+                      class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                    />
+                  </div>
+                  <div class="flex flex-1 flex-col p-4">
+                    <div class="mb-2 flex items-center justify-between gap-2">
+                      <span class="text-[11px] font-black uppercase tracking-[0.12em] text-wheat">
+                        {CATEGORY_LABEL[g.data.category] ?? g.data.category}
+                      </span>
+                      <StatusBadge status={g.data.status} size="sm" />
+                    </div>
+                    <h3 class="text-base font-black text-bone group-hover:text-wheat">{g.data.heading ?? g.data.title}</h3>
+                    <p class="mt-2 flex-1 text-sm leading-relaxed text-fog">{g.data.description}</p>
+                    <span class="mt-4 text-sm font-bold text-wheat">Read →</span>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+  </div>
+</Layout>

@@ -1,0 +1,44 @@
+---
+title: "Resonance: A Plague Tale Legacy Romance Guide — What We Know"
+heading: "Resonance: A Plague Tale Legacy Romance Guide"
+description: "Is there romance in Resonance: A Plague Tale Legacy? An honest look at Sophia's story, the two fate-linked heroes, and past A Plague Tale relationships."
+category: "romance"
+status: "prequel"
+order: 2
+updatedAt: "2026-07-27"
+sourceKeys: ["steam"]
+cover: "/images/ptl-sophia-combat.webp"
+---
+
+Players searching for a **Resonance: A Plague Tale Legacy romance guide** usually want one answer: does the game have romantic relationships or dating options? Here is the honest, source-backed answer as of the pre-release period.
+
+## Is there romance in Resonance: A Plague Tale Legacy?
+
+**No romance system has been confirmed.** The official Steam description does not mention dating, relationship choices, or a romance mechanic. A Plague Tale has never been a dating-sim-style series — it tells linear, cinematic narrative stories. So if you are expecting selectable love interests or a relationship meter, that is **not** what this series does.
+
+What the official text *does* confirm is emotional, character-driven storytelling built around **bonds between characters**:
+
+- You play as **Sophia**, a fierce young plunderer uncovering the secrets of her past.
+- The story follows **"the entwined destinies of two heroes linked by fate"** across Sophia's Middle Ages and ancient Minoan times.
+- These bonds are tied to the **Macula's mysterious legacy**.
+
+That fate-link between two heroes is the closest the confirmed material comes to a central relationship — but it is described as a bond of destiny, not a romance you control.
+
+## How relationships worked in earlier A Plague Tale games
+
+To set expectations, here is how the series handled relationships (labelled series-based inference, to be verified for Resonance at launch):
+
+- ***A Plague Tale: Innocence* (2019)** centred on the sibling bond between Amicia and her younger brother Hugo. There was no player-chosen romance.
+- ***A Plague Tale: Requiem* (2022)** deepened Amicia's relationships with Hugo and side characters, and introduced meaningful companions — again, through scripted story beats, not dating mechanics.
+
+Both games earned praise for emotional weight precisely because relationships were authored, not gamified. Resonance is expected to follow the same approach.
+
+## Who are the two heroes linked by fate?
+
+Sophia is the confirmed protagonist. The **second hero** belongs to the ancient Minoan era and is confirmed to exist in official text, but has not been named publicly yet. When Asobo reveals who they are, we will update our [characters guide](/characters/) and this page with the verified details.
+
+## What to expect at launch
+
+When the game releases on **August 27, 2026**, we will play through it and update this page with the truth: whether any relationship choices exist, how the two-hero bond plays out, and whether the ending hinges on any relationship. Until then, everything here is either drawn straight from official text or clearly flagged as inference from the earlier games.
+
+If you want the confirmed cast and story framing right now, start with our [characters and story guide](/characters/).

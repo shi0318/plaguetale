@@ -1,0 +1,78 @@
+---
+// About page — editorial + sourcing (AdSense trust surface).
+import Layout from '../layouts/Layout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import { SITE } from '../data/site';
+import { STATUS_META } from '../data/confidence';
+
+const title = 'About — Resonance: A Plague Tale Legacy Guide';
+const description =
+  'Who runs this independent Resonance: A Plague Tale Legacy guide, how we verify every fact with a confirmation status, and where our information comes from.';
+
+const crumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'About', url: '/about/' },
+];
+
+const statuses = Object.values(STATUS_META);
+---
+
+<Layout title={title} description={description} pageType="article" breadcrumbs={crumbs}>
+  <article class="container max-w-3xl py-10">
+    <Breadcrumb items={crumbs} />
+
+    <h1 class="text-3xl font-black tracking-tight text-bone md:text-4xl">About this guide</h1>
+    <p class="mt-3 text-lg text-fog">
+      An independent, fan-made guide to {SITE.fullTitle} — built on one rule: every fact
+      carries a source and a confirmation status.
+    </p>
+
+    <div class="prose-page mt-8">
+      <h2>What this site is</h2>
+      <p>
+        This is a community resource covering the story, characters, collectibles, combat, and
+        skills for {SITE.developer}'s {SITE.fullTitle}. We are not affiliated with
+        {SITE.developer} or {SITE.publisher}. This is a fan project.
+      </p>
+
+      <h2>How we mark confirmation status</h2>
+      <p>
+        This is the core of the site. Instead of blending official facts with rumours, every
+        entry carries one of these labels so you always know how reliable it is:
+      </p>
+      <ul>
+        {
+          statuses.map((s) => (
+            <li>
+              <strong class="text-bone">{s.icon} {s.label}</strong> — {s.description}
+            </li>
+          ))
+        }
+      </ul>
+
+      <h2>Where our information comes from</h2>
+      <p>Our sources, in order of authority:</p>
+      <ul>
+        <li>The official <a href={SITE.steamUrl} rel="nofollow noopener noreferrer" target="_blank">Steam store page</a> (App {SITE.steamAppId}) — release date, price, platform, and the official description</li>
+        <li>Focus Entertainment and Asobo Studio official channels</li>
+        <li>Official screenshots and trailers, cited where relevant</li>
+        <li>The earlier A Plague Tale games (Innocence, Requiem), used only for clearly-labelled inference</li>
+      </ul>
+
+      <h2>Image sources</h2>
+      <p>
+        Screenshots and header art come from the {SITE.fullTitle} Steam store page. We use them
+        for fan-site documentation with attribution. Trademarks and game assets belong to their
+        respective owners. To request removal of any content, use our
+        <a href="/contact/">contact page</a>.
+      </p>
+
+      <h2>Our launch-day promise</h2>
+      <p>
+        On release (August 27, 2026) we replace every trailer- and series-based note with data
+        verified in-game. Pages that were inference become confirmed, and the confirmation
+        badges update accordingly.
+      </p>
+    </div>
+  </article>
+</Layout>

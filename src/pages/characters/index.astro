@@ -1,0 +1,85 @@
+---
+// Characters hub — CollectionPage. Every character carries a confirmation status.
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import PreReleaseNotice from '../../components/PreReleaseNotice.astro';
+import StatusBadge from '../../components/StatusBadge.astro';
+import MediaFigure from '../../components/MediaFigure.astro';
+import SourcePanel from '../../components/SourcePanel.astro';
+import { CHARACTERS } from '../../data/characters';
+import { CORE_SOURCES } from '../../data/sources';
+import { ASSETS } from '../../data/assets';
+
+const title = 'Resonance: A Plague Tale Legacy Characters — Sophia, the Myth & Cast';
+const description =
+  'Every confirmed character in Resonance: A Plague Tale Legacy: Sophia the protagonist, the fate-linked second hero, the creature behind the Minotaur myth, and Daedalus. Sourced from official Steam text.';
+
+const crumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Characters', url: '/characters/' },
+];
+
+const officialCount = CHARACTERS.filter((c) => c.status === 'official').length;
+---
+
+<Layout title={title} description={description} pageType="collection" breadcrumbs={crumbs}>
+  <div class="container py-10">
+    <Breadcrumb items={crumbs} />
+
+    <div class="mt-4"><PreReleaseNotice /></div>
+
+    <header class="mt-6 max-w-3xl">
+      <p class="section-kicker">Cast &amp; story</p>
+      <h1 class="section-title">Resonance: A Plague Tale Legacy characters</h1>
+      <p class="mt-3 text-lg text-fog">
+        The Steam store page names only a handful of figures directly. This page tracks every
+        confirmed character — {officialCount} of {CHARACTERS.length} entries carry Official
+        status — and clearly labels anything drawn from the earlier games.
+      </p>
+    </header>
+
+    <div class="mt-8">
+      <MediaFigure {...ASSETS.sophiaCombat} />
+    </div>
+
+    <div class="mt-10 space-y-6">
+      {
+        CHARACTERS.map((c) => (
+          <article class="surface p-6" id={c.slug}>
+            <div class="flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <h2 class="text-2xl font-black text-bone">{c.name}</h2>
+                <p class="mt-1 text-sm font-bold uppercase tracking-[0.1em] text-wheat">{c.role}</p>
+              </div>
+              <StatusBadge status={c.status} size="sm" />
+            </div>
+            <p class="mt-4 text-fog">{c.summary}</p>
+            <ul class="mt-4 list-disc space-y-1.5 pl-5 text-sm text-fog">
+              {c.knownFacts.map((f) => (
+                <li>{f}</li>
+              ))}
+            </ul>
+            <p class="mt-4 text-xs text-fog">Source: {c.sourceNote}</p>
+          </article>
+        ))
+      }
+    </div>
+
+    <section class="prose-page mt-12 max-w-3xl">
+      <h2>What is confirmed right now</h2>
+      <p>
+        Official Steam text confirms Sophia as the sole playable protagonist, references "the
+        entwined destinies of two heroes linked by fate" across two eras, and names the creature
+        behind the Minotaur myth as a restless presence that hunts the player. Daedalus is cited
+        as the mythological figure who wove light into the island.
+      </p>
+      <p>
+        Full character bios, relationships, and any romance options are not documented on the
+        store page. We will add named profiles as Asobo Studio and Focus Entertainment reveal
+        them, and replace inference with verified detail at launch.
+      </p>
+    </section>
+
+    <SourcePanel sources={CORE_SOURCES} />
+  </div>
+</Layout>

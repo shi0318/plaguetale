@@ -1,0 +1,23 @@
+---
+// 404 — keep visitors on-site by routing them to the verified core pages.
+import Layout from '../layouts/Layout.astro';
+import { ASSETS } from '../data/assets';
+
+const title = 'Page Not Found — Resonance: A Plague Tale Legacy Guide';
+const description = 'The requested page could not be found. Start with the verified guide pages.';
+---
+
+<Layout title={title} description={description} image={ASSETS.islandTrail.src}>
+  <section class="mx-auto max-w-2xl py-16 text-center">
+    <p class="section-kicker justify-center">404</p>
+    <h1 class="mt-3 text-4xl font-black text-bone md:text-5xl">Page not found</h1>
+    <p class="mt-4 text-fog">
+      That trail on the Minotaur's Island isn't mapped yet. Start with the verified guide pages.
+    </p>
+    <div class="mt-8 flex flex-wrap justify-center gap-3">
+      <a href="/" class="btn-primary">Home</a>
+      <a href="/walkthrough/" class="btn-secondary">Walkthrough</a>
+      <a href="/collectibles/" class="btn-secondary">Collectibles</a>
+    </div>
+  </section>
+</Layout>

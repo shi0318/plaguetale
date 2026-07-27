@@ -1,1 +1,1 @@
-"# plaguetale" 
+# plaguetaleguide

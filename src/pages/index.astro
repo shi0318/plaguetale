@@ -1,0 +1,231 @@
+---
+// Homepage — immersive field-guide landing for the Resonance: A Plague Tale Legacy guide.
+import Layout from '../layouts/Layout.astro';
+import Countdown from '../components/Countdown.astro';
+import StatusBadge from '../components/StatusBadge.astro';
+import MediaFigure from '../components/MediaFigure.astro';
+import { isReleased } from '../data/site';
+import { ASSETS } from '../data/assets';
+import { OFFICIAL_FACTS } from '../data/official';
+import { CHARACTERS } from '../data/characters';
+
+const released = isReleased();
+
+const title = 'Resonance: A Plague Tale Legacy Guide — Story, Characters & Collectibles';
+const description =
+  'Independent Resonance: A Plague Tale Legacy guide. Verified release date, Sophia and the story, characters, collectibles, combat, and skills — every fact tagged with a confirmation status.';
+
+const startHere = [
+  {
+    href: '/release-date/',
+    title: 'Release Date (Aug 27, 2026)',
+    desc: 'Confirmed launch date, price, platform, and what we know before day one.',
+    cover: ASSETS.islandTrail.src,
+  },
+  {
+    href: '/characters/',
+    title: 'Characters & Story',
+    desc: 'Sophia, the Minotaur myth, and the Macula legacy — sourced from official Steam text.',
+    cover: ASSETS.sophiaCombat.src,
+  },
+  {
+    href: '/collectibles/',
+    title: 'Collectibles Guide',
+    desc: 'How collectibles worked in Innocence and Requiem, and our plan for launch-day maps.',
+    cover: ASSETS.minoanRuins.src,
+  },
+  {
+    href: '/skills/',
+    title: 'Combat & Skills',
+    desc: 'Dynamic melee, parries, and the stolen Minoan sphere light puzzles.',
+    cover: ASSETS.lightPuzzle.src,
+  },
+];
+
+const categories = [
+  {
+    href: '/characters/',
+    title: 'Characters',
+    desc: 'Who Sophia is, the pursuing army, and the creature behind the myth.',
+    count: CHARACTERS.length,
+    countLabel: 'entries tracked',
+  },
+  {
+    href: '/collectibles/',
+    title: 'Collectibles',
+    desc: 'Pre-release framework, ready to fill with real chapter maps at launch.',
+    count: null as number | null,
+    countLabel: '',
+  },
+  {
+    href: '/skills/',
+    title: 'Skills & Combat',
+    desc: 'Melee combat, parries, tools, and Minoan-sphere light puzzles.',
+    count: null,
+    countLabel: '',
+  },
+  {
+    href: '/walkthrough/',
+    title: 'Walkthrough',
+    desc: 'Chapter framework going live, filled with real routes on release day.',
+    count: null,
+    countLabel: '',
+  },
+];
+---
+
+<Layout title={title} description={description} pageType="home" fullWidth>
+  <!-- Immersive hero -->
+  <section class="relative isolate overflow-hidden border-b border-white/10">
+    <div class="absolute inset-0">
+      <img
+        src={ASSETS.hero.src}
+        alt={ASSETS.hero.alt}
+        width={ASSETS.hero.width}
+        height={ASSETS.hero.height}
+        loading="eager"
+        decoding="sync"
+        fetchpriority="high"
+        class="h-full w-full object-cover object-center"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-ink/60 via-ink/72 to-ink"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/35 to-ink/60"></div>
+    </div>
+
+    <div class="container relative flex min-h-[80vh] flex-col items-center justify-center py-24 text-center">
+      <p class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/35 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.16em] text-bone backdrop-blur">
+        Fan Guide &amp; Source Tracker
+        <span class="text-fog">·</span>
+        <span class="text-wheat">Releases August 27, 2026</span>
+      </p>
+
+      <h1 class="mt-6 max-w-4xl text-4xl font-black tracking-tight text-bone sm:text-5xl md:text-6xl">
+        Resonance: A Plague Tale Legacy Guide
+      </h1>
+
+      <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-fog md:text-lg">
+        The prequel set 15 years before <em>A Plague Tale: Requiem</em>. Play as Sophia,
+        journey to the Minotaur's Island, and confront the myth at the heart of the curse.
+        Every fact here is tagged with a confirmation status.
+      </p>
+
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <a href="/guide/" class="btn-primary">All guides →</a>
+        <a href="/release-date/" class="btn-secondary">Release date</a>
+        <a href="/characters/" class="btn-secondary">Characters &amp; story</a>
+      </div>
+
+      {!released && <div class="mt-10"><Countdown /></div>}
+    </div>
+  </section>
+
+  <div class="container py-16">
+    <!-- Official facts band -->
+    <section class="surface p-6 md:p-8">
+      <p class="section-kicker">Confirmed by official sources</p>
+      <h2 class="section-title">What we know for certain</h2>
+      <p class="mt-3 max-w-3xl text-fog">
+        These facts come straight from the Steam store page and Focus Entertainment. Everything
+        marked with another status below is clearly labelled as inference or preview.
+      </p>
+      <dl class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          OFFICIAL_FACTS.map((fact) => (
+            <div class="surface-muted p-4">
+              <dt class="text-xs font-bold uppercase tracking-[0.12em] text-wheat">{fact.label}</dt>
+              <dd class="mt-2 text-bone">{fact.value}</dd>
+            </div>
+          ))
+        }
+      </dl>
+    </section>
+
+    <!-- Trust -->
+    <section class="mt-14 surface p-6 md:p-8">
+      <p class="section-kicker">Why this guide</p>
+      <h2 class="section-title">Every fact is sourced</h2>
+      <p class="mt-3 max-w-3xl text-fog">
+        Before launch, most sites blend confirmed details with rumours. We don't. Each entry is
+        tagged so you always know what is verified and what is still inference:
+      </p>
+      <div class="mt-5 flex flex-wrap gap-2">
+        <StatusBadge status="official" />
+        <StatusBadge status="trailer" />
+        <StatusBadge status="prequel" />
+        <StatusBadge status="unconfirmed" />
+      </div>
+    </section>
+
+    <!-- Start here -->
+    <section class="mt-16">
+      <div class="mb-6 flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <p class="section-kicker">Essential pages</p>
+          <h2 class="section-title">Where to begin</h2>
+        </div>
+        <a href="/guide/" class="text-sm font-bold text-wheat hover:underline">All guides →</a>
+      </div>
+      <div class="grid gap-5 sm:grid-cols-2">
+        {
+          startHere.map((s) => (
+            <a href={s.href} class="surface group flex h-full overflow-hidden">
+              <div class="w-[38%] min-w-[7.5rem] overflow-hidden bg-ink">
+                <img
+                  src={s.cover}
+                  alt={`${s.title} cover`}
+                  width="480"
+                  height="360"
+                  loading="lazy"
+                  decoding="async"
+                  class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                />
+              </div>
+              <div class="flex flex-1 flex-col p-4 md:p-5">
+                <h3 class="text-base font-black text-bone group-hover:text-wheat md:text-lg">{s.title}</h3>
+                <p class="mt-2 flex-1 text-sm leading-relaxed text-fog">{s.desc}</p>
+                <span class="mt-4 text-sm font-bold text-wheat">Open page →</span>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="mt-16">
+      <p class="section-kicker">Browse the guide</p>
+      <h2 class="section-title">Explore by topic</h2>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {
+          categories.map((c) => (
+            <a href={c.href} class="surface group flex h-full flex-col p-5 transition hover:border-wheat/35">
+              <span class="text-lg font-black text-bone group-hover:text-wheat">{c.title}</span>
+              <span class="mt-2 flex-1 text-sm leading-relaxed text-fog">{c.desc}</span>
+              {c.count !== null && (
+                <span class="mt-4 text-xs uppercase tracking-[0.12em] text-fog">
+                  {c.count} {c.countLabel}
+                </span>
+              )}
+            </a>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- Visual archive -->
+    <section class="mt-16">
+      <p class="section-kicker">Visual archive</p>
+      <h2 class="section-title">Official screenshots</h2>
+      <p class="mt-3 max-w-3xl text-fog">
+        Screenshots from the official Steam store page. Every image is attributed so you know
+        exactly where it comes from.
+      </p>
+      <div class="mt-6 grid gap-4 md:grid-cols-2">
+        <MediaFigure {...ASSETS.sophiaCombat} />
+        <MediaFigure {...ASSETS.minoanRuins} />
+        <MediaFigure {...ASSETS.lightPuzzle} />
+        <MediaFigure {...ASSETS.enemyEncounter} />
+      </div>
+    </section>
+  </div>
+</Layout>

@@ -1,0 +1,113 @@
+---
+// Walkthrough hub — CollectionPage. Pre-release this is a framework; on launch day it fills
+// with real chapter routes. Honest about what is and isn't known.
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import PreReleaseNotice from '../../components/PreReleaseNotice.astro';
+import StatusBadge from '../../components/StatusBadge.astro';
+import MediaFigure from '../../components/MediaFigure.astro';
+import SourcePanel from '../../components/SourcePanel.astro';
+import { ASSETS } from '../../data/assets';
+import { SOURCES } from '../../data/sources';
+
+const title = 'Resonance: A Plague Tale Legacy Walkthrough — Chapter Guide (Launch Plan)';
+const description =
+  'Resonance: A Plague Tale Legacy walkthrough hub. What the story structure looks like before launch, and our chapter-by-chapter plan for full routes and collectibles on release day.';
+
+const crumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Walkthrough', url: '/walkthrough/' },
+];
+
+const knownBeats = [
+  {
+    title: 'Arrival and pursuit',
+    body:
+      'Sophia is on the run, pursued by an army also drawn to the island to reclaim a mysterious treasure. Early hours establish the chase and the stakes.',
+  },
+  {
+    title: "The Minotaur's Island maze",
+    body:
+      'You navigate a treacherous maze — deadly trials, treacherous trails, and puzzles — following in your crew’s footsteps using the notebook.',
+  },
+  {
+    title: 'Light puzzles with the Minoan sphere',
+    body:
+      'A stolen Minoan sphere lets you manipulate light to solve ingenious puzzles, a force Daedalus wove into the island’s heart.',
+  },
+  {
+    title: 'Two eras, entwined',
+    body:
+      'The story shifts between Sophia’s Middle Ages and ancient Minoan times, weaving two fate-linked heroes and the Macula’s legacy.',
+  },
+  {
+    title: 'The hunt intensifies',
+    body:
+      'A restless presence hunts you through the depths. Some sections are about hiding and outsmarting it rather than fighting.',
+  },
+];
+---
+
+<Layout title={title} description={description} pageType="collection" breadcrumbs={crumbs}>
+  <div class="container py-10">
+    <Breadcrumb items={crumbs} />
+
+    <div class="mt-4"><PreReleaseNotice /></div>
+
+    <header class="mt-6 max-w-3xl">
+      <p class="section-kicker">Walkthrough</p>
+      <h1 class="section-title">A Plague Tale Legacy walkthrough</h1>
+      <p class="mt-3 text-lg text-fog">
+        The full chapter-by-chapter walkthrough goes live when the game unlocks on
+        <strong>August 27, 2026</strong>. Until then, here is the confirmed story structure and
+        exactly what this hub becomes on day one — no fabricated chapter lists.
+      </p>
+    </header>
+
+    <div class="mt-8">
+      <MediaFigure {...ASSETS.islandTrail} />
+    </div>
+
+    <!-- Known story beats -->
+    <section class="mt-12">
+      <div class="mb-4 flex items-center gap-3">
+        <h2 class="text-2xl font-black text-bone">Confirmed story beats</h2>
+        <StatusBadge status="official" size="sm" />
+      </div>
+      <p class="max-w-3xl text-fog">
+        These beats are drawn from the official Steam description. Exact chapter names, order, and
+        objectives are not public yet, so we do not list numbered chapters until launch.
+      </p>
+      <ol class="mt-5 space-y-4">
+        {
+          knownBeats.map((beat, i) => (
+            <li class="surface p-5">
+              <div class="flex items-baseline gap-3">
+                <span class="text-2xl font-black text-wheat/70">{String(i + 1).padStart(2, '0')}</span>
+                <div>
+                  <h3 class="text-lg font-black text-bone">{beat.title}</h3>
+                  <p class="mt-1 text-sm leading-relaxed text-fog">{beat.body}</p>
+                </div>
+              </div>
+            </li>
+          ))
+        }
+      </ol>
+    </section>
+
+    <!-- Launch plan -->
+    <section class="mt-12 surface p-6 md:p-8">
+      <p class="section-kicker">Release-day plan</p>
+      <h2 class="mt-2 text-2xl font-black text-bone">What lands on day one</h2>
+      <ul class="mt-4 space-y-2.5 text-fog">
+        <li class="flex gap-3"><span class="text-wheat">→</span> Chapter 1 walkthrough within hours of unlock, with a full route.</li>
+        <li class="flex gap-3"><span class="text-wheat">→</span> Collectible locations per chapter, cross-linked to the <a href="/collectibles/" class="text-wheat underline underline-offset-2">collectibles guide</a>.</li>
+        <li class="flex gap-3"><span class="text-wheat">→</span> Puzzle solutions for the Minoan-sphere light sections.</li>
+        <li class="flex gap-3"><span class="text-wheat">→</span> Boss and Presence-encounter tactics as they appear.</li>
+        <li class="flex gap-3"><span class="text-wheat">→</span> New chapters added daily as we progress through the game.</li>
+      </ul>
+    </section>
+
+    <SourcePanel sources={[SOURCES.steam]} />
+  </div>
+</Layout>

@@ -1,0 +1,104 @@
+---
+// Collectibles hub — pre-release framework page (KD-target: "plague tale legacy collectibles").
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import PreReleaseNotice from '../../components/PreReleaseNotice.astro';
+import StatusBadge from '../../components/StatusBadge.astro';
+import MediaFigure from '../../components/MediaFigure.astro';
+import SourcePanel from '../../components/SourcePanel.astro';
+import { CORE_SOURCES } from '../../data/sources';
+import { ASSETS } from '../../data/assets';
+
+const title = 'Resonance: A Plague Tale Legacy Collectibles Guide (Pre-release)';
+const description =
+  'Collectibles guide framework for Resonance: A Plague Tale Legacy. How collectibles worked in Innocence and Requiem, what the Steam page confirms, and our plan for launch-day chapter maps.';
+
+const crumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Collectibles', url: '/collectibles/' },
+];
+
+// Series-based reference (clearly labelled prequel inference)
+const seriesCollectibles = [
+  {
+    game: 'A Plague Tale: Innocence (2019)',
+    types: 'Curiosities, flowers (for Amicia), Hugo’s trinkets, alchemy carts',
+    note: 'Collectibles were tied to optional exploration and character moments, not combat.',
+  },
+  {
+    game: 'A Plague Tale: Requiem (2022)',
+    types: 'Feathers, flowers, chapter mementos, knives, and "Collectibles" chapter tracking',
+    note: 'Requiem added a per-chapter collectible counter and post-chapter cleanup.',
+  },
+];
+---
+
+<Layout title={title} description={description} pageType="collection" breadcrumbs={crumbs}>
+  <div class="container py-10">
+    <Breadcrumb items={crumbs} />
+
+    <div class="mt-4"><PreReleaseNotice /></div>
+
+    <header class="mt-6 max-w-3xl">
+      <p class="section-kicker">Completion</p>
+      <h1 class="section-title">Resonance: A Plague Tale Legacy collectibles</h1>
+      <p class="mt-3 text-lg text-fog">
+        Resonance has not launched, so no in-game collectible list exists yet. This page sets up
+        the framework now and will fill with real, per-chapter locations and maps on release day —
+        August 27, 2026.
+      </p>
+    </header>
+
+    <div class="mt-8">
+      <MediaFigure {...ASSETS.minoanRuins} />
+    </div>
+
+    <section class="prose-page mt-10 max-w-3xl">
+      <h2>What the Steam page confirms</h2>
+      <p>
+        The official description mentions Sophia is "guided by the knowledge safeguarded in your
+        notebook" and follows "in your crew's footsteps to explore a richly detailed world,
+        unravel its secrets." That points to exploration-driven optional content — secrets, notes,
+        and lore items — consistent with the series, but no specific collectible categories are
+        named on the store page yet.
+      </p>
+
+      <h2 class="flex items-center gap-3">
+        How collectibles worked in the series
+        <StatusBadge status="prequel" size="sm" />
+      </h2>
+      <p>
+        Until launch, the most reliable guide is how Asobo handled collectibles in the two earlier
+        games. This is <strong>series-based inference</strong>, not confirmed Resonance content:
+      </p>
+      <table>
+        <thead>
+          <tr><th>Game</th><th>Collectible types</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          {seriesCollectibles.map((row) => (
+            <tr>
+              <td>{row.game}</td>
+              <td>{row.types}</td>
+              <td>{row.note}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <h2>Our launch-day plan</h2>
+      <p>
+        On release day we will publish per-chapter collectible pages with screenshots, map
+        markers, and missable warnings, using the same source-tracked approach as the rest of the
+        site. Bookmark this page — it becomes the collectibles index the moment the game unlocks.
+      </p>
+      <ul>
+        <li>Chapter-by-chapter location lists with screenshots</li>
+        <li>Missable collectible warnings before points of no return</li>
+        <li>A completion checklist for 100% and any collectible-linked achievements</li>
+      </ul>
+    </section>
+
+    <SourcePanel sources={CORE_SOURCES} />
+  </div>
+</Layout>
