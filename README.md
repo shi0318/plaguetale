@@ -2,6 +2,8 @@
 
 Independent, source-tracked fan guide for **Resonance: A Plague Tale Legacy** (Asobo Studio / Focus Entertainment, releasing 27 August 2026).
 
+🔗 **Live site: https://plaguetaleguide.com**
+
 Every fact carries a visible confirmation status (Official / Trailer-preview / Series-based / Unconfirmed) and links back to its source. Data is drawn from the official Steam store page (App 2713000); nothing is fabricated.
 
 ## Tech stack
