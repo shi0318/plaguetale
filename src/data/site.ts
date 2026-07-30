@@ -40,6 +40,7 @@ export const NAV = [
   { label: 'Skills', href: '/skills/' },
   { label: 'Walkthrough', href: '/walkthrough/' },
   { label: 'Release Date', href: '/release-date/' },
+  { label: 'Download', href: '/download/' },
 ] as const;
 
 export function isReleased(now: Date = new Date()): boolean {

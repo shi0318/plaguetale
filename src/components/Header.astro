@@ -17,14 +17,14 @@ const isActive = (href: string) => current === href || current.startsWith(href);
       </span>
     </a>
 
-    <ul class="hidden items-center gap-1 lg:flex">
+    <ul class="hidden flex-wrap items-center justify-end gap-1 lg:flex">
       {
         NAV.map((item) => (
           <li>
             <a
               href={item.href}
               class:list={[
-                'rounded-md px-3 py-2 text-sm font-semibold transition-colors',
+                'rounded-md px-2.5 py-2 text-sm font-semibold transition-colors',
                 isActive(item.href)
                   ? 'bg-wheat/12 text-wheat'
                   : 'text-fog hover:bg-white/5 hover:text-bone',

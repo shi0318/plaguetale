@@ -20,6 +20,7 @@ const requiredPages = [
   '/combat/',
   '/romance-guide/',
   '/platforms/',
+  '/download/',
   '/about/',
   '/privacy/',
   '/contact/',
