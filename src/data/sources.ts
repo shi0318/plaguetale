@@ -36,6 +36,14 @@ export const SOURCES = {
     lastChecked: LAST_CHECKED,
     note: 'Official screenshots, header art, and trailers published on the Steam store page.',
   },
+  steamNews: {
+    label: 'Official Steam devblogs (DEVBLOG #1–#4)',
+    url: 'https://store.steampowered.com/news/app/2713000',
+    publisher: 'Asobo Studio / Focus Entertainment',
+    status: 'official',
+    lastChecked: '2026-07-30',
+    note: 'First-party developer blogs posted to the Steam news hub for App 2713000: #1 Sophia’s Story, #2 Anna Demetriou interview, #3 "Into The Myth", #4 Olivier Derivière interview.',
+  },
   ign: {
     label: 'IGN preview coverage',
     url: 'https://www.ign.com/',
