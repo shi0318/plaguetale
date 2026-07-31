@@ -198,3 +198,22 @@ summary:focus-visible {
   background: rgba(82, 97, 66, 0.22);
   color: var(--color-bone);
 }
+
+.prose-page figure {
+  margin-top: 1.75rem;
+}
+
+.prose-page img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(239, 230, 208, 0.12);
+  border-radius: 8px;
+}
+
+.prose-page figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--color-fog);
+  opacity: 0.85;
+}
