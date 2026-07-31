@@ -35,10 +35,10 @@ export const OFFICIAL_FACTS: OfficialFact[] = [
     sourceUrl: SITE.steamUrl,
   },
   {
-    label: 'Platform',
-    value: 'Windows PC via Steam (DirectX 12, 64-bit)',
-    sourceLabel: 'Steam',
-    sourceUrl: SITE.steamUrl,
+    label: 'Platforms',
+    value: 'PC via Steam (DirectX 12, 64-bit), plus PlayStation 5 and Xbox Series X|S',
+    sourceLabel: 'Steam store page + official Resonance FAQ',
+    sourceUrl: 'https://store.steampowered.com/news/app/2713000',
   },
   {
     label: 'Story framing',

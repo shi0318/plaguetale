@@ -5,8 +5,8 @@ description: "Resonance: A Plague Tale Legacy releases August 27, 2026 on Steam.
 category: "guide"
 status: "official"
 order: 1
-updatedAt: "2026-07-27"
-sourceKeys: ["steam", "focus"]
+updatedAt: "2026-07-31"
+sourceKeys: ["steam", "steamNews", "focus"]
 cover: "/images/ptl-island-trail.webp"
 ---
 
@@ -17,17 +17,19 @@ cover: "/images/ptl-island-trail.webp"
 | Detail | Confirmed information |
 | --- | --- |
 | Release date | August 27, 2026 |
-| Platform | Windows PC via Steam |
-| Price | USD 49.99 (standard edition) |
+| Platforms | PC (Steam), PlayStation 5, Xbox Series X\|S |
+| Price | USD 49.99 (standard edition, PC) |
 | Developer | Asobo Studio |
 | Publisher | Focus Entertainment |
 | Pre-purchase | Live now on Steam |
 
-All of the above is pulled directly from the Steam store page. We re-check it on the date shown at the top of this article.
+All of the above is pulled from the official Steam store page and the official Resonance FAQ on the game's Steam news hub. We re-check it on the date shown at the top of this article.
 
 ## Is Resonance: A Plague Tale Legacy coming to PS5 and Xbox?
 
-The only platform confirmed on the store page right now is **Windows PC via Steam**. The two earlier games — *A Plague Tale: Innocence* (2019) and *A Plague Tale: Requiem* (2022) — both released on PlayStation, Xbox, and PC, so console versions would fit the series pattern. We are labelling console availability as **series-based inference** until Focus Entertainment publishes an official console listing. We will update this page the moment a PS5 or Xbox Series X|S page appears.
+**Yes — both are officially confirmed.** The official Resonance FAQ, posted to the game's own Steam news hub, answers this directly: the game "will be available on **PC, Xbox Series X|S and PS5**." Focus also said there that PC specs would be communicated before launch.
+
+An earlier version of this page treated console versions as series-based inference. That was out of date, and it is corrected as of 2026-07-31. What is still genuinely unannounced is the detail: console store listings, console pricing, performance modes, install sizes, and whether the game reaches Game Pass — see [platforms](/platforms/) for the per-platform status.
 
 ## What is the price?
 
@@ -55,4 +57,4 @@ For the full breakdown of the story and cast, see our [characters and story guid
 
 ## How we verify this page
 
-The release date, price, platform, developer, and publisher on this page all come from the official Steam listing and Focus Entertainment. Anything we cannot confirm from an official source — such as console versions — is clearly labelled as inference, never presented as fact.
+The release date, price, platforms, developer, and publisher on this page all come from the official Steam listing, the official Resonance FAQ, and Focus Entertainment. Anything we cannot confirm from an official source — such as Game Pass availability or console pricing — is clearly labelled as unconfirmed, never presented as fact.

@@ -1,41 +1,49 @@
 ---
 title: "Resonance: A Plague Tale Legacy Platforms — PC, PS5, Xbox & Game Pass"
 heading: "Resonance: A Plague Tale Legacy Platforms"
-description: "Which platforms is Resonance: A Plague Tale Legacy on? Confirmed PC release, plus the PS5, Xbox, and Game Pass status — each tagged by confirmation level."
+description: "Resonance: A Plague Tale Legacy is officially confirmed for PC, PS5 and Xbox Series X|S. Game Pass and Switch status, each tagged by confirmation level."
 category: "guide"
-status: "prequel"
+status: "official"
 order: 3
-updatedAt: "2026-07-27"
-sourceKeys: ["steam"]
+updatedAt: "2026-07-31"
+sourceKeys: ["steamNews", "steam", "focus"]
 cover: "/images/ptl-minoan-ruins.webp"
 ---
 
-Players want a straight answer on where they can play **Resonance: A Plague Tale Legacy**. Here is the platform breakdown as of the pre-release period, with every line tagged by how confirmed it actually is.
+Players want a straight answer on where they can play **Resonance: A Plague Tale Legacy**. Here is the platform breakdown, with every line tagged by how confirmed it actually is.
 
 ## What platforms is Resonance: A Plague Tale Legacy confirmed on?
 
-**PC (Windows) is confirmed.** The official Steam store page (App 2713000) lists Resonance for Windows PC at **$49.99**, with full controller support. That is the only platform officially announced so far.
+**Three: PC, PlayStation 5, and Xbox Series X|S.** This is answered directly in the official **Resonance FAQ** posted to the game's own Steam news hub:
+
+> "Which platform will Resonance be on? Resonance: A Plague Tale Legacy will be available on **PC, Xbox Series X|S and PS5**! We'll make sure to communicate the required specs prior to the launch."
+
+That is a first-party statement, not inference. The Steam store page (App 2713000) covers the PC side specifically, listing Windows at **$49.99** with full controller support.
 
 | Platform | Status | What we know |
 | --- | --- | --- |
 | PC (Steam) | **Confirmed** | Listed on Steam for Windows, $49.99, full controller support. |
-| PlayStation 5 | Unconfirmed | Not officially announced. Likely, based on series precedent. |
-| Xbox Series X\|S | Unconfirmed | Not officially announced. Likely, based on series precedent. |
+| PlayStation 5 | **Confirmed** | Named in the official Resonance FAQ. Storefront details not yet broken out. |
+| Xbox Series X\|S | **Confirmed** | Named in the official Resonance FAQ. Storefront details not yet broken out. |
 | Game Pass | Unconfirmed | No official word. Requiem launched day one on Game Pass in 2022. |
 | Nintendo Switch / Switch 2 | Unconfirmed | No announcement. Requiem later reached cloud/Switch; unclear here. |
 
+An earlier version of this page listed PS5 and Xbox as unconfirmed. That was out of date — the FAQ had already answered it and we had not caught up. Corrected on 2026-07-31.
+
 ## Is Resonance: A Plague Tale Legacy coming to PS5 and Xbox?
 
-No console version has been **officially announced** yet, so we list PlayStation 5 and Xbox Series X|S as unconfirmed. That said, both previous entries shipped on current-generation consoles:
+Yes, both are officially confirmed. For series context, this also matches how the previous entries shipped:
 
 - ***A Plague Tale: Innocence*** (2019) launched on PS4, Xbox One, and PC, with later PS5 and Xbox Series upgrades.
 - ***A Plague Tale: Requiem*** (2022) launched on PS5, Xbox Series X|S, and PC.
 
-Given that history, current-gen console releases for Resonance are **likely** — but "likely" is inference, not a promise. We will move PS5 and Xbox to confirmed the moment Focus Entertainment states it directly.
+What is *not* yet stated is per-platform detail: console pricing, edition parity, performance and quality modes, install sizes, or when the PC specs Focus promised will arrive. Those we will add with the source attached.
 
 ## Is Resonance: A Plague Tale Legacy on Game Pass?
 
 **Not confirmed.** Microsoft, Focus Entertainment, and Asobo Studio have made no Game Pass announcement for the prequel. For context, *A Plague Tale: Requiem* launched **day one on Xbox Game Pass** in October 2022, which is why the question comes up so often. Precedent makes it plausible, but until there is an official listing, treat any Game Pass claim as speculation.
+
+Note the asymmetry: an Xbox Series X|S release is confirmed, and Game Pass is not. Those are separate commitments, and the first does not imply the second.
 
 ## Will there be a Nintendo Switch version?
 
@@ -43,6 +51,6 @@ There is no Switch or Switch 2 announcement. *Requiem* eventually reached Switch
 
 ## What we will confirm at launch
 
-When Resonance releases on **August 27, 2026**, we will update this page with the final, verified platform list: exact console SKUs, any Game Pass deal, storefronts, and pricing per platform. Everything above is either drawn straight from the official Steam listing or clearly flagged as series-based inference.
+When Resonance releases on **August 27, 2026**, we will update this page with the final, verified detail: console storefront SKUs, any Game Pass deal, per-platform pricing, and the PC requirements Focus said it would publish beforehand. Everything above is either a first-party statement or clearly flagged as series-based inference.
 
 For the confirmed launch details we already have, see our [release date guide](/release-date/).

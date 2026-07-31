@@ -25,10 +25,12 @@ export const SITE = {
   protagonist: 'Sophia',
   setting: "the Minotaur's Island",
   priceUsd: '$49.99',
-  platforms: ['Steam (PC)'] as const,
+  // 官方 Resonance FAQ（Steam 新闻中心 App 2713000）明确 "PC, Xbox Series X|S and PS5"。
+  // Game Pass 与 Switch 至今无第一方公告，故不列入。
+  platforms: ['Steam (PC)', 'PlayStation 5', 'Xbox Series X|S'] as const,
   // Prequel timing (confirmed: 15 years before A Plague Tale: Requiem)
   prequelGap: '15 years before A Plague Tale: Requiem',
-  lastVerified: '2026-07-27',
+  lastVerified: '2026-07-31',
 } as const;
 
 export const NAV = [
@@ -95,6 +97,12 @@ export const OFFICIAL_FACTS = [
     label: 'Platform & price',
     value: 'Listed on Steam for Windows PC at $49.99, with full controller support.',
     source: SOURCES.steam,
+  },
+  {
+    label: 'Console platforms',
+    value:
+      'The official Resonance FAQ states the game "will be available on PC, Xbox Series X|S and PS5". Game Pass and Switch remain unannounced.',
+    source: SOURCES.steamNews,
   },
 ] as const;
 

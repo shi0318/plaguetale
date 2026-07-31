@@ -5,8 +5,8 @@ description: "Where to download Resonance: A Plague Tale Legacy: the official St
 category: "guide"
 status: "official"
 order: 2
-updatedAt: "2026-07-30"
-sourceKeys: ["steam", "focus"]
+updatedAt: "2026-07-31"
+sourceKeys: ["steam", "steamNews", "focus"]
 cover: "/images/ptl-island-trail.webp"
 ---
 
@@ -22,7 +22,8 @@ That is Steam **App ID 2713000**, published by Focus Entertainment. Pre-purchase
 | --- | --- |
 | Status | Pre-purchase live — game not released |
 | Release date | August 27, 2026 |
-| Platform | Windows PC via Steam |
+| Platform (this page) | Windows PC via Steam |
+| Other confirmed platforms | PS5, Xbox Series X\|S — no store listing yet |
 | Steam App ID | 2713000 |
 | Price | USD 49.99 (standard edition) |
 | Developer | Asobo Studio |
@@ -57,12 +58,12 @@ No install size has been given. For scale, *A Plague Tale: Requiem* asked for ro
 
 ## What about PS5, Xbox, and Game Pass?
 
-Only **Windows PC via Steam** is confirmed. No PlayStation, Xbox, Switch, or Game Pass listing exists yet, so there is no console download channel to point you at. Both earlier games shipped on consoles, so console versions would fit the pattern — we track that as series-based inference, clearly labelled, on the [platforms page](/platforms/).
+**PlayStation 5 and Xbox Series X|S are confirmed platforms** — the official Resonance FAQ on the game's Steam news hub states it "will be available on PC, Xbox Series X|S and PS5". What does not exist yet is a console *store listing*, so there is no console pre-order or download channel to point you at, and no console pricing. **Game Pass remains unconfirmed**, which is a separate question from the Xbox release itself. Details on the [platforms page](/platforms/).
 
 ## Before launch day
 
 - Read [release date, price & editions](/release-date/) for everything confirmed about the launch
-- Check [platforms](/platforms/) if you are waiting on a console version
+- Check [platforms](/platforms/) for the confirmed platform list and what is still unannounced
 - Start with the [story and characters](/characters/) if you want context on Sophia before you play
 - The [skills and combat guide](/skills/) covers what is known about the systems
 

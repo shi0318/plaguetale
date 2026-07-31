@@ -56,7 +56,9 @@ const videoGame = {
   genre: ['Action', 'Adventure'],
   author: { '@type': 'Organization', name: SITE.developer },
   publisher: { '@type': 'Organization', name: SITE.publisher },
-  gamePlatform: ['PC'],
+  // 官方 Resonance FAQ 确认 PC / PS5 / Xbox Series X|S 三平台；
+  // Game Pass 与 Switch 无第一方公告，不写入 Schema。
+  gamePlatform: ['PC', 'PlayStation 5', 'Xbox Series X|S'],
   datePublished: SITE.releaseDate,
 };
 

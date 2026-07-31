@@ -9,7 +9,7 @@ export interface SourceRef {
   note: string;
 }
 
-export const LAST_CHECKED = '2026-07-27';
+export const LAST_CHECKED = '2026-07-31';
 
 export const SOURCES = {
   steam: {
@@ -37,12 +37,12 @@ export const SOURCES = {
     note: 'Official screenshots, header art, and trailers published on the Steam store page.',
   },
   steamNews: {
-    label: 'Official Steam devblogs (DEVBLOG #1–#4)',
+    label: 'Official Steam devblogs and FAQ',
     url: 'https://store.steampowered.com/news/app/2713000',
     publisher: 'Asobo Studio / Focus Entertainment',
     status: 'official',
-    lastChecked: '2026-07-30',
-    note: 'First-party developer blogs posted to the Steam news hub for App 2713000: #1 Sophia’s Story, #2 Anna Demetriou interview, #3 "Into The Myth", #4 Olivier Derivière interview.',
+    lastChecked: LAST_CHECKED,
+    note: 'First-party posts on the Steam news hub for App 2713000: the Resonance FAQ (platforms: "PC, Xbox Series X|S and PS5"), plus DEVBLOG #1 Sophia’s Story, #2 Anna Demetriou interview, #3 "Into The Myth", #4 Olivier Derivière interview.',
   },
   ign: {
     label: 'IGN preview coverage',
