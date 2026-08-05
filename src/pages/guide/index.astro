@@ -40,6 +40,13 @@ const guides = (await getCollection('guides', ({ data }) => !data.draft)).sort(
   (a, b) => a.data.order - b.data.order,
 );
 
+const latest = [...guides]
+  .sort(
+    (a, b) =>
+      b.data.updatedAt.localeCompare(a.data.updatedAt) || a.data.order - b.data.order,
+  )
+  .slice(0, 3);
+
 // Static topic hubs that aren't markdown-driven
 const hubs = [
   {
@@ -103,6 +110,47 @@ function coverOf(g: (typeof guides)[number]) {
     </header>
 
     <div class="mb-8"><PreReleaseNotice /></div>
+
+    {
+      latest.length > 0 && (
+        <section class="latest-guides mb-12" aria-label="Latest guides">
+          <p class="section-kicker">Latest guides first</p>
+          <h2 class="mt-2 mb-5 text-2xl font-black text-bone">New and recently updated</h2>
+          <ul class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {latest.map((g) => (
+              <li>
+                <a href={`/${g.id}/`} class="surface group flex h-full flex-col overflow-hidden">
+                  <div class="aspect-[16/10] overflow-hidden bg-ink">
+                    <img
+                      src={coverOf(g)}
+                      alt={`${g.data.heading ?? g.data.title} cover`}
+                      width="640"
+                      height="400"
+                      loading="lazy"
+                      decoding="async"
+                      class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                    />
+                  </div>
+                  <div class="flex flex-1 flex-col p-4">
+                    <div class="mb-2 flex items-center justify-between gap-2">
+                      <span class="text-[11px] font-black uppercase tracking-[0.12em] text-wheat">
+                        {CATEGORY_LABEL[g.data.category] ?? g.data.category}
+                      </span>
+                      <StatusBadge status={g.data.status} size="sm" />
+                    </div>
+                    <h3 class="text-base font-black text-bone group-hover:text-wheat md:text-lg">
+                      {g.data.heading ?? g.data.title}
+                    </h3>
+                    <p class="mt-2 flex-1 text-sm leading-relaxed text-fog">{g.data.description}</p>
+                    <span class="mt-4 text-sm font-bold text-wheat">Read →</span>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
 
     <!-- Topic hubs -->
     <section aria-label="Main topics">
