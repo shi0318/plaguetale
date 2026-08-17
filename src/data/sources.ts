@@ -9,7 +9,7 @@ export interface SourceRef {
   note: string;
 }
 
-export const LAST_CHECKED = '2026-07-31';
+export const LAST_CHECKED = '2026-08-17';
 
 export const SOURCES = {
   steam: {
