@@ -1,16 +1,16 @@
 ---
 title: "Resonance: A Plague Tale Legacy Combat Guide — Melee, Parries & Tools"
-heading: "Combat Guide: Melee, Parries, Light Puzzles & Tools"
+heading: "Resonance: A Plague Tale Legacy Combat Guide — Melee, Parries & Light Puzzles"
 description: "Confirmed combat in Resonance: A Plague Tale Legacy — dynamic melee, parries, and the Minoan sphere light mechanic. Sourced and clearly labelled."
 category: "skills"
 status: "official"
 order: 4
-updatedAt: "2026-07-27"
+updatedAt: "2026-08-21"
 sourceKeys: ["steam"]
 cover: "/images/ptl-sophia-combat.webp"
 ---
 
-This page collects the **confirmed** combat details for Resonance from the official Steam description, then explains — clearly labelled — how combat and tools worked in the earlier A Plague Tale games so you have useful context before launch.
+This page collects the **confirmed** combat details for **Resonance: A Plague Tale Legacy** from the official Steam description, then explains — clearly labelled — how combat and tools worked in the earlier A Plague Tale games so you have useful context before launch.
 
 ## Confirmed combat facts
 
@@ -27,7 +27,7 @@ This is a notable shift for the series. The earlier games leaned heavily on **st
 
 ## The Minoan sphere: light as a tool
 
-A signature mechanic is the **stolen Minoan sphere**, used to **manipulate light** and solve puzzles. Official text credits **Daedalus** with weaving light into the island's heart. In the A Plague Tale series, light and darkness have always been mechanically important — expect the sphere to be both a **puzzle tool** and, potentially, a way to control encounters. Full combat applications are not yet documented.
+A signature mechanic is the **stolen Minoan sphere**, used to **manipulate light** and solve puzzles. Official text credits **Daedalus** with weaving light into the island's heart. The source confirms the sphere's puzzle role, but does not confirm a combat effect, enemy control rule, upgrade path, or charge system.
 
 ## Series context (to be verified at launch)
 

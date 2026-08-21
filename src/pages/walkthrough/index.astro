@@ -10,9 +10,9 @@ import SourcePanel from '../../components/SourcePanel.astro';
 import { ASSETS } from '../../data/assets';
 import { SOURCES } from '../../data/sources';
 
-const title = 'Resonance: A Plague Tale Legacy Walkthrough — Chapter Guide (Launch Plan)';
+const title = 'Resonance: A Plague Tale Legacy Walkthrough — Story, Locations & Puzzle Guide';
 const description =
-  'Resonance: A Plague Tale Legacy walkthrough hub. What the story structure looks like before launch, and our chapter-by-chapter plan for full routes and collectibles on release day.';
+  'Resonance: A Plague Tale Legacy walkthrough hub covering confirmed story beats, Venice and Minoan Island locations, combat, and Minoan sphere light puzzles before launch.';
 
 const crumbs = [
   { name: 'Home', url: '/' },
@@ -55,12 +55,13 @@ const knownBeats = [
     <div class="mt-4"><PreReleaseNotice /></div>
 
     <header class="mt-6 max-w-3xl">
-      <p class="section-kicker">Walkthrough</p>
-      <h1 class="section-title">A Plague Tale Legacy walkthrough</h1>
+      <p class="section-kicker">Walkthrough hub</p>
+      <h1 class="section-title">Resonance: A Plague Tale Legacy walkthrough</h1>
       <p class="mt-3 text-lg text-fog">
-        The full chapter-by-chapter walkthrough goes live when the game unlocks on
-        <strong>August 27, 2026</strong>. Until then, here is the confirmed story structure and
-        exactly what this hub becomes on day one — no fabricated chapter lists.
+        A complete chapter-by-chapter route cannot be verified before the game unlocks on
+        <strong>August 27, 2026</strong>. Until then, this page answers what the official material
+        actually establishes about the story, locations, combat, and puzzle systems — with no
+        fabricated chapter names or objectives.
       </p>
     </header>
 
@@ -95,16 +96,33 @@ const knownBeats = [
       </ol>
     </section>
 
+    <section class="mt-12 surface p-6 md:p-8" aria-labelledby="walkthrough-now">
+      <p class="section-kicker">Useful before launch</p>
+      <h2 id="walkthrough-now" class="mt-2 text-2xl font-black text-bone">What you can prepare now</h2>
+      <p class="mt-3 max-w-3xl text-fog">
+        The official pages already give players a reliable starting map of the search intent: the
+        Venice lagoon camp and carnival, the legendary Minoan Island, Sophia’s melee combat, and
+        the Minoan sphere’s light manipulation. Use the linked guides for verified context rather
+        than treating a preview as a finished route.
+      </p>
+      <ul class="mt-5 grid gap-3 sm:grid-cols-2">
+        <li class="surface-muted p-4"><a href="/locations/" class="font-bold text-wheat underline underline-offset-2">Locations and world guide</a><span class="mt-1 block text-sm text-fog">Confirmed Venice, the carnival, the lagoon camp, and Minoan Island references.</span></li>
+        <li class="surface-muted p-4"><a href="/island-exploration-encounter-guide/" class="font-bold text-wheat underline underline-offset-2">Island exploration guide</a><span class="mt-1 block text-sm text-fog">A factual route-card method for recording encounters after launch.</span></li>
+        <li class="surface-muted p-4"><a href="/minoan-sphere-light-puzzle-guide/" class="font-bold text-wheat underline underline-offset-2">Minoan sphere puzzle guide</a><span class="mt-1 block text-sm text-fog">Confirmed light-manipulation role, without invented beam sequences.</span></li>
+        <li class="surface-muted p-4"><a href="/collectibles/" class="font-bold text-wheat underline underline-offset-2">Collectibles guide</a><span class="mt-1 block text-sm text-fog">What the notebook and official devblog reveal, and what awaits a hands-on checklist.</span></li>
+      </ul>
+    </section>
+
     <!-- Launch plan -->
     <section class="mt-12 surface p-6 md:p-8">
       <p class="section-kicker">Release-day plan</p>
       <h2 class="mt-2 text-2xl font-black text-bone">What lands on day one</h2>
       <ul class="mt-4 space-y-2.5 text-fog">
-        <li class="flex gap-3"><span class="text-wheat">→</span> Chapter 1 walkthrough within hours of unlock, with a full route.</li>
+        <li class="flex gap-3"><span class="text-wheat">→</span> Verified chapter routes after the retail build provides the in-game chapter names and objectives.</li>
         <li class="flex gap-3"><span class="text-wheat">→</span> Collectible locations per chapter, cross-linked to the <a href="/collectibles/" class="text-wheat underline underline-offset-2">collectibles guide</a>.</li>
         <li class="flex gap-3"><span class="text-wheat">→</span> Puzzle solutions for the Minoan-sphere light sections.</li>
         <li class="flex gap-3"><span class="text-wheat">→</span> Boss and Presence-encounter tactics as they appear.</li>
-        <li class="flex gap-3"><span class="text-wheat">→</span> New chapters added daily as we progress through the game.</li>
+        <li class="flex gap-3"><span class="text-wheat">→</span> New routes added as each section is played and independently rechecked.</li>
       </ul>
     </section>
 

@@ -1,13 +1,13 @@
 ---
-title: "A Plague Tale Legacy Minoan Sphere Light Puzzle Guide"
-heading: "The Minoan Sphere: A Spoiler-Safe Light Puzzle Guide"
+title: "Resonance: A Plague Tale Legacy Minoan Sphere Light Puzzle Guide"
+heading: "Resonance: A Plague Tale Legacy Minoan Sphere Light Puzzle Guide"
 description: "What Resonance: A Plague Tale Legacy officially confirms about Sophia's Minoan sphere and light manipulation, plus a practical puzzle observation checklist."
 category: skills
 status: official
 sourceKeys: ["steam", "steamNews", "steamMedia"]
 preRelease: true
 order: 12
-updatedAt: "2026-08-05"
+updatedAt: "2026-08-21"
 cover: "/images/ptl-light-puzzle.webp"
 ---
 
@@ -69,4 +69,3 @@ Before launch, avoid claiming:
 The useful launch-day data will be a screenshot, room name, mechanism state, solution order, and whether the solution changes on a second visit. Keep those fields ready in a notes template.
 
 For combat context, read [the melee and parry guide](/combat/). For the myth and timeline, see [story and setting](/story/). Both pages distinguish official Resonance information from earlier-series context.
-

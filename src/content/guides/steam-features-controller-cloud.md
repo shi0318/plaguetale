@@ -1,11 +1,11 @@
 ---
-title: "Resonance Steam Features — Controller, Cloud, HDR & Family Sharing"
-heading: "Steam Features: Controller Support, Cloud Saves & HDR"
+title: "Resonance: A Plague Tale Legacy Steam Features — Controller, Cloud & HDR"
+heading: "Resonance: A Plague Tale Legacy Steam Features — Controller, Cloud & HDR"
 description: "Official Steam feature categories for Resonance: A Plague Tale Legacy: single-player, controller support, Steam Cloud, HDR, Family Sharing, and the limits of each label."
 category: guide
 status: official
 order: 2
-updatedAt: "2026-08-07"
+updatedAt: "2026-08-21"
 sourceKeys: ["steam"]
 cover: "/images/ptl-hero-banner.webp"
 ---

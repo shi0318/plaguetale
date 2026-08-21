@@ -1,11 +1,11 @@
 ---
-title: "Who Plays Sophia in Resonance: A Plague Tale Legacy?"
-heading: "Sophia's Voice & Mocap: Anna Demetriou on Playing the Younger Scorpion"
+title: "Resonance: A Plague Tale Legacy Sophia Voice Actor — Anna Demetriou"
+heading: "Resonance: A Plague Tale Legacy Sophia Voice & Mocap — Anna Demetriou"
 description: "Anna Demetriou returns as Sophia and, for the first time, performs the motion capture too. What the official devblog says about the younger Sophia."
 category: "characters"
 status: "official"
 order: 4
-updatedAt: "2026-07-30"
+updatedAt: "2026-08-21"
 sourceKeys: ["steamNews", "steam", "focus"]
 cover: "/images/ptl-sophia-combat.webp"
 ---

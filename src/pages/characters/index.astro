@@ -7,12 +7,12 @@ import StatusBadge from '../../components/StatusBadge.astro';
 import MediaFigure from '../../components/MediaFigure.astro';
 import SourcePanel from '../../components/SourcePanel.astro';
 import { CHARACTERS } from '../../data/characters';
-import { CORE_SOURCES } from '../../data/sources';
+import { CORE_SOURCES, SOURCES } from '../../data/sources';
 import { ASSETS } from '../../data/assets';
 
-const title = 'Resonance: A Plague Tale Legacy Characters — Sophia, the Myth & Cast';
+const title = 'Resonance: A Plague Tale Legacy Characters Guide — Sophia, Leni, Alec & Theseus';
 const description =
-  'Every confirmed character in Resonance: A Plague Tale Legacy: Sophia the protagonist, the fate-linked second hero, the creature behind the Minotaur myth, and Daedalus. Sourced from official Steam text.';
+  'Resonance: A Plague Tale Legacy characters guide covering Sophia, Leni, Alec, Theseus, Daedalus, and the unnamed island entity from official Steam sources.';
 
 const crumbs = [
   { name: 'Home', url: '/' },
@@ -32,9 +32,10 @@ const officialCount = CHARACTERS.filter((c) => c.status === 'official').length;
       <p class="section-kicker">Cast &amp; story</p>
       <h1 class="section-title">Resonance: A Plague Tale Legacy characters</h1>
       <p class="mt-3 text-lg text-fog">
-        The Steam store page names only a handful of figures directly. This page tracks every
-        confirmed character — {officialCount} of {CHARACTERS.length} entries carry Official
-        status — and clearly labels anything drawn from the earlier games.
+        This page tracks the named figures and entities confirmed in the official Steam store
+        description and developer announcements — {officialCount} of {CHARACTERS.length} entries
+        carry Official status. It does not turn an unnamed role, trailer inference, or earlier-game
+        character into a confirmed Resonance cast member.
       </p>
     </header>
 
@@ -68,15 +69,18 @@ const officialCount = CHARACTERS.filter((c) => c.status === 'official').length;
     <section class="prose-page mt-12 max-w-3xl">
       <h2>What is confirmed right now</h2>
       <p>
-        Official Steam text confirms Sophia as the sole playable protagonist, references "the
-        entwined destinies of two heroes linked by fate" across two eras, and names the creature
-        behind the Minotaur myth as a restless presence that hunts the player. Daedalus is cited
-        as the mythological figure who wove light into the island.
+        Official Steam text confirms Sophia as the protagonist, references "the entwined destinies
+        of two heroes linked by fate" across two eras, and names Daedalus as the mythological figure
+        who wove light into the island. Official Steam news adds Leni as Sophia’s friend, Alec as
+        her father and the leader of her childhood plunderer camp, and Theseus as the legendary hero
+        whose perspective is part of the Minoan-era story.
       </p>
       <p>
-        Full character bios, relationships, and any romance options are not documented on the
-        store page. We will add named profiles as Asobo Studio and Focus Entertainment reveal
-        them, and replace inference with verified detail at launch.
+        The hostile entity is still unnamed in the tracked first-party material. Its role is not the
+        same as Theseus: the store page describes a restless hunter in the island’s shadows, while
+        the gameplay announcement identifies Theseus as the presence resonating within Sophia. Full
+        bios, relationship choices, and final encounter details remain unconfirmed until the game
+        is playable.
       </p>
 
       <h2>More on the cast</h2>
@@ -88,7 +92,7 @@ const officialCount = CHARACTERS.filter((c) => c.status === 'official').length;
         </li>
         <li>
           <a href="/allies-and-crew/">Allies &amp; crew</a> — Leni, Sophia's father Alec, and the
-          mythic hero Theseus, plus what the free Heritage Pack pre-order DLC contains.
+          mythic hero Theseus, plus the confirmed Heritage Pack pre-order DLC contents.
         </li>
         <li>
           <a href="/minotaur-myth-explained/">The Minotaur myth explained</a> — Minos, Theseus and
@@ -105,6 +109,6 @@ const officialCount = CHARACTERS.filter((c) => c.status === 'official').length;
       </ul>
     </section>
 
-    <SourcePanel sources={CORE_SOURCES} />
+    <SourcePanel sources={[...CORE_SOURCES, SOURCES.steamNews]} />
   </div>
 </Layout>

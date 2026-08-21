@@ -8,6 +8,7 @@ import StatusBadge from '../components/StatusBadge.astro';
 import SourcePanel from '../components/SourcePanel.astro';
 import { STATUS_META, type ConfidenceStatus } from '../data/confidence';
 import { SOURCES, type SourceRef, type SourceKey } from '../data/sources';
+import { formatDate } from '../utils/dates';
 
 interface Crumb {
   name: string;
@@ -85,7 +86,7 @@ const sources: SourceRef[] = sourceKeys.map((k) => SOURCES[k]);
       <h1 class="text-3xl font-black tracking-tight text-bone md:text-4xl">{h1}</h1>
       <p class="mt-3 text-lg text-fog">{description}</p>
       <p class="mt-4 text-sm text-fog">
-        Last verified <time datetime={updatedAt}>{updatedAt}</time> · {meta.label}
+        Updated <time datetime={updatedAt}>{formatDate(updatedAt)}</time> · {meta.label}
       </p>
     </header>
 

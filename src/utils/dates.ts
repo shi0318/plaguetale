@@ -23,7 +23,18 @@ export function toDateString(value: string | Date | null | undefined): string {
   return raw;
 }
 
-/** Visible date label — keep simple and locale-stable. */
+/** Visible date label for the site's US-English audience. */
 export function formatDate(value: string | Date | null | undefined): string {
-  return toDateString(value);
+  const normalized = toDateString(value);
+  if (!normalized) return '';
+
+  const parsed = new Date(`${normalized}T00:00:00Z`);
+  if (Number.isNaN(parsed.getTime())) return normalized;
+
+  return new Intl.DateTimeFormat('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }).format(parsed);
 }

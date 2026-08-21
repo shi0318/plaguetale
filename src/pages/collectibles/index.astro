@@ -6,12 +6,12 @@ import PreReleaseNotice from '../../components/PreReleaseNotice.astro';
 import StatusBadge from '../../components/StatusBadge.astro';
 import MediaFigure from '../../components/MediaFigure.astro';
 import SourcePanel from '../../components/SourcePanel.astro';
-import { CORE_SOURCES } from '../../data/sources';
+import { SOURCES } from '../../data/sources';
 import { ASSETS } from '../../data/assets';
 
-const title = 'Resonance: A Plague Tale Legacy Collectibles Guide (Pre-release)';
+const title = 'Resonance: A Plague Tale Legacy Collectibles Guide — Notebook, Secrets & Locations';
 const description =
-  'Collectibles guide framework for Resonance: A Plague Tale Legacy. How collectibles worked in Innocence and Requiem, what the Steam page confirms, and our plan for launch-day chapter maps.';
+  'Resonance: A Plague Tale Legacy collectibles guide covering the notebook, secrets, artifacts, exploration, and what locations remain unconfirmed before launch.';
 
 const crumbs = [
   { name: 'Home', url: '/' },
@@ -43,9 +43,9 @@ const seriesCollectibles = [
       <p class="section-kicker">Completion</p>
       <h1 class="section-title">Resonance: A Plague Tale Legacy collectibles</h1>
       <p class="mt-3 text-lg text-fog">
-        Resonance has not launched, so no in-game collectible list exists yet. This page sets up
-        the framework now and will fill with real, per-chapter locations and maps on release day —
-        August 27, 2026.
+        Resonance has not launched, so no complete in-game collectible checklist or per-chapter
+        location map is published yet. This page records the official exploration clues now and
+        will add hands-on locations only after the release build can be played on August 27, 2026.
       </p>
     </header>
 
@@ -61,6 +61,23 @@ const seriesCollectibles = [
         unravel its secrets." That points to exploration-driven optional content — secrets, notes,
         and lore items — consistent with the series, but no specific collectible categories are
         named on the store page yet.
+      </p>
+
+      <h2>Officially named exploration artifacts</h2>
+      <p>
+        The official <em>Into The Myth</em> developer post gives two concrete examples of the
+        island’s historical artifacts: an <strong>orrery</strong>, a device used to predict the
+        movement of the stars, and <strong>seal stones depicting people playing with a bull before
+        killing it</strong>. They confirm the kind of environmental history the game wants players
+        to investigate; they do <strong>not</strong> confirm a collectible category, a count, a
+        chapter location, or an achievement requirement.
+      </p>
+      <p>
+        These are real official examples, not a finished “all collectibles” list. The safest
+        pre-release answer to “where are the collectibles?” is that the locations have not been
+        published. The <a href="/locations/">locations guide</a> covers the confirmed world
+        context, while the <a href="/walkthrough/">walkthrough hub</a> will hold verified chapter
+        routes after launch.
       </p>
 
       <h2 class="flex items-center gap-3">
@@ -99,6 +116,6 @@ const seriesCollectibles = [
       </ul>
     </section>
 
-    <SourcePanel sources={CORE_SOURCES} />
+    <SourcePanel sources={[SOURCES.steam, SOURCES.steamNews, SOURCES.steamMedia]} />
   </div>
 </Layout>

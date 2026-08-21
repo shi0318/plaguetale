@@ -1,6 +1,7 @@
 ---
 // Pre-release notice — soft banner, does not steal focus from the main content.
 import { SITE } from '../data/site';
+import { formatDate } from '../utils/dates';
 
 interface Props {
   compact?: boolean;
@@ -17,7 +18,7 @@ const { compact = false } = Astro.props;
 >
   <p>
     <span class="font-bold text-wheat">Pre-release guide.</span>
-    {SITE.fullTitle} launches on {SITE.releaseDate}. Facts below are tagged with a confirmation
+    {SITE.fullTitle} launches on <time datetime={SITE.releaseDate}>{formatDate(SITE.releaseDate)}</time>. Facts below are tagged with a confirmation
     status — anything drawn from trailers or the earlier Plague Tale games is flagged and will be
     replaced with verified data at launch.
   </p>

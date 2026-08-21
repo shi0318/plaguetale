@@ -1,11 +1,11 @@
 ---
 title: "Resonance: A Plague Tale Legacy Locations & World Guide"
-heading: "Every Confirmed Location: the Venice Lagoon, the Carnival & the Minoan Island"
+heading: "Resonance: A Plague Tale Legacy Locations — Venice, Carnival & Minoan Island"
 description: "The confirmed settings in Resonance: a raiders' camp in the Venice lagoon, 14th-century Venice, and a Minoan island built from real Greek references."
 category: "walkthrough"
 status: "official"
 order: 6
-updatedAt: "2026-07-30"
+updatedAt: "2026-08-21"
 sourceKeys: ["steamNews", "steam", "steamMedia"]
 cover: "/images/ptl-island-trail.webp"
 ---

@@ -1,11 +1,11 @@
 ---
-title: "Resonance Allies & Crew — Leni, Alec and Theseus Explained"
-heading: "Sophia's Allies: Leni, Alec, Theseus & the Heritage Pack"
+title: "Resonance: A Plague Tale Legacy Allies & Crew — Leni, Alec and Theseus"
+heading: "Resonance: A Plague Tale Legacy Allies — Leni, Alec, Theseus & Heritage Pack"
 description: "Who stands with Sophia in Resonance: A Plague Tale Legacy — her friend Leni, her father Alec, and the mythic hero Theseus — plus what the free Heritage Pack holds."
 category: "characters"
 status: "official"
 order: 4
-updatedAt: "2026-08-03"
+updatedAt: "2026-08-21"
 sourceKeys: ["steamNews", "steam", "steamMedia"]
 cover: "/images/ptl-enemy-encounter.webp"
 ---

@@ -1,12 +1,12 @@
 ---
 title: "Resonance: A Plague Tale Legacy Romance Guide — What We Know"
-heading: "Resonance: A Plague Tale Legacy Romance Guide"
+heading: "Resonance: A Plague Tale Legacy Romance Guide — Relationships & Choices"
 description: "Is there romance in Resonance: A Plague Tale Legacy? An honest look at Sophia's story, the two fate-linked heroes, and past A Plague Tale relationships."
 category: "romance"
 status: "prequel"
 order: 2
-updatedAt: "2026-07-27"
-sourceKeys: ["steam"]
+updatedAt: "2026-08-21"
+sourceKeys: ["steam", "steamNews"]
 cover: "/images/ptl-sophia-combat.webp"
 ---
 
@@ -35,7 +35,7 @@ Both games earned praise for emotional weight precisely because relationships we
 
 ## Who are the two heroes linked by fate?
 
-Sophia is the confirmed protagonist. The **second hero** belongs to the ancient Minoan era and is confirmed to exist in official text, but has not been named publicly yet. When Asobo reveals who they are, we will update our [characters guide](/characters/) and this page with the verified details.
+Sophia is the named protagonist, and official Steam news identifies the Minoan-era hero as **Theseus**. The announcement says players experience trials through Theseus’s eyes, but it does not confirm a romance route, relationship meter, dialogue choices, or the exact control structure. For the named cast, see our [characters guide](/characters/).
 
 ## What to expect at launch
 

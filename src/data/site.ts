@@ -30,7 +30,8 @@ export const SITE = {
   platforms: ['Steam (PC)', 'PlayStation 5', 'Xbox Series X|S'] as const,
   // Prequel timing (confirmed: 15 years before A Plague Tale: Requiem)
   prequelGap: '15 years before A Plague Tale: Requiem',
-  lastVerified: '2026-07-31',
+  // Latest date on which the official Steam / publisher material was checked.
+  lastVerified: '2026-08-17',
 } as const;
 
 export const NAV = [

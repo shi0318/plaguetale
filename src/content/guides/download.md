@@ -1,11 +1,11 @@
 ---
-title: "Plague Tale Legacy Download — Official Steam Page"
+title: "Resonance: A Plague Tale Legacy Download — Official Steam Page"
 heading: "Resonance: A Plague Tale Legacy download and pre-purchase"
 description: "Where to download Resonance: A Plague Tale Legacy: the official Steam page, pre-purchase price, why there is no demo, and how to avoid fake download sites."
 category: "guide"
 status: "official"
 order: 2
-updatedAt: "2026-07-31"
+updatedAt: "2026-08-21"
 sourceKeys: ["steam", "steamNews", "focus"]
 cover: "/images/ptl-island-trail.webp"
 ---

@@ -1,12 +1,12 @@
 ---
 title: "Resonance: A Plague Tale Legacy Story & Setting Explained"
-heading: "Story & Setting: Sophia, the Minotaur's Island & the Macula"
+heading: "Resonance: A Plague Tale Legacy Story & Setting — Sophia and the Minotaur's Island"
 description: "The confirmed story setup for Resonance: A Plague Tale Legacy — Sophia, the Minotaur's Island, the two eras, and the Macula's legacy, sourced from official text."
 category: "characters"
 status: "official"
 order: 3
-updatedAt: "2026-07-27"
-sourceKeys: ["steam", "focus"]
+updatedAt: "2026-08-21"
+sourceKeys: ["steam", "steamNews", "focus"]
 cover: "/images/ptl-minoan-ruins.webp"
 ---
 
@@ -37,7 +37,7 @@ One of the most distinctive story hooks: the game **shifts between two time peri
 - **Sophia's Middle Ages** — her present-day journey.
 - **Ancient Minoan times** — where echoes of the past shape the battles of the present.
 
-Official text describes **"the entwined destinies of two heroes linked by fate,"** connected through the **Macula's mysterious legacy**. Sophia is one hero; the second belongs to the Minoan era and has not been named publicly yet.
+Official text describes **"the entwined destinies of two heroes linked by fate,"** connected through the **Macula's mysterious legacy**. Official Steam news identifies the Minoan-era hero as **Theseus** and says players experience trials through his eyes. The announcement does not yet publish the final control structure or how the two perspectives switch.
 
 ## Daedalus and the light
 

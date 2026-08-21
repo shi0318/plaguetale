@@ -1,13 +1,13 @@
 ---
-title: "A Plague Tale Legacy Island Exploration and Encounter Guide"
-heading: "Minotaur's Island: Exploration and Encounter Planning"
+title: "Resonance: A Plague Tale Legacy Island Exploration & Encounter Guide"
+heading: "Resonance: A Plague Tale Legacy Island Exploration & Encounter Guide"
 description: "A pre-release Resonance: A Plague Tale Legacy guide to exploring Minotaur's Island, reading encounters, using parries, and tracking unknown systems."
 category: walkthrough
 status: official
 sourceKeys: ["steam", "steamNews", "steamMedia"]
 preRelease: true
 order: 13
-updatedAt: "2026-08-05"
+updatedAt: "2026-08-21"
 cover: "/images/ptl-island-trail.webp"
 ---
 
@@ -68,5 +68,4 @@ The highest-value update targets are:
 - the exact role of stealth, hiding, and environmental tricks;
 - the order of story gates and the point-of-no-return structure.
 
-Until those are tested, the [locations page](/locations/) is the official-scope reference, the [combat page](/combat/) covers confirmed wording, and the [Minoan sphere guide](/guides/minoan-sphere-light-puzzle-guide/) handles the light mechanic.
-
+Until those are tested, the [locations page](/locations/) is the official-scope reference, the [combat page](/combat/) covers confirmed wording, and the [Minoan sphere guide](/minoan-sphere-light-puzzle-guide/) handles the light mechanic.

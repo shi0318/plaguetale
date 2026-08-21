@@ -8,9 +8,9 @@ import Pagination from '../../components/Pagination.astro';
 import { getCollection } from 'astro:content';
 import { ASSETS } from '../../data/assets';
 
-const title = 'Resonance: A Plague Tale Legacy Guides — Every Page';
+const title = 'Resonance: A Plague Tale Legacy Guides — Release Date, Combat & Walkthrough';
 const description =
-  'Browse every Resonance: A Plague Tale Legacy guide: release date, story, characters, collectibles, combat, skills, and the walkthrough plan — each tagged with a confirmation status.';
+  'Browse Resonance: A Plague Tale Legacy guides for release date, PC requirements, characters, collectibles, combat, skills, platforms, and walkthrough planning.';
 
 const crumbs = [
   { name: 'Home', url: '/' },
@@ -59,7 +59,7 @@ const hubs = [
     href: '/characters/',
     label: 'Characters',
     title: 'Characters & story',
-    desc: 'Sophia, the fate-linked second hero, the Presence behind the Minotaur myth, and Daedalus.',
+    desc: 'Sophia, Leni, Alec, Theseus, Daedalus, and the unnamed entity behind the island hunt.',
     cover: ASSETS.sophiaCombat.src,
     status: 'official' as const,
   },
@@ -100,14 +100,39 @@ function coverOf(g: (typeof guides)[number]) {
 
     <header class="mb-8 max-w-3xl">
       <p class="section-kicker">Start here</p>
-      <h1 class="section-title">Every A Plague Tale Legacy guide</h1>
+      <h1 class="section-title">Every Resonance: A Plague Tale Legacy guide</h1>
       <p class="mt-3 text-lg text-fog">
-        Pre-release pages only. Every card shows a confirmation status so you can tell official
-        Steam facts from series-based inference or preview clues.
+        Every card shows a confirmation status so you can separate official Resonance: A Plague
+        Tale Legacy facts from series context and pre-release information. The list is sorted by
+        the latest verified update, with the newest page first.
       </p>
     </header>
 
     <div class="mb-8"><PreReleaseNotice /></div>
+
+    <section aria-labelledby="topic-guides" class="mb-14">
+      <div class="mb-5">
+        <p class="section-kicker">Search by question</p>
+        <h2 id="topic-guides" class="section-title">Resonance: A Plague Tale Legacy topic guides</h2>
+        <p class="mt-3 max-w-3xl text-fog">
+          Start with the answer you need: launch details, confirmed characters and story, the
+          current collectibles scope, melee and light puzzles, or the walkthrough framework. These
+          hubs link to the detailed pages without adding extra navigation-only URLs.
+        </p>
+      </div>
+      <ul class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {hubs.map((hub) => (
+          <GuideCard
+            href={hub.href}
+            title={hub.title}
+            description={hub.desc}
+            cover={hub.cover}
+            label={hub.label}
+            status={hub.status}
+          />
+        ))}
+      </ul>
+    </section>
 
     <section class="latest-guides" aria-label="Latest guides">
       <p class="section-kicker">Latest guides first</p>

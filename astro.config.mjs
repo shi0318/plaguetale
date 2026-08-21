@@ -14,9 +14,22 @@ function frontmatterDate(file) {
   return match?.[1];
 }
 
-// Only guide frontmatter supplies a sitemap date; static routes omit it.
+// Static hubs changed in this editorial pass carry the real modification date.
+// Unchanged static routes intentionally omit lastmod instead of receiving a fake date.
+const STATIC_LASTMOD = {
+  '/': '2026-08-21',
+  '/guide/': '2026-08-21',
+  '/guide/page/2/': '2026-08-21',
+  '/characters/': '2026-08-21',
+  '/collectibles/': '2026-08-21',
+  '/skills/': '2026-08-21',
+  '/walkthrough/': '2026-08-21',
+  '/privacy/': '2026-08-21',
+};
+
 function lastmodFor(url) {
   const pathname = new URL(url).pathname;
+  if (STATIC_LASTMOD[pathname]) return STATIC_LASTMOD[pathname];
   const slug = pathname.replace(/^\/+|\/+$/g, ''); // 去首尾斜杠
   const candidates = [`src/content/guides/${slug}.md`, `src/content/guides/${slug}.mdx`];
   const file = candidates.find((rel) => existsSync(join(ROOT, rel)));
