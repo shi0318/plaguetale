@@ -16,3 +16,10 @@
 - 修正：首页 title/description、若干内页 description 与分页描述收紧到搜索结果可读长度；同步实际修改内容页的 `updatedAt`/静态 `lastmod`。
 - 验证：SEO 检查、3 个 Plague Tale 测试和 Astro `build --force` 均通过，生成 29 个页面，title/description 审计无超限项。
 - 下一轮唯一改进：推送后重新核验线上版本；Steam 解锁前不发布零售版实测内容。
+
+## 2026-08-27 — GitHub 推送与线上回归
+
+- 操作：将本轮代码与发布记录推送到 GitHub `main`，远端提交为 `2737324733caee72b2e33f15e55224569e7f0a1c`。
+- 线上证据：首页、关键 hub、robots、sitemap-index、sitemap-0 与 PNG favicon 均返回预期状态；线上 28 个页面 URL 与本地构建一致。
+- 结论：发布链路完成；GSC 登录态和索引状态仍需在 Search Console 中单独核验，Steam 解锁前不发布零售版实测内容。
+- 下一轮唯一改进：Steam 状态变为可玩后，重新验证零售版事实，再将对应页面从预发布框架升级。
