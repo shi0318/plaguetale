@@ -1,16 +1,16 @@
 ---
-title: "Resonance: A Plague Tale Legacy Release Date — August 27, 2026"
+title: "Resonance: A Plague Tale Legacy Release Date & Platforms"
 heading: "Resonance: A Plague Tale Legacy Release Date"
 description: "Resonance: A Plague Tale Legacy releases August 27, 2026 on Steam. Confirmed price, platform, editions, and everything Asobo and Focus have revealed so far."
 category: "guide"
 status: "official"
 order: 1
-updatedAt: "2026-07-31"
+updatedAt: "2026-08-27"
 sourceKeys: ["steam", "steamNews", "focus"]
 cover: "/images/ptl-island-trail.webp"
 ---
 
-**Resonance: A Plague Tale Legacy** launches on **August 27, 2026**. The date is confirmed on the official [Steam store page](https://store.steampowered.com/app/2713000/Resonance_A_Plague_Tale_Legacy/) (App ID 2713000), where pre-purchase is already live. This is the third entry in Asobo Studio's A Plague Tale series and an original prequel — not a direct sequel.
+**Resonance: A Plague Tale Legacy** is listed for **August 27, 2026** on the official [Steam store page](https://store.steampowered.com/app/2713000/Resonance_A_Plague_Tale_Legacy/) (App ID 2713000), where pre-purchase is already live. Steam still shows the game as coming soon, so this page does not treat the calendar date as proof that the build has unlocked. This is the third entry in Asobo Studio's A Plague Tale series and an original prequel — not a direct sequel.
 
 ## Release date at a glance
 

@@ -1,5 +1,5 @@
 ---
-title: "Resonance: A Plague Tale Legacy Minotaur Myth Explained — Where the Story Begins"
+title: "Resonance: A Plague Tale Legacy Minotaur Myth Explained"
 heading: "Resonance: A Plague Tale Legacy Minotaur Myth — Minos, Theseus & Ariadne"
 description: "The Greek myth Resonance is built on, told straight, plus what Asobo's official devblog says about where their version begins and what it changes."
 category: "characters"

@@ -1,11 +1,11 @@
 ---
-title: "Resonance: A Plague Tale Legacy Combat Guide — Melee, Parries & Tools"
+title: "Resonance: A Plague Tale Legacy Combat Guide"
 heading: "Resonance: A Plague Tale Legacy Combat Guide — Melee, Parries & Light Puzzles"
 description: "Confirmed combat in Resonance: A Plague Tale Legacy — dynamic melee, parries, and the Minoan sphere light mechanic. Sourced and clearly labelled."
 category: "skills"
 status: "official"
 order: 4
-updatedAt: "2026-08-21"
+updatedAt: "2026-08-27"
 sourceKeys: ["steam"]
 cover: "/images/ptl-sophia-combat.webp"
 ---
@@ -41,7 +41,7 @@ We do not yet know which of these systems carry into Resonance. Because Sophia's
 
 ## How we'll update this page
 
-On launch day (August 27, 2026) we will replace the series-based sections with:
+After Steam unlock on August 27, 2026 we will replace the series-based sections with:
 
 - The actual skill or upgrade system, if any
 - Confirmed tools and how to unlock them

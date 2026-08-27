@@ -1,5 +1,5 @@
 ---
-// Walkthrough hub — CollectionPage. Pre-release this is a framework; on launch day it fills
+// Walkthrough hub — CollectionPage. Pre-release this is a framework; after Steam unlock it fills
 // with real chapter routes. Honest about what is and isn't known.
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
@@ -10,9 +10,9 @@ import SourcePanel from '../../components/SourcePanel.astro';
 import { ASSETS } from '../../data/assets';
 import { SOURCES } from '../../data/sources';
 
-const title = 'Resonance: A Plague Tale Legacy Walkthrough — Story, Locations & Puzzle Guide';
+const title = 'Resonance: A Plague Tale Legacy Walkthrough Guide';
 const description =
-  'Resonance: A Plague Tale Legacy walkthrough hub covering confirmed story beats, Venice and Minoan Island locations, combat, and Minoan sphere light puzzles before launch.';
+  'Resonance: A Plague Tale Legacy walkthrough hub covering story beats, locations, combat, and Minoan sphere light puzzles before Steam unlock.';
 
 const crumbs = [
   { name: 'Home', url: '/' },
@@ -113,10 +113,10 @@ const knownBeats = [
       </ul>
     </section>
 
-    <!-- Launch plan -->
+    <!-- Post-unlock plan -->
     <section class="mt-12 surface p-6 md:p-8">
-      <p class="section-kicker">Release-day plan</p>
-      <h2 class="mt-2 text-2xl font-black text-bone">What lands on day one</h2>
+      <p class="section-kicker">After Steam unlock</p>
+      <h2 class="mt-2 text-2xl font-black text-bone">What we will verify first</h2>
       <ul class="mt-4 space-y-2.5 text-fog">
         <li class="flex gap-3"><span class="text-wheat">→</span> Verified chapter routes after the retail build provides the in-game chapter names and objectives.</li>
         <li class="flex gap-3"><span class="text-wheat">→</span> Collectible locations per chapter, cross-linked to the <a href="/collectibles/" class="text-wheat underline underline-offset-2">collectibles guide</a>.</li>

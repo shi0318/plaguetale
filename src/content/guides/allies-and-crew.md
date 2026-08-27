@@ -1,11 +1,11 @@
 ---
-title: "Resonance: A Plague Tale Legacy Allies & Crew — Leni, Alec and Theseus"
+title: "Resonance: A Plague Tale Legacy Allies & Crew Guide"
 heading: "Resonance: A Plague Tale Legacy Allies — Leni, Alec, Theseus & Heritage Pack"
-description: "Who stands with Sophia in Resonance: A Plague Tale Legacy — her friend Leni, her father Alec, and the mythic hero Theseus — plus what the free Heritage Pack holds."
+description: "Guide to Resonance: A Plague Tale Legacy allies Leni, Alec, Theseus, and the free Heritage Pack, with confirmed story context."
 category: "characters"
 status: "official"
 order: 4
-updatedAt: "2026-08-21"
+updatedAt: "2026-08-27"
 sourceKeys: ["steamNews", "steam", "steamMedia"]
 cover: "/images/ptl-enemy-encounter.webp"
 ---
@@ -77,7 +77,7 @@ Both the **Resonance FAQ** and the **release-date announcement** list the pre-or
 | **Alec's Pendant** | Named after Sophia's father. Type and effect not disclosed. |
 | **A 30+ page in-game artbook** | Viewable in-game, per the official wording. |
 
-The FAQ describes the pack as free with pre-order and does not mention a paid version, a deluxe edition, or a post-launch route to obtaining it. Whether the Heritage Pack becomes purchasable after August 27 has not been addressed either way.
+The FAQ describes the pack as free with pre-order and does not mention a paid version, a deluxe edition, or a post-launch route to obtaining it. Whether the Heritage Pack becomes purchasable after Steam unlock has not been addressed either way.
 
 Two of the three items are named after story elements on this page, which is the neatest confirmation available that Alec and the Minoan-era thread are both load-bearing rather than background colour.
 
@@ -96,4 +96,4 @@ The official material is quiet on a lot of the cast, and it is worth being expli
 - **Confirmed:** Leni is Sophia's friend and helps her through enemies and trials; Alec is Sophia's father and led the plunderer camp of her childhood; Sophia is 22 in the main story and nicknamed "The Scorpion of the Seas"; Theseus is the presence resonating within her and a perspective you experience; the Heritage Pack is a free pre-order DLC with three listed items.
 - **Not confirmed:** Leni's role, fate or playability; whether Alec appears in the present-day story; that the "unexpected ally" line refers specifically to Theseus; any stats or effects for the Minoan Sword and Alec's Pendant; whether the Heritage Pack will be sold separately later.
 
-We will re-check this page after launch on August 27, 2026 and replace every implied link above with what the finished game actually shows. In the meantime, the [characters hub](/characters/) tracks the confirmation status of the full cast, and [story and setting](/story/) covers the two-era structure these allies sit inside.
+We will re-check this page after Steam unlock on August 27, 2026 and replace every implied link above with what the finished game actually shows. In the meantime, the [characters hub](/characters/) tracks the confirmation status of the full cast, and [story and setting](/story/) covers the two-era structure these allies sit inside.

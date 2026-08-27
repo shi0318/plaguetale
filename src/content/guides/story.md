@@ -1,11 +1,11 @@
 ---
 title: "Resonance: A Plague Tale Legacy Story & Setting Explained"
 heading: "Resonance: A Plague Tale Legacy Story & Setting — Sophia and the Minotaur's Island"
-description: "The confirmed story setup for Resonance: A Plague Tale Legacy — Sophia, the Minotaur's Island, the two eras, and the Macula's legacy, sourced from official text."
+description: "Resonance: A Plague Tale Legacy story guide covering Sophia, the Minotaur's Island, two eras, and the Macula's legacy from official text."
 category: "characters"
 status: "official"
 order: 3
-updatedAt: "2026-08-21"
+updatedAt: "2026-08-27"
 sourceKeys: ["steam", "steamNews", "focus"]
 cover: "/images/ptl-minoan-ruins.webp"
 ---

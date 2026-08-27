@@ -8,7 +8,7 @@ import Pagination from '../../components/Pagination.astro';
 import { getCollection } from 'astro:content';
 import { ASSETS } from '../../data/assets';
 
-const title = 'Resonance: A Plague Tale Legacy Guides — Release Date, Combat & Walkthrough';
+const title = 'Resonance: A Plague Tale Legacy Guide Hub';
 const description =
   'Browse Resonance: A Plague Tale Legacy guides for release date, PC requirements, characters, collectibles, combat, skills, platforms, and walkthrough planning.';
 
@@ -67,7 +67,7 @@ const hubs = [
     href: '/collectibles/',
     label: 'Collectibles',
     title: 'Collectibles guide',
-    desc: 'How collectibles worked across the series and our launch-day plan for full chapter maps.',
+    desc: 'How collectibles worked across the series and our plan for full chapter maps after Steam unlock.',
     cover: ASSETS.minoanRuins.src,
     status: 'prequel' as const,
   },
@@ -83,7 +83,7 @@ const hubs = [
     href: '/walkthrough/',
     label: 'Walkthrough',
     title: 'Walkthrough plan',
-    desc: 'Confirmed story beats now, full chapter routes on release day.',
+    desc: 'Confirmed story beats now; full chapter routes will follow Steam unlock.',
     cover: ASSETS.enemyEncounter.src,
     status: 'official' as const,
   },

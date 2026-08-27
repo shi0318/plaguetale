@@ -5,22 +5,19 @@ import Countdown from '../components/Countdown.astro';
 import StatusBadge from '../components/StatusBadge.astro';
 import MediaFigure from '../components/MediaFigure.astro';
 import FaqBlock from '../components/FaqBlock.astro';
-import { isReleased } from '../data/site';
 import { ASSETS } from '../data/assets';
 import { OFFICIAL_FACTS } from '../data/official';
 import { CHARACTERS } from '../data/characters';
 
-const released = isReleased();
-
-const title = 'Resonance: A Plague Tale Legacy Guide — Story, Combat, Characters & Collectibles';
+const title = 'Resonance: A Plague Tale Legacy Walkthrough & Collectibles';
 const description =
-  'Resonance: A Plague Tale Legacy guide with verified release date, Sophia, story, combat, characters, collectibles, PC requirements, and walkthrough planning.';
+  'Resonance: A Plague Tale Legacy guide covering walkthrough planning, collectibles, combat, characters, PC requirements, and confirmed Steam details.';
 
 const startHere = [
   {
     href: '/release-date/',
     title: 'Release Date (August 27, 2026)',
-    desc: 'Confirmed launch date, price, platform, and what we know before day one.',
+    desc: 'Confirmed Steam release date, price, platforms, and what is known before launch.',
     cover: ASSETS.islandTrail.src,
   },
   {
@@ -38,7 +35,7 @@ const startHere = [
   {
     href: '/collectibles/',
     title: 'Collectibles Guide',
-    desc: 'How collectibles worked in Innocence and Requiem, and our plan for launch-day maps.',
+    desc: 'How collectibles worked in Innocence and Requiem, plus the confirmed pre-release scope and map plan.',
     cover: ASSETS.minoanRuins.src,
   },
   {
@@ -60,7 +57,7 @@ const categories = [
   {
     href: '/collectibles/',
     title: 'Collectibles',
-    desc: 'Pre-release framework, ready to fill with real chapter maps at launch.',
+    desc: 'Pre-release framework, ready for real chapter maps after Steam unlock.',
     count: null as number | null,
     countLabel: '',
   },
@@ -74,7 +71,7 @@ const categories = [
   {
     href: '/walkthrough/',
     title: 'Walkthrough',
-    desc: 'Chapter framework going live, filled with real routes on release day.',
+    desc: 'Chapter framework for launch preparation; verified routes will follow Steam unlock.',
     count: null,
     countLabel: '',
   },
@@ -84,7 +81,7 @@ const faqs = [
   {
     question: 'When does Resonance: A Plague Tale Legacy release?',
     answer:
-      'Resonance: A Plague Tale Legacy launches on August 27, 2026, according to its official Steam store page. It is a prequel set roughly 15 years before A Plague Tale: Requiem. Focus Entertainment is publishing and Asobo Studio is developing, the same team behind Innocence and Requiem. We track the date live and will flag any confirmed change the moment it appears on an official channel.',
+      'Steam currently lists Resonance: A Plague Tale Legacy as coming on August 27, 2026, with pre-purchase available. The game is still pre-release and is a prequel set roughly 15 years before A Plague Tale: Requiem. Focus Entertainment is publishing and Asobo Studio is developing, the same team behind Innocence and Requiem. We track the date and will flag any confirmed change from an official channel.',
   },
   {
     question: 'Is A Plague Tale Legacy on Game Pass?',
@@ -137,7 +134,10 @@ const faqs = [
       <h1 class="mt-6 max-w-4xl text-4xl font-black tracking-tight text-bone sm:text-5xl md:text-6xl">
         Resonance: A Plague Tale Legacy Guide
         <span class="mt-2 block text-2xl font-bold text-wheat sm:text-3xl md:text-4xl">
-          Story, combat, characters &amp; collectibles
+          Walkthrough &amp; collectibles
+        </span>
+        <span class="mt-2 block text-xl font-bold text-fog sm:text-2xl md:text-3xl">
+          Story, combat, characters &amp; pre-release facts
         </span>
       </h1>
 
@@ -153,7 +153,7 @@ const faqs = [
         <a href="/characters/" class="btn-secondary">Characters &amp; story</a>
       </div>
 
-      {!released && <div class="mt-10"><Countdown /></div>}
+      <div class="mt-10"><Countdown /></div>
     </div>
   </section>
 

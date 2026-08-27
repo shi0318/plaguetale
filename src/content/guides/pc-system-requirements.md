@@ -8,7 +8,7 @@ sourceKeys: ["steam"]
 preRelease: true
 order: 1
 cover: "/images/ptl-hero-banner.webp"
-updatedAt: "2026-08-14"
+updatedAt: "2026-08-27"
 ---
 
 The official Steam listing for **Resonance: A Plague Tale Legacy** now publishes both minimum and recommended PC requirements. The game is scheduled for **August 27, 2026**. This page was checked on **August 14, 2026**, including the official Steam requirements announcement posted on August 13.

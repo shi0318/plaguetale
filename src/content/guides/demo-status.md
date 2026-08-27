@@ -7,11 +7,11 @@ status: official
 sourceKeys: ["steam", "steamNews", "focus"]
 preRelease: true
 order: 3
-updatedAt: "2026-08-12"
+updatedAt: "2026-08-27"
 cover: "/images/ptl-island-trail.webp"
 ---
 
-**Resonance: A Plague Tale Legacy does not currently have an announced public demo or beta.** The official Steam listing marks the game as coming soon for **August 27, 2026**, while the tracked Focus/Asobo materials provide the release and platform information but no playable demo download. Checked August 12, 2026.
+**Resonance: A Plague Tale Legacy does not currently have an announced public demo or beta.** The Steam listing checked on **August 27, 2026** still marks the game as coming soon for **August 27, 2026**. The Focus/Asobo materials tracked on this page provide release and platform information but no playable demo download; those materials were last checked on August 12, 2026.
 
 <figure>
   <img src="/images/ptl-island-trail.webp" alt="Sophia walking along an island trail in Resonance: A Plague Tale Legacy" width="1600" height="900" loading="lazy" decoding="async" />
@@ -47,6 +47,5 @@ Searches for “Plague Tale Legacy demo download” can lead to pages that imita
 
 ## Sources
 
-- [Resonance: A Plague Tale Legacy on Steam](https://store.steampowered.com/app/2713000/Resonance_A_Plague_Tale_Legacy/) - coming-soon status, August 27, 2026 date, story, platforms, and published gameplay description. Checked August 12, 2026.
+- [Resonance: A Plague Tale Legacy on Steam](https://store.steampowered.com/app/2713000/Resonance_A_Plague_Tale_Legacy/) - coming-soon status, August 27, 2026 date, story, platforms, and published gameplay description. Steam appdetails checked August 27, 2026; Focus/Asobo pages last checked August 12, 2026.
 - [Focus Entertainment / A Plague Tale official site](https://www.plaguetale.com/) - official franchise channel. Checked August 12, 2026.
-

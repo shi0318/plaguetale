@@ -1,5 +1,5 @@
 ---
-title: "Resonance: A Plague Tale Legacy Island Exploration & Encounter Guide"
+title: "Resonance: A Plague Tale Legacy Island Exploration Guide"
 heading: "Resonance: A Plague Tale Legacy Island Exploration & Encounter Guide"
 description: "A pre-release Resonance: A Plague Tale Legacy guide to exploring Minotaur's Island, reading encounters, using parries, and tracking unknown systems."
 category: walkthrough

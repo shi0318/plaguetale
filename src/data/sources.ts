@@ -17,7 +17,7 @@ export const SOURCES = {
     url: 'https://store.steampowered.com/app/2713000/Resonance_A_Plague_Tale_Legacy/',
     publisher: 'Valve / Steam',
     status: 'platform',
-    lastChecked: '2026-08-07',
+    lastChecked: '2026-08-27',
     note: 'App id 2713000, developer, publisher, release date, price, genres, categories, languages, screenshots, and the official Steam description.',
   },
   focus: {

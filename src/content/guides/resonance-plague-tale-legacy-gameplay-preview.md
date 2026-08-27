@@ -1,12 +1,12 @@
 ---
-title: "Resonance: A Plague Tale Legacy Gameplay Preview: Combat & Light Puzzles"
+title: "Resonance: A Plague Tale Legacy Gameplay Preview"
 heading: "Resonance: A Plague Tale Legacy Gameplay Preview"
 description: "A verified Resonance: A Plague Tale Legacy gameplay preview covering Sophia, melee combat, parries, the Minoan sphere, platforms, and demo status."
 category: guide
 status: official
 preRelease: true
 order: 0
-updatedAt: "2026-08-17"
+updatedAt: "2026-08-27"
 cover: /images/ptl-sophia-combat.webp
 sourceKeys: ["steam", "steamNews", "focus"]
 ---
@@ -61,4 +61,3 @@ For every puzzle or encounter, record the platform, build number, chapter, trigg
 - [Resonance: A Plague Tale Legacy on Steam](https://store.steampowered.com/app/2713000/Resonance_A_Plague_Tale_Legacy/) — release date, platforms, story, combat, Minoan sphere, and PC requirements. Checked August 17, 2026.
 - [Official Resonance Steam news hub](https://store.steampowered.com/news/app/2713000) — official platform and developer information. Checked August 17, 2026.
 - [Focus Entertainment](https://www.focus-entmt.com/en/games) — official publisher channel. Checked August 17, 2026.
-

@@ -1,4 +1,4 @@
-// Official confirmed facts only — pulled from the Steam store page (App 2713000, checked 2026-07-27)
+// Official confirmed facts only — pulled from the Steam store page (App 2713000, checked 2026-08-27)
 // and Focus Entertainment. Used on the homepage and release-date page trust surfaces.
 import { SITE } from './site';
 

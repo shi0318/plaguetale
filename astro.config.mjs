@@ -17,14 +17,16 @@ function frontmatterDate(file) {
 // Static hubs changed in this editorial pass carry the real modification date.
 // Unchanged static routes intentionally omit lastmod instead of receiving a fake date.
 const STATIC_LASTMOD = {
-  '/': '2026-08-21',
-  '/guide/': '2026-08-21',
-  '/guide/page/2/': '2026-08-21',
+  '/': '2026-08-27',
+  '/guide/': '2026-08-27',
+  '/guide/page/2/': '2026-08-27',
   '/characters/': '2026-08-21',
-  '/collectibles/': '2026-08-21',
+  '/collectibles/': '2026-08-27',
   '/skills/': '2026-08-21',
-  '/walkthrough/': '2026-08-21',
-  '/privacy/': '2026-08-21',
+  '/walkthrough/': '2026-08-27',
+  '/contact/': '2026-08-27',
+  '/privacy/': '2026-08-27',
+  '/about/': '2026-08-27',
 };
 
 function lastmodFor(url) {

@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 
 const root = process.cwd();
@@ -58,13 +58,15 @@ if (existsSync(distIndex)) {
   assert(distText.includes('application/ld+json'), 'JSON-LD schema is missing from homepage.');
 }
 
-const sourceFiles = [
-  'src/data/site.ts',
-  'src/data/sources.ts',
-  'src/pages/characters/index.astro',
-  'src/pages/collectibles/index.astro',
-  'src/pages/walkthrough/index.astro',
-].map((file) => join(root, file));
+function sourceTreeFiles(directory) {
+  return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    const path = join(directory, entry.name);
+    if (entry.isDirectory()) return sourceTreeFiles(path);
+    return /\.(astro|md|mdx|mjs|ts)$/.test(entry.name) ? [path] : [];
+  });
+}
+
+const sourceFiles = sourceTreeFiles(join(root, 'src'));
 
 for (const sourceUrl of requiredSourceUrls) {
   const found = sourceFiles.some((file) => existsSync(file) && readFileSync(file, 'utf8').includes(sourceUrl));
@@ -73,19 +75,27 @@ for (const sourceUrl of requiredSourceUrls) {
 
 // The release date is confirmed by Steam as August 27, 2026 — guard against stale planning dates.
 const forbiddenClaims = [
+  'August 28',
   'August 20, 2026',
   '2026-08-20',
   'August 25, 2026',
   '2026-08-25',
 ];
 
+// A verification date is valid evidence and must not be confused with a release claim.
+// Remove only dates attached to words such as "checked" or "verified" before scanning.
+const verificationDate = /(?:last\s+)?(?:checked|verified|observed|reviewed|updated)\s*(?:on|as of|:)\s*\*{0,2}(?:August\s+\d{1,2},\s+2026|2026-\d{2}-\d{2})\*{0,2}/gi;
+
 for (const file of sourceFiles) {
   if (!existsSync(file)) continue;
-  const text = readFileSync(file, 'utf8');
+  const text = readFileSync(file, 'utf8').replace(verificationDate, '');
   for (const claim of forbiddenClaims) {
     assert(!text.includes(claim), `Unverified release-date claim found in ${file}: ${claim}`);
   }
 }
+
+const siteSource = readFileSync(join(root, 'src/data/site.ts'), 'utf8');
+assert(/releaseDate:\s*['"]2026-08-27['"]/.test(siteSource), 'Current ISO release date is missing from src/data/site.ts.');
 
 if (failures.length > 0) {
   console.error(`SEO check failed with ${failures.length} issue(s):`);

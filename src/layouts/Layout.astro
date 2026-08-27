@@ -118,6 +118,7 @@ const schema = {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href={canonicalUrl} />
     <meta property="og:type" content={pageType === 'home' ? 'website' : 'article'} />
     <meta property="og:site_name" content={SITE.name} />
@@ -125,11 +126,13 @@ const schema = {
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:alt" content={ASSETS.hero.alt} />
     <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={imageUrl} />
+    <meta name="twitter:image:alt" content={ASSETS.hero.alt} />
     <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />

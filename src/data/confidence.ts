@@ -1,6 +1,6 @@
 // Content confidence system for the Resonance: A Plague Tale Legacy guide.
 // Pre-release, every fact is tagged so readers know how reliable it is.
-// After launch (2026-08-27) the trailer/prequel tags are replaced with verified play data.
+// After Steam unlock, the trailer/prequel tags are replaced with verified play data.
 
 export type ConfidenceStatus = 'official' | 'trailer' | 'prequel' | 'unconfirmed';
 

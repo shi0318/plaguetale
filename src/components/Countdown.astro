@@ -1,10 +1,15 @@
 ---
 // Release countdown — used on the homepage hero.
 import { SITE, isReleased } from '../data/site';
-import { formatReleaseDate } from '../utils/release-date.js';
+import { formatReleaseDate, getReleaseState } from '../utils/release-date.js';
 
 const released = isReleased();
 const releaseDate = formatReleaseDate(SITE.releaseDate);
+const calendarState = getReleaseState(SITE.releaseDate);
+const awaitingUnlock = calendarState.kind !== 'upcoming';
+const initialPrefix = awaitingUnlock ? 'Release status' : 'Launches in';
+const initialValue = awaitingUnlock ? 'Pending' : '--';
+const initialSuffix = awaitingUnlock ? 'Steam unlock verification' : 'days';
 ---
 
 {
@@ -18,13 +23,14 @@ const releaseDate = formatReleaseDate(SITE.releaseDate);
       class="inline-flex min-w-[10.5rem] flex-col items-center rounded-lg border border-white/12 bg-black/45 px-5 py-4 text-center shadow-2xl backdrop-blur-md"
       data-countdown
       data-release={SITE.releaseDate}
+      data-release-status={SITE.releaseStatus}
     >
-      <span class="text-[0.65rem] font-black uppercase tracking-[0.2em] text-fog" data-countdown-prefix>Launches in</span>
+      <span class="text-[0.65rem] font-black uppercase tracking-[0.2em] text-fog" data-countdown-prefix>{initialPrefix}</span>
       <span class="mt-1 text-4xl font-black tabular-nums tracking-tight text-wheat" data-countdown-value aria-live="polite">
-        --
+        {initialValue}
       </span>
       <span class="mt-1 text-xs text-fog">
-        <span data-countdown-suffix>days</span> · <time datetime={SITE.releaseDate}>{releaseDate}</time>
+        <span data-countdown-suffix>{initialSuffix}</span> · <time datetime={SITE.releaseDate}>{releaseDate}</time>
       </span>
     </div>
   )
@@ -41,17 +47,17 @@ const releaseDate = formatReleaseDate(SITE.releaseDate);
     const tick = () => {
       const release = el.dataset.release;
       if (!release) return;
-      const state = getReleaseState(release);
-      if (state.kind === 'released') {
+      if (el.dataset.releaseStatus === 'released') {
         if (prefix) prefix.textContent = '';
         if (out) out.textContent = 'Out now';
         if (suffix) suffix.textContent = '';
         return;
       }
-      if (state.kind === 'today') {
-        if (prefix) prefix.textContent = '';
-        if (out) out.textContent = 'Launches today';
-        if (suffix) suffix.textContent = '';
+      const state = getReleaseState(release);
+      if (state.kind !== 'upcoming') {
+        if (prefix) prefix.textContent = 'Release status';
+        if (out) out.textContent = 'Pending';
+        if (suffix) suffix.textContent = 'Steam unlock verification';
         return;
       }
       if (prefix) prefix.textContent = 'Launches in';

@@ -1,15 +1,19 @@
 // 站点全局常量 —— 单一数据源，避免各页面硬编码不一致
 import { SOURCES } from './sources';
 
+export type ReleaseStatus = 'pre-release' | 'released';
+
 export const SITE = {
   name: 'Plague Tale Legacy Guide',
   shortName: 'PTL Guide',
   url: 'https://plaguetaleguide.com',
   // Official release date (Steam store page, App 2713000)
   releaseDate: '2026-08-27',
+  // Manual gate: keep this at pre-release until Steam unlock is verified.
+  releaseStatus: 'pre-release' as ReleaseStatus,
   tagline: 'Verified Pre-release Guide',
   description:
-    'Independent Resonance: A Plague Tale Legacy guide with source-tracked pages for the story, characters, collectibles, combat, and skills. Every fact carries a confirmation status.',
+    'Independent pre-release Resonance: A Plague Tale Legacy guide with a walkthrough framework, collectibles planning, story, combat, and skills. Every fact carries a confirmation status.',
   locale: 'en',
   // Full game name used in schema / VideoGame entity
   gameName: 'Resonance: A Plague Tale Legacy',
@@ -31,7 +35,7 @@ export const SITE = {
   // Prequel timing (confirmed: 15 years before A Plague Tale: Requiem)
   prequelGap: '15 years before A Plague Tale: Requiem',
   // Latest date on which the official Steam / publisher material was checked.
-  lastVerified: '2026-08-17',
+  lastVerified: '2026-08-27',
 } as const;
 
 export const NAV = [
@@ -46,8 +50,9 @@ export const NAV = [
   { label: 'Download', href: '/download/' },
 ] as const;
 
-export function isReleased(now: Date = new Date()): boolean {
-  return now >= new Date(SITE.releaseDate + 'T00:00:00Z');
+export function isReleased(_now: Date = new Date()): boolean {
+  // Do not infer release status from the calendar: regional unlock times and delays exist.
+  return SITE.releaseStatus === 'released';
 }
 
 export function daysUntilRelease(now: Date = new Date()): number {
@@ -61,7 +66,7 @@ export function daysUntilRelease(now: Date = new Date()): number {
 export const OFFICIAL_FACTS = [
   {
     label: 'Release date',
-    value: 'Steam lists Resonance: A Plague Tale Legacy as coming August 27, 2026.',
+    value: 'Steam lists Resonance: A Plague Tale Legacy as coming August 27, 2026, with pre-purchase live.',
     source: SOURCES.steam,
   },
   {
@@ -113,14 +118,14 @@ export const REQUIRED_GUIDES = [
     href: '/walkthrough/',
     title: 'Walkthrough',
     description:
-      'Chapter-by-chapter walkthrough framework for the Minotaur’s Island, filled with verified routes after launch.',
+      'Chapter-by-chapter walkthrough framework for the Minotaur’s Island, ready for verified routes after Steam unlock.',
     priority: 'P0',
   },
   {
     href: '/collectibles/',
     title: 'Collectibles',
     description:
-      'Collectible tracker scaffold for every chapter, ready for confirmed locations on release day.',
+      'Collectible tracker scaffold for every chapter, ready for confirmed locations after Steam unlock.',
     priority: 'P0',
   },
   {
@@ -148,7 +153,7 @@ export const REQUIRED_GUIDES = [
     href: '/release-date/',
     title: 'Release Date',
     description:
-      'Confirmed August 27, 2026 launch, countdown, editions, and platform details from Steam.',
+      'Confirmed August 27, 2026 release date, countdown, editions, and platform details from Steam.',
     priority: 'P2',
   },
 ] as const;

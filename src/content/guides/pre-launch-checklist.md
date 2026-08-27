@@ -1,11 +1,11 @@
 ---
 title: "Resonance: A Plague Tale Legacy Pre-Launch Checklist"
 heading: "Resonance: A Plague Tale Legacy pre-launch checklist"
-description: "A verified Resonance: A Plague Tale Legacy checklist for the August 27 launch: platforms, PC requirements, demo status, story setup, and official puzzle systems."
+description: "A verified Resonance: A Plague Tale Legacy checklist for the August 27 launch: platforms, PC requirements, demo status, story setup, and puzzle systems."
 category: guide
 status: official
 order: 1
-updatedAt: "2026-08-14"
+updatedAt: "2026-08-27"
 sourceKeys: ["steam", "steamNews", "focus"]
 cover: "/images/ptl-island-trail.webp"
 ---
