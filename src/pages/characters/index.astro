@@ -2,7 +2,6 @@
 // Characters hub — CollectionPage. Every character carries a confirmation status.
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
-import PreReleaseNotice from '../../components/PreReleaseNotice.astro';
 import StatusBadge from '../../components/StatusBadge.astro';
 import MediaFigure from '../../components/MediaFigure.astro';
 import SourcePanel from '../../components/SourcePanel.astro';
@@ -25,8 +24,6 @@ const officialCount = CHARACTERS.filter((c) => c.status === 'official').length;
 <Layout title={title} description={description} pageType="collection" breadcrumbs={crumbs}>
   <div class="container py-10">
     <Breadcrumb items={crumbs} />
-
-    <div class="mt-4"><PreReleaseNotice /></div>
 
     <header class="mt-6 max-w-3xl">
       <p class="section-kicker">Cast &amp; story</p>
@@ -79,8 +76,8 @@ const officialCount = CHARACTERS.filter((c) => c.status === 'official').length;
         The hostile entity is still unnamed in the tracked first-party material. Its role is not the
         same as Theseus: the store page describes a restless hunter in the island’s shadows, while
         the gameplay announcement identifies Theseus as the presence resonating within Sophia. Full
-        bios, relationship choices, and final encounter details remain unconfirmed until the game
-        is playable.
+        bios, relationship choices, and final encounter details remain unconfirmed until the released
+        game provides verifiable evidence.
       </p>
 
       <h2>More on the cast</h2>

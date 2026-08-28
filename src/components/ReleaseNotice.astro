@@ -1,0 +1,24 @@
+---
+// Released-state notice used where an article needs a concise evidence reminder.
+import { SITE } from '../data/site';
+import { formatDate } from '../utils/dates';
+
+interface Props {
+  compact?: boolean;
+}
+const { compact = false } = Astro.props;
+---
+
+<aside
+  class:list={[
+    'rounded-md border border-sage/30 bg-sage/[0.06] text-bone',
+    compact ? 'px-3 py-2 text-xs' : 'px-4 py-3 text-sm',
+  ]}
+  role="note"
+>
+  <p>
+    <span class="font-bold text-sage">Released guide.</span>
+    Steam lists {SITE.fullTitle} as released on <time datetime={SITE.releaseDate}>{formatDate(SITE.releaseDate)}</time>.
+    Official Steam features and Steam community reports are labelled separately below.
+  </p>
+</aside>

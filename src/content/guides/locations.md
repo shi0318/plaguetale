@@ -5,12 +5,12 @@ description: "The confirmed settings in Resonance: a raiders' camp in the Venice
 category: "walkthrough"
 status: "official"
 order: 6
-updatedAt: "2026-08-21"
+updatedAt: "2026-08-28"
 sourceKeys: ["steamNews", "steam", "steamMedia"]
 cover: "/images/ptl-island-trail.webp"
 ---
 
-Resonance runs across **two eras and three broad settings**, and Asobo's art director and narrative team laid out the real-world references for all of them in **DEVBLOG #3**. This page collects what is confirmed about the places you travel through. It is not a route guide — chapter-by-chapter routing goes on the [walkthrough hub](/walkthrough/) at launch.
+Resonance runs across **two eras and three broad settings**, and Asobo's art director and narrative team laid out the real-world references for all of them in **DEVBLOG #3**. This page collects what is confirmed about the places you travel through. It is not a route guide — chapter-by-chapter routing belongs on the [walkthrough hub](/walkthrough/) when each route has been directly documented.
 
 ## The two time periods
 

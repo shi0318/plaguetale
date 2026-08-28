@@ -3,11 +3,11 @@
   "skill": "rankup",
   "source": "yan-labs/yan-skills",
   "installedVersion": "2.43.0",
-  "latestVersion": "2.43.0",
+  "latestVersion": "2.56.0",
   "installedAt": "2026-08-27T09:31:44.603Z",
-  "lastCheckedAt": null,
+  "lastCheckedAt": "2026-08-28T03:53:11.992Z",
   "lastUpdatedAt": null,
   "lastOutcome": "blocked",
-  "lastReason": "remote-check-failed",
+  "lastReason": "update-command-failed",
   "scope": "global"
 }

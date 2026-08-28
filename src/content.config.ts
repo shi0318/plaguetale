@@ -5,10 +5,10 @@ import { glob } from 'astro/loaders';
 import { toDateString } from './utils/dates';
 
 // Must match ConfidenceStatus in src/data/confidence.ts
-const confidenceStatus = z.enum(['official', 'trailer', 'prequel', 'unconfirmed']);
+const confidenceStatus = z.enum(['official', 'steam-feature', 'community', 'trailer', 'prequel', 'unconfirmed']);
 
 // Must match SourceKey in src/data/sources.ts
-const sourceKey = z.enum(['steam', 'focus', 'steamMedia', 'steamNews', 'ign']);
+const sourceKey = z.enum(['steam', 'focus', 'steamMedia', 'steamNews', 'steamCommunity', 'ign']);
 
 // YAML bare dates become Date objects; always normalize to YYYY-MM-DD strings.
 const dateString = z.preprocess(
@@ -26,10 +26,10 @@ const guides = defineCollection({
     status: confidenceStatus,
     // References into the central SOURCES registry; rendered as the "Sources" table.
     sourceKeys: z.array(sourceKey).default([]),
-    preRelease: z.boolean().default(true),
+    preRelease: z.boolean().default(false),
     order: z.number().default(100),
     draft: z.boolean().default(false),
-    cover: z.string().optional(),
+    cover: z.string().min(1),
     updatedAt: dateString,
   }),
 });

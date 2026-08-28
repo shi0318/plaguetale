@@ -1,70 +1,18 @@
 ---
-// Release countdown — used on the homepage hero.
+// Release-status badge — kept under the historical component name for the homepage import.
 import { SITE, isReleased } from '../data/site';
-import { formatReleaseDate, getReleaseState } from '../utils/release-date.js';
+import { formatReleaseDate } from '../utils/release-date.js';
 
 const released = isReleased();
 const releaseDate = formatReleaseDate(SITE.releaseDate);
-const calendarState = getReleaseState(SITE.releaseDate);
-const awaitingUnlock = calendarState.kind !== 'upcoming';
-const initialPrefix = awaitingUnlock ? 'Release status' : 'Launches in';
-const initialValue = awaitingUnlock ? 'Pending' : '--';
-const initialSuffix = awaitingUnlock ? 'Steam unlock verification' : 'days';
 ---
 
-{
-  released ? (
-    <div class="inline-flex items-center gap-2 rounded-lg border border-sage/30 bg-sage/10 px-5 py-3 text-sm font-bold text-sage backdrop-blur-md">
-      <span class="h-2 w-2 rounded-full bg-sage" />
-      Out now — verified guides live
-    </div>
-  ) : (
-    <div
-      class="inline-flex min-w-[10.5rem] flex-col items-center rounded-lg border border-white/12 bg-black/45 px-5 py-4 text-center shadow-2xl backdrop-blur-md"
-      data-countdown
-      data-release={SITE.releaseDate}
-      data-release-status={SITE.releaseStatus}
-    >
-      <span class="text-[0.65rem] font-black uppercase tracking-[0.2em] text-fog" data-countdown-prefix>{initialPrefix}</span>
-      <span class="mt-1 text-4xl font-black tabular-nums tracking-tight text-wheat" data-countdown-value aria-live="polite">
-        {initialValue}
-      </span>
-      <span class="mt-1 text-xs text-fog">
-        <span data-countdown-suffix>{initialSuffix}</span> · <time datetime={SITE.releaseDate}>{releaseDate}</time>
-      </span>
-    </div>
-  )
-}
-
-<script>
-  import { getReleaseState } from '../utils/release-date.js';
-
-  const el = document.querySelector<HTMLElement>('[data-countdown]');
-  if (el) {
-    const out = el.querySelector<HTMLElement>('[data-countdown-value]');
-    const prefix = el.querySelector<HTMLElement>('[data-countdown-prefix]');
-    const suffix = el.querySelector<HTMLElement>('[data-countdown-suffix]');
-    const tick = () => {
-      const release = el.dataset.release;
-      if (!release) return;
-      if (el.dataset.releaseStatus === 'released') {
-        if (prefix) prefix.textContent = '';
-        if (out) out.textContent = 'Out now';
-        if (suffix) suffix.textContent = '';
-        return;
-      }
-      const state = getReleaseState(release);
-      if (state.kind !== 'upcoming') {
-        if (prefix) prefix.textContent = 'Release status';
-        if (out) out.textContent = 'Pending';
-        if (suffix) suffix.textContent = 'Steam unlock verification';
-        return;
-      }
-      if (prefix) prefix.textContent = 'Launches in';
-      if (out) out.textContent = String(state.days);
-      if (suffix) suffix.textContent = state.days === 1 ? 'day' : 'days';
-    };
-    tick();
-    setInterval(tick, 60000);
-  }
-</script>
+<div
+  class="inline-flex items-center gap-2 rounded-lg border border-sage/30 bg-sage/10 px-5 py-3 text-sm font-bold text-sage backdrop-blur-md"
+  aria-label={released ? 'Release status: available now' : `Release date: ${releaseDate}`}
+>
+  <span class="h-2 w-2 rounded-full bg-sage" aria-hidden="true"></span>
+  <span>{released ? 'Available now' : 'Release date'}</span>
+  <span class="text-fog" aria-hidden="true">·</span>
+  <time datetime={SITE.releaseDate}>{releaseDate}</time>
+</div>

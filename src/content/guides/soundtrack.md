@@ -5,7 +5,7 @@ description: "Olivier Derivière returns to score Resonance. What DEVBLOG #4 con
 category: "news"
 status: "official"
 order: 7
-updatedAt: "2026-08-21"
+updatedAt: "2026-08-28"
 sourceKeys: ["steamNews", "steam", "focus"]
 cover: "/images/ptl-minoan-ruins.webp"
 ---
@@ -61,4 +61,4 @@ Derivière's stated intent for the choir is thematic rather than atmospheric: a 
 - **Confirmed:** Olivier Derivière composes; Evgenios Voulgaris plays Yayli Tambur and rebab; Vasiliki Anastasiou and the Amalgamation choir recorded in Cyprus; Giorgos Kalogirou sings; lyrics written in French and translated to Cypriot Greek; Eric Maria Couturier's cello remains part of the series signature; David Dedeine (Creative Director) and Aurélien Piters (Audio Director) shaped the approach.
 - **Not confirmed:** the track list, the total runtime, whether a standalone OST release or vinyl is planned, and which scenes the choir pieces score. The devblog does not name a single track.
 
-Treat any "full soundtrack track list" you see before launch as unofficial. For the character the score is built around, see [Sophia's voice and mocap](/sophia-voice-actor/) and the [story and setting page](/story/); for the mythology feeding the lyrics, the [Minotaur myth explained](/minotaur-myth-explained/).
+Treat any "full soundtrack track list" as unofficial unless it comes from a current official release. For the character the score is built around, see [Sophia's voice and mocap](/sophia-voice-actor/) and the [story and setting page](/story/); for the mythology feeding the lyrics, the [Minotaur myth explained](/minotaur-myth-explained/).

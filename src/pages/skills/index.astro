@@ -3,7 +3,6 @@
 // with series-based inference clearly labelled.
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
-import PreReleaseNotice from '../../components/PreReleaseNotice.astro';
 import StatusBadge from '../../components/StatusBadge.astro';
 import MediaFigure from '../../components/MediaFigure.astro';
 import SourcePanel from '../../components/SourcePanel.astro';
@@ -65,8 +64,6 @@ const seriesBased = [
   <div class="container py-10">
     <Breadcrumb items={crumbs} />
 
-    <div class="mt-4"><PreReleaseNotice /></div>
-
     <header class="mt-6 max-w-3xl">
       <p class="section-kicker">Skills &amp; combat</p>
       <h1 class="section-title">Resonance: A Plague Tale Legacy combat and skills</h1>
@@ -107,7 +104,8 @@ const seriesBased = [
       </div>
       <p class="max-w-3xl text-fog">
         These points come from how skills and upgrades worked in the earlier A Plague Tale games.
-        They are educated expectations, not confirmed features, and will be verified on release day.
+        They are educated expectations, not confirmed features. Use the released-game articles for
+        claims that require direct evidence.
       </p>
       <ul class="mt-5 space-y-3">
         {
@@ -121,15 +119,14 @@ const seriesBased = [
       </ul>
     </section>
 
-    <!-- Launch plan -->
+    <!-- Released-game maintenance -->
     <section class="mt-12 surface p-6 md:p-8">
-      <p class="section-kicker">On release day</p>
-      <h2 class="mt-2 text-2xl font-black text-bone">What this page becomes</h2>
+      <p class="section-kicker">Released-game maintenance</p>
+      <h2 class="mt-2 text-2xl font-black text-bone">How the combat guide is expanded</h2>
       <p class="mt-3 max-w-3xl text-fog">
-        Once the game is out, this page turns into a full skills and combat guide: the real upgrade
-        tree, best early skills to prioritise, parry timing notes, boss-by-boss tactics, and how the
-        Minoan sphere is used in combat and puzzles. Everything currently tagged as inference gets
-        replaced with tested, sourced detail.
+        This page is expanded with the released-game upgrade tree, early skill priorities, parry
+        timing notes, boss tactics, and Minoan-sphere puzzle details only when each claim can be
+        checked in the game or in an attributable player report. Inference remains labelled.
       </p>
       <div class="mt-5 flex flex-wrap gap-3">
         <a href="/characters/" class="btn-secondary">Characters &amp; story</a>

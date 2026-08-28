@@ -1,16 +1,16 @@
 ---
 title: "Resonance: A Plague Tale Legacy Release Date & Platforms"
 heading: "Resonance: A Plague Tale Legacy Release Date"
-description: "Resonance: A Plague Tale Legacy releases August 27, 2026 on Steam. Confirmed price, platform, editions, and everything Asobo and Focus have revealed so far."
+description: "Resonance: A Plague Tale Legacy released August 27, 2026 on Steam. Confirmed price, platforms, PC requirements, and current store facts."
 category: "guide"
 status: "official"
 order: 1
-updatedAt: "2026-08-27"
+updatedAt: "2026-08-28"
 sourceKeys: ["steam", "steamNews", "focus"]
 cover: "/images/ptl-island-trail.webp"
 ---
 
-**Resonance: A Plague Tale Legacy** is listed for **August 27, 2026** on the official [Steam store page](https://store.steampowered.com/app/2713000/Resonance_A_Plague_Tale_Legacy/) (App ID 2713000), where pre-purchase is already live. Steam still shows the game as coming soon, so this page does not treat the calendar date as proof that the build has unlocked. This is the third entry in Asobo Studio's A Plague Tale series and an original prequel — not a direct sequel.
+**Resonance: A Plague Tale Legacy** released on **August 27, 2026** through the official [Steam store page](https://store.steampowered.com/app/2713000/Resonance_A_Plague_Tale_Legacy/) (App ID 2713000). Steam currently lists the PC game as available. This is the third entry in Asobo Studio's A Plague Tale series and an original prequel — not a direct sequel.
 
 ## Release date at a glance
 
@@ -21,33 +21,27 @@ cover: "/images/ptl-island-trail.webp"
 | Price | USD 49.99 (standard edition, PC) |
 | Developer | Asobo Studio |
 | Publisher | Focus Entertainment |
-| Pre-purchase | Live now on Steam |
+| Store status | Available on Steam |
 
 All of the above is pulled from the official Steam store page and the official Resonance FAQ on the game's Steam news hub. We re-check it on the date shown at the top of this article.
 
-## Is Resonance: A Plague Tale Legacy coming to PS5 and Xbox?
+## Is Resonance: A Plague Tale Legacy available on PS5 and Xbox?
 
-**Yes — both are officially confirmed.** The official Resonance FAQ, posted to the game's own Steam news hub, answers this directly: the game "will be available on **PC, Xbox Series X|S and PS5**." Focus also said there that PC specs would be communicated before launch.
+**Yes — both are officially confirmed.** The official Resonance FAQ, posted to the game's own Steam news hub, answers this directly: the game "will be available on **PC, Xbox Series X|S and PS5**." The Steam listing now provides the detailed PC requirements.
 
 An earlier version of this page treated console versions as series-based inference. That was out of date, and it is corrected as of 2026-07-31. What is still genuinely unannounced is the detail: console store listings, console pricing, performance modes, install sizes, and whether the game reaches Game Pass — see [platforms](/platforms/) for the per-platform status.
 
 ## What is the price?
 
-The standard edition is listed at **USD 49.99** on Steam. No deluxe or collector's edition has been detailed on the store page yet. If a higher-tier edition is announced, its contents will be added to our [editions section](#editions).
+The standard edition is listed at **USD 49.99** on Steam. The tracked listing does not currently provide a separate deluxe or collector's edition record. Check the live storefront for any edition or regional offer changes.
 
 ## System requirements
 
-The Steam page currently lists only baseline technical details:
-
-- 64-bit processor and operating system required
-- DirectX Version 12
-- Full detailed CPU / GPU / RAM specs are marked **"To be announced soon"**
-
-We will publish the full minimum and recommended specs as soon as Asobo releases them.
+The Steam page now publishes full minimum and recommended PC requirements, including 16 GB RAM, a 75 GB SSD requirement, DirectX 12.1, and the named CPU/GPU targets. See the [PC requirements guide](/pc-system-requirements/) for the complete tables.
 
 ## Editions
 
-Only a **standard edition** at USD 49.99 is documented on Steam at the time of writing. There is a pre-purchase offer live on the store page, but no separately-detailed deluxe bundle. This section will be filled in when official edition details are published.
+The standard PC price is **USD 49.99** on Steam. Regional pricing, taxes, and any additional edition details belong to the live store listing and may change over time.
 
 ## What we know about the game
 

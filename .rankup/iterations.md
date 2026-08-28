@@ -1,5 +1,14 @@
 # 迭代记录
 
+## 2026-08-28 — 发售后内容与状态切换
+
+- 目标：在 Steam 已 released 后，让首页、旧页面和新增文章不再把游戏写成未发售，同时保持真实证据边界。
+- 证据：Steam App 2713000 于 2026-08-28 核验为 released；发布日期为 August 27, 2026。
+- 操作：切换 `SITE.releaseStatus`；清理首页、hub、FAQ、下载、平台、演示、系统和攻略页的旧口径；新增 20 个 Markdown guide 页面；复用官方 Steam 图像素材；将修改页面的 sitemap `lastmod` 设为 2026-08-28。
+- 边界：没有把媒体 preview、社区报告或系列推断写成本站个人零售版实测；没有删除 `/pre-launch-checklist/` 旧 URL。
+- 验证：待本轮 `npm test`、`npm run build`、GitHub 推送和线上回归完成后补充最终证据。
+- 下一轮唯一改进：以 GSC 的实际展示词和未收录原因选择下一批更新，不用 `site:` 结果替代 GSC。
+
 ## 2026-08-27 — 发售前 SEO 与状态修正
 
 - 目标：让首页承接 guide intent，并避免按日历误报已发售。

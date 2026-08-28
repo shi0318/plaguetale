@@ -1,23 +1,23 @@
 ---
 title: "Resonance: A Plague Tale Legacy Island Exploration Guide"
 heading: "Resonance: A Plague Tale Legacy Island Exploration & Encounter Guide"
-description: "A pre-release Resonance: A Plague Tale Legacy guide to exploring Minotaur's Island, reading encounters, using parries, and tracking unknown systems."
+description: "A Resonance: A Plague Tale Legacy guide to exploring Minotaur's Island, reading encounters, using parries, and separating verified routes from open questions."
 category: walkthrough
 status: official
 sourceKeys: ["steam", "steamNews", "steamMedia"]
-preRelease: true
+preRelease: false
 order: 13
-updatedAt: "2026-08-21"
+updatedAt: "2026-08-28"
 cover: "/images/ptl-island-trail.webp"
 ---
 
 **Resonance: A Plague Tale Legacy** puts Sophia on **Minotaur's Island**, but the official material does not provide a final map or a complete encounter list. What it does confirm is enough to define a useful exploration loop: Sophia is agile and strong-willed, combat is dynamic and violent melee, parries and powerful strikes matter, and the island draws multiple enemies toward a mysterious treasure.
 
-Use this page to plan safe exploration without pretending that the unreleased build has already been fully mapped.
+Use this page to plan safe exploration while keeping the route notes honest: the released game is available, but this page does not claim a complete map unless a route has been directly documented.
 
 <figure>
   <img src="/images/ptl-island-trail.webp" alt="A rocky island trail leading through the Minoan landscape in Resonance: A Plague Tale Legacy" width="1600" height="900" loading="lazy" decoding="async" />
-  <figcaption>Island exploration should be logged as routes and encounter conditions until the release build confirms the final map.</figcaption>
+  <figcaption>Island exploration is logged as routes and encounter conditions only when the released game provides a checkable result.</figcaption>
 </figure>
 
 ## The confirmed encounter premise
@@ -45,7 +45,7 @@ Create one card for each new trail or interior:
 | Retreat | The nearest cover, height change, doorway, or open route. |
 | Return state | Whether the area changes after the puzzle, fight, or story beat. |
 
-The route card is intentionally factual. Write "guard patrol moved after light changed" before writing "light controls the patrol." That distinction prevents a pre-release assumption becoming a misleading walkthrough.
+The route card is intentionally factual. Write "guard patrol moved after light changed" before writing "light controls the patrol." That distinction prevents an announcement-based assumption becoming a misleading walkthrough.
 
 ## Build a parry-first encounter habit
 
@@ -57,7 +57,7 @@ The official page does not publish parry windows, stamina rules, enemy health, o
 
 The story takes place before *A Plague Tale: Requiem*, with Sophia's island journey tied to the larger myth. Story pages and previews may mention historical context, but a historical reference is not a gameplay solution. Keep lore notes, environmental clues, and mechanical discoveries in separate sections of your guide.
 
-## Facts to verify after launch
+## Additional released-game checks
 
 The highest-value update targets are:
 

@@ -1,4 +1,4 @@
-// Official confirmed facts only — pulled from the Steam store page (App 2713000, checked 2026-08-27)
+// Official confirmed facts only — pulled from the Steam store page (App 2713000, checked 2026-08-28)
 // and Focus Entertainment. Used on the homepage and release-date page trust surfaces.
 import { SITE } from './site';
 
@@ -18,7 +18,7 @@ export const OFFICIAL_FACTS: OfficialFact[] = [
   },
   {
     label: 'Release date',
-    value: 'August 27, 2026 (pre-purchase live on Steam)',
+    value: 'Released August 27, 2026; standard Steam price is USD 49.99',
     sourceLabel: 'Steam',
     sourceUrl: SITE.steamUrl,
   },

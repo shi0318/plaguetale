@@ -1,4 +1,4 @@
-// Character data — pre-release.
+// Character data — release-state facts and clearly bounded story context.
 // Confirmed names come from the Steam store description and official Steam news for App 2713000.
 // We keep roles narrow when the first-party material does not confirm playability or fate.
 import type { ConfidenceStatus } from './confidence';

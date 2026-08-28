@@ -1,0 +1,11 @@
+---
+import { SITE } from '../data/site';
+import { formatDate } from '../utils/dates';
+---
+
+<div class="inline-flex items-center gap-2 rounded-lg border border-sage/30 bg-sage/10 px-5 py-3 text-sm font-bold text-sage backdrop-blur-md" aria-label="Release status: available now">
+  <span class="h-2 w-2 rounded-full bg-sage" aria-hidden="true"></span>
+  <span>Available now</span>
+  <span class="text-fog">·</span>
+  <time datetime={SITE.releaseDate}>{formatDate(SITE.releaseDate)}</time>
+</div>

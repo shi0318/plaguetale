@@ -1,4 +1,4 @@
-export type SourceStatus = 'official' | 'platform' | 'official-media' | 'press';
+export type SourceStatus = 'official' | 'platform' | 'official-media' | 'community' | 'press';
 
 export interface SourceRef {
   label: string;
@@ -9,7 +9,7 @@ export interface SourceRef {
   note: string;
 }
 
-export const LAST_CHECKED = '2026-08-17';
+export const LAST_CHECKED = '2026-08-28';
 
 export const SOURCES = {
   steam: {
@@ -17,7 +17,7 @@ export const SOURCES = {
     url: 'https://store.steampowered.com/app/2713000/Resonance_A_Plague_Tale_Legacy/',
     publisher: 'Valve / Steam',
     status: 'platform',
-    lastChecked: '2026-08-27',
+    lastChecked: '2026-08-28',
     note: 'App id 2713000, developer, publisher, release date, price, genres, categories, languages, screenshots, and the official Steam description.',
   },
   focus: {
@@ -35,6 +35,14 @@ export const SOURCES = {
     status: 'official-media',
     lastChecked: LAST_CHECKED,
     note: 'Official screenshots, header art, and trailers published on the Steam store page.',
+  },
+  steamCommunity: {
+    label: 'Steam community reports',
+    url: 'https://store.steampowered.com/app/2713000/Resonance_A_Plague_Tale_Legacy/#app_reviews_hash',
+    publisher: 'Steam players',
+    status: 'community',
+    lastChecked: '2026-08-28',
+    note: 'Recent English player reviews and discussions. Completion time, chapter count, Story Select, persistence, structure, traversal, and performance observations are player reports rather than official specifications.',
   },
   steamNews: {
     label: 'Official Steam devblogs and FAQ',

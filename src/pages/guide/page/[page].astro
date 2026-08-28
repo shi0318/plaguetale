@@ -2,7 +2,6 @@
 import { getCollection } from 'astro:content';
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumb from '../../../components/Breadcrumb.astro';
-import PreReleaseNotice from '../../../components/PreReleaseNotice.astro';
 import GuideCard from '../../../components/GuideCard.astro';
 import Pagination from '../../../components/Pagination.astro';
 import { ASSETS } from '../../../data/assets';
@@ -29,7 +28,6 @@ function coverOf(g: (typeof guides)[number]) { return g.data.cover ?? FALLBACK_C
   <div class="container py-10">
     <Breadcrumb items={crumbs} />
     <header class="mt-6 mb-8"><p class="section-kicker">Latest guides first</p><h1 class="section-title">Resonance: A Plague Tale Legacy guides — page {page}</h1><p class="mt-3 text-lg text-fog">Page {page} of {totalPages}; entries are sorted by their latest verified update.</p></header>
-    <div class="mb-8"><PreReleaseNotice /></div>
     <ul class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {visibleGuides.map((g) => <GuideCard href={`/${g.id}/`} title={g.data.heading ?? g.data.title} description={g.data.description} cover={coverOf(g)} label={CATEGORY_LABEL[g.data.category] ?? g.data.category} status={g.data.status} />)}
     </ul>

@@ -5,13 +5,13 @@ description: "Official Resonance: A Plague Tale Legacy PC system requirements fr
 category: guide
 status: official
 sourceKeys: ["steam"]
-preRelease: true
+preRelease: false
 order: 1
 cover: "/images/ptl-hero-banner.webp"
-updatedAt: "2026-08-27"
+updatedAt: "2026-08-28"
 ---
 
-The official Steam listing for **Resonance: A Plague Tale Legacy** now publishes both minimum and recommended PC requirements. The game is scheduled for **August 27, 2026**. This page was checked on **August 14, 2026**, including the official Steam requirements announcement posted on August 13.
+The official Steam listing for **Resonance: A Plague Tale Legacy** publishes both minimum and recommended PC requirements. The game released on **August 27, 2026**. This page uses the published requirements announcement and the current Steam listing checked on August 28, 2026.
 
 <figure>
   <img src="/images/ptl-hero-banner.webp" alt="Official Resonance: A Plague Tale Legacy artwork showing Sophia on the Minotaur's Island" width="1920" height="1080" loading="lazy" decoding="async" />
@@ -54,7 +54,7 @@ The official listing also describes DLSS 4.5 with Dynamic Multi Frame Generation
 - The 30 FPS and 60 FPS figures are the official target labels, not an independent test of every PC.
 - The requirements do not establish console performance modes, preload timing, or a universal graphics preset for every driver version.
 
-Before launch, compare your hardware with the tables above and keep the official Steam page bookmarked. After launch, this page can add measured settings only when the test hardware, driver, build, resolution, and preset are recorded.
+Compare your hardware with the tables above before installing. Any measured settings added later must still name the test hardware, driver, build, resolution, and preset rather than presenting one PC result as universal.
 
 ## Source
 

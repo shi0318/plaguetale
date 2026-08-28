@@ -9,11 +9,11 @@ export const SITE = {
   url: 'https://plaguetaleguide.com',
   // Official release date (Steam store page, App 2713000)
   releaseDate: '2026-08-27',
-  // Manual gate: keep this at pre-release until Steam unlock is verified.
-  releaseStatus: 'pre-release' as ReleaseStatus,
-  tagline: 'Verified Pre-release Guide',
+  // Steam App 2713000 is confirmed released (checked 2026-08-28).
+  releaseStatus: 'released' as ReleaseStatus,
+  tagline: 'Verified Post-Launch Guide',
   description:
-    'Independent pre-release Resonance: A Plague Tale Legacy guide with a walkthrough framework, collectibles planning, story, combat, and skills. Every fact carries a confirmation status.',
+    'Independent Resonance: A Plague Tale Legacy guide with release-state facts, walkthrough and collectibles coverage, combat tips, story context, and current platform details.',
   locale: 'en',
   // Full game name used in schema / VideoGame entity
   gameName: 'Resonance: A Plague Tale Legacy',
@@ -35,7 +35,7 @@ export const SITE = {
   // Prequel timing (confirmed: 15 years before A Plague Tale: Requiem)
   prequelGap: '15 years before A Plague Tale: Requiem',
   // Latest date on which the official Steam / publisher material was checked.
-  lastVerified: '2026-08-27',
+  lastVerified: '2026-08-28',
 } as const;
 
 export const NAV = [
@@ -66,7 +66,7 @@ export function daysUntilRelease(now: Date = new Date()): number {
 export const OFFICIAL_FACTS = [
   {
     label: 'Release date',
-    value: 'Steam lists Resonance: A Plague Tale Legacy as coming August 27, 2026, with pre-purchase live.',
+    value: 'Resonance: A Plague Tale Legacy is available on Steam after its August 27, 2026 release.',
     source: SOURCES.steam,
   },
   {
@@ -101,13 +101,13 @@ export const OFFICIAL_FACTS = [
   },
   {
     label: 'Platform & price',
-    value: 'Listed on Steam for Windows PC at $49.99, with full controller support.',
+    value: 'Available on Steam for Windows PC at $49.99, with full controller support.',
     source: SOURCES.steam,
   },
   {
     label: 'Console platforms',
     value:
-      'The official Resonance FAQ states the game "will be available on PC, Xbox Series X|S and PS5". Game Pass and Switch remain unannounced.',
+      'Official Resonance information confirms PC, Xbox Series X|S, and PS5. Game Pass and Switch remain unannounced.',
     source: SOURCES.steamNews,
   },
 ] as const;
@@ -118,14 +118,14 @@ export const REQUIRED_GUIDES = [
     href: '/walkthrough/',
     title: 'Walkthrough',
     description:
-      'Chapter-by-chapter walkthrough framework for the Minotaur’s Island, ready for verified routes after Steam unlock.',
+      'Post-launch walkthrough coverage for the Minotaur’s Island, with spoiler-aware route guidance and clearly attributed player reports.',
     priority: 'P0',
   },
   {
     href: '/collectibles/',
     title: 'Collectibles',
     description:
-      'Collectible tracker scaffold for every chapter, ready for confirmed locations after Steam unlock.',
+      'Post-launch collectible guidance covering artifacts, exploration, and clearly labelled retail-build and community evidence.',
     priority: 'P0',
   },
   {
@@ -146,14 +146,14 @@ export const REQUIRED_GUIDES = [
     href: '/guide/',
     title: 'Guide Hub',
     description:
-      'Everything we know before launch, organized so official facts stay separate from post-release notes.',
+      'Release-state facts and Steam community reports organized so official features stay separate from player-reported experience.',
     priority: 'P2',
   },
   {
     href: '/release-date/',
     title: 'Release Date',
     description:
-      'Confirmed August 27, 2026 release date, countdown, editions, and platform details from Steam.',
+      'Confirmed August 27, 2026 release date, USD 49.99 Steam price, developer, publisher, and platform details.',
     priority: 'P2',
   },
 ] as const;

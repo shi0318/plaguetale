@@ -5,9 +5,9 @@ description: "What Resonance: A Plague Tale Legacy officially confirms about Sop
 category: skills
 status: official
 sourceKeys: ["steam", "steamNews", "steamMedia"]
-preRelease: true
+preRelease: false
 order: 12
-updatedAt: "2026-08-21"
+updatedAt: "2026-08-28"
 cover: "/images/ptl-light-puzzle.webp"
 ---
 
@@ -58,7 +58,7 @@ The previous *A Plague Tale* games used light, darkness, fire, alchemical tools,
 
 ## Do not publish the wrong kind of walkthrough yet
 
-Before launch, avoid claiming:
+Without a direct released-game check, avoid claiming:
 
 - exact beam angles or mirror sequences;
 - a universal answer for every island room;

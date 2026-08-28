@@ -5,12 +5,12 @@ description: "Confirmed combat in Resonance: A Plague Tale Legacy — dynamic me
 category: "skills"
 status: "official"
 order: 4
-updatedAt: "2026-08-27"
+updatedAt: "2026-08-28"
 sourceKeys: ["steam"]
 cover: "/images/ptl-sophia-combat.webp"
 ---
 
-This page collects the **confirmed** combat details for **Resonance: A Plague Tale Legacy** from the official Steam description, then explains — clearly labelled — how combat and tools worked in the earlier A Plague Tale games so you have useful context before launch.
+This page collects the **confirmed** combat details for **Resonance: A Plague Tale Legacy** from the official Steam description, then explains — clearly labelled — how combat and tools worked in the earlier A Plague Tale games as series context.
 
 ## Confirmed combat facts
 
@@ -29,25 +29,25 @@ This is a notable shift for the series. The earlier games leaned heavily on **st
 
 A signature mechanic is the **stolen Minoan sphere**, used to **manipulate light** and solve puzzles. Official text credits **Daedalus** with weaving light into the island's heart. The source confirms the sphere's puzzle role, but does not confirm a combat effect, enemy control rule, upgrade path, or charge system.
 
-## Series context (to be verified at launch)
+## Earlier-series context
 
-The following describes the earlier games and is provided as background only. It will be replaced with verified Resonance data after release.
+The following describes the earlier games and is provided as background only. It is not a claim that Resonance uses the same systems.
 
 - **Innocence and Requiem** used a **sling** as the primary ranged tool, plus **alchemical ammunition** (Ignifer to light braziers, Extinguis to douse them, and more).
 - **Fire and light** managed swarms of rats and could be turned against human enemies.
 - **Stealth**, distraction, and environmental manipulation were central.
 
-We do not yet know which of these systems carry into Resonance. Because Sophia's combat is described as **melee-forward**, the balance of tools is likely different.
+The tracked official description does not specify which earlier systems carry into Resonance. Because Sophia's combat is described as **melee-forward**, the released game should be treated as its own ruleset rather than inheriting earlier mechanics by assumption.
 
-## How we'll update this page
+## How this page is updated
 
-After Steam unlock on August 27, 2026 we will replace the series-based sections with:
+The released-game coverage can replace or extend the series-based sections when each detail is directly checked. The update targets are:
 
 - The actual skill or upgrade system, if any
 - Confirmed tools and how to unlock them
 - Parry timing and enemy tells
 - Recommended approaches for early encounters
 
-Until then, everything above the "series context" line is confirmed; everything below it is clearly labelled inference.
+Everything above the "Earlier-series context" line is confirmed from the tracked official material; everything below it is clearly labelled background or inference.
 
 For the story behind the light mechanic, see our [story and setting guide](/story/). For skills strategy, see the [skills hub](/skills/).

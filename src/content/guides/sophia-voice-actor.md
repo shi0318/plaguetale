@@ -5,7 +5,7 @@ description: "Anna Demetriou returns as Sophia and, for the first time, performs
 category: "characters"
 status: "official"
 order: 4
-updatedAt: "2026-08-21"
+updatedAt: "2026-08-28"
 sourceKeys: ["steamNews", "steam", "focus"]
 cover: "/images/ptl-sophia-combat.webp"
 ---
@@ -20,7 +20,7 @@ Resonance sits **15 years before Requiem**, and Demetriou is blunt about what th
 
 Her framing for the shift: keep the swagger, the confidence and the groundedness that Requiem players know, then add a **"screw it" mentality**. Sophia in Resonance has not yet understood consequences.
 
-About halfway through shooting she was given a specific note from the direction team — to bring some **"Vi from *Arcane*" energy** into the younger scenes. That is an unusually concrete reference point for a pre-release character, and a useful one: it tells you the register the studio is aiming for.
+About halfway through shooting she was given a specific note from the direction team — to bring some **"Vi from *Arcane*" energy** into the younger scenes. That is an unusually concrete reference point for the character, and a useful one: it tells you the register the studio aimed for.
 
 ## The hardest scenes to play
 

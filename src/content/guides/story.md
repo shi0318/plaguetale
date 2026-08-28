@@ -37,7 +37,7 @@ One of the most distinctive story hooks: the game **shifts between two time peri
 - **Sophia's Middle Ages** — her present-day journey.
 - **Ancient Minoan times** — where echoes of the past shape the battles of the present.
 
-Official text describes **"the entwined destinies of two heroes linked by fate,"** connected through the **Macula's mysterious legacy**. Official Steam news identifies the Minoan-era hero as **Theseus** and says players experience trials through his eyes. The announcement does not yet publish the final control structure or how the two perspectives switch.
+Official text describes **"the entwined destinies of two heroes linked by fate,"** connected through the **Macula's mysterious legacy**. Official Steam news identifies the Minoan-era hero as **Theseus** and says players experience trials through his eyes. The announcement does not publish the final control structure or explain how the two perspectives switch.
 
 ## Daedalus and the light
 

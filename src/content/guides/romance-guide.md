@@ -5,12 +5,12 @@ description: "Is there romance in Resonance: A Plague Tale Legacy? An honest loo
 category: "romance"
 status: "prequel"
 order: 2
-updatedAt: "2026-08-27"
+updatedAt: "2026-08-28"
 sourceKeys: ["steam", "steamNews"]
 cover: "/images/ptl-sophia-combat.webp"
 ---
 
-Players searching for a **Resonance: A Plague Tale Legacy romance guide** usually want one answer: does the game have romantic relationships or dating options? Here is the honest, source-backed answer as of the pre-release period.
+Players searching for a **Resonance: A Plague Tale Legacy romance guide** usually want one answer: does the game have romantic relationships or dating options? Here is the honest, source-backed answer based on the available story information.
 
 ## Is there romance in Resonance: A Plague Tale Legacy?
 
@@ -26,7 +26,7 @@ That fate-link between two heroes is the closest the confirmed material comes to
 
 ## How relationships worked in earlier A Plague Tale games
 
-To set expectations, here is how the series handled relationships (labelled series-based inference, to be verified for Resonance at launch):
+For context, here is how the series handled relationships (labelled series-based inference, not a claim about an undocumented Resonance mechanic):
 
 - ***A Plague Tale: Innocence* (2019)** centred on the sibling bond between Amicia and her younger brother Hugo. There was no player-chosen romance.
 - ***A Plague Tale: Requiem* (2022)** deepened Amicia's relationships with Hugo and side characters, and introduced meaningful companions — again, through scripted story beats, not dating mechanics.
@@ -37,8 +37,8 @@ Both games earned praise for emotional weight precisely because relationships we
 
 Sophia is the named protagonist, and official Steam news identifies the Minoan-era hero as **Theseus**. The announcement says players experience trials through Theseus’s eyes, but it does not confirm a romance route, relationship meter, dialogue choices, or the exact control structure. For the named cast, see our [characters guide](/characters/).
 
-## What to expect at launch
+## What the available story evidence supports
 
-When the game releases on **August 27, 2026**, we will play through it and update this page with the truth: whether any relationship choices exist, how the two-hero bond plays out, and whether the ending hinges on any relationship. Until then, everything here is either drawn straight from official text or clearly flagged as inference from the earlier games.
+The currently tracked official text does not document a romance system, relationship meter, or player-selected dating route. If a later release-build report establishes a relationship choice, this page can be updated with the exact chapter, choice, and result rather than inferring one from the series.
 
 If you want the confirmed cast and story framing right now, start with our [characters and story guide](/characters/).

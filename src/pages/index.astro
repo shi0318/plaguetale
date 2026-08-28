@@ -1,7 +1,7 @@
 ---
-// Homepage — immersive field-guide landing for the Resonance: A Plague Tale Legacy guide.
+// Homepage — immersive field-guide landing for the released Resonance: A Plague Tale Legacy guide.
 import Layout from '../layouts/Layout.astro';
-import Countdown from '../components/Countdown.astro';
+import ReleaseStatus from '../components/ReleaseStatus.astro';
 import StatusBadge from '../components/StatusBadge.astro';
 import MediaFigure from '../components/MediaFigure.astro';
 import FaqBlock from '../components/FaqBlock.astro';
@@ -11,13 +11,13 @@ import { CHARACTERS } from '../data/characters';
 
 const title = 'Resonance: A Plague Tale Legacy Walkthrough & Collectibles';
 const description =
-  'Resonance: A Plague Tale Legacy guide covering walkthrough planning, collectibles, combat, characters, PC requirements, and confirmed Steam details.';
+  'Resonance: A Plague Tale Legacy guide covering walkthroughs, collectibles, combat, characters, PC requirements, and current Steam details.';
 
 const startHere = [
   {
     href: '/release-date/',
     title: 'Release Date (August 27, 2026)',
-    desc: 'Confirmed Steam release date, price, platforms, and what is known before launch.',
+    desc: 'Confirmed Steam release date, price, platforms, and current availability details.',
     cover: ASSETS.islandTrail.src,
   },
   {
@@ -29,13 +29,13 @@ const startHere = [
   {
     href: '/romance-guide/',
     title: 'Romance Guide',
-    desc: 'Does Resonance have romance or dating? The honest, source-backed answer before launch.',
+    desc: 'Does Resonance have romance or dating? The honest, source-backed answer from the released story.',
     cover: ASSETS.creatureShadow.src,
   },
   {
     href: '/collectibles/',
     title: 'Collectibles Guide',
-    desc: 'How collectibles worked in Innocence and Requiem, plus the confirmed pre-release scope and map plan.',
+    desc: 'Collectible coverage for exploration, artifacts, and clearly labelled retail-build evidence.',
     cover: ASSETS.minoanRuins.src,
   },
   {
@@ -57,7 +57,7 @@ const categories = [
   {
     href: '/collectibles/',
     title: 'Collectibles',
-    desc: 'Pre-release framework, ready for real chapter maps after Steam unlock.',
+    desc: 'Collectible routes, artifacts, and completion notes with evidence status shown clearly.',
     count: null as number | null,
     countLabel: '',
   },
@@ -71,7 +71,7 @@ const categories = [
   {
     href: '/walkthrough/',
     title: 'Walkthrough',
-    desc: 'Chapter framework for launch preparation; verified routes will follow Steam unlock.',
+    desc: 'Chapter routes, story beats, puzzles, and verified progression notes for the released game.',
     count: null,
     countLabel: '',
   },
@@ -79,19 +79,19 @@ const categories = [
 
 const faqs = [
   {
-    question: 'When does Resonance: A Plague Tale Legacy release?',
+    question: 'When did Resonance: A Plague Tale Legacy release?',
     answer:
-      'Steam currently lists Resonance: A Plague Tale Legacy as coming on August 27, 2026, with pre-purchase available. The game is still pre-release and is a prequel set roughly 15 years before A Plague Tale: Requiem. Focus Entertainment is publishing and Asobo Studio is developing, the same team behind Innocence and Requiem. We track the date and will flag any confirmed change from an official channel.',
+      'Resonance: A Plague Tale Legacy released on August 27, 2026. Steam lists the PC version at $49.99, while the official Resonance FAQ confirms PC, Xbox Series X|S, and PS5. It is an original prequel set roughly 15 years before A Plague Tale: Requiem, developed by Asobo Studio and published by Focus Entertainment.',
   },
   {
     question: 'Is A Plague Tale Legacy on Game Pass?',
     answer:
-      'Game Pass availability has not been confirmed by Microsoft, Focus Entertainment, or Asobo Studio. We mark this as unconfirmed. An Xbox Series X|S release is confirmed, but that is a separate commitment and does not imply Game Pass. For context, A Plague Tale: Requiem launched day one on Game Pass in 2022, so there is precedent, but precedent is not a promise. Until an official announcement lands, treat any Game Pass claim for the prequel as speculation.',
+      'Game Pass availability has not been confirmed by Microsoft, Focus Entertainment, or Asobo Studio, so we mark it as unconfirmed. An Xbox Series X|S release is confirmed, but that is a separate commitment and does not imply Game Pass. A Plague Tale: Requiem launched day one on Game Pass in 2022, but that precedent does not confirm availability for this game.',
   },
   {
     question: 'Who is Sophia in Resonance: A Plague Tale Legacy?',
     answer:
-      'Sophia is the named protagonist of Resonance. Requiem players will recognise her as the sailor and treasure hunter who helped Amicia and Hugo. Official Steam news also describes trials through the eyes of the legendary hero Theseus, but does not yet publish the final control structure. This prequel follows Sophia’s earlier journey to the Minotaur’s Island, where the Minoan myth and the Macula’s legacy intersect.',
+      'Sophia is the named protagonist of Resonance. Requiem players will recognise her as the sailor and treasure hunter who helped Amicia and Hugo. Official Steam news also describes trials through the eyes of the legendary hero Theseus. This prequel follows Sophia’s earlier journey to the Minotaur’s Island, where the Minoan myth and the Macula’s legacy intersect.',
   },
   {
     question: 'Is A Plague Tale Legacy a prequel or a sequel?',
@@ -101,7 +101,7 @@ const faqs = [
   {
     question: 'Is A Plague Tale Legacy on PS5 and Xbox?',
     answer:
-      'Yes, both are confirmed. The official Resonance FAQ, posted to the game’s Steam news hub, states the game "will be available on PC, Xbox Series X|S and PS5". The Steam store page covers the PC version specifically at $49.99. What is still unstated is per-platform detail such as console pricing, performance modes, and install sizes. Game Pass availability is a separate question and remains unconfirmed.',
+      'Yes, both are confirmed. The official Resonance FAQ, posted to the game’s Steam news hub, confirms PC, Xbox Series X|S, and PS5. The Steam store page lists the PC version at $49.99. Per-platform details such as console pricing, performance modes, and install sizes may differ, while Game Pass availability remains unconfirmed.',
   },
 ];
 ---
@@ -128,7 +128,7 @@ const faqs = [
       <p class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/35 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.16em] text-bone backdrop-blur">
         Fan Guide &amp; Source Tracker
         <span class="text-fog">·</span>
-        <span class="text-wheat">Releases August 27, 2026</span>
+        <span class="text-wheat">Released August 27, 2026</span>
       </p>
 
       <h1 class="mt-6 max-w-4xl text-4xl font-black tracking-tight text-bone sm:text-5xl md:text-6xl">
@@ -137,7 +137,7 @@ const faqs = [
           Walkthrough &amp; collectibles
         </span>
         <span class="mt-2 block text-xl font-bold text-fog sm:text-2xl md:text-3xl">
-          Story, combat, characters &amp; pre-release facts
+          Story, combat, characters &amp; release facts
         </span>
       </h1>
 
@@ -153,7 +153,7 @@ const faqs = [
         <a href="/characters/" class="btn-secondary">Characters &amp; story</a>
       </div>
 
-      <div class="mt-10"><Countdown /></div>
+      <div class="mt-10"><ReleaseStatus /></div>
     </div>
   </section>
 
@@ -183,11 +183,13 @@ const faqs = [
       <p class="section-kicker">Why this guide</p>
       <h2 class="section-title">Every fact is sourced</h2>
       <p class="mt-3 max-w-3xl text-fog">
-        Before launch, most sites blend confirmed details with rumours. We don't. Each entry is
-        tagged so you always know what is verified and what is still inference:
+        We keep confirmed details separate from series context, preview material, and player reports.
+        Each entry is tagged so you always know what is verified and what remains inference:
       </p>
       <div class="mt-5 flex flex-wrap gap-2">
         <StatusBadge status="official" />
+        <StatusBadge status="steam-feature" />
+        <StatusBadge status="community" />
         <StatusBadge status="trailer" />
         <StatusBadge status="prequel" />
         <StatusBadge status="unconfirmed" />
@@ -271,8 +273,8 @@ const faqs = [
       <p class="section-kicker">Common questions</p>
       <h2 class="section-title">Resonance: A Plague Tale Legacy FAQ</h2>
       <p class="mt-3 max-w-3xl text-fog">
-        The questions players ask most before launch, answered from official sources and clearly
-        flagged when the answer is still unconfirmed.
+        The questions players ask most, answered from official sources and clearly flagged when the
+        answer is still unconfirmed.
       </p>
       <div class="mt-6">
         <FaqBlock items={faqs} />
