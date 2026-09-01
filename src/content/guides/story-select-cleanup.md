@@ -3,7 +3,8 @@ title: "Resonance: A Plague Tale Legacy Story Select Cleanup"
 heading: "Resonance: A Plague Tale Legacy Story Select Cleanup Guide"
 description: "Recent players report Story Select in Resonance: A Plague Tale Legacy, making it the reported starting point for chapter and artifact cleanup."
 category: "walkthrough"
-status: "unconfirmed"
+keyword: "plague tale legacy story select"
+status: "community"
 order: 6
 updatedAt: "2026-08-28"
 sourceKeys: ["steamCommunity", "steam"]

@@ -3,7 +3,8 @@ title: "Resonance: A Plague Tale Legacy Demo Download Status"
 heading: "Resonance: A Plague Tale Legacy Demo Download Status Guide"
 description: "No official public demo download is confirmed in the checked materials for Resonance: A Plague Tale Legacy; use the released Steam listing for updates."
 category: "news"
-status: "unconfirmed"
+keyword: "plague tale legacy demo download"
+status: "official"
 order: 18
 updatedAt: "2026-08-28"
 sourceKeys: ["steam", "steamNews", "focus"]

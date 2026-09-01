@@ -3,7 +3,8 @@ title: "Resonance: A Plague Tale Legacy Find Missed Artifacts"
 heading: "Resonance: A Plague Tale Legacy Find Missed Artifacts Guide"
 description: "Use reported Story Select cleanup to revisit missed artifacts in Resonance: A Plague Tale Legacy, without relying on invented routes or unverified locations."
 category: "collectibles"
-status: "unconfirmed"
+keyword: "plague tale legacy missed artifacts"
+status: "community"
 order: 5
 updatedAt: "2026-08-28"
 sourceKeys: ["steamCommunity", "steam"]

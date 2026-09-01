@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy Download Guide"
 heading: "Resonance: A Plague Tale Legacy download and install"
 description: "Where to download and install Resonance: A Plague Tale Legacy from Steam, plus the current demo status and safety checks for fake download sites."
 category: "guide"
+keyword: "plague tale legacy download"
 status: "official"
 order: 2
 updatedAt: "2026-08-28"

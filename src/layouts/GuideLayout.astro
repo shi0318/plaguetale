@@ -6,7 +6,8 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 import StatusBadge from '../components/StatusBadge.astro';
 import MediaFigure from '../components/MediaFigure.astro';
 import SourcePanel from '../components/SourcePanel.astro';
-import { STATUS_META, type ConfidenceStatus } from '../data/confidence';
+import RelatedGuides from '../components/RelatedGuides.astro';
+import { STATUS_META, INDEXABLE_STATUS, type ConfidenceStatus } from '../data/confidence';
 import { SOURCES, type SourceRef, type SourceKey } from '../data/sources';
 import { formatDate } from '../utils/dates';
 
@@ -68,6 +69,12 @@ const crumbs: Crumb[] = [
 
 const meta = STATUS_META[status];
 const sources: SourceRef[] = sourceKeys.map((k) => SOURCES[k]);
+
+// 与另外三个站点的信心分级一致：只有能追到信源的 status 进索引。
+// `unconfirmed` 页保留 canonical 与 follow，仅退出索引；改为 official 后自动放开。
+// astro.config.mjs 的 sitemap filter 读同一份 INDEXABLE_STATUS，两边不会漂移。
+const noindex = !INDEXABLE_STATUS.includes(status);
+const coverAlt = `${h1} official cover image`;
 ---
 
 <Layout
@@ -75,6 +82,9 @@ const sources: SourceRef[] = sourceKeys.map((k) => SOURCES[k]);
   description={description}
   pageType={category === 'news' ? 'article' : 'article'}
   breadcrumbs={crumbs}
+  image={cover}
+  imageAlt={coverAlt}
+  noindex={noindex}
 >
   <article class="container max-w-3xl py-10">
     <Breadcrumb items={crumbs} />
@@ -82,7 +92,7 @@ const sources: SourceRef[] = sourceKeys.map((k) => SOURCES[k]);
     <MediaFigure
       class="mt-6"
       src={cover}
-      alt={`${h1} official cover image`}
+      alt={coverAlt}
       width={1920}
       height={1080}
       priority
@@ -105,5 +115,6 @@ const sources: SourceRef[] = sourceKeys.map((k) => SOURCES[k]);
     </div>
 
     <SourcePanel sources={sources} />
+    <RelatedGuides currentPath={Astro.url.pathname} category={category} />
   </article>
 </Layout>

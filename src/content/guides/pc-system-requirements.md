@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy System Requirements"
 heading: "Resonance: A Plague Tale Legacy PC Requirements"
 description: "Official Resonance: A Plague Tale Legacy PC system requirements from Steam, including 1080p targets, CPU, GPU, RAM, storage, and SSD details."
 category: guide
+keyword: "plague tale legacy pc requirements"
 status: official
 sourceKeys: ["steam"]
 preRelease: false

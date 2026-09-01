@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy Difficulty and Accessibility"
 heading: "Resonance: A Plague Tale Legacy Difficulty & Accessibility Guide"
 description: "Steam confirms adjustable difficulty and play without timed input in Resonance: A Plague Tale Legacy; this guide explains the safe scope of those features."
 category: "guide"
+keyword: "plague tale legacy difficulty"
 status: "official"
 order: 11
 updatedAt: "2026-08-28"

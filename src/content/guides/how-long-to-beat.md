@@ -3,7 +3,8 @@ title: "Resonance: A Plague Tale Legacy How Long to Beat"
 heading: "Resonance: A Plague Tale Legacy How Long to Beat — Player Reports Explained"
 description: "Recent Steam reviews for Resonance: A Plague Tale Legacy report about 10 hours on Normal; treat that estimate as community evidence, not a guarantee."
 category: "walkthrough"
-status: "unconfirmed"
+keyword: "how long is plague tale legacy"
+status: "community"
 order: 1
 updatedAt: "2026-08-28"
 sourceKeys: ["steamCommunity", "steam"]

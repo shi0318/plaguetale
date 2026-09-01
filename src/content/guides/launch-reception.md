@@ -3,7 +3,8 @@ title: "Resonance: A Plague Tale Legacy Launch Reception"
 heading: "Resonance: A Plague Tale Legacy Launch Reception — Steam Reports"
 description: "Recent Steam reviews checked on August 28, 2026 call Resonance: A Plague Tale Legacy Very Positive, with player reports kept separate from official facts."
 category: "news"
-status: "unconfirmed"
+keyword: "plague tale legacy reception"
+status: "community"
 order: 19
 updatedAt: "2026-08-28"
 sourceKeys: ["steamCommunity", "steam"]

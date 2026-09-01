@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy Combat Guide"
 heading: "Resonance: A Plague Tale Legacy Combat Guide — Melee, Parries & Light Puzzles"
 description: "Confirmed combat in Resonance: A Plague Tale Legacy — dynamic melee, parries, and the Minoan sphere light mechanic. Sourced and clearly labelled."
 category: "skills"
+keyword: "plague tale legacy combat"
 status: "official"
 order: 4
 updatedAt: "2026-08-28"

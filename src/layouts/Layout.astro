@@ -17,8 +17,12 @@ interface Props {
   pageType?: 'home' | 'article' | 'collection';
   canonical?: string;
   image?: string;
+  // Describes the page's own cover; falls back to the hero alt only when no image is overridden.
+  imageAlt?: string;
   breadcrumbs?: Crumb[];
   fullWidth?: boolean;
+  // Speculative pages stay out of the index but keep their canonical and outbound links.
+  noindex?: boolean;
 }
 
 const {
@@ -27,13 +31,16 @@ const {
   pageType = 'article',
   canonical,
   image = ASSETS.hero.src,
+  imageAlt,
   breadcrumbs = [],
   fullWidth = false,
+  noindex = false,
 } = Astro.props;
 
 const path = Astro.url.pathname;
 const canonicalUrl = canonical ?? new URL(path, SITE.url).href;
 const imageUrl = new URL(image, SITE.url).href;
+const socialImageAlt = imageAlt ?? ASSETS.hero.alt;
 
 const organization = {
   '@type': 'Organization',
@@ -118,7 +125,10 @@ const schema = {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta
+      name="robots"
+      content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large'}
+    />
     <link rel="canonical" href={canonicalUrl} />
     <meta property="og:type" content={pageType === 'home' ? 'website' : 'article'} />
     <meta property="og:site_name" content={SITE.name} />
@@ -126,13 +136,13 @@ const schema = {
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={imageUrl} />
-    <meta property="og:image:alt" content={ASSETS.hero.alt} />
+    <meta property="og:image:alt" content={socialImageAlt} />
     <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={imageUrl} />
-    <meta name="twitter:image:alt" content={ASSETS.hero.alt} />
+    <meta name="twitter:image:alt" content={socialImageAlt} />
     <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />

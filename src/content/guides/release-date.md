@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy Release Date & Platforms"
 heading: "Resonance: A Plague Tale Legacy Release Date"
 description: "Resonance: A Plague Tale Legacy released August 27, 2026 on Steam. Confirmed price, platforms, PC requirements, and current store facts."
 category: "guide"
+keyword: "plague tale legacy release date"
 status: "official"
 order: 1
 updatedAt: "2026-08-28"

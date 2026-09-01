@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy Island Exploration Guide"
 heading: "Resonance: A Plague Tale Legacy Island Exploration & Encounter Guide"
 description: "A Resonance: A Plague Tale Legacy guide to exploring Minotaur's Island, reading encounters, using parries, and separating verified routes from open questions."
 category: walkthrough
+keyword: "plague tale legacy island exploration"
 status: official
 sourceKeys: ["steam", "steamNews", "steamMedia"]
 preRelease: false

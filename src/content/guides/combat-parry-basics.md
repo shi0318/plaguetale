@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy Combat and Parry Basics"
 heading: "Resonance: A Plague Tale Legacy Combat & Parry Basics Guide"
 description: "Official combat basics for Resonance: A Plague Tale Legacy: dynamic melee, agility, tricks, sharp reflexes, parries, and powerful strikes."
 category: "skills"
+keyword: "plague tale legacy parry"
 status: "official"
 order: 7
 updatedAt: "2026-08-28"

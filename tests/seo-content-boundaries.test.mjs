@@ -43,8 +43,13 @@ test('release status stays manually gated after the calendar date', async () => 
   assert.match(site, /releaseDate:\s*['"]2026-08-27['"]/);
   assert.match(site, /releaseStatus:\s*['"]released['"]/);
   assert.match(site, /return SITE\.releaseStatus === ['"]released['"]/);
-  assert.match(countdown, /data-release-status=\{SITE\.releaseStatus\}/);
-  assert.match(countdown, /el\.dataset\.releaseStatus === ['"]released['"]/);
+
+  // The badge is resolved at build time from the explicit releaseStatus field.
+  // The earlier `data-release-status` attribute plus client script is gone; what must not
+  // come back is a clock comparison, which would flip the copy without an editorial decision.
+  assert.match(countdown, /import \{[^}]*\bisReleased\b[^}]*\} from ['"]\.\.\/data\/site['"]/);
+  assert.match(countdown, /const released = isReleased\(\)/);
+  assert.doesNotMatch(countdown, /Date\.now\(\)|new Date\(\)/);
 });
 
 test('guide links point to the existing flat content routes', async () => {

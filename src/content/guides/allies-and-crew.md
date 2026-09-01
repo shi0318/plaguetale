@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy Allies & Crew Guide"
 heading: "Resonance: A Plague Tale Legacy Allies — Leni, Alec, Theseus & Heritage Pack"
 description: "Guide to Resonance: A Plague Tale Legacy allies Leni, Alec, Theseus, and the free Heritage Pack, with confirmed story context."
 category: "characters"
+keyword: "plague tale legacy allies"
 status: "official"
 order: 4
 updatedAt: "2026-08-28"

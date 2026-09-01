@@ -3,7 +3,8 @@ title: "Resonance: A Plague Tale Legacy Collectibles After Death"
 heading: "Resonance: A Plague Tale Legacy Collectibles After Death Guide"
 description: "Player reports say collectibles in Resonance: A Plague Tale Legacy persist through death, while the report does not define every save or cleanup rule."
 category: "collectibles"
-status: "unconfirmed"
+keyword: "plague tale legacy collectibles after death"
+status: "community"
 order: 3
 updatedAt: "2026-08-28"
 sourceKeys: ["steamCommunity", "steam"]

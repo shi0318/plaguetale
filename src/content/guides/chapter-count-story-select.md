@@ -3,7 +3,8 @@ title: "Resonance: A Plague Tale Legacy Chapter Count and Story Select"
 heading: "Resonance: A Plague Tale Legacy Chapter Count & Story Select Guide"
 description: "Steam community reports describe 13 chapters and Story Select in Resonance: A Plague Tale Legacy; neither detail is treated as an official specification."
 category: "walkthrough"
-status: "unconfirmed"
+keyword: "plague tale legacy chapters"
+status: "community"
 order: 2
 updatedAt: "2026-08-28"
 sourceKeys: ["steamCommunity", "steam"]

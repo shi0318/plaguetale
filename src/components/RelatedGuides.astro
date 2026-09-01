@@ -1,0 +1,59 @@
+---
+// 同分类相关攻略 —— 每篇 guide 底部渲染，给 39 篇内容页补上稳定的内链。
+// 之前有 17 篇正文里一条内链都没有，属于半孤儿页；这里按 category 关联，不是随机推荐。
+import { getCollection } from 'astro:content';
+
+interface Props {
+  // 当前页 URL path，用于把自己排除掉
+  currentPath: string;
+  category: string;
+  limit?: number;
+}
+
+const { currentPath, category, limit = 6 } = Astro.props;
+
+const CATEGORY_LABEL: Record<string, string> = {
+  guide: 'guides',
+  characters: 'character pages',
+  collectibles: 'collectibles guides',
+  skills: 'skills guides',
+  walkthrough: 'walkthrough pages',
+  romance: 'romance guides',
+  news: 'news pages',
+};
+
+const currentSlug = currentPath.replace(/^\/|\/$/g, '');
+
+const related = (await getCollection('guides', ({ data }) => !data.draft))
+  .filter((entry) => entry.data.category === category && entry.id !== currentSlug)
+  // order 小的在前（人工排定的重要度），并列时按更新时间新的在前
+  .sort((a, b) =>
+    a.data.order === b.data.order
+      ? b.data.updatedAt.localeCompare(a.data.updatedAt)
+      : a.data.order - b.data.order,
+  )
+  .slice(0, limit);
+---
+
+{
+  related.length > 0 && (
+    <nav class="mt-12 border-t border-white/10 pt-8" aria-labelledby="related-guides">
+      <h2 id="related-guides" class="text-xl font-black tracking-tight text-bone">
+        More {CATEGORY_LABEL[category] ?? 'guides'}
+      </h2>
+      <ul class="mt-4 grid gap-3 sm:grid-cols-2">
+        {related.map((entry) => (
+          <li class="rounded-md border border-white/10 bg-white/[0.02] p-4">
+            <a href={`/${entry.id}/`} class="font-semibold text-bone hover:text-amber-300">
+              {entry.data.heading ?? entry.data.title}
+            </a>
+            <p class="mt-1 text-sm leading-relaxed text-fog">{entry.data.description}</p>
+          </li>
+        ))}
+      </ul>
+      <p class="mt-4 text-sm text-fog">
+        Or browse <a href="/guide/" class="text-amber-300 hover:underline">every Resonance: A Plague Tale Legacy guide</a>.
+      </p>
+    </nav>
+  )
+}

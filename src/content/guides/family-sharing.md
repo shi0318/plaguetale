@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy Family Sharing"
 heading: "Resonance: A Plague Tale Legacy Family Sharing Guide"
 description: "Steam officially lists Family Sharing for Resonance: A Plague Tale Legacy; this guide explains the platform feature without promising multiplayer or account behavior."
 category: "guide"
+keyword: "plague tale legacy family sharing"
 status: "official"
 order: 17
 updatedAt: "2026-08-28"

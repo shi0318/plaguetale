@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy Soundtrack & Composer"
 heading: "Resonance: A Plague Tale Legacy Soundtrack — Olivier Derivière, Yayli Tambur & Choir"
 description: "Olivier Derivière returns to score Resonance. What DEVBLOG #4 confirms about the instruments, the Cyprus choir sessions, and why the cello had to change."
 category: "news"
+keyword: "plague tale legacy soundtrack"
 status: "official"
 order: 7
 updatedAt: "2026-08-28"

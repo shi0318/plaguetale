@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy Romance Guide"
 heading: "Resonance: A Plague Tale Legacy Romance Guide — Relationships & Choices"
 description: "Is there romance in Resonance: A Plague Tale Legacy? An honest look at Sophia's story, the two fate-linked heroes, and past A Plague Tale relationships."
 category: "romance"
+keyword: "plague tale legacy romance"
 status: "prequel"
 order: 2
 updatedAt: "2026-08-28"

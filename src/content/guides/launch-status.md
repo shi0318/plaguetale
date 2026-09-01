@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy Launch Status"
 heading: "Resonance: A Plague Tale Legacy Launch Status — Release, Price & Store Facts"
 description: "Resonance: A Plague Tale Legacy launched on Steam App 2713000 on August 27, 2026, at $49.99 from Asobo Studio and Focus Entertainment."
 category: "guide"
+keyword: "plague tale legacy launch status"
 status: "official"
 order: 0
 updatedAt: "2026-08-28"

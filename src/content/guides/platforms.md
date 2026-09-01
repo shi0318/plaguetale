@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy Platforms Guide"
 heading: "Resonance: A Plague Tale Legacy Platforms"
 description: "Resonance: A Plague Tale Legacy is officially confirmed for PC, PS5 and Xbox Series X|S. Game Pass and Switch status, each tagged by confirmation level."
 category: "guide"
+keyword: "plague tale legacy platforms"
 status: "official"
 order: 3
 updatedAt: "2026-08-28"

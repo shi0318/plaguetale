@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy Controller Support"
 heading: "Resonance: A Plague Tale Legacy Controller Support Guide"
 description: "Resonance: A Plague Tale Legacy has official Steam Full Controller Support, with DualShock and DualSense support also listed for PC."
 category: "guide"
+keyword: "plague tale legacy controller support"
 status: "official"
 order: 12
 updatedAt: "2026-08-28"

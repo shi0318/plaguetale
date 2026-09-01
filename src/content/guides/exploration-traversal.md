@@ -3,7 +3,8 @@ title: "Resonance: A Plague Tale Legacy Exploration and Traversal"
 heading: "Resonance: A Plague Tale Legacy Exploration & Traversal Guide"
 description: "Explore the Minotaur's Island in Resonance: A Plague Tale Legacy with a report-aware look at linear exploration and traversal interaction complaints."
 category: "walkthrough"
-status: "unconfirmed"
+keyword: "plague tale legacy exploration"
+status: "community"
 order: 10
 updatedAt: "2026-08-28"
 sourceKeys: ["steamCommunity", "steam", "steamMedia"]

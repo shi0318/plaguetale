@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy PC Performance Settings"
 heading: "Resonance: A Plague Tale Legacy PC Performance & Settings Guide"
 description: "Use the official PC requirements for Resonance: A Plague Tale Legacy and adjust released-game settings carefully without inventing unsupported hardware targets."
 category: "guide"
+keyword: "plague tale legacy pc settings"
 status: "official"
 order: 15
 updatedAt: "2026-08-28"

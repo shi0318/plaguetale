@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy Minotaur Myth Explained"
 heading: "Resonance: A Plague Tale Legacy Minotaur Myth — Minos, Theseus & Ariadne"
 description: "The Greek myth Resonance is built on, told straight, plus what Asobo's official devblog says about where their version begins and what it changes."
 category: "characters"
+keyword: "plague tale legacy minotaur myth"
 status: "official"
 order: 5
 updatedAt: "2026-08-21"

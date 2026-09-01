@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy Steam Cloud Saves"
 heading: "Resonance: A Plague Tale Legacy Steam Cloud Saves Guide"
 description: "Steam lists Steam Cloud for Resonance: A Plague Tale Legacy; learn what that confirms and what it does not promise about save slots or conflicts."
 category: "guide"
+keyword: "plague tale legacy steam cloud"
 status: "official"
 order: 13
 updatedAt: "2026-08-28"

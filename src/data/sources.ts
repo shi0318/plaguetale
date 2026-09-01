@@ -52,6 +52,16 @@ export const SOURCES = {
     lastChecked: LAST_CHECKED,
     note: 'First-party posts on the Steam news hub for App 2713000: the Resonance FAQ (platforms: "PC, Xbox Series X|S and PS5"), plus DEVBLOG #1 Sophia’s Story, #2 Anna Demetriou interview, #3 "Into The Myth", #4 Olivier Derivière interview.',
   },
+  steamAchievements: {
+    label: 'Steam global achievement stats',
+    url: 'https://steamcommunity.com/stats/2713000/achievements/',
+    publisher: 'Valve / Steam',
+    status: 'platform',
+    lastChecked: '2026-09-01',
+    // Valve 自己发布的成就名称、公开描述与全球解锁率。隐藏成就在这个页面上描述为空，
+    // 不能据此推断其条件 —— 页面里把它们标为 hidden，而不是编一个要求。
+    note: 'The public achievement stats page for App 2713000: 36 achievement names, the descriptions Valve publishes, and the global unlock percentage of each. 19 entries are hidden, meaning Valve publishes the name but not the requirement. Percentages are a snapshot read on 2026-09-01 and drift as more accounts play.',
+  },
   ign: {
     label: 'IGN preview coverage',
     url: 'https://www.ign.com/',

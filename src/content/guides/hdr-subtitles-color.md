@@ -3,7 +3,8 @@ title: "Resonance: A Plague Tale Legacy HDR Subtitles and Color"
 heading: "Resonance: A Plague Tale Legacy HDR, Subtitles & Color Guide"
 description: "HDR is officially listed for Resonance: A Plague Tale Legacy; subtitles and color options remain unconfirmed in the evidence checked here."
 category: "guide"
-status: "unconfirmed"
+keyword: "plague tale legacy hdr settings"
+status: "steam-feature"
 order: 16
 updatedAt: "2026-08-28"
 sourceKeys: ["steam"]

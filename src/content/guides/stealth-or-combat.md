@@ -3,7 +3,8 @@ title: "Resonance: A Plague Tale Legacy Stealth or Combat"
 heading: "Resonance: A Plague Tale Legacy Stealth or Combat Guide"
 description: "Recent Steam reports describe Resonance: A Plague Tale Legacy as a linear mix of stealth, combat, puzzles, and exploration, not combat alone."
 category: "skills"
-status: "unconfirmed"
+keyword: "plague tale legacy stealth or combat"
+status: "community"
 order: 8
 updatedAt: "2026-08-28"
 sourceKeys: ["steamCommunity", "steam"]

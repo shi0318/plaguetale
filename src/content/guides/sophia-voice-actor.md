@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy Sophia Voice Actor"
 heading: "Resonance: A Plague Tale Legacy Sophia Voice & Mocap — Anna Demetriou"
 description: "Anna Demetriou returns as Sophia and, for the first time, performs the motion capture too. What the official devblog says about the younger Sophia."
 category: "characters"
+keyword: "plague tale legacy sophia voice actor"
 status: "official"
 order: 4
 updatedAt: "2026-08-28"

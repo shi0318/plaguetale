@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy Demo Status"
 heading: "Does Resonance: A Plague Tale Legacy Have a Demo?"
 description: "The current Resonance: A Plague Tale Legacy demo status, release date, official Steam link, and what Asobo and Focus have actually announced."
 category: news
+keyword: "plague tale legacy demo"
 status: official
 sourceKeys: ["steam", "steamNews", "focus"]
 preRelease: false

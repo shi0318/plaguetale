@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy Minoan Sphere Guide"
 heading: "Resonance: A Plague Tale Legacy Minoan Sphere Light Puzzle Guide"
 description: "What Resonance: A Plague Tale Legacy officially confirms about Sophia's Minoan sphere and light manipulation, plus a practical puzzle observation checklist."
 category: skills
+keyword: "plague tale legacy minoan sphere puzzle"
 status: official
 sourceKeys: ["steam", "steamNews", "steamMedia"]
 preRelease: false

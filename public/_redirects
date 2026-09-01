@@ -1,0 +1,4 @@
+# 页面重命名：游戏已发售，pre-launch 这个 slug 不再准确。
+# 原 URL 已被 GSC 收录，用 301 保留权重。Cloudflare Pages 读取本文件。
+/pre-launch-checklist/ /launch-checklist/ 301
+/pre-launch-checklist /launch-checklist/ 301

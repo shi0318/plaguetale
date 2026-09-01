@@ -3,6 +3,7 @@ title: "Resonance: A Plague Tale Legacy Light Puzzle Tips"
 heading: "Resonance: A Plague Tale Legacy Light Puzzle Tips Guide"
 description: "Official light-puzzle guidance for Resonance: A Plague Tale Legacy, centered on Sophia's stolen Minoan sphere and its ability to manipulate light."
 category: "skills"
+keyword: "plague tale legacy light puzzles"
 status: "official"
 order: 9
 updatedAt: "2026-08-28"

@@ -8,7 +8,7 @@ import { toDateString } from './utils/dates';
 const confidenceStatus = z.enum(['official', 'steam-feature', 'community', 'trailer', 'prequel', 'unconfirmed']);
 
 // Must match SourceKey in src/data/sources.ts
-const sourceKey = z.enum(['steam', 'focus', 'steamMedia', 'steamNews', 'steamCommunity', 'ign']);
+const sourceKey = z.enum(['steam', 'focus', 'steamMedia', 'steamNews', 'steamCommunity', 'steamAchievements', 'ign']);
 
 // YAML bare dates become Date objects; always normalize to YYYY-MM-DD strings.
 const dateString = z.preprocess(
@@ -23,6 +23,10 @@ const guides = defineCollection({
     heading: z.string().optional(),
     description: z.string().min(50).max(170),
     category: z.enum(['guide', 'characters', 'collectibles', 'skills', 'walkthrough', 'romance', 'news']),
+    // Primary keyword for internal annotation: one page owns one keyword, prevents cannibalization.
+    // Not rendered on page or used as meta keywords tag (Google ignores that).
+    // Optional for now: existing 39 pages not yet fully annotated, new pages should fill it.
+    keyword: z.string().optional(),
     status: confidenceStatus,
     // References into the central SOURCES registry; rendered as the "Sources" table.
     sourceKeys: z.array(sourceKey).default([]),

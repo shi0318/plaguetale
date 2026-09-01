@@ -3,7 +3,8 @@ title: "Resonance: A Plague Tale Legacy Skill Points After Death"
 heading: "Resonance: A Plague Tale Legacy Skill Points After Death Guide"
 description: "Recent Steam reports say skill points do not persist after death in Resonance: A Plague Tale Legacy; this guide separates reports from confirmed features."
 category: "skills"
-status: "unconfirmed"
+keyword: "plague tale legacy skill points after death"
+status: "community"
 order: 4
 updatedAt: "2026-08-28"
 sourceKeys: ["steamCommunity", "steam"]
