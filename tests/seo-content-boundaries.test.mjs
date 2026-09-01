@@ -23,15 +23,16 @@ test('characters data uses the named official cast instead of the stale placehol
   assert.doesNotMatch(source, /second hero is confirmed to exist but not yet named publicly/);
 });
 
-test('pre-release hubs keep confirmed facts separate from launch-only data', async () => {
+test('released hubs keep official facts separate from unverified route details', async () => {
   const [collectibles, walkthrough, skills] = await Promise.all([
     readFile(projectFile('src/pages/collectibles/index.astro'), 'utf8'),
     readFile(projectFile('src/pages/walkthrough/index.astro'), 'utf8'),
     readFile(projectFile('src/pages/skills/index.astro'), 'utf8'),
   ]);
 
-  assert.match(collectibles, /not (?:yet )?(?:published|confirmed)/i);
-  assert.match(walkthrough, /not public|not (?:yet )?confirmed/i);
+  assert.match(collectibles, /released game|direct, reproducible evidence/i);
+  assert.match(walkthrough, /released game|verifiable/i);
+  assert.doesNotMatch(walkthrough, /awaits a hands-on checklist/i);
   assert.doesNotMatch(skills, /likely doubles as|potentially,? a way to control encounters/i);
 });
 
@@ -40,7 +41,7 @@ test('release status stays manually gated after the calendar date', async () => 
   const countdown = await readFile(projectFile('src/components/Countdown.astro'), 'utf8');
 
   assert.match(site, /releaseDate:\s*['"]2026-08-27['"]/);
-  assert.match(site, /releaseStatus:\s*['"]pre-release['"]/);
+  assert.match(site, /releaseStatus:\s*['"]released['"]/);
   assert.match(site, /return SITE\.releaseStatus === ['"]released['"]/);
   assert.match(countdown, /data-release-status=\{SITE\.releaseStatus\}/);
   assert.match(countdown, /el\.dataset\.releaseStatus === ['"]released['"]/);
@@ -72,16 +73,16 @@ test('sitemap config records real dates for the static hubs changed in this pass
   const source = await readFile(projectFile('astro.config.mjs'), 'utf8');
 
   const expectedDates = {
-    '/': '2026-08-27',
-    '/guide/': '2026-08-27',
-    '/guide/page/2/': '2026-08-27',
-    '/characters/': '2026-08-21',
-    '/collectibles/': '2026-08-27',
-    '/skills/': '2026-08-21',
-    '/walkthrough/': '2026-08-27',
-    '/contact/': '2026-08-27',
-    '/privacy/': '2026-08-27',
-    '/about/': '2026-08-27',
+    '/': '2026-08-28',
+    '/guide/': '2026-08-28',
+    '/guide/page/2/': '2026-08-28',
+    '/characters/': '2026-08-28',
+    '/collectibles/': '2026-08-28',
+    '/skills/': '2026-08-28',
+    '/walkthrough/': '2026-09-01',
+    '/contact/': '2026-08-28',
+    '/privacy/': '2026-08-28',
+    '/about/': '2026-09-01',
   };
 
   for (const [route, date] of Object.entries(expectedDates)) {

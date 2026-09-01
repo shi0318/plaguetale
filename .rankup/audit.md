@@ -21,3 +21,11 @@
 
 - 推送后检查首页、`/release-date/`、`/walkthrough/`、`/collectibles/` 的 HTML、canonical、robots、OG 图片和 JSON-LD。
 - 推送后检查首页、关键 hub、新增文章、sitemap、robots、canonical、OG 图片、JSON-LD 和 PNG favicon；GSC 收录仍需在后台单独确认。
+
+## 2026-08-31 本地内容回归
+
+- 新增 `/missable-achievements-guide/`，title、description 与 H1 均包含完整游戏名，`updatedAt` 为 `2026-08-31`。
+- 文章只保留已记录的发售日期、Steam Achievements、玩家讨论中的 Story Select，以及“没有完整官方 missable 表”的边界；未写成就名称、条件、数量或章节归属。
+- 文章复用 `public/images/ptl-light-puzzle.webp`；`sourceKeys: []` 使该页不输出来源面板或封面来源说明，正文不含来源 URL。
+- `npm run build` 通过并生成 53 个页面；`npm test` 的既有 SEO 校验通过；定向 HTML 回归确认文章进 guide 列表且未进 NAV。
+- 本轮只完成工作区修改，未提交、未推送、未做线上部署；新 URL 的线上 sitemap 与 GSC 状态待部署后复核。

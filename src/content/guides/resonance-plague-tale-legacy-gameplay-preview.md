@@ -1,17 +1,17 @@
 ---
-title: "Resonance: A Plague Tale Legacy Gameplay Preview"
-heading: "Resonance: A Plague Tale Legacy Gameplay Preview"
-description: "A verified Resonance: A Plague Tale Legacy gameplay preview covering Sophia, melee combat, parries, the Minoan sphere, platforms, and demo status."
+title: "Resonance: A Plague Tale Legacy Gameplay Guide"
+heading: "Resonance: A Plague Tale Legacy Gameplay Guide — Combat, Sphere & Platforms"
+description: "Resonance: A Plague Tale Legacy gameplay guide covering Sophia, melee combat, parries, the Minoan sphere, platforms, and current demo status."
 category: guide
 status: official
 preRelease: false
 order: 0
-updatedAt: "2026-08-28"
+updatedAt: "2026-09-01"
 cover: /images/ptl-sophia-combat.webp
 sourceKeys: ["steam", "steamNews", "focus"]
 ---
 
-Searching for a **Resonance: A Plague Tale Legacy gameplay preview** usually means looking for more than a trailer summary: what kind of combat is confirmed, what the light sphere does, and whether there is a demo to play. The official Steam and publisher information gives the feature frame, but this article is not a complete walkthrough or puzzle answer key.
+Searching for a **Resonance: A Plague Tale Legacy gameplay guide** usually means looking for more than a trailer summary: what kind of combat is confirmed, what the light sphere does, and whether there is a demo to play. The released-store and publisher information gives the current feature frame, but this article is not a complete walkthrough or puzzle answer key.
 
 <figure>
   <img src="/images/ptl-sophia-combat.webp" alt="Sophia fighting on the island in Resonance: A Plague Tale Legacy" width="1600" height="900" loading="lazy" decoding="async" />
@@ -24,15 +24,15 @@ Searching for a **Resonance: A Plague Tale Legacy gameplay preview** usually mea
 
 The PC listing also publishes a 75 GB storage requirement and Windows 10/11 64-bit support, plus minimum and recommended target hardware. Those are store targets, not an independent benchmark. Check the live Steam page again after major patches because requirements and support details can change.
 
-## What the announced gameplay confirms
+## What the released-game information confirms
 
 The official description places Sophia on **Minotaur's Island** in an original prequel set **15 years before A Plague Tale: Requiem**. The announced combat language is melee-forward: it mentions melee combat, parries, and powerful strikes. That is a meaningful difference from treating the game as a simple stealth-only sequel.
 
 The same description names the **Minoan sphere**, a tool that manipulates light and is used for environmental puzzles. The source confirms the tool and its puzzle role. It does not publish sphere upgrades, charges, a damage effect, a universal stun rule, or a chapter-by-chapter solution.
 
-## How to prepare for the sphere puzzles
+## How to document sphere puzzles
 
-Until the shipped game exposes the exact rooms, use an evidence-first checklist rather than a guessed walkthrough:
+The checked official material does not provide room-specific solutions. Use an evidence-first checklist rather than a guessed walkthrough:
 
 1. Record the chapter and room name exactly as displayed.
 2. Photograph or note the sphere position, light source, mirror, gate, or other visible mechanism.
@@ -42,19 +42,19 @@ Until the shipped game exposes the exact rooms, use an evidence-first checklist 
 
 The official wording supports light manipulation for puzzles. It does not support claiming that the sphere works as a weapon against every enemy. Keep environmental problem-solving and combat observations separate until a reproducible build result connects them.
 
-## What the combat preview can and cannot answer
+## What this gameplay guide can and cannot answer
 
 The useful release-build testing topics are melee timing, parry windows, powerful strikes, enemy encounters, and the relationship between combat space and light puzzles. The public store copy does not give enemy health, stamina values, weapon stats, healing rules, or a complete skill tree.
 
-Previous **A Plague Tale** games are useful series context, but their sling, alchemical ammunition, rat behavior, and upgrade numbers are not automatically Resonance data. A real guide should label earlier-game comparisons as context and reserve new-game mechanics for the official build or a reproducible hands-on test.
+Previous **A Plague Tale** games are useful series context, but their sling, alchemical ammunition, rat behavior, and upgrade numbers are not automatically Resonance data. A real guide should label earlier-game comparisons as context and reserve new-game mechanics for the released build or a reproducible retail observation.
 
 ## Is there a Resonance demo?
 
 No separate public demo or closed beta is announced in the official sources tracked for this page. The safe download route is the official Steam product page. Third-party “demo download” pages are not proof of official access and should not be treated as a source.
 
-## What a real walkthrough needs
+## What a reproducible walkthrough entry needs
 
-For every puzzle or encounter, record the platform, build number, chapter, trigger, solution steps, enemy state, and whether a reload changes the outcome. That turns this preview into a useful launch guide without turning trailer copy into a fabricated route.
+For every puzzle or encounter, record the platform, build number, chapter, trigger, solution steps, enemy state, and whether a reload changes the outcome. That turns this gameplay reference into a useful released-game guide without turning trailer copy into a fabricated route.
 
 ## Sources
 

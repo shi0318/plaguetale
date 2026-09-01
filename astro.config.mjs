@@ -23,10 +23,10 @@ const STATIC_LASTMOD = {
   '/characters/': '2026-08-28',
   '/collectibles/': '2026-08-28',
   '/skills/': '2026-08-28',
-  '/walkthrough/': '2026-08-28',
+  '/walkthrough/': '2026-09-01',
   '/contact/': '2026-08-28',
   '/privacy/': '2026-08-28',
-  '/about/': '2026-08-28',
+  '/about/': '2026-09-01',
 };
 
 function lastmodFor(url) {

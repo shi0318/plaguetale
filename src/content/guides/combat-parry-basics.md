@@ -12,7 +12,7 @@ draft: false
 cover: "/images/ptl-sophia-combat.webp"
 ---
 
-**The confirmed combat foundation in Resonance: A Plague Tale Legacy is dynamic melee built around agility, tricks, sharp reflexes, parries, and powerful strikes.** Those details come from the official Steam description. The listing does not publish a control map, timing window, enemy catalogue, or weapon list, so this is a safe basics guide rather than a move-by-move walkthrough.
+**The released-game combat foundation in Resonance: A Plague Tale Legacy is dynamic melee built around agility, tricks, sharp reflexes, parries, and powerful strikes.** Those details come from the official Steam description. The listing does not publish a control map, timing window, enemy catalogue, or weapon list, so this is a fundamentals guide rather than a move-by-move walkthrough.
 
 ## Resonance: A Plague Tale Legacy confirmed combat
 
@@ -34,6 +34,6 @@ Choose the setting that lets you read movement and practice safely. The importan
 
 ## Resonance: A Plague Tale Legacy combat limits
 
-This guide relies on official store text, not hands-on footage or a personal completion report. It confirms the combat verbs and their general purpose, but it does not claim a complete tutorial. Future official documentation or the game’s own prompts may provide more precise controls.
+This page records the official combat baseline and keeps exact controls tied to the released game’s own settings and tutorial prompts. It does not turn a general store description into a frame-data table, enemy route, or weapon guide. Use the in-game prompt and the current build when a timing detail matters.
 
 For now, start with the confirmed priorities: agility, tricks, reflexes, parries, and powerful strikes. Leave exact routes, bosses, and weapons to evidence that actually verifies them.

@@ -7,7 +7,7 @@ status: official
 sourceKeys: ["steam", "steamNews", "steamMedia"]
 preRelease: false
 order: 13
-updatedAt: "2026-08-28"
+updatedAt: "2026-09-01"
 cover: "/images/ptl-island-trail.webp"
 ---
 
@@ -51,7 +51,7 @@ The route card is intentionally factual. Write "guard patrol moved after light c
 
 The official combat language makes parry timing a core skill. In a new area, do not immediately spend every tool or commit to a long attack string. Watch one enemy's wind-up, test a parry, then decide whether a powerful strike is safe. If the encounter includes multiple pursuers, use agility and terrain to split them before trying to win a crowded exchange.
 
-The official page does not publish parry windows, stamina rules, enemy health, or a finished upgrade tree. Avoid exact frame advice until the game is available and the same attack can be reproduced.
+The official page does not publish parry windows, stamina rules, enemy health, or a finished upgrade tree. Avoid exact frame advice until a retail-build result reproduces the same attack under a named version and platform.
 
 ## Use the two-era story as a spoiler boundary
 

@@ -86,7 +86,7 @@ const sources: SourceRef[] = sourceKeys.map((k) => SOURCES[k]);
       width={1920}
       height={1080}
       priority
-      credit="Official Steam media used as the article cover."
+      credit={sources.length > 0 ? 'Official Steam media used as the article cover.' : undefined}
     />
 
     <header class="mt-6 border-b border-white/10 pb-6">

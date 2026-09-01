@@ -9,6 +9,15 @@
 - 验证：待本轮 `npm test`、`npm run build`、GitHub 推送和线上回归完成后补充最终证据。
 - 下一轮唯一改进：以 GSC 的实际展示词和未收录原因选择下一批更新，不用 `site:` 结果替代 GSC。
 
+## 2026-08-31 — Missable achievements 搜索意图页
+
+- 目标：回答玩家是否会漏掉 Resonance: A Plague Tale Legacy 成就，以及能否用 Story Select 回头清理。
+- 观察：项目记录确认 Steam Achievements；玩家讨论提到 Story Select；没有完整官方 missable 成就表。
+- 操作：新增 `src/content/guides/missable-achievements-guide.md`，写入通用记录/复查流程；复用 `ptl-light-puzzle.webp`；空 `sourceKeys` 隐藏该页来源面板与封面来源说明。
+- 验证：`npm run build` 生成新路由；`npm test` 通过；定向 HTML 检查确认 TDK/H1、日期、图片、列表和 NAV 边界。
+- 决定：不添加成就名称、条件、数量或章节归属，不写第三方测试，不把社区材料升级为本站实测。
+- 后续：部署后用线上 HTML、sitemap 和 GSC 复核新 URL；在获得逐条证据前保持 `unconfirmed`。
+
 ## 2026-08-27 — 发售前 SEO 与状态修正
 
 - 目标：让首页承接 guide intent，并避免按日历误报已发售。
