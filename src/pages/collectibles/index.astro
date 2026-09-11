@@ -5,6 +5,7 @@ import Breadcrumb from '../../components/Breadcrumb.astro';
 import StatusBadge from '../../components/StatusBadge.astro';
 import MediaFigure from '../../components/MediaFigure.astro';
 import SourcePanel from '../../components/SourcePanel.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
 import { SOURCES } from '../../data/sources';
 import { ASSETS } from '../../data/assets';
 
@@ -28,6 +29,33 @@ const seriesCollectibles = [
     game: 'A Plague Tale: Requiem (2022)',
     types: 'Feathers, flowers, chapter mementos, knives, and "Collectibles" chapter tracking',
     note: 'Requiem added a per-chapter collectible counter and post-chapter cleanup.',
+  },
+];
+
+const collectibleFaqs = [
+  {
+    question: 'Which collectible categories are confirmed?',
+    answer:
+      'The Steam achievement list names four collectible categories: Blades from the Heroes’ Graves, Theseus’ Echoes, Charms, and Relics of the Present and the Past. The list confirms the category names, not a chapter-by-chapter location map.',
+    link: { href: '/achievements-guide/', label: 'See all 36 achievements and category notes' },
+  },
+  {
+    question: 'What should I do if I missed an artifact?',
+    answer:
+      'Use the report-based cleanup workflow: identify the likely story section, revisit it through the reported Story Select option, and confirm the result in the game’s own tracking. No exact artifact location is claimed without direct evidence.',
+    link: { href: '/find-missed-artifacts/', label: 'Open the missed-artifact cleanup guide' },
+  },
+  {
+    question: 'Do collectibles persist through death?',
+    answer:
+      'Recent Steam player reports say registered collectibles persist through death. This is community evidence, not an official guarantee for every collectible type, checkpoint, or interruption.',
+    link: { href: '/collectibles-after-death/', label: 'Read the death-and-collectibles report' },
+  },
+  {
+    question: 'Can Story Select help with collectible cleanup?',
+    answer:
+      'Recent Steam reports describe Story Select as the reported starting point for replaying a story section. They do not document the complete menu or promise that every item is recoverable in one pass.',
+    link: { href: '/story-select-cleanup/', label: 'Read the Story Select boundaries' },
   },
 ];
 ---
@@ -113,6 +141,8 @@ const seriesCollectibles = [
         <li>A completion checklist for 100% and any collectible-linked achievements</li>
       </ul>
     </section>
+
+    <FaqBlock items={collectibleFaqs} />
 
     <SourcePanel sources={[SOURCES.steam, SOURCES.steamNews, SOURCES.steamMedia]} />
   </div>

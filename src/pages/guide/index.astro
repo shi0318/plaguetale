@@ -3,6 +3,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import GuideCard from '../../components/GuideCard.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
 import Pagination from '../../components/Pagination.astro';
 import { getCollection } from 'astro:content';
 import { ASSETS } from '../../data/assets';
@@ -10,6 +11,33 @@ import { ASSETS } from '../../data/assets';
 const title = 'Resonance: A Plague Tale Legacy Guide Hub';
 const description =
   'Browse Resonance: A Plague Tale Legacy guides for release date, PC requirements, characters, collectibles, combat, skills, platforms, and walkthroughs.';
+
+const hubFaqs = [
+  {
+    question: 'What is the first combat guide to read?',
+    answer:
+      'The combat and parry basics page is the best starting point for the confirmed combat vocabulary: dynamic melee, agility, tricks, sharp reflexes, parries, and powerful strikes. It does not invent button prompts or timing windows.',
+    link: { href: '/combat-parry-basics/', label: 'Open combat and parry basics' },
+  },
+  {
+    question: 'How do I find a missed artifact?',
+    answer:
+      'The available player reports point to Story Select and replaying the relevant story section, but they do not give a verified artifact route. Check the game’s own tracking after revisiting the section.',
+    link: { href: '/find-missed-artifacts/', label: 'Open the missed-artifact guide' },
+  },
+  {
+    question: 'Can I use Story Select for cleanup?',
+    answer:
+      'Recent Steam reports describe Story Select as a cleanup entry point. The reports do not establish the full menu behavior, chapter labels, or whether every collectible can be recovered in one pass.',
+    link: { href: '/story-select-cleanup/', label: 'Read the Story Select cleanup guide' },
+  },
+  {
+    question: 'What happens to skill points after death?',
+    answer:
+      'Recent Steam player reports say skill points do not persist after death. That is reported behavior rather than official documentation, so the page keeps the exact award and restart rules open.',
+    link: { href: '/skill-points-after-death/', label: 'Check the skill-point answer' },
+  },
+];
 
 const crumbs = [
   { name: 'Home', url: '/' },
@@ -141,5 +169,7 @@ function coverOf(g: (typeof guides)[number]) {
       </ul>
       <Pagination currentPage={currentPage} totalPages={totalPages} basePath="/guide/" />
     </section>
+
+    <FaqBlock items={hubFaqs} />
   </div>
 </Layout>

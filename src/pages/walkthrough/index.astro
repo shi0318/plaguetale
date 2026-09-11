@@ -5,6 +5,7 @@ import Breadcrumb from '../../components/Breadcrumb.astro';
 import StatusBadge from '../../components/StatusBadge.astro';
 import MediaFigure from '../../components/MediaFigure.astro';
 import SourcePanel from '../../components/SourcePanel.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
 import { ASSETS } from '../../data/assets';
 import { SOURCES } from '../../data/sources';
 
@@ -42,6 +43,33 @@ const knownBeats = [
     title: 'The hunt intensifies',
     body:
       'A restless presence hunts you through the depths. Some sections are about hiding and outsmarting it rather than fighting.',
+  },
+];
+
+const walkthroughFaqs = [
+  {
+    question: 'Is there a complete chapter-by-chapter walkthrough yet?',
+    answer:
+      'Not from the evidence currently documented here. The official material confirms the story premise and major beats, while player reports mention a linear structure and 13 chapters without supplying a verified objective route.',
+    link: { href: '/chapter-count-story-select/', label: 'Read the chapter-count and Story Select evidence' },
+  },
+  {
+    question: 'How do I replay a section for cleanup?',
+    answer:
+      'Recent Steam reports describe Story Select as the reported replay entry point. Use it to revisit the likely section, then trust the game’s own progress feedback rather than an unverified chapter map.',
+    link: { href: '/story-select-cleanup/', label: 'Open the Story Select cleanup guide' },
+  },
+  {
+    question: 'What is confirmed about the Minoan sphere puzzles?',
+    answer:
+      'Official Steam material confirms that the Minoan sphere lets Sophia manipulate light to solve puzzles. It does not publish beam sequences or room-by-room solutions.',
+    link: { href: '/minoan-sphere-light-puzzle-guide/', label: 'Read the Minoan sphere puzzle guide' },
+  },
+  {
+    question: 'What should I learn first in combat?',
+    answer:
+      'The official combat description emphasizes dynamic melee, agility, tricks, sharp reflexes, parries, and powerful strikes. Exact controls and timing windows should be checked in the released game.',
+    link: { href: '/combat-parry-basics/', label: 'Open the combat and parry basics guide' },
   },
 ];
 ---
@@ -120,6 +148,8 @@ const knownBeats = [
         <li class="flex gap-3"><span class="text-wheat">→</span> New routes added as each section is documented and independently rechecked.</li>
       </ul>
     </section>
+
+    <FaqBlock items={walkthroughFaqs} />
 
     <!-- Related pages -->
     <section class="mt-12 surface p-6 md:p-8">
