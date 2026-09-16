@@ -5,7 +5,7 @@ description: "Leni in Resonance: A Plague Tale Legacy: what the official release
 category: characters
 keyword: "plague tale legacy leni"
 status: official
-sourceKeys: ["steamNews"]
+sourceKeys: []
 preRelease: false
 order: 2
 cover: "/images/ptl-island-trail.webp"

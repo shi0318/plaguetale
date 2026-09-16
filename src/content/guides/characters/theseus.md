@@ -5,7 +5,7 @@ description: "Theseus in Resonance: A Plague Tale Legacy: the Minoan-era hero th
 category: characters
 keyword: "plague tale legacy theseus"
 status: official
-sourceKeys: ["steamNews", "steam"]
+sourceKeys: []
 preRelease: false
 order: 4
 cover: "/images/ptl-minoan-ruins.webp"

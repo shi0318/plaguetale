@@ -5,7 +5,7 @@ description: "The unnamed hunter in Resonance: A Plague Tale Legacy: what the St
 category: characters
 keyword: "plague tale legacy minotaur boss entity"
 status: official
-sourceKeys: ["steam"]
+sourceKeys: []
 preRelease: false
 order: 5
 cover: "/images/ptl-creature-shadow.webp"

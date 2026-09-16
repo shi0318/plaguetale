@@ -4,9 +4,9 @@ heading: "Resonance: A Plague Tale Legacy Missable Achievements Guide — Story 
 description: "Can you miss achievements in Resonance: A Plague Tale Legacy? This guide explains what is confirmed and how to check your list before Story Select cleanup."
 category: "guide"
 keyword: "plague tale legacy missable achievements"
-status: "unconfirmed"
+status: "community"
 order: 20
-updatedAt: "2026-08-31"
+updatedAt: "2026-09-16"
 sourceKeys: []
 preRelease: false
 draft: false

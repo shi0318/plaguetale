@@ -5,7 +5,7 @@ description: "Alec in Resonance: A Plague Tale Legacy: Sophia's father and leade
 category: characters
 keyword: "plague tale legacy alec"
 status: official
-sourceKeys: ["steamNews"]
+sourceKeys: []
 preRelease: false
 order: 3
 cover: "/images/ptl-header.webp"

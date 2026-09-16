@@ -5,7 +5,7 @@ description: "Daedalus in Resonance: A Plague Tale Legacy: the mythological craf
 category: characters
 keyword: "plague tale legacy daedalus"
 status: official
-sourceKeys: ["steam"]
+sourceKeys: []
 preRelease: false
 order: 6
 cover: "/images/ptl-light-puzzle.webp"

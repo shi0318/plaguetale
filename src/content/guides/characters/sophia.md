@@ -5,7 +5,7 @@ description: "Who Sophia is in Resonance: A Plague Tale Legacy: the plunderer pr
 category: characters
 keyword: "plague tale legacy sophia"
 status: official
-sourceKeys: ["steam", "steamNews"]
+sourceKeys: []
 preRelease: false
 order: 1
 cover: "/images/ptl-sophia-combat.webp"
