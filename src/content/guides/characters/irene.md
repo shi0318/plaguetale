@@ -8,13 +8,13 @@ status: community
 sourceKeys: []
 preRelease: false
 order: 10
-	cover: "/images/ptl-crop-irene-camp.jpg"
-	updatedAt: "2026-09-22"
+cover: "/images/ptl-crop-irene-camp.jpg"
+updatedAt: "2026-09-22"
 ---
 
 **Irene** is crew / camp ally.
 
-	![Camp still life — barrel, crate, and cookware on the cliff](/images/ptl-crop-irene-camp.jpg)
+![Camp still life — barrel, crate, and cookware on the cliff](/images/ptl-crop-irene-camp.jpg)
 
 ## Personality
 

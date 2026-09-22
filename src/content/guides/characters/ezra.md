@@ -8,13 +8,13 @@ status: community
 sourceKeys: []
 preRelease: false
 order: 11
-	cover: "/images/ptl-crop-ezra-ships.jpg"
-	updatedAt: "2026-09-22"
+cover: "/images/ptl-crop-ezra-ships.jpg"
+updatedAt: "2026-09-22"
 ---
 
 **Ezra** is crew / navigator temperament.
 
-	![Bay, lookout, and wrecked ships](/images/ptl-crop-ezra-ships.jpg)
+![Bay, lookout, and wrecked ships](/images/ptl-crop-ezra-ships.jpg)
 
 ## Personality
 
