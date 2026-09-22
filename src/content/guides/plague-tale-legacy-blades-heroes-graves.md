@@ -28,5 +28,5 @@ Do not treat a missed collectible as a reason to restart the whole story until t
 
 ## Completion warning
 
-The achievement name confirms the goal, not every location. This page does not invent coordinates, chapter numbers or reward values. Use the [collectibles hub](/collectibles/) and [missed artifacts guide](/guides/find-missed-artifacts/) to record a verified location as you revisit it.
+The achievement name confirms the goal, not every location. This page does not invent coordinates, chapter numbers or reward values. Use the [collectibles hub](/collectibles/) and [missed artifacts guide](/find-missed-artifacts/) to record a verified location as you revisit it.
 

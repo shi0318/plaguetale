@@ -1,0 +1,48 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import MediaFigure from '../../components/MediaFigure.astro';
+import { ASSETS } from '../../data/assets';
+import { WEAPONS } from '../../data/gear';
+
+const title = 'Resonance: A Plague Tale Legacy Weapons';
+const description =
+  'Resonance: A Plague Tale Legacy weapons: Sophia’s melee blade, parries, the Minoan sphere, and eight Blades from the Heroes’ Graves.';
+const crumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Weapons', url: '/weapons/' },
+];
+---
+
+<Layout title={title} description={description} pageType="collection" breadcrumbs={crumbs}>
+  <div class="container py-10">
+    <Breadcrumb items={crumbs} />
+    <header class="mt-6 max-w-3xl">
+      <p class="section-kicker">Loadout</p>
+      <h1 class="section-title">Resonance: A Plague Tale Legacy weapons</h1>
+      <p class="mt-3 text-lg text-fog">
+        Sophia fights in melee. The sling-first kit from Amicia’s games is not the default here. The
+        sphere is a light tool. The eight Heroes’ Graves blades are a collectible set.
+      </p>
+    </header>
+    <div class="mt-8"><MediaFigure {...ASSETS.weaponBlade} /></div>
+    <ul class="mt-10 grid gap-4 md:grid-cols-2">
+      {
+        WEAPONS.map((w) => (
+          <li class="surface overflow-hidden p-0">
+            <img src={w.image} alt={w.imageAlt} width="960" height="540" loading="lazy" decoding="async" class="h-44 w-full object-cover" />
+            <div class="p-5">
+              <h2 class="text-lg font-black text-bone">{w.name}</h2>
+              <p class="mt-1 text-xs uppercase tracking-[0.12em] text-wheat">{w.type}</p>
+              <p class="mt-3 text-sm text-fog">{w.note}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="mt-6 text-sm text-fog">
+      Combat habits: <a href="/skills/" class="text-wheat underline">skills</a>. Grave blades list:
+      <a href="/collectibles/" class="text-wheat underline">collectibles</a>.
+    </p>
+  </div>
+</Layout>

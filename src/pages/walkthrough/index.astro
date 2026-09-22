@@ -1,168 +1,48 @@
 ---
-// Walkthrough hub — CollectionPage for verified release-build progression notes.
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
-import StatusBadge from '../../components/StatusBadge.astro';
 import MediaFigure from '../../components/MediaFigure.astro';
-import SourcePanel from '../../components/SourcePanel.astro';
-import FaqBlock from '../../components/FaqBlock.astro';
 import { ASSETS } from '../../data/assets';
-import { SOURCES } from '../../data/sources';
+import { CHAPTERS } from '../../data/chapter-guide';
 
 const title = 'Resonance: A Plague Tale Legacy Walkthrough Guide';
 const description =
-  'Resonance: A Plague Tale Legacy walkthrough hub covering story beats, locations, combat, and Minoan sphere light puzzles with dated evidence.';
-
+  'Resonance walkthrough: fourteen chapters from Blood Ties to What Remains, with goals, combat notes, and collectible reminders.';
 const crumbs = [
   { name: 'Home', url: '/' },
   { name: 'Walkthrough', url: '/walkthrough/' },
-];
-
-const knownBeats = [
-  {
-    title: 'Arrival and pursuit',
-    body:
-      'Sophia is on the run, pursued by an army also drawn to the island to reclaim a mysterious treasure. Early hours establish the chase and the stakes.',
-  },
-  {
-    title: "The Minotaur's Island maze",
-    body:
-      'You navigate a treacherous maze — deadly trials, treacherous trails, and puzzles — following in your crew’s footsteps using the notebook.',
-  },
-  {
-    title: 'Light puzzles with the Minoan sphere',
-    body:
-      'A stolen Minoan sphere lets you manipulate light to solve ingenious puzzles, a force Daedalus wove into the island’s heart.',
-  },
-  {
-    title: 'Two eras, entwined',
-    body:
-      'The story shifts between Sophia’s Middle Ages and ancient Minoan times, weaving two fate-linked heroes and the Macula’s legacy.',
-  },
-  {
-    title: 'The hunt intensifies',
-    body:
-      'A restless presence hunts you through the depths. Some sections are about hiding and outsmarting it rather than fighting.',
-  },
-];
-
-const walkthroughFaqs = [
-  {
-    question: 'Is there a complete chapter-by-chapter walkthrough yet?',
-    answer:
-      'Not from the evidence currently documented here. The official material confirms the story premise and major beats, while player reports mention a linear structure and 13 chapters without supplying a verified objective route.',
-    link: { href: '/chapter-count-story-select/', label: 'Read the chapter-count and Story Select evidence' },
-  },
-  {
-    question: 'How do I replay a section for cleanup?',
-    answer:
-      'Recent Steam reports describe Story Select as the reported replay entry point. Use it to revisit the likely section, then trust the game’s own progress feedback rather than an unverified chapter map.',
-    link: { href: '/story-select-cleanup/', label: 'Open the Story Select cleanup guide' },
-  },
-  {
-    question: 'What is confirmed about the Minoan sphere puzzles?',
-    answer:
-      'Official Steam material confirms that the Minoan sphere lets Sophia manipulate light to solve puzzles. It does not publish beam sequences or room-by-room solutions.',
-    link: { href: '/minoan-sphere-light-puzzle-guide/', label: 'Read the Minoan sphere puzzle guide' },
-  },
-  {
-    question: 'What should I learn first in combat?',
-    answer:
-      'The official combat description emphasizes dynamic melee, agility, tricks, sharp reflexes, parries, and powerful strikes. Exact controls and timing windows should be checked in the released game.',
-    link: { href: '/combat-parry-basics/', label: 'Open the combat and parry basics guide' },
-  },
 ];
 ---
 
 <Layout title={title} description={description} pageType="collection" breadcrumbs={crumbs}>
   <div class="container py-10">
     <Breadcrumb items={crumbs} />
-
     <header class="mt-6 max-w-3xl">
-      <p class="section-kicker">Walkthrough hub</p>
+      <p class="section-kicker">Walkthrough</p>
       <h1 class="section-title">Resonance: A Plague Tale Legacy walkthrough</h1>
       <p class="mt-3 text-lg text-fog">
-        A chapter-by-chapter route is listed here only when the released game provides a verifiable
-        chapter name, objective, location, or puzzle sequence. The page keeps official story beats
-        separate from player-reported progression and does not invent chapter names or objectives.
+        Fourteen chapters. Open a chapter for setting, goals, combat, and what to sweep before you leave.
       </p>
     </header>
-
-    <div class="mt-8">
-      <MediaFigure {...ASSETS.islandTrail} />
-    </div>
-
-    <!-- Known story beats -->
-    <section class="mt-12">
-      <div class="mb-4 flex items-center gap-3">
-        <h2 class="text-2xl font-black text-bone">Confirmed story beats</h2>
-        <StatusBadge status="official" size="sm" />
-      </div>
-      <p class="max-w-3xl text-fog">
-        These beats are drawn from the official Steam description. Exact chapter names, order, and
-        objectives are added only when they can be checked in the released game.
-      </p>
-      <ol class="mt-5 space-y-4">
-        {
-          knownBeats.map((beat, i) => (
-            <li class="surface p-5">
-              <div class="flex items-baseline gap-3">
-                <span class="text-2xl font-black text-wheat/70">{String(i + 1).padStart(2, '0')}</span>
-                <div>
-                  <h3 class="text-lg font-black text-bone">{beat.title}</h3>
-                  <p class="mt-1 text-sm leading-relaxed text-fog">{beat.body}</p>
-                </div>
+    <div class="mt-8"><MediaFigure {...ASSETS.islandOverlook} /></div>
+    <ol class="mt-10 grid gap-4 md:grid-cols-2">
+      {
+        CHAPTERS.map((ch) => (
+          <li class="surface overflow-hidden p-0">
+            <a href={`/walkthrough/${ch.slug}/`} class="block no-underline">
+              <img src={ch.image} alt={ch.imageAlt} width="1920" height="1080" loading="lazy" decoding="async" class="h-40 w-full object-cover" />
+              <div class="p-5">
+                <span class="text-xl font-black text-wheat">Chapter {ch.number}: {ch.title}</span>
+                <p class="mt-2 text-sm text-fog">{ch.setting}</p>
               </div>
-            </li>
-          ))
-        }
-      </ol>
-    </section>
-
-    <section class="mt-12 surface p-6 md:p-8" aria-labelledby="walkthrough-now">
-      <p class="section-kicker">Released-game route notes</p>
-      <h2 id="walkthrough-now" class="mt-2 text-2xl font-black text-bone">What the current evidence supports</h2>
-      <p class="mt-3 max-w-3xl text-fog">
-        The official pages already give players a reliable starting map of the search intent: the
-        Venice lagoon camp and carnival, the legendary Minoan Island, Sophia’s melee combat, and
-        the Minoan sphere’s light manipulation. Use the linked guides for verified context rather
-        than treating an unverified report as a finished route.
-      </p>
-      <ul class="mt-5 grid gap-3 sm:grid-cols-2">
-        <li class="surface-muted p-4"><a href="/locations/" class="font-bold text-wheat underline underline-offset-2">Locations and world guide</a><span class="mt-1 block text-sm text-fog">Confirmed Venice, the carnival, the lagoon camp, and Minoan Island references.</span></li>
-        <li class="surface-muted p-4"><a href="/island-exploration-encounter-guide/" class="font-bold text-wheat underline underline-offset-2">Island exploration guide</a><span class="mt-1 block text-sm text-fog">A factual route-card method for recording encounters in the released game.</span></li>
-        <li class="surface-muted p-4"><a href="/minoan-sphere-light-puzzle-guide/" class="font-bold text-wheat underline underline-offset-2">Minoan sphere puzzle guide</a><span class="mt-1 block text-sm text-fog">Confirmed light-manipulation role, without invented beam sequences.</span></li>
-        <li class="surface-muted p-4"><a href="/collectibles/" class="font-bold text-wheat underline underline-offset-2">Collectibles guide</a><span class="mt-1 block text-sm text-fog">What the notebook and official devblog reveal, plus the retail evidence currently documented.</span></li>
-      </ul>
-    </section>
-
-    <!-- Verification policy -->
-    <section class="mt-12 surface p-6 md:p-8">
-      <p class="section-kicker">Verification policy</p>
-      <h2 class="mt-2 text-2xl font-black text-bone">What gets added to the walkthrough</h2>
-      <ul class="mt-4 space-y-2.5 text-fog">
-        <li class="flex gap-3"><span class="text-wheat">→</span> Chapter routes only when the retail build provides the in-game chapter names and objectives.</li>
-        <li class="flex gap-3"><span class="text-wheat">→</span> Collectible locations per chapter, cross-linked to the <a href="/collectibles/" class="text-wheat underline underline-offset-2">collectibles guide</a>.</li>
-        <li class="flex gap-3"><span class="text-wheat">→</span> Puzzle solutions for the Minoan-sphere light sections.</li>
-        <li class="flex gap-3"><span class="text-wheat">→</span> Boss and Presence-encounter tactics as they appear.</li>
-        <li class="flex gap-3"><span class="text-wheat">→</span> New routes added as each section is documented and independently rechecked.</li>
-      </ul>
-    </section>
-
-    <FaqBlock items={walkthroughFaqs} />
-
-    <!-- Related pages -->
-    <section class="mt-12 surface p-6 md:p-8">
-      <p class="section-kicker">Route context</p>
-      <h2 class="mt-2 text-2xl font-black text-bone">Where the walkthrough will take you</h2>
-      <p class="mt-3 text-fog">
-        The settings are already confirmed, even if the routes are not. Our
-        <a href="/locations/" class="text-wheat underline underline-offset-2">locations and world guide</a>
-        covers the Venice lagoon camp, the carnival, and the Minoan island — including the real Greek
-        sites Asobo built it from, and the artifacts that carry the island's history.
-      </p>
-    </section>
-
-    <SourcePanel sources={[SOURCES.steam]} />
+            </a>
+          </li>
+        ))
+      }
+    </ol>
+    <p class="mt-8 text-sm text-fog">
+      Maps: <a href="/maps/" class="text-wheat underline">region list</a>. Collectibles:
+      <a href="/collectibles/" class="text-wheat underline">totals and chapter hints</a>.
+    </p>
   </div>
 </Layout>

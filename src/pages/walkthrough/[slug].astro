@@ -1,0 +1,61 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { CHAPTERS } from '../../data/chapter-guide';
+
+export function getStaticPaths() {
+  return CHAPTERS.map((ch) => ({ params: { slug: ch.slug }, props: { ch } }));
+}
+
+const { ch } = Astro.props;
+const title = `Chapter ${ch.number}: ${ch.title} — Resonance Walkthrough`;
+const description = `Resonance Chapter ${ch.number} ${ch.title} walkthrough: setting, goals, combat notes, and collectibles before you leave the chapter.`;
+const crumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Walkthrough', url: '/walkthrough/' },
+  { name: `Chapter ${ch.number}`, url: `/walkthrough/${ch.slug}/` },
+];
+const idx = CHAPTERS.findIndex((c) => c.slug === ch.slug);
+const prev = CHAPTERS[idx - 1];
+const next = CHAPTERS[idx + 1];
+---
+
+<Layout title={title} description={description} pageType="article" breadcrumbs={crumbs}>
+  <div class="container py-10">
+    <Breadcrumb items={crumbs} />
+    <header class="mt-6 max-w-3xl">
+      <p class="section-kicker">Chapter {ch.number} of 14</p>
+      <h1 class="section-title">Chapter {ch.number}: {ch.title}</h1>
+      <p class="mt-3 text-lg text-fog">{ch.setting}</p>
+    </header>
+    <div class="mt-8">
+      <img src={ch.image} alt={ch.imageAlt} width="1920" height="1080" loading="lazy" decoding="async" class="w-full rounded object-cover" />
+    </div>
+    <article class="prose-page mt-10 max-w-3xl">
+      <h2>Goals</h2>
+      <ul>
+        {ch.goals.map((g) => <li>{g}</li>)}
+      </ul>
+      <h2>Combat</h2>
+      <p>{ch.combat}</p>
+      <h2>Collectibles in this chapter</h2>
+      <p>{ch.collectibles}</p>
+      <p>
+        Full counters live on the <a href="/collectibles/">collectibles hub</a>. Skills if a fight is the problem:
+        <a href="/skills/">mastery branches</a>.
+      </p>
+    </article>
+    <nav class="mt-10 flex flex-wrap gap-3 text-sm">
+      {prev && (
+        <a href={`/walkthrough/${prev.slug}/`} class="btn-secondary">
+          ← Ch. {prev.number} {prev.title}
+        </a>
+      )}
+      {next && (
+        <a href={`/walkthrough/${next.slug}/`} class="btn-secondary">
+          Ch. {next.number} {next.title} →
+        </a>
+      )}
+    </nav>
+  </div>
+</Layout>

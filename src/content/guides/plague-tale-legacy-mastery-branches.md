@@ -30,5 +30,5 @@ The important rule is not to spend every point before understanding the next cha
 
 Write down the branch, the unlocked skill name, the chapter or scene where it was purchased, and what changed in a repeatable encounter. Avoid assigning hidden damage multipliers or exact cooldowns unless the released game displays them clearly.
 
-The [combat guide](/guides/combat/) and [skill-points page](/guides/skill-points-after-death/) cover the surrounding progression. The six-branch count is confirmed; a single best order is not.
+The [combat guide](/combat/) and [skill-points page](/skill-points-after-death/) cover the surrounding progression. The six-branch count is confirmed; a single best order is not.
 

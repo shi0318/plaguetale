@@ -30,5 +30,5 @@ If the group becomes chaotic, disengage and restart the attempt. A failed block 
 
 The achievement wording says “successfully block”; it does not require six kills, six parries or one specific chapter. Use the defensive input that the released build recognizes as a block, then confirm the achievement notification. Do not convert the requirement into a guessed frame window.
 
-For related combat practice, see [combat parry basics](/guides/combat-parry-basics/) and [difficulty and accessibility](/guides/difficulty-accessibility/).
+For related combat practice, see [combat parry basics](/combat-parry-basics/) and [difficulty and accessibility](/difficulty-accessibility/).
 

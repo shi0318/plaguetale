@@ -6,12 +6,13 @@ import StatusBadge from '../../components/StatusBadge.astro';
 import MediaFigure from '../../components/MediaFigure.astro';
 import SourcePanel from '../../components/SourcePanel.astro';
 import { CHARACTERS } from '../../data/characters';
+import { EXTRA_CAST } from '../../data/cast';
 import { CORE_SOURCES, SOURCES } from '../../data/sources';
 import { ASSETS } from '../../data/assets';
 
 const title = 'Resonance: A Plague Tale Legacy Characters Guide';
 const description =
-  'Resonance: A Plague Tale Legacy characters guide covering Sophia, Leni, Alec, Theseus, Daedalus, and the unnamed island entity from official Steam sources.';
+  'Resonance: A Plague Tale Legacy characters: Sophia, Leni, Alec, Theseus, Irene, Ezra, Faro, Asterion, Ariadne — roles, personality, background, skills, and weapons.';
 
 const crumbs = [
   { name: 'Home', url: '/' },
@@ -37,7 +38,7 @@ const officialCount = CHARACTERS.filter((c) => c.status === 'official').length;
     </header>
 
     <div class="mt-8">
-      <MediaFigure {...ASSETS.sophiaCombat} />
+      <MediaFigure {...ASSETS.sophiaPortrait} />
     </div>
 
     <div class="mt-10 space-y-6">
@@ -67,6 +68,50 @@ const officialCount = CHARACTERS.filter((c) => c.status === 'official').length;
         ))
       }
     </div>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-black text-bone">Crew and Minoan names</h2>
+      <p class="mt-3 max-w-3xl text-fog">
+        Irene, Ezra, and Faro sit with Sophia’s plunderer crew. Asterion and Ariadne belong to the Minoan
+        era with Theseus and Daedalus. Personality, skills, and weapons below are play notes for this wiki.
+      </p>
+      <div class="mt-6 space-y-6">
+        {
+          EXTRA_CAST.map((c) => (
+            <article class="surface overflow-hidden p-0" id={c.slug}>
+              <img src={c.image} alt={c.imageAlt} width="1920" height="1080" loading="lazy" decoding="async" class="h-48 w-full object-cover" />
+              <div class="p-6">
+              <h2 class="text-2xl font-black text-bone">{c.name}</h2>
+              <p class="mt-1 text-sm font-bold uppercase tracking-[0.1em] text-wheat">{c.role}</p>
+              <dl class="mt-4 grid gap-3 text-sm text-fog sm:grid-cols-2">
+                <div>
+                  <dt class="font-bold text-bone">Personality</dt>
+                  <dd class="mt-1">{c.personality}</dd>
+                </div>
+                <div>
+                  <dt class="font-bold text-bone">Background</dt>
+                  <dd class="mt-1">{c.background}</dd>
+                </div>
+                <div>
+                  <dt class="font-bold text-bone">Skills</dt>
+                  <dd class="mt-1">{c.skills}</dd>
+                </div>
+                <div>
+                  <dt class="font-bold text-bone">Weapons</dt>
+                  <dd class="mt-1">{c.weapons}</dd>
+                </div>
+              </dl>
+              <p class="mt-3">
+                <a href={`/characters/${c.slug}/`} class="text-sm font-bold text-wheat underline-offset-2 hover:underline">
+                  Full {c.name} profile →
+                </a>
+              </p>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </section>
 
     <section class="prose-page mt-12 max-w-3xl">
       <h2>What is confirmed right now</h2>

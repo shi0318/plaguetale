@@ -28,5 +28,5 @@ When a turtle appears in an explorable scene, approach slowly and look for the i
 
 Check that the prompt was completed rather than only displayed, then reload the scene and try the same interaction once more. Avoid assuming a similar animal or decorative object counts. The public achievement requirement is specific: say hello to the turtle.
 
-For the rest of the completion list, open the [all achievements guide](/guides/achievements-guide/). Keep this objective separate from the story-completion achievement **A new beginning**.
+For the rest of the completion list, open the [all achievements guide](/achievements-guide/). Keep this objective separate from the story-completion achievement **A new beginning**.
 

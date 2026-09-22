@@ -28,5 +28,5 @@ The public achievement list confirms the objective’s name but does not provide
 
 ## Avoid double-counting
 
-Use one checklist for Theseus’ Echoes, one for Blades from Heroes’ Graves, and one for the Relics. A partial visual match is not proof that two similarly named objectives share the same item. The [collectibles-after-death guide](/guides/collectibles-after-death/) explains why a failed run should be logged before restarting.
+Use one checklist for Theseus’ Echoes, one for Blades from Heroes’ Graves, and one for the Relics. A partial visual match is not proof that two similarly named objectives share the same item. The [collectibles-after-death guide](/collectibles-after-death/) explains why a failed run should be logged before restarting.
 

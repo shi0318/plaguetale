@@ -1,140 +1,61 @@
 ---
-// Skills & Combat hub — CollectionPage. Combat and progression facts from official Steam text,
-// with series-based inference clearly labelled.
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
-import StatusBadge from '../../components/StatusBadge.astro';
 import MediaFigure from '../../components/MediaFigure.astro';
-import SourcePanel from '../../components/SourcePanel.astro';
 import { ASSETS } from '../../data/assets';
-import { SOURCES } from '../../data/sources';
+import { MASTERY_BRANCHES } from '../../data/mastery';
 
 const title = 'Resonance: A Plague Tale Legacy Skills & Combat Guide';
 const description =
-  'Resonance: A Plague Tale Legacy combat and skills guide covering confirmed melee, parries, powerful strikes, agility, and Minoan sphere light puzzles.';
-
+  'Resonance skills: six mastery branches, one base skill and two paths each, eighteen nodes. Melee, parry, stealth, sphere, motion, craft.';
 const crumbs = [
   { name: 'Home', url: '/' },
   { name: 'Skills', url: '/skills/' },
-];
-
-// Officially confirmed combat facts (Steam description)
-const confirmed = [
-  {
-    title: 'Dynamic, violent melee',
-    body:
-      'Sophia engages in dynamic and violent melee combat. This is a clear shift from the earlier games, where Amicia relied mainly on a sling and stealth. Sophia is described as a skilled, agile, strong-willed fighter.',
-  },
-  {
-    title: 'Parries and powerful strikes',
-    body:
-      'Official text tells you to “perfect your parries, and unleash powerful strikes to survive deadly encounters.” Timing-based defence appears to be a core combat pillar.',
-  },
-  {
-    title: 'Agility, tricks and reflexes',
-    body:
-      'Rather than standing toe-to-toe, you “rely on your agility, tricks and sharp reflexes to outsmart enemies.” Expect evasion and repositioning to matter as much as raw damage.',
-  },
-  {
-    title: 'The stolen Minoan sphere (light manipulation)',
-    body:
-      'Sophia uses a stolen Minoan sphere to solve ingenious puzzles by manipulating light — a force woven by Daedalus into the island’s heart. The official description confirms its puzzle role; it does not confirm a combat effect, traversal upgrade, charges, or damage values.',
-  },
-  {
-    title: 'Hide and outsmart the Presence',
-    body:
-      'Against the creature hunting you, official text is explicit: “You can’t stop, only hide, outsmart, and push forward.” Some encounters are about evasion, not fighting.',
-  },
-  {
-    title: 'The notebook',
-    body:
-      'The official description says Sophia is guided by knowledge safeguarded in her notebook while following her crew’s footsteps. It does not publish a menu layout, upgrade list, or skill progression system.',
-  },
-];
-
-// Series-based inference (Innocence / Requiem)
-const seriesBased = [
-  'A Plague Tale games use a workbench-style upgrade system: you gather crafting materials (tools, leather, etc.) and spend them to improve your gear and capacity.',
-  'Skill progression in Requiem was tied to your playstyle — using stealth, aggression, or opportunism more often levelled up matching skill branches. Whether Legacy reuses this exact system is unconfirmed.',
-  'Alchemical ammunition (Ignifer, Extinguis, Tar, etc.) defined earlier combat. Legacy’s melee focus suggests the toolkit will differ, so we will not assume specific ammo types until launch.',
 ];
 ---
 
 <Layout title={title} description={description} pageType="collection" breadcrumbs={crumbs}>
   <div class="container py-10">
     <Breadcrumb items={crumbs} />
-
     <header class="mt-6 max-w-3xl">
       <p class="section-kicker">Skills &amp; combat</p>
       <h1 class="section-title">Resonance: A Plague Tale Legacy combat and skills</h1>
       <p class="mt-3 text-lg text-fog">
-        Resonance makes Sophia a melee fighter — a real departure for the series. Below is what the
-        official Steam description confirms about combat and the Minoan sphere, separated from what
-        we can only infer from <em>Innocence</em> and <em>Requiem</em>.
+        Six mastery branches. Each has one base skill and two paths of two nodes — eighteen skills.
+        Spend on the problem in front of you, not a fake best-build order.
       </p>
     </header>
-
-    <div class="mt-8">
-      <MediaFigure {...ASSETS.sophiaCombat} />
-    </div>
-
-    <!-- Confirmed combat -->
-    <section class="mt-12">
-      <div class="mb-4 flex items-center gap-3">
-        <h2 class="text-2xl font-black text-bone">Officially confirmed for Resonance</h2>
-        <StatusBadge status="official" size="sm" />
-      </div>
-      <div class="grid gap-4 md:grid-cols-2">
-        {
-          confirmed.map((c) => (
-            <div class="surface p-5">
-              <h3 class="text-lg font-black text-bone">{c.title}</h3>
-              <p class="mt-2 text-sm leading-relaxed text-fog">{c.body}</p>
+    <div class="mt-8"><MediaFigure {...ASSETS.spherePuzzle} /></div>
+    <div class="mt-10 space-y-8">
+      {
+        MASTERY_BRANCHES.map((branch) => (
+          <article class="surface p-6">
+            <h2 class="text-2xl font-black text-bone">{branch.name}</h2>
+            <p class="mt-1 text-sm text-wheat">{branch.focus}</p>
+            <p class="mt-4 text-sm text-fog">
+              <strong class="text-bone">Base — {branch.base.name}.</strong> {branch.base.note}
+            </p>
+            <div class="mt-4 grid gap-4 md:grid-cols-2">
+              {branch.paths.map((path, i) => (
+                <div class="surface-muted p-4">
+                  <p class="text-xs font-bold uppercase tracking-[0.12em] text-wheat">Path {i + 1}</p>
+                  <ol class="mt-2 list-decimal space-y-2 pl-4 text-sm text-fog">
+                    {path.map((node) => (
+                      <li>
+                        <strong class="text-bone">{node.name}.</strong> {node.note}
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              ))}
             </div>
-          ))
-        }
-      </div>
-    </section>
-
-    <!-- Series-based -->
-    <section class="mt-12">
-      <div class="mb-4 flex items-center gap-3">
-        <h2 class="text-2xl font-black text-bone">Series-based inference</h2>
-        <StatusBadge status="prequel" size="sm" />
-      </div>
-      <p class="max-w-3xl text-fog">
-        These points come from how skills and upgrades worked in the earlier A Plague Tale games.
-        They are educated expectations, not confirmed features. Use the released-game articles for
-        claims that require direct evidence.
-      </p>
-      <ul class="mt-5 space-y-3">
-        {
-          seriesBased.map((point) => (
-            <li class="surface-muted flex gap-3 p-4 text-sm leading-relaxed text-fog">
-              <span class="text-wheat">❖</span>
-              <span>{point}</span>
-            </li>
-          ))
-        }
-      </ul>
-    </section>
-
-    <!-- Released-game maintenance -->
-    <section class="mt-12 surface p-6 md:p-8">
-      <p class="section-kicker">Released-game maintenance</p>
-      <h2 class="mt-2 text-2xl font-black text-bone">How the combat guide is expanded</h2>
-      <p class="mt-3 max-w-3xl text-fog">
-        This page is expanded with the released-game upgrade tree, early skill priorities, parry
-        timing notes, boss tactics, and Minoan-sphere puzzle details only when each claim can be
-        checked in the game or in an attributable player report. Inference remains labelled.
-      </p>
-      <div class="mt-5 flex flex-wrap gap-3">
-        <a href="/characters/" class="btn-secondary">Characters &amp; story</a>
-        <a href="/collectibles/" class="btn-secondary">Collectibles</a>
-        <a href="/walkthrough/" class="btn-secondary">Walkthrough</a>
-      </div>
-    </section>
-
-    <SourcePanel sources={[SOURCES.steam, SOURCES.steamMedia]} />
+          </article>
+        ))
+      }
+    </div>
+    <p class="mt-8 text-sm text-fog">
+      Weapons context: <a href="/weapons/" class="text-wheat underline">weapons</a>. Chapter pressure:
+      <a href="/walkthrough/" class="text-wheat underline">walkthrough</a>.
+    </p>
   </div>
 </Layout>

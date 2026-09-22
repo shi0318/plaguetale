@@ -28,5 +28,5 @@ The public achievement record confirms the objective name, but it does not publi
 
 ## Pair it with chapter completion
 
-The achievement **A new beginning** requires completing all Chapters. That is a story goal, not proof that every relic was collected. Finish the narrative, then use the [find missed artifacts guide](/guides/find-missed-artifacts/) and the [collectibles hub](/collectibles/) for a separate cleanup pass.
+The achievement **A new beginning** requires completing all Chapters. That is a story goal, not proof that every relic was collected. Finish the narrative, then use the [find missed artifacts guide](/find-missed-artifacts/) and the [collectibles hub](/collectibles/) for a separate cleanup pass.
 

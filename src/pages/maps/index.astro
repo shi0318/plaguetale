@@ -1,0 +1,58 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import MediaFigure from '../../components/MediaFigure.astro';
+import { ASSETS } from '../../data/assets';
+import { MAP_REGIONS } from '../../data/gear';
+import { CHAPTERS } from '../../data/chapter-guide';
+
+const title = 'Resonance: A Plague Tale Legacy Maps';
+const description =
+  'Resonance: A Plague Tale Legacy maps: Venice lagoon camp, carnival streets, Minotaur’s Island courts, the maze beneath, and night trails.';
+const crumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Maps', url: '/maps/' },
+];
+---
+
+<Layout title={title} description={description} pageType="collection" breadcrumbs={crumbs}>
+  <div class="container py-10">
+    <Breadcrumb items={crumbs} />
+    <header class="mt-6 max-w-3xl">
+      <p class="section-kicker">World</p>
+      <h1 class="section-title">Resonance: A Plague Tale Legacy maps</h1>
+      <p class="mt-3 text-lg text-fog">
+        Two eras, one island, plus Venice. Use this as a region list, then open the chapter walkthrough
+        for the route inside each space.
+      </p>
+    </header>
+    <div class="mt-8"><MediaFigure {...ASSETS.islandOverlook} /></div>
+    <ul class="mt-10 grid gap-4 md:grid-cols-2">
+      {
+        MAP_REGIONS.map((r) => (
+          <li class="surface overflow-hidden p-0">
+            <img src={r.image} alt={r.imageAlt} width="1920" height="1080" loading="lazy" decoding="async" class="h-44 w-full object-cover" />
+            <div class="p-5">
+              <h2 class="text-xl font-black text-bone">{r.name}</h2>
+              <p class="mt-1 text-xs uppercase tracking-[0.12em] text-wheat">{r.era}</p>
+              <p class="mt-3 text-sm text-fog">{r.note}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+    <h2 class="mt-12 text-2xl font-black text-bone">Chapters on the map</h2>
+    <ol class="mt-4 space-y-2 text-sm text-fog">
+      {
+        CHAPTERS.map((ch) => (
+          <li>
+            <a href={`/walkthrough/${ch.slug}/`} class="font-bold text-wheat underline-offset-2 hover:underline">
+              Chapter {ch.number}: {ch.title}
+            </a>
+            <span class="text-fog"> — {ch.setting}</span>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</Layout>

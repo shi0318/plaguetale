@@ -30,8 +30,8 @@ test('released hubs keep official facts separate from unverified route details',
     readFile(projectFile('src/pages/skills/index.astro'), 'utf8'),
   ]);
 
-  assert.match(collectibles, /released game|direct, reproducible evidence/i);
-  assert.match(walkthrough, /released game|verifiable/i);
+  assert.match(collectibles, /8 Blades|Blades from the Heroes/i);
+  assert.match(walkthrough, /fourteen chapters|Chapter 1/i);
   assert.doesNotMatch(walkthrough, /awaits a hands-on checklist/i);
   assert.doesNotMatch(skills, /likely doubles as|potentially,? a way to control encounters/i);
 });
@@ -78,13 +78,13 @@ test('sitemap config records real dates for the static hubs changed in this pass
   const source = await readFile(projectFile('astro.config.mjs'), 'utf8');
 
   const expectedDates = {
-    '/': '2026-08-28',
+    '/': '2026-09-21',
     '/guide/': '2026-08-28',
     '/guide/page/2/': '2026-08-28',
-    '/characters/': '2026-08-28',
-    '/collectibles/': '2026-08-28',
-    '/skills/': '2026-08-28',
-    '/walkthrough/': '2026-09-01',
+    '/characters/': '2026-09-22',
+    '/collectibles/': '2026-09-21',
+    '/skills/': '2026-09-21',
+    '/walkthrough/': '2026-09-22',
     '/contact/': '2026-08-28',
     '/privacy/': '2026-08-28',
     '/about/': '2026-09-01',

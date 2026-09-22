@@ -28,5 +28,5 @@ Keep the soldier alive, create space, and make the Brute enter its rage state be
 
 The requirement is about an enemy killing another enemy. A Brute killing the player, a soldier killing the Brute, or a non-rage attack does not match the stated condition. The achievement list gives the condition but not a universal arena or exact timing, so use a repeatable mixed-enemy encounter on the released build.
 
-The [combat guide](/guides/combat/) covers positioning and the [achievements guide](/guides/achievements-guide/) lists the full 36-achievement set.
+The [combat guide](/combat/) covers positioning and the [achievements guide](/achievements-guide/) lists the full 36-achievement set.
 

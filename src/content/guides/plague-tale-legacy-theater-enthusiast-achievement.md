@@ -26,5 +26,5 @@ When you reach the carnival puppet show, remain in the viewing area and let the 
 
 The requirement confirms the action and the completion point, but not a universal chapter number in the public list. Keep the location note tied to the in-game scene name on your build instead of copying an unverified chapter label.
 
-Pair this with the [achievements guide](/guides/achievements-guide/) and [chapter story guide](/guides/story/). It is separate from the 36-achievement total and from **A new beginning**, which requires completing all Chapters.
+Pair this with the [achievements guide](/achievements-guide/) and [chapter story guide](/story/). It is separate from the 36-achievement total and from **A new beginning**, which requires completing all Chapters.
 

@@ -28,5 +28,5 @@ Save before a combat encounter, use Echo’s Return once, and observe the target
 
 Do not build the entire run around Echo’s Return until you know that it solves your problem. If the current section is stealth-heavy, compare the skill with a quiet route. If the section is a direct fight, check whether the action leaves enough time to reposition. The six mastery branches give room for different solutions.
 
-This page intentionally does not claim an exact multiplier, cooldown or hidden unlock chapter. Use the [mastery branches guide](/guides/mastery-branches/) for the wider skill plan and the [combat guide](/guides/combat/) for encounter fundamentals.
+This page intentionally does not claim an exact multiplier, cooldown or hidden unlock chapter. Use the [mastery branches guide](/plague-tale-legacy-mastery-branches/) for the wider skill plan and the [combat guide](/combat/) for encounter fundamentals.
 
