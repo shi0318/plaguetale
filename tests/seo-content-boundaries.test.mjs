@@ -79,12 +79,11 @@ test('sitemap config records real dates for the static hubs changed in this pass
 
   const expectedDates = {
     '/': '2026-09-21',
-    '/guide/': '2026-08-28',
-    '/guide/page/2/': '2026-08-28',
-    '/characters/': '2026-09-22',
+    '/guide/': '2026-09-23',
+    '/characters/': '2026-09-23',
     '/collectibles/': '2026-09-21',
     '/skills/': '2026-09-21',
-    '/walkthrough/': '2026-09-22',
+    '/walkthrough/': '2026-09-23',
     '/contact/': '2026-08-28',
     '/privacy/': '2026-08-28',
     '/about/': '2026-09-01',
@@ -93,4 +92,44 @@ test('sitemap config records real dates for the static hubs changed in this pass
   for (const [route, date] of Object.entries(expectedDates)) {
     assert.match(source, new RegExp(`['"]${route.replaceAll('/', '\\/')}['"]\\s*:\\s*['"]${date}['"]`), `missing static lastmod: ${route}`);
   }
+
+  assert.match(source, /guide\\\/page/);
+  assert.doesNotMatch(source, /['"]\/guide\/page\/2\/['"]/);
+});
+
+test('extra-cast character pages do not badge adjectives as Steam community reports', async () => {
+  const files = [
+    'src/content/guides/characters/ezra.md',
+    'src/content/guides/characters/irene.md',
+    'src/content/guides/characters/faro.md',
+    'src/content/guides/characters/asterion.md',
+  ];
+
+  for (const file of files) {
+    const source = await readFile(projectFile(file), 'utf8');
+    assert.match(source, /^status:\s*unconfirmed/m, `${file} must not use community without a source`);
+    assert.doesNotMatch(source, /^status:\s*community/m);
+    assert.doesNotMatch(source, /^## Personality/m);
+  }
+
+  const ariadne = await readFile(projectFile('src/content/guides/characters/ariadne.md'), 'utf8');
+  assert.match(ariadne, /DEVBLOG #3/);
+  assert.match(ariadne, /^status:\s*official/m);
+  assert.doesNotMatch(ariadne, /Clear-headed, political/);
+});
+
+test('guide pagination stays noindex and off the sitemap; chapter pages stay indexable', async () => {
+  const chapter = await readFile(projectFile('dist/walkthrough/chapter-1-blood-ties/index.html'), 'utf8');
+  assert.doesNotMatch(chapter, /noindex,\s*follow/);
+  assert.match(chapter, /index, follow, max-image-preview:large/);
+
+  const page3 = await readFile(projectFile('dist/guide/page/3/index.html'), 'utf8');
+  assert.match(page3, /noindex,\s*follow/);
+
+  const sitemap = await readFile(projectFile('dist/sitemap-0.xml'), 'utf8');
+  assert.match(sitemap, /\/walkthrough\/chapter-1-blood-ties\//);
+  assert.doesNotMatch(sitemap, /\/guide\/page\/3\//);
+  assert.match(sitemap, /\/walkthrough\//);
+  assert.match(sitemap, /\/characters\/ariadne\//);
+  assert.doesNotMatch(sitemap, /\/characters\/ezra\//);
 });

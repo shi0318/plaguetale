@@ -26,8 +26,11 @@ function guideFile(pathname) {
 }
 
 function isIndexable(url) {
-  const file = guideFile(new URL(url).pathname);
-  if (!file) return true; // 静态路由不受信心分级约束
+  const pathname = new URL(url).pathname;
+  // Guide pagination is crawlable from the hub but must not be sitemap URLs.
+  if (/^\/guide\/page\/\d+\/$/.test(pathname)) return false;
+  const file = guideFile(pathname);
+  if (!file) return true; // 其余静态路由不受信心分级约束
   const status = readFileSync(join(ROOT, file), 'utf8').match(/^status:\s*["']?([\w-]+)/m)?.[1];
   return status ? INDEXABLE_STATUS.includes(status) : true;
 }
@@ -36,12 +39,25 @@ function isIndexable(url) {
 // Unchanged static routes intentionally omit lastmod instead of receiving a fake date.
 const STATIC_LASTMOD = {
     '/': '2026-09-21',
-    '/guide/': '2026-08-28',
-    '/guide/page/2/': '2026-08-28',
-    '/characters/': '2026-09-22',
+    '/guide/': '2026-09-23',
+    '/characters/': '2026-09-23',
     '/collectibles/': '2026-09-21',
     '/skills/': '2026-09-21',
-    '/walkthrough/': '2026-09-22',
+    '/walkthrough/': '2026-09-23',
+    '/walkthrough/chapter-1-blood-ties/': '2026-09-23',
+    '/walkthrough/chapter-2-felons/': '2026-09-23',
+    '/walkthrough/chapter-3-those-before-us/': '2026-09-23',
+    '/walkthrough/chapter-4-from-hell-it-rose/': '2026-09-23',
+    '/walkthrough/chapter-5-desolation-it-wrought/': '2026-09-23',
+    '/walkthrough/chapter-6-what-lies-beneath/': '2026-09-23',
+    '/walkthrough/chapter-7-death-it-sowed/': '2026-09-23',
+    '/walkthrough/chapter-8-resonance/': '2026-09-23',
+    '/walkthrough/chapter-9-night-has-come/': '2026-09-23',
+    '/walkthrough/chapter-10-parallel-paths/': '2026-09-23',
+    '/walkthrough/chapter-11-patera/': '2026-09-23',
+    '/walkthrough/chapter-12-fading-light/': '2026-09-23',
+    '/walkthrough/chapter-13-as-one/': '2026-09-23',
+    '/walkthrough/chapter-14-what-remains/': '2026-09-23',
     '/weapons/': '2026-09-22',
     '/maps/': '2026-09-21',
   '/contact/': '2026-08-28',

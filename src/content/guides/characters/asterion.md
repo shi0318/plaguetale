@@ -1,38 +1,35 @@
 ---
-title: "Resonance: A Plague Tale Legacy Asterion — Minoan-era figure / labyrinth name"
+title: "Resonance: A Plague Tale Legacy Asterion — mythic Minotaur name, not a Steam bio"
 heading: "Asterion"
-description: "Asterion in Resonance: A Plague Tale Legacy: minoan-era figure / labyrinth name. Personality, background, skills, and weapons on the Resonance wiki roster page."
+description: "Asterion is the classical name of the Minotaur. Asobo’s Resonance myth post names Minos, the Minotaur, Daedalus, Theseus, and Ariadne — not Asterion as a character."
 category: characters
 keyword: "plague tale legacy asterion"
-status: community
-sourceKeys: []
+status: unconfirmed
+sourceKeys: ["steamNews"]
 preRelease: false
 order: 13
 cover: "/images/ptl-ss-bull-statue.jpg"
-updatedAt: "2026-09-21"
+updatedAt: "2026-09-23"
 ---
 
-**Asterion** is minoan-era figure / labyrinth name.
+**Asterion** is the classical personal name attached to the Minotaur in Greek myth. It is not a name Asobo’s tracked Steam posts use for a Resonance character.
 
 ![Colossal bull statue over a ritual court](/images/ptl-ss-bull-statue.jpg)
 
-## Personality
+## What Asobo did name
 
-The Minotaur’s other identity: trapped, feared, not simply a monster.
+DEVBLOG #3, “Into The Myth,” retells Minos, Pasiphaë, the Minotaur, Daedalus’s labyrinth, Theseus, and Ariadne’s thread. The store page names **Daedalus** as the craftsman who wove light into the island. The gameplay announcement names **Theseus** as the presence resonating within Sophia.
 
-## Background
+None of those posts call the beast Asterion, give it a skill tree, or put it in a weapon slot.
 
-Mythic personal name tied to the labyrinth, same era as Theseus and Ariadne.
+## What this page will not do
 
-## Skills
+It will not write a personality (“trapped, feared”) as if that were a Steam community report. Classical myth is not a patch note.
 
-The island itself — corridors, darkness, the hunt.
-
-## Weapons
-
-The labyrinth and the curse, not a player weapon slot.
+For the official myth summary and the line that Resonance begins after the thread vanishes, read [the Minotaur myth explained](/minotaur-myth-explained/).
 
 ## Related
 
 - [All characters](/characters/)
-- [Walkthrough](/walkthrough/)
+- [The Minotaur myth explained](/minotaur-myth-explained/)
+- [Theseus](/characters/theseus/)

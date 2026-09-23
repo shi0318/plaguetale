@@ -70,10 +70,11 @@ const officialCount = CHARACTERS.filter((c) => c.status === 'official').length;
     </div>
 
     <section class="mt-12">
-      <h2 class="text-2xl font-black text-bone">Crew and Minoan names</h2>
+      <h2 class="text-2xl font-black text-bone">Other names on this wiki</h2>
       <p class="mt-3 max-w-3xl text-fog">
-        Irene, Ezra, and Faro sit with Sophia’s plunderer crew. Asterion and Ariadne belong to the Minoan
-        era with Theseus and Daedalus. Personality, skills, and weapons below are play notes for this wiki.
+        Irene, Ezra, Faro, Asterion, and Ariadne are extra roster names. Only Ariadne is named in a
+        tracked first-party post (DEVBLOG #3). The others stay listed so the URL does not vanish, but
+        this hub does not invent personality, skills, or weapons for them.
       </p>
       <div class="mt-6 space-y-6">
         {
@@ -81,26 +82,15 @@ const officialCount = CHARACTERS.filter((c) => c.status === 'official').length;
             <article class="surface overflow-hidden p-0" id={c.slug}>
               <img src={c.image} alt={c.imageAlt} width="1920" height="1080" loading="lazy" decoding="async" class="h-48 w-full object-cover" />
               <div class="p-6">
-              <h2 class="text-2xl font-black text-bone">{c.name}</h2>
-              <p class="mt-1 text-sm font-bold uppercase tracking-[0.1em] text-wheat">{c.role}</p>
-              <dl class="mt-4 grid gap-3 text-sm text-fog sm:grid-cols-2">
+              <div class="flex flex-wrap items-start justify-between gap-3">
                 <div>
-                  <dt class="font-bold text-bone">Personality</dt>
-                  <dd class="mt-1">{c.personality}</dd>
+                  <h2 class="text-2xl font-black text-bone">{c.name}</h2>
+                  <p class="mt-1 text-sm font-bold uppercase tracking-[0.1em] text-wheat">{c.role}</p>
                 </div>
-                <div>
-                  <dt class="font-bold text-bone">Background</dt>
-                  <dd class="mt-1">{c.background}</dd>
-                </div>
-                <div>
-                  <dt class="font-bold text-bone">Skills</dt>
-                  <dd class="mt-1">{c.skills}</dd>
-                </div>
-                <div>
-                  <dt class="font-bold text-bone">Weapons</dt>
-                  <dd class="mt-1">{c.weapons}</dd>
-                </div>
-              </dl>
+                <StatusBadge status={c.status} size="sm" />
+              </div>
+              <p class="mt-4 text-fog">{c.fact}</p>
+              <p class="mt-3 text-sm text-fog">{c.gap}</p>
               <p class="mt-3">
                 <a href={`/characters/${c.slug}/`} class="text-sm font-bold text-wheat underline-offset-2 hover:underline">
                   Full {c.name} profile →
@@ -125,9 +115,8 @@ const officialCount = CHARACTERS.filter((c) => c.status === 'official').length;
       <p>
         The hostile entity is still unnamed in the tracked first-party material. Its role is not the
         same as Theseus: the store page describes a restless hunter in the island’s shadows, while
-        the gameplay announcement identifies Theseus as the presence resonating within Sophia. Full
-        bios, relationship choices, and final encounter details remain unconfirmed until the released
-        game provides verifiable evidence.
+        the gameplay announcement identifies Theseus as the presence resonating within Sophia.
+        Irene, Ezra, Faro, and Asterion are extra names without a first-party bio on this wiki.
       </p>
 
       <h2>More on the cast</h2>
