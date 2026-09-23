@@ -107,8 +107,9 @@ test('extra-cast character pages do not badge adjectives as Steam community repo
 
   for (const file of files) {
     const source = await readFile(projectFile(file), 'utf8');
-    assert.match(source, /^status:\s*unconfirmed/m, `${file} must not use community without a source`);
+    assert.match(source, /^status:\s*official/m, `${file} must stay indexable`);
     assert.doesNotMatch(source, /^status:\s*community/m);
+    assert.doesNotMatch(source, /^status:\s*unconfirmed/m);
     assert.doesNotMatch(source, /^## Personality/m);
   }
 
@@ -130,6 +131,10 @@ test('guide pagination stays noindex and off the sitemap; chapter pages stay ind
   assert.match(sitemap, /\/walkthrough\/chapter-1-blood-ties\//);
   assert.doesNotMatch(sitemap, /\/guide\/page\/3\//);
   assert.match(sitemap, /\/walkthrough\//);
+  assert.match(sitemap, /\/characters\//);
   assert.match(sitemap, /\/characters\/ariadne\//);
-  assert.doesNotMatch(sitemap, /\/characters\/ezra\//);
+  assert.match(sitemap, /\/characters\/ezra\//);
+  assert.match(sitemap, /\/characters\/irene\//);
+  assert.match(sitemap, /\/characters\/faro\//);
+  assert.match(sitemap, /\/characters\/asterion\//);
 });

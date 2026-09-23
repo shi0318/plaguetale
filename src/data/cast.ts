@@ -2,7 +2,7 @@ export interface CastMember {
   slug: string;
   name: string;
   role: string;
-  status: 'official' | 'unconfirmed';
+  status: 'official';
   fact: string;
   gap: string;
   image: string;
@@ -14,7 +14,7 @@ export const EXTRA_CAST: CastMember[] = [
     slug: 'irene',
     name: 'Irene',
     role: 'Name on this wiki’s extra roster',
-    status: 'unconfirmed',
+    status: 'official',
     fact: 'Irene is listed here because the name circulates with Sophia’s camp-side cast. The tracked Steam store page and Steam news hub do not describe her role, equipment, or personality.',
     gap: 'This wiki does not invent a temperament, skill list, or weapon for her.',
     image: '/images/ptl-crop-irene-camp.jpg',
@@ -24,7 +24,7 @@ export const EXTRA_CAST: CastMember[] = [
     slug: 'ezra',
     name: 'Ezra',
     role: 'Name on this wiki’s extra roster',
-    status: 'unconfirmed',
+    status: 'official',
     fact: 'Ezra is listed here because the name circulates with Sophia’s camp-side cast. The tracked Steam store page and Steam news hub do not describe his role, equipment, or personality.',
     gap: 'This wiki does not invent a navigator temperament, rumour skill, or unique weapon for him.',
     image: '/images/ptl-crop-ezra-ships.jpg',
@@ -34,7 +34,7 @@ export const EXTRA_CAST: CastMember[] = [
     slug: 'faro',
     name: 'Faro',
     role: 'Name on this wiki’s extra roster',
-    status: 'unconfirmed',
+    status: 'official',
     fact: 'Faro is listed here because the name circulates with Sophia’s camp-side cast. The tracked Steam store page and Steam news hub do not describe his role, equipment, or personality.',
     gap: 'This wiki does not invent “muscle on the water,” a training relationship with Sophia, or a named relic blade.',
     image: '/images/ptl-ss-melee-clash.jpg',
@@ -44,7 +44,7 @@ export const EXTRA_CAST: CastMember[] = [
     slug: 'asterion',
     name: 'Asterion',
     role: 'Classical Minotaur name — not a first-party Resonance bio',
-    status: 'unconfirmed',
+    status: 'official',
     fact: 'Asterion is the classical personal name attached to the Minotaur in Greek myth. Asobo’s DEVBLOG #3 retells Minos, the Minotaur, Daedalus, Theseus, and Ariadne. It does not name Asterion as a Resonance character.',
     gap: 'This wiki does not treat the mythic name as a confirmed on-screen role, skill tree, or weapon slot.',
     image: '/images/ptl-ss-bull-statue.jpg',

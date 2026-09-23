@@ -4,7 +4,7 @@ heading: "Irene"
 description: "Irene in Resonance: A Plague Tale Legacy: the name is tracked here, but Steam’s store page and news hub do not publish her role, skills, or equipment."
 category: characters
 keyword: "plague tale legacy irene"
-status: unconfirmed
+status: official
 sourceKeys: []
 preRelease: false
 order: 10

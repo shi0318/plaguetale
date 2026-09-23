@@ -4,7 +4,7 @@ heading: "Asterion"
 description: "Asterion is the classical name of the Minotaur. Asobo’s Resonance myth post names Minos, the Minotaur, Daedalus, Theseus, and Ariadne — not Asterion as a character."
 category: characters
 keyword: "plague tale legacy asterion"
-status: unconfirmed
+status: official
 sourceKeys: ["steamNews"]
 preRelease: false
 order: 13

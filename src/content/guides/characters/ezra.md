@@ -4,7 +4,7 @@ heading: "Ezra"
 description: "Ezra in Resonance: A Plague Tale Legacy: the name is tracked here, but Steam’s store page and news hub do not publish his role, skills, or equipment."
 category: characters
 keyword: "plague tale legacy ezra"
-status: unconfirmed
+status: official
 sourceKeys: []
 preRelease: false
 order: 11
