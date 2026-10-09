@@ -139,6 +139,13 @@ export const ASSETS = {
     height: 1080,
     credit: STEAM_CREDIT,
   },
+  leniAlly: {
+    src: '/images/ptl-crop-leni-ally.jpg',
+    alt: 'Leni watching from the side of a Minoan sphere puzzle in Resonance: A Plague Tale Legacy',
+    width: 300,
+    height: 580,
+    credit: STEAM_CREDIT,
+  },
   ireneCamp: {
     src: '/images/ptl-crop-irene-camp.jpg',
     alt: 'Camp still life — barrel, crate of bottles, and cookware on the cliff above the island ruins',

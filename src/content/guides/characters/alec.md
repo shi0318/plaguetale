@@ -8,7 +8,7 @@ status: official
 sourceKeys: []
 preRelease: false
 order: 3
-cover: "/images/ptl-header.webp"
+cover: "/images/ptl-ss-melee-clash.jpg"
 updatedAt: "2026-09-15"
 ---
 

@@ -8,7 +8,7 @@ status: official
 sourceKeys: []
 preRelease: false
 order: 2
-cover: "/images/ptl-island-trail.webp"
+cover: "/images/ptl-crop-leni-ally.jpg"
 updatedAt: "2026-09-15"
 ---
 
@@ -18,7 +18,7 @@ updatedAt: "2026-09-15"
 
 > "As she uncovers the truth about **her own family's connection to the island**, Sophia can rely on **her friend Leni** to help her face dangerous enemies and deadly trials."
 
-![Island trail](/images/ptl-island-trail.webp)
+![Leni watching from the side of a Minoan sphere puzzle, as shown in an official screenshot](/images/ptl-crop-leni-ally.jpg)
 
 ## What that sentence does and does not say
 
