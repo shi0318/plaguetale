@@ -49,3 +49,11 @@
 - 线上证据：首页、关键 hub、robots、sitemap-index、sitemap-0 与 PNG favicon 均返回预期状态；线上 28 个页面 URL 与本地构建一致。
 - 结论：发布链路完成；GSC 登录态和索引状态仍需在 Search Console 中单独核验，Steam 解锁前不发布零售版实测内容。
 - 下一轮唯一改进：Steam 状态变为可玩后，重新验证零售版事实，再将对应页面从预发布框架升级。
+# 2026-10-15 — October 6 bug-fix and chapter-blocker guides
+
+- Goal: answer the released-build search intent around the October 6 bug-fixes update, Nemesis-area stutter, and chapter blockers without repeating the earlier PSSR summary.
+- Evidence: the Steam App 2713000 news feed includes the official “Bug Fixes update” dated October 6, 2026. It lists 21:9 support, reduced stutter approaching new Nemesis Areas, PSSR settings persistence on PS5, AMD Anti-Lag behavior when Frame Generation is disabled, and additional stability/progression, combat, accessibility, animation, audio, and localization fixes. Current Steam reviews on October 15 are Very Positive, 5,561/5,990; this review total is a volatile snapshot. No volume/KD/SERP measurement was available.
+- Change: added `src/content/guides/resonance-plague-tale-legacy-october-6-update.md` with an update-specific troubleshooting checklist, an existing matched coastal screenshot, empty source keys, and internal links to PC/performance and chapter coverage. Added `src/content/guides/resonance-chapter-3-leni-lens-fix.md` for the Chapter III Leni lens trigger, Chapter IX crouch, Chapter XIII save, and Chapter XIV book blockers, using the matched sphere-puzzle screenshot. Added both routes to local SEO required-pages checks; NAV remains unchanged. The initial patch-1-1 slug was removed because the official note is titled “Bug Fixes update” and does not establish that patch version.
+- Validation: `npm run build` and `npm test` passed; the built route has the expected title, local image, sitemap URL, no source panel, and the guide hub FAQ links to it while primary navigation remains unchanged.
+- Decision: call the release a “Bug Fixes update” because that is the published title; report only fixes explicitly listed in the update and do not guarantee that all remaining stutter or progression issues are gone.
+- Next: run `npm test` and `npm run build`; check the built page’s title, description, image, route, and missing-source behavior.

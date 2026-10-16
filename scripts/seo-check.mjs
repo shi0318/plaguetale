@@ -24,6 +24,8 @@ const requiredPages = [
   '/about/',
   '/privacy/',
   '/contact/',
+  '/resonance-plague-tale-legacy-october-6-update/',
+  '/resonance-chapter-3-leni-lens-fix/',
 ];
 
 const requiredImages = [
@@ -32,6 +34,11 @@ const requiredImages = [
   'public/images/ptl-island-trail.webp',
   'public/images/ptl-light-puzzle.webp',
   'public/images/ptl-header.webp',
+  'public/images/ptl-hot-3.webp',
+];
+const sourceHiddenPages = [
+  '/resonance-plague-tale-legacy-october-6-update/',
+  '/resonance-chapter-3-leni-lens-fix/',
 ];
 
 const failures = [];
@@ -49,6 +56,14 @@ for (const page of requiredPages) {
       ? join(root, 'dist', 'index.html')
       : join(root, 'dist', page.replace(/^\/|\/$/g, ''), 'index.html');
   assert(existsSync(outputPath), `Missing built route: ${page}`);
+}
+
+for (const page of sourceHiddenPages) {
+  const outputPath = join(root, 'dist', page.replace(/^\/|\/$/g, ''), 'index.html');
+  if (!existsSync(outputPath)) continue;
+  const html = readFileSync(outputPath, 'utf8');
+  assert(!html.includes('Fact sources'), `${page} exposes a source table despite empty sourceKeys.`);
+  assert(!html.includes('Sources and verification'), `${page} exposes a source panel despite empty sourceKeys.`);
 }
 
 const distIndex = join(root, 'dist', 'index.html');
