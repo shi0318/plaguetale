@@ -8,7 +8,7 @@ status: official
 sourceKeys: []
 preRelease: false
 order: 6
-updatedAt: "2026-10-20"
+updatedAt: "2026-10-23"
 cover: "/images/ptl-crop-weapon-blade.jpg"
 ---
 

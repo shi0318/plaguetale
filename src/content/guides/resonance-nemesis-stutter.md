@@ -8,7 +8,7 @@ status: official
 sourceKeys: []
 preRelease: false
 order: 5
-updatedAt: "2026-10-20"
+updatedAt: "2026-10-23"
 cover: "/images/ptl-creature-shadow.webp"
 ---
 

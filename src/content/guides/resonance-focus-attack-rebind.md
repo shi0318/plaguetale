@@ -8,7 +8,7 @@ status: official
 sourceKeys: []
 preRelease: false
 order: 9
-updatedAt: "2026-10-21"
+updatedAt: "2026-10-23"
 cover: "/images/ptl-crop-weapon-parry.jpg"
 ---
 
