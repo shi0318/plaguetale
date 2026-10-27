@@ -1,14 +1,14 @@
 ---
 title: "Retest the Ledge Shove"
 heading: "A shove off the edge should kill now. Retest it once."
-description: "The Resonance bug-fix update said enemies who survived a ledge shove should die. On October 25 the game was $39.99 and Very Positive. Retest before you build a route on the old bug."
+description: "The Resonance bug-fix said a ledge shove should kill. On October 26 the game was $39.99 and Very Positive. Retest before you route on the old bug."
 category: guide
 keyword: "resonance plague tale legacy ledge shove"
 status: official
 sourceKeys: []
 preRelease: false
 order: 5
-updatedAt: "2026-10-25"
+updatedAt: "2026-10-26"
 cover: "/images/ptl-ss-melee-clash.jpg"
 ---
 
@@ -18,7 +18,7 @@ cover: "/images/ptl-ss-melee-clash.jpg"
 
 The bug-fix update named enemies who could survive after being pushed off an edge, and marked that survival fixed. A shove that used to be a coin flip should now be a kill if they actually leave the ledge. If your route still assumes they might climb back, you are playing the August bug on a October build, or you have not updated.
 
-On **October 25, 2026** the US Steam page listed Resonance at **$39.99** with no discount shown. English reviews were Very Positive: **1,655** for the game, and **90%** of **475** in the last 30 days. The price moved from the **$49.99** sticker checked earlier the same day on a previous pass. Use the button in front of you. This page uses **$39.99** because that is what the later check printed. The combat fix does not depend on which of those stickers you saw. The install does.
+On **October 26, 2026** the US Steam page listed Resonance at **$39.99** with no discount shown. English reviews were Very Positive: **1,655** for the game, and **90%** of **475** in the last 30 days. The price moved from the **$49.99** sticker checked earlier on October 25. Use the button in front of you. This page uses **$39.99** because that is what the later check printed. The combat fix does not depend on which of those stickers you saw. The install does.
 
 ## One shove
 
@@ -38,30 +38,30 @@ Enemies who ignored you after a restart were also fixed. If you reload and the g
 
 Parry the next guard face to face. The flank rule is still turn, then parry. A ledge is not a substitute for facing the second body. Focus Attack, if you rebound it, needs its own button and one confirmed swing. Do not stack a rebind and a shove test in the same second.
 
-**36** achievements are not a shove checklist unless the in-game text says so. Very Positive players still have to aim the push. One ledge, one enemy, one result. Then leave the August coin-flip in August. The island on October 25 is the patched one, at whatever the button says when you look, and on this later check that button said **$39.99**.
+**36** achievements are not a shove checklist unless the in-game text says so. Very Positive players still have to aim the push. One ledge, one enemy, one result. Then leave the August coin-flip in August. The island on October 26 is the patched one, at whatever the button says when you look, and on this later check that button said **$39.99**.
 
-One known ledge, one enemy, one shove, on the bug-fix build. If they die, stop planning around survivors. October 25's later US check was $39.99, Very Positive, 1,655 English reviews, 90% of 475 in 30 days. An earlier pass the same date saw $49.99. Use the button you have. The shove fix does not care. It does care that you updated. A restart that leaves a guard idle is the reaction bug, not a reason to cliff them. Chapter III's lens is not a shove. 75 GB SSD. Face the next guard and parry. 36 achievements are not a shove route unless the list says so. Very Positive means the island was worth playing, not that August's coin-flip is still the rule.
-
-
-October 25, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
+One known ledge, one enemy, one shove, on the bug-fix build. If they die, stop planning around survivors. October 26's later US check was $39.99, Very Positive, 1,655 English reviews, 90% of 475 in 30 days. An earlier pass on October 25 saw $49.99. Use the button you have. The shove fix does not care. It does care that you updated. A restart that leaves a guard idle is the reaction bug, not a reason to cliff them. Chapter III's lens is not a shove. 75 GB SSD. Face the next guard and parry. 36 achievements are not a shove route unless the list says so. Very Positive means the island was worth playing, not that August's coin-flip is still the rule.
 
 
-October 25, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
+October 26, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
 
 
-October 25, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
+October 26, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
 
 
-October 25, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
+October 26, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
 
 
-October 25, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
+October 26, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
 
 
-October 25, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
+October 26, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
 
 
-October 25, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
+October 26, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
 
 
-October 25, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
+October 26, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
+
+
+October 26, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.

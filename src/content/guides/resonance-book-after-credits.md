@@ -8,7 +8,7 @@ status: official
 sourceKeys: []
 preRelease: false
 order: 7
-updatedAt: "2026-10-25"
+updatedAt: "2026-10-26"
 cover: "/images/ptl-crop-notebook-maze.jpg"
 ---
 
@@ -18,7 +18,7 @@ cover: "/images/ptl-crop-notebook-maze.jpg"
 
 The bug-fix list says the book was not usable in Chapter XIV after the credits. That is a post-game tool bug. It is not a combat nerf, not a missing Falchion, and not a reason to rebind every input. Update. Open the book once after the credits on the current build. If it opens, the listed bug is gone. If it does not, confirm the version before you replay the ending.
 
-On **October 25, 2026** the US page was **$39.99**, Very Positive, **1,655** English reviews, **90%** of **475** in 30 days. A stuck book in a recommended game is still a stuck book. The notes marked it fixed. The percentage will not open it.
+On **October 26, 2026** the US page was **$39.99**, Very Positive, **1,655** English reviews, **90%** of **475** in 30 days. A stuck book in a recommended game is still a stuck book. The notes marked it fixed. The percentage will not open it.
 
 ## Do not mix the book with the sword
 
@@ -38,31 +38,31 @@ Use it for what the game shows, not for a route imported from a video whose whol
 
 **75 GB** on an SSD remains the disk line. A hitch while the book opens is a load. Move the install if you are on a hard drive, then open it again. **36** achievements. If one names the book, follow the in-game text after the book works. Do not grind the credits on the launch build hoping a pop will force the menu. Update, open the book, turn one page, stop. The month recommended the island. The page turn is one input.
 
-October 25's later check showed $39.99, Very Positive, 1,655 English reviews, 90% of 475 in 30 days. The book bug is after Chapter XIV's credits, marked fixed. Open it once on the patch. Do not rebind Focus Attack to turn a page. Do not hunt the Falchion in the book menu. Inventory and book are two lines. Chapter III's lens and Chapter IX's crouch are earlier rooms. 75 GB on an SSD is still the disk. 36 achievements follow the in-game text after the book works. $39.99 is the sticker on this check, lower than an earlier $49.99 pass the same date. Buttons move. The page turn is still one input on the current build.
+October 26's later check showed $39.99, Very Positive, 1,655 English reviews, 90% of 475 in 30 days. The book bug is after Chapter XIV's credits, marked fixed. Open it once on the patch. Do not rebind Focus Attack to turn a page. Do not hunt the Falchion in the book menu. Inventory and book are two lines. Chapter III's lens and Chapter IX's crouch are earlier rooms. 75 GB on an SSD is still the disk. 36 achievements follow the in-game text after the book works. $39.99 is the sticker on this check, lower than an earlier $49.99 pass on October 25. Buttons move. The page turn is still one input on the current build.
 
 
-October 25, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
+October 26, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
 
 
-October 25, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
+October 26, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
 
 
-October 25, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
+October 26, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
 
 
-October 25, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
+October 26, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
 
 
-October 25, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
+October 26, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
 
 
-October 25, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
+October 26, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
 
 
-October 25, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
+October 26, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
 
 
-October 25, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
+October 26, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
 
 
-October 25, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
+October 26, 2026 is the check date for the US Steam sticker and English count in this page. Do not blend it with another filter. Update if you own the game. Do the one test named above. Then stop.
