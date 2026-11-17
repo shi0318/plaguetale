@@ -91,4 +91,4 @@ The creature that hunts Sophia from Chapter 6 onward **cannot be killed**. Every
 
 - [Walkthrough by chapter](/walkthrough/)
 - [Skills and masteries](/plague-tale-legacy-skills-unlock-order/)
-- [Light puzzles and sphere powers](/plague-tale-legacy-sphere-powers/)
+- [Light puzzles and sphere powers](/minoan-sphere-light-puzzle-guide/)

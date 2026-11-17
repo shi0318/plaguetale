@@ -13,7 +13,7 @@ cover: "/images/ptl-sophia-combat.webp"
 
 Players searching for a **Resonance: A Plague Tale Legacy romance guide** usually want one answer: does the game have romantic relationships or dating options? Here is the honest, source-backed answer based on the available story information.
 
-## Is there romance in Resonance: A Plague Tale Legacy?
+## Is there romance?
 
 **No romance system has been confirmed.** The official Steam description does not mention dating, relationship choices, or a romance mechanic. A Plague Tale has never been a dating-sim-style series — it tells linear, cinematic narrative stories. So if you are expecting selectable love interests or a relationship meter, that is **not** what this series does.
 
@@ -38,8 +38,8 @@ Both games earned praise for emotional weight precisely because relationships we
 
 Sophia is the named protagonist, and official Steam news identifies the Minoan-era hero as **Theseus**. The announcement says players experience trials through Theseus’s eyes, but it does not confirm a romance route, relationship meter, dialogue choices, or the exact control structure. For the named cast, see our [characters guide](/characters/).
 
-## What the available story evidence supports
+## What the story actually shows
 
-The currently tracked official text does not document a romance system, relationship meter, or player-selected dating route. If a later release-build report establishes a relationship choice, this page can be updated with the exact chapter, choice, and result rather than inferring one from the series.
+The official text does not document a romance system, relationship meter, or player-selected dating route, and none of the walkthrough coverage on this site describes one.
 
 If you want the confirmed cast and story framing right now, start with our [characters and story guide](/characters/).

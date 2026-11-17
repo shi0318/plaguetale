@@ -1,0 +1,107 @@
+---
+// Editorial policy — the single place for sourcing and evidence rules,
+// so individual guides don't repeat the same disclaimers.
+import Layout from '../layouts/Layout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import { SITE } from '../data/site';
+import { STATUS_META } from '../data/confidence';
+import { formatDate } from '../utils/dates';
+
+const UPDATED = '2026-11-16';
+const title = 'Editorial Policy — Plague Tale Legacy Guide';
+const description =
+  'How this unofficial Resonance: A Plague Tale Legacy guide sources facts, labels player reports, dates snapshots, and handles corrections.';
+
+const crumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Editorial Policy', url: '/editorial/' },
+];
+
+const statuses = Object.values(STATUS_META);
+---
+
+<Layout title={title} description={description} pageType="article" breadcrumbs={crumbs}>
+  <article class="prose-page container max-w-3xl py-10">
+    <Breadcrumb items={crumbs} />
+
+    <h1 class="text-3xl font-black tracking-tight text-bone md:text-4xl">Editorial Policy</h1>
+    <p>Last updated: <time datetime={UPDATED}>{formatDate(UPDATED)}</time></p>
+
+    <p>
+      This page explains how every guide on {SITE.name} is researched and labelled. It applies to
+      the whole site, so individual guides do not repeat it.
+    </p>
+
+    <h2>Where facts come from</h2>
+    <p>Sources are used in this order of authority:</p>
+    <ol>
+      <li>
+        The official <a href={SITE.steamUrl} rel="nofollow noopener noreferrer" target="_blank">Steam store page</a>
+        (App {SITE.steamAppId}) and the game's Steam news hub: release date, price, platforms,
+        system requirements, features, and patch notes.
+      </li>
+      <li>Official {SITE.developer} and {SITE.publisher} channels, including developer blogs and FAQs.</li>
+      <li>Steam's global achievement statistics, quoted with the date they were read.</li>
+      <li>Player reports from Steam reviews and discussions, and community walkthrough notes.</li>
+      <li>The earlier A Plague Tale games, used only as clearly labelled series background.</li>
+    </ol>
+
+    <h2>What we do not do</h2>
+    <p>
+      This site has not played or benchmarked the game itself. We do not present our own hands-on
+      tests, invent menu paths, button prompts, frame rates, or routes, or turn a trailer shot into a
+      confirmed mechanic. When a guide says "check this" or "load the save again", that is advice for
+      you as the player, not a claim that we ran the test.
+    </p>
+
+    <h2>How player reports are labelled</h2>
+    <p>
+      When a specific claim comes from players rather than an official source, the sentence says so
+      ("Steam reviewers report...", "walkthrough notes list..."). Pages built mainly on player reports
+      carry the "Steam community reports" badge. Reports can be wrong, describe one platform, or change
+      after a patch, so treat them as the best available information rather than a specification.
+    </p>
+
+    <h2>Confirmation badges</h2>
+    <p>Every guide carries one of these labels at the top:</p>
+    <ul>
+      {
+        statuses.map((s) => (
+          <li>
+            <strong>{s.icon} {s.label}</strong> — {s.description}
+          </li>
+        ))
+      }
+    </ul>
+    <p>Pages marked Unconfirmed are kept out of search indexes.</p>
+
+    <h2>Dates and snapshots</h2>
+    <p>
+      Prices, review scores, and achievement unlock rates change daily. Wherever we quote one, we give
+      the date it was read, and newer snapshots are added rather than silently overwriting older ones.
+      The "Updated" date on a guide is the last time its content changed.
+    </p>
+
+    <h2>Patches</h2>
+    <p>
+      {SITE.developer} has patched the game since its August 27, 2026 release, notably the October 6
+      bug-fix update. Guides note which fixes apply, but a later patch can change behaviour before we
+      update a page.
+    </p>
+
+    <h2>Corrections</h2>
+    <p>
+      If something is wrong or out of date, email
+      <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a> with the page URL and, ideally,
+      a link or screenshot. Confirmed corrections are made to the page and its updated date is changed.
+    </p>
+
+    <h2>Independence</h2>
+    <p>
+      This is an unofficial fan site, not affiliated with {SITE.developer} or {SITE.publisher}. The
+      site may carry advertising; advertisers have no say in what we write. See the
+      <a href="/about/">About page</a>, <a href="/terms/">Terms of Use</a>, and
+      <a href="/privacy/">Privacy Policy</a>.
+    </p>
+  </article>
+</Layout>

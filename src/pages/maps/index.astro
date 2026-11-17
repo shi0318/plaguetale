@@ -8,7 +8,7 @@ import { CHAPTERS } from '../../data/chapter-guide';
 
 const title = 'Resonance: A Plague Tale Legacy Maps';
 const description =
-  'Resonance: A Plague Tale Legacy maps: Venice lagoon camp, carnival streets, Minotaur’s Island courts, the maze beneath, and night trails.';
+  'Resonance: A Plague Tale Legacy maps and regions: the Venice lagoon camp, Venice and its carnival, the Minotaur’s Island across two eras, and where each chapter takes place.';
 const crumbs = [
   { name: 'Home', url: '/' },
   { name: 'Maps', url: '/maps/' },
@@ -27,6 +27,68 @@ const crumbs = [
       </p>
     </header>
     <div class="mt-8"><MediaFigure {...ASSETS.islandOverlook} /></div>
+
+    <div class="prose-page mt-10 max-w-3xl">
+      <h2>Is there an open map?</h2>
+      <p>
+        No. Steam reviewers describe the story as linear, and the game is split into {CHAPTERS.length} chapters
+        rather than one open world. Exploration means side rooms, dead-end ledges and alternate corners inside each
+        area, not free travel between regions. If you miss something, the way back is a chapter replay through{' '}
+        <a href="/story-select-cleanup/">Story Select</a>, not a fast-travel point.
+      </p>
+
+      <h2>Two time periods</h2>
+      <p>
+        Sophia’s half of the story is set in the early 14th century, about 15 years before A Plague Tale: Requiem.
+        The other half takes place in the Minoan civilisation around 2000 BC, through Theseus’s memories. Several
+        locations are the same stone in both eras, which is why the island regions below are marked “both eras”.
+      </p>
+
+      <h2>The Venice lagoon camp</h2>
+      <p>
+        The game opens in a plunderers’ camp in the lagoons near Venice, where Sophia grew up under her father
+        Alec. Asobo’s DEVBLOG #3 says it was built out from the Red City Arena in Requiem, with worn fabrics and
+        hanging cloth added, and that the team looked at wooden working-class districts in Africa and Asia because
+        14th-century references for such a settlement barely exist.
+      </p>
+
+      <h2>Venice and the carnival</h2>
+      <p>
+        Venice is still largely preserved from the era, so the architecture was the easy part. The hard part,
+        according to the developers, was the carnival and its huge crowds. The carnival is in Chapter 2, Felons,
+        where watching the full puppet show unlocks the Theater enthusiast achievement.
+      </p>
+
+      <h2>The island and its references</h2>
+      <p>
+        Most of the game happens on the legendary island, hidden somewhere in the Mediterranean. To avoid
+        repetition the team pulled references from across Greece:
+      </p>
+      <ul>
+        <li><strong>The Cyclades</strong> — white limestone cliffs, turquoise water and pine, the baseline look.</li>
+        <li><strong>Santorini and Stromboli</strong> — volcanic landscapes and darker rock.</li>
+        <li><strong>Thiorichio</strong> — more colourful rock formations.</li>
+        <li><strong>Preveli Beach</strong> — varied vegetation.</li>
+        <li><strong>Knossos and Akrotiri</strong> — the Minoan architecture itself.</li>
+      </ul>
+      <p>
+        Core Minoan elements such as columns and friezes were kept, then blended with later Greek and Roman
+        influences so the large arenas read as coherent. Full background is on the{' '}
+        <a href="/locations/">locations and world guide</a>.
+      </p>
+
+      <h2>Named areas from the walkthrough</h2>
+      <p>
+        Inside the island chapters, the guides on this site point to these named sections and arenas: “The
+        Architect” in <a href="/walkthrough/chapter-6-what-lies-beneath/">Chapter 6</a>, the Black Temple arena
+        and “The Whole Damn Army” in <a href="/walkthrough/chapter-7-death-it-sowed/">Chapter 7</a>, the palace,
+        its petrified area and “Hunted” in <a href="/walkthrough/chapter-9-night-has-come/">Chapter 9</a>, the
+        mine exit in <a href="/walkthrough/chapter-11-patera/">Chapter 11</a>, and the heart of the Labyrinth with
+        the Minotaur statue in <a href="/walkthrough/chapter-13-as-one/">Chapter 13</a>. The eight Blades are in
+        the Heroes’ Graves — bull-pillar crypts off the main route.
+      </p>
+    </div>
+
     <ul class="mt-10 grid gap-4 md:grid-cols-2">
       {
         MAP_REGIONS.map((r) => (

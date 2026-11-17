@@ -119,14 +119,14 @@ export const REQUIRED_GUIDES = [
     href: '/walkthrough/',
     title: 'Walkthrough',
     description:
-      'Post-launch walkthrough coverage for the Minotaur’s Island, with spoiler-aware route guidance and clearly attributed player reports.',
+      'All 14 chapters of the Minotaur’s Island with collectible counts, Blade locations, bosses, and chapter fixes.',
     priority: 'P0',
   },
   {
     href: '/collectibles/',
     title: 'Collectibles',
     description:
-      'Post-launch collectible guidance covering artifacts, exploration, and clearly labelled retail-build and community evidence.',
+      '8 Blades, 37 Artefacts, 30 Charms, and 200 Resonance Points, with per-chapter counts and Story Select rules.',
     priority: 'P0',
   },
   {
@@ -147,7 +147,7 @@ export const REQUIRED_GUIDES = [
     href: '/guide/',
     title: 'Guide Hub',
     description:
-      'Release-state facts and Steam community reports organized so official features stay separate from player-reported experience.',
+      'Every guide on the site, newest first: release facts, fixes, combat, collectibles, achievements, and story.',
     priority: 'P2',
   },
   {

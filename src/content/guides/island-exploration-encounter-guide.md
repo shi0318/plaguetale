@@ -1,72 +1,69 @@
 ---
 title: "Resonance: A Plague Tale Legacy Island Exploration Guide"
-heading: "Resonance: A Plague Tale Legacy Island Exploration & Encounter Guide"
-description: "A Resonance: A Plague Tale Legacy guide to exploring Minotaur's Island, reading encounters, using parries, and separating verified routes from open questions."
+heading: "Resonance: A Plague Tale Legacy Island Exploration and Traversal Guide"
+description: "How exploration works on the Minotaur's Island in Resonance: A Plague Tale Legacy: linear routes, traversal, encounters, and what to sweep before moving on."
 category: walkthrough
 keyword: "plague tale legacy island exploration"
-status: official
-sourceKeys: ["steam", "steamNews", "steamMedia"]
+status: community
+sourceKeys: ["steam", "steamNews", "steamMedia", "steamCommunity"]
 preRelease: false
 order: 13
-updatedAt: "2026-09-01"
+updatedAt: "2026-11-16"
 cover: "/images/ptl-island-trail.webp"
 ---
 
-**Resonance: A Plague Tale Legacy** puts Sophia on **Minotaur's Island**, but the official material does not provide a final map or a complete encounter list. What it does confirm is enough to define a useful exploration loop: Sophia is agile and strong-willed, combat is dynamic and violent melee, parries and powerful strikes matter, and the island draws multiple enemies toward a mysterious treasure.
-
-Use this page to plan safe exploration while keeping the route notes honest: the released game is available, but this page does not claim a complete map unless a route has been directly documented.
+Resonance: A Plague Tale Legacy sends Sophia to the **Minotaur's Island**, which the Steam description calls a maze of deadly trials, trails, and puzzles. Many enemies pursue her there to reclaim a mysterious treasure, and the creature behind the myth cannot be stopped — only hidden from, outsmarted, and outrun. This guide covers how exploring that island actually plays: how open it is, how traversal feels, and the habits that save you a replay.
 
 <figure>
   <img src="/images/ptl-island-trail.webp" alt="A rocky island trail leading through the Minoan landscape in Resonance: A Plague Tale Legacy" width="1600" height="900" loading="lazy" decoding="async" />
-  <figcaption>Island exploration is logged as routes and encounter conditions only when the released game provides a checkable result.</figcaption>
+  <figcaption>The island is explored chapter by chapter along a directed route, with side rooms and dead ends worth checking.</figcaption>
 </figure>
 
-## The confirmed encounter premise
+## Is the island open world?
 
-The Steam description frames the island as a dangerous destination where enemies pursue the same mysterious treasure. Sophia must stay one step ahead, and the mythic creature cannot simply be stopped: she must hide, outsmart it, and keep moving. The same description gives her a dynamic melee system built around agility, tricks, sharp reflexes, parries, and powerful strikes.
+No. Steam reviewers describe the story as linear, and the game is split into 14 chapters rather than one open map. Exploration means discovery inside a directed journey: side rooms, dead-end ledges, and alternate corners of each area, not free travel between regions. The places the story visits — the raiders' camp in the Venice lagoon, Venice and its carnival, and the island itself across two time periods — are described on the [locations guide](/locations/).
 
-That wording suggests three planning questions for every route:
+Because the route is linear, the cost of missing something is a chapter replay through Story Select. The [Story Select and cleanup guide](/story-select-cleanup/) explains what carries over and what does not.
 
-1. Where can Sophia retreat if a melee exchange goes wrong?
-2. Which enemy attack is readable enough to parry, and which one should be avoided?
-3. Does the route offer a way to hide, outsmart, or bypass an encounter instead of forcing a fight?
+## How traversal feels
 
-Those are confirmed design priorities, not a claim that every room has a stealth solution.
+Some Steam reviews checked on August 28, 2026 complained about traversal interactions. They did not describe a consistent list of affected actions, so read them as feedback about how movement felt to those players rather than as a known bug. If an interaction seems unresponsive, check the on-screen prompt and your input settings first; it is usually a positioning issue rather than a hidden route.
 
-## Make an island route card
+If Sophia actually drops below the scenery, let the normal checkpoint transition finish before giving more inputs, and keep your existing save. The [falling through the map guide](/resonance-falling-through-map-recovery/) walks through a safe recovery. The October 6 bug-fix update also lists collision fixes; the [October 6 update guide](/resonance-plague-tale-legacy-october-6-update/) has the full list.
 
-Create one card for each new trail or interior:
+## Reading a new area
 
-| Note | Record |
-| --- | --- |
-| Route name | The name shown in-game, once the retail build provides it. |
-| Landmark | Ruin, shoreline, statue, bridge, or other stable visual anchor. |
-| Sphere interaction | What the Minoan sphere changes, if anything. |
-| Encounter | Enemy presence, pursuit, or a safe bypass observed. |
-| Retreat | The nearest cover, height change, doorway, or open route. |
-| Return state | Whether the area changes after the puzzle, fight, or story beat. |
+Three questions cover most new rooms:
 
-The route card is intentionally factual. Write "guard patrol moved after light changed" before writing "light controls the patrol." That distinction prevents an announcement-based assumption becoming a misleading walkthrough.
+1. **Is there an armed enemy?** Combat rooms announce themselves with a person holding a weapon. Puzzle rooms announce themselves with architecture — a beam, a mirror, a brazier, a statue.
+2. **Where can Sophia retreat?** Note the nearest cover, height change, or doorway before a melee exchange starts.
+3. **Is this a creature section?** From Chapter 6 the creature hunts Sophia. It cannot be killed, so those scenes are about hiding and moving, not fighting.
 
-## Build a parry-first encounter habit
+The official combat language makes parry timing a core skill. In a new area, do not commit to a long attack string straight away: watch one enemy's wind-up, parry, then decide whether a powerful strike is safe. If several pursuers arrive at once, use agility and terrain to split them. The [combat guide](/combat/) covers the attack colour rule, and [stealth or combat](/stealth-or-combat/) covers the creature chases.
 
-The official combat language makes parry timing a core skill. In a new area, do not immediately spend every tool or commit to a long attack string. Watch one enemy's wind-up, test a parry, then decide whether a powerful strike is safe. If the encounter includes multiple pursuers, use agility and terrain to split them before trying to win a crowded exchange.
+## Light, puzzles, and the sphere
 
-The official page does not publish parry windows, stamina rules, enemy health, or a finished upgrade tree. Avoid exact frame advice until a retail-build result reproduces the same attack under a named version and platform.
+Much of the island's exploration runs through light puzzles solved with the stolen Minoan sphere. Light Splitting arrives in Chapter 4, Light Reveal from Chapter 5, and Light Concentrate in Daedalus' Workshop in Chapter 10, after which light also works as a weapon. The [Minoan sphere guide](/minoan-sphere-light-puzzle-guide/) lists the puzzles worth knowing per chapter.
 
-## Use the two-era story as a spoiler boundary
+## What to sweep before moving on
 
-The story takes place before *A Plague Tale: Requiem*, with Sophia's island journey tied to the larger myth. Story pages and previews may mention historical context, but a historical reference is not a gameplay solution. Keep lore notes, environmental clues, and mechanical discoveries in separate sections of your guide.
+Exploration is where completion is won or lost. The game tracks four collectible counters — Blades, Artefacts, Charms, and Resonance Points — across its chapters, and one of them cannot be recovered later:
 
-## Additional released-game checks
+- **Resonance Points** save only at the next checkpoint, do not carry through Story Select, and cannot be farmed on a replay. Sweep dead ends and cliff trails as you go.
+- **Blades, Artefacts, and Charms** count in Story Select after the credits, so a missed one is recoverable.
 
-The highest-value update targets are:
+Two exploration achievements are missed by walking past rather than by difficulty: **Sea you later!** (say hello to the turtle) and **Theater enthusiast** (watch the entire puppet show at the carnival in Chapter 2). The [collectibles by chapter guide](/plague-tale-legacy-collectibles-by-chapter/) has the per-chapter counts, and the [missable achievements guide](/missable-achievements-guide/) covers the rest.
 
-- the final island map and named regions;
-- whether the sphere can affect combat as well as puzzles;
-- the complete tool and upgrade list;
-- enemy tells, parry timing, and encounter respawn rules;
-- the exact role of stealth, hiding, and environmental tricks;
-- the order of story gates and the point-of-no-return structure.
+## A simple route note
 
-Until those are tested, the [locations page](/locations/) is the official-scope reference, the [combat page](/combat/) covers confirmed wording, and the [Minoan sphere guide](/minoan-sphere-light-puzzle-guide/) handles the light mechanic.
+If you are hunting a missed collectible or a stuck traversal spot, a short note per area makes a replay much faster. Record the chapter, a stable landmark (a ruin, statue, bridge, or shoreline), what the sphere changed if anything, which enemies were present, and where you could retreat. Write what you saw — "the patrol moved after the light changed" — before deciding why it happened. That habit keeps a replay focused and stops a one-off accident from turning into a false rule for the whole island.
+
+## Lore versus mechanics
+
+The story takes place 15 years before *A Plague Tale: Requiem*, and Sophia's island journey is tied to the Minotaur myth. Environmental details and artefacts tell that story, but a historical reference is not a puzzle solution. Keep lore and route notes separate; the [story guide](/story/) and [Minotaur myth explainer](/minotaur-myth-explained/) cover the background.
+
+## Related pages
+
+- [Walkthrough by chapter](/walkthrough/)
+- [Locations and world guide](/locations/)
+- [All bosses](/plague-tale-legacy-all-bosses/)

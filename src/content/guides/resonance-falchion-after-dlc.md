@@ -54,7 +54,7 @@ Steam lists **36** achievements. On October 20, **ACH_01** was **92.9%**. The th
 
 Update. Open the inventory. Equip the Falchion if it returned. Retest one edge kill and one restart. Then go back to the fight you actually meant to learn.
 
-The [flank parry](/how-to-parry-a-flank/) still starts by turning to face the second guard. A missing sword made that page impossible. A restored sword makes it ordinary again. The island did not change because a DLC install hid a blade. The inventory did, and the notes say that hide is fixed.
+The [flank parry](/combat/) still starts by turning to face the second guard. A missing sword made that page impossible. A restored sword makes it ordinary again. The island did not change because a DLC install hid a blade. The inventory did, and the notes say that hide is fixed.
 
 While you are in that inventory, check the other menu bugs from the same list so you do not "lose" the sword a second time by failing to bind it. Focus Attack, Prism unlock, and book navigation could all refuse a rebind before this patch. A Falchion on the old button, with Focus Attack stuck on a key you no longer press, feels exactly like a missing weapon in a fight. Rebind one control, swing once, then rebind the next. A stack of new binds plus a restored sword is how you convince yourself the patch stole the blade again.
 

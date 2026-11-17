@@ -1,72 +1,87 @@
 ---
 title: "Resonance: A Plague Tale Legacy Minoan Sphere Guide"
-heading: "Resonance: A Plague Tale Legacy Minoan Sphere Light Puzzle Guide"
-description: "What Resonance: A Plague Tale Legacy officially confirms about Sophia's Minoan sphere and light manipulation, plus a practical puzzle observation checklist."
+heading: "Resonance: A Plague Tale Legacy Minoan Sphere and Light Puzzle Guide"
+description: "Resonance: A Plague Tale Legacy light puzzles: the Minoan sphere's three powers, how to read a light room, chapter puzzles, and using light against the creature."
 category: skills
 keyword: "plague tale legacy minoan sphere puzzle"
-status: official
-sourceKeys: ["steam", "steamNews", "steamMedia"]
+status: community
+sourceKeys: ["steam", "steamNews", "steamMedia", "steamAchievements"]
 preRelease: false
 order: 12
-updatedAt: "2026-08-28"
+updatedAt: "2026-11-16"
 cover: "/images/ptl-light-puzzle.webp"
 ---
 
-The **Minoan sphere** is the clearest new tool in **Resonance: A Plague Tale Legacy**. The official Steam description says Sophia steals the sphere and can use it to manipulate light, while the island's myth describes Daedalus weaving light into its heart. That establishes the mechanic's role without publishing a room-by-room solution list.
-
-This guide is a spoiler-safe way to prepare for those rooms. It explains what is confirmed, what belongs to earlier-series context, and how to record a puzzle before committing to a dangerous route.
+The stolen **Minoan sphere** is the other half of the game. The official Steam description says Sophia steals it and uses it to manipulate light — a force that **Daedalus** wove into the heart of the island. Light puzzles are the spine of the exploration, and over the campaign the sphere gains three powers that turn it from a door key into a weapon.
 
 <figure>
-  <img src="/images/ptl-light-puzzle.webp" alt="Sophia standing near a bright Minoan light puzzle mechanism in Resonance: A Plague Tale Legacy" width="1600" height="900" loading="lazy" decoding="async" />
-  <figcaption>The sphere is a light-manipulation tool. The screenshot establishes the visual language; it does not reveal the final puzzle solutions.</figcaption>
+  <img src="/images/ptl-ss-sphere-puzzle.jpg" alt="Sophia holds the Minoan sphere as cyan light traces a floor puzzle in a stone chamber" width="1920" height="1080" loading="lazy" decoding="async" />
+  <figcaption>Every light room comes down to three questions: where is the source, where is the lock, and what is in the way.</figcaption>
 </figure>
 
-## What is confirmed
+## The three sphere powers
 
-- **Sophia** is the playable character described by the official store page.
-- She reaches **Minotaur's Island**, a location tied to the game's Greek myth setting.
-- The stolen **Minoan sphere** manipulates light.
-- Light and the island's mechanisms are part of exploration and puzzle solving.
-- The game also confirms dynamic melee, parries, powerful strikes, agility, and tricks, so a puzzle room may sit beside an encounter rather than replacing it.
+Walkthrough coverage of the released game lists three powers, unlocked in this order:
 
-The official material does not say whether the sphere has one universal interaction, a skill tree, a charge limit, or a fixed set of beam rules. Do not copy a system from *Innocence* or *Requiem* and label it as Resonance data.
+| Power | From | What it does |
+|---|---|---|
+| **Light Splitting** | The first trial (Chapter 4) | Splits one beam into several, so one source can feed two or three receptacles |
+| **Light Reveal** | The trials (Chapter 5 onward) | Exposes hidden markings — safe floor plates, skull switch order, wall symbols |
+| **Light Concentrate** | Daedalus' Workshop, Chapter 10 | A focused beam you can aim anywhere while near a light source |
 
-## A four-step room-reading loop
+**Light Concentrate is the turning point.** Before Chapter 10 the sphere opens light gates and reopens paths; it is not a damage tool. From Chapter 10 on it burns corruption off bridges and mirrors, kills Petrified Soldiers, and pushes the creature back.
 
-When you enter a light puzzle, pause and record the room in this order:
+## How to read a light room
 
-1. **Source:** where the sphere's light begins and whether the source can move.
-2. **Surface:** every mirror, opening, reflective panel, floor mark, or carved channel that visibly reacts.
-3. **Shadow:** which blocked areas change when the light moves, and whether an enemy or door is affected.
-4. **Exit:** the route that becomes safe or reachable after the interaction.
+1. **Find the source.** A brazier, a sun shaft, or a Receptacle where the sphere goes.
+2. **Find the lock.** A golden sphere, a medallion, a gem on a bull pillar, a stela.
+3. **Find what is in the way.** Corruption on a mirror, a barricade, an unaligned lens.
+4. **Clear, then aim.** Burning the corruption off a mirror before you align it saves the whole re-run.
 
-This loop keeps a visual clue separate from a guessed purpose. If rotating a mechanism changes a beam, record that observation before deciding whether it opens a door, disables a threat, or reveals a route.
+When a room has coloured gems — red, green, blue — the solution is a one-to-one match of beam colour to gem position, not a sequence. If the game shows a prompt or a visual response after an interaction, treat that as the clue; the room's state matters more than any memorised order.
 
-## Separate light from combat assumptions
+## Puzzle room or combat room?
 
-The sphere is confirmed as a light tool, not as a confirmed weapon. The store description says Sophia must hide, outsmart, and push forward against the creature behind the myth, while the combat description foregrounds melee, parries, and strikes. Until a first-party source gives the sphere a combat effect, use it for observation and environmental problem solving rather than assuming it stuns every enemy.
+Combat rooms announce themselves with a person holding a weapon. Puzzle rooms announce themselves with architecture: a beam, a mirror, a brazier, a statue in a shaft of light. Mixing them up is why some players call the puzzles unclear. In a mixed room, deal with the armed enemy first, then return to the light — and if a fight breaks a beam, reset the light before continuing.
 
-If a puzzle room includes a hostile encounter, prepare the same way you would for combat elsewhere:
+The coastal ruins are a good example. The opening vista is a cliff of carved stone, a tower offshore, and turquoise water, and the rooms under it are mostly light puzzles and short fights. A locked door with no enemy in front of it is usually not a bug: the ruins stack vertically, so walk back one terrace. The view from the cliff is the map — down, then across, then the tower.
 
-- identify a safe retreat before moving the light;
-- watch for a parry opportunity and a non-parryable attack;
-- use agility and environmental space to avoid being cornered;
-- test the sphere only when the enemy's current position is understood.
+## Chapter puzzles worth knowing in advance
 
-## Earlier-series context, clearly labelled
+- **Chapter 3 — mountain entrance.** Place the sphere in the Receptacle to raise two mirrors, then aim light at the golden spheres. The last lens is broken: Sophia and Leni lift it together. If Leni's lens prompt never appears, that was a named bug fixed by the October 6 update — see the [October 6 update guide](/resonance-plague-tale-legacy-october-6-update/) and the [Chapter 3 lens checklist](/resonance-leni-lens-puzzle-checklist/).
+- **Chapter 4 — spike corridor.** The safe plates are shown by the wall symbols. Use Light Reveal before you step, not after.
+- **Chapter 5 — four symbols.** Floor plates marked dots, octopus and flower, then rotating mirrors, then a chasm where Light Reveal shows which platforms hold. If the prism colours look wrong, read the [Chapter 5 prism colours guide](/chapter-five-prism-colors-missing/).
+- **Chapter 7 — Black Temple.** The skull switches go rightmost, second from right, leftmost, second from left. Light Reveal shows which is which.
+- **Chapter 10 — stela door.** Light Reveal on six stelas, then Light Splitting to open it.
+- **Chapter 11 — Patera.** The whole chapter is one lens chain, with Faro on the cranks while you position.
+- **Chapter 13 — three gates.** Braziers, mirrors, pressure plates and Receptacles, with the creature interrupting each one.
 
-The previous *A Plague Tale* games used light, darkness, fire, alchemical tools, stealth, and the sling in specific ways. That is useful context for the series' design language, but it is not confirmation that Resonance has a sling, rat-control rules, or the same alchemical ammunition. The new game is explicitly described as melee-forward, with its own Minoan sphere.
+Several hidden Steam achievements — named Resonance, Patera, Refraction, and Fading Light — use the same light-and-sound language. Valve hides their requirements, so they are not assigned to specific rooms here.
 
-## Do not publish the wrong kind of walkthrough yet
+## Light as survival
 
-Without a direct released-game check, avoid claiming:
+From Chapter 6 the creature hunts Sophia, and it tracks the **blue trail** that sprinting leaves on the floor.
 
-- exact beam angles or mirror sequences;
-- a universal answer for every island room;
-- sphere upgrades, charges, or damage values;
-- whether light permanently changes enemy behaviour;
-- which puzzles are mandatory or optional.
+- Walk or crouch in dark areas. Running is what gets you caught.
+- Lit areas and braziers are safe. Rubble is cover when it breathes in.
+- The creature **breathes out to kill braziers** — stay behind cover when it does.
+- After Chapter 10, burn it at a brazier with Light Concentrate to buy ground.
 
-The useful launch-day data will be a screenshot, room name, mechanism state, solution order, and whether the solution changes on a second visit. Keep those fields ready in a notes template.
+## Petrified Soldiers
 
-For combat context, read [the melee and parry guide](/combat/). For the myth and timeline, see [story and setting](/story/). Both pages distinguish official Resonance information from earlier-series context.
+The late-game enemy the sphere exists for: stagger them, land a Critical Strike to expose the corruption inside, then aim Light Concentrate at the head. Swinging alone will not finish one. Combat basics are on the [combat guide](/combat/).
+
+## Light and accessibility
+
+Steam lists a way to play without timed input. Light puzzles themselves are about reading a room, not speed, so take a moment to understand the beam when the scene allows it, then return to movement or combat prompts. More on the options in the [difficulty and accessibility guide](/difficulty-accessibility/).
+
+## Series context
+
+The earlier *A Plague Tale* games used fire, alchemical ammunition, and light mainly against rat swarms. Resonance has no rat swarms; its light mechanic is built around the Minoan sphere instead.
+
+## Related pages
+
+- [All bosses](/plague-tale-legacy-all-bosses/)
+- [Daedalus](/characters/daedalus/)
+- [Walkthrough by chapter](/walkthrough/)
+- [Story and setting](/story/)

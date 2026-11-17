@@ -6,7 +6,7 @@ category: "guide"
 keyword: "plague tale legacy achievements"
 status: "official"
 order: 14
-updatedAt: "2026-09-01"
+updatedAt: "2026-11-16"
 sourceKeys: ["steamAchievements", "steam"]
 preRelease: false
 draft: false
@@ -17,7 +17,9 @@ cover: "/images/ptl-capsule.webp"
 
 The rarest achievement in the game is **Hoarder** at 3.2%. The story completion achievement, **A new beginning**, sits at 26.3% — roughly one in four players who started the game has finished all chapters.
 
-## All 36 Resonance: A Plague Tale Legacy achievements
+The count has not changed since launch: Steam App 2713000 still listed **36 achievements** on October 16, 2026, and the storefront publishes no missable table.
+
+## All 36 achievements
 
 Sorted by global unlock rate, most common first. A low percentage usually means one of two things: the achievement is deep in the story, or it is a deliberate challenge most players never set up.
 
@@ -60,7 +62,7 @@ Sorted by global unlock rate, most common first. A low percentage usually means 
 | 35 | Superstitious | Collect all Charms | 3.4% |
 | 36 | Hoarder | Collect all Relics of the Present and the Past | 3.2% |
 
-## The four collectible categories the achievement list confirms
+## The four collectible sets
 
 Four separate "collect them all" achievements appear in the list, and between them they name the collectible types the game tracks:
 
@@ -69,7 +71,7 @@ Four separate "collect them all" achievements appear in the list, and between th
 - **Superstitious** — all **Charms** (3.4%)
 - **Hoarder** — all **Relics of the Present and the Past** (3.2%)
 
-Valve publishes the categories, not the counts or the locations, so this page names the four sets without claiming a total per set. If you are planning a completion run, those four are the ones to track from Chapter 1 — see the [collectibles after death](/collectibles-after-death/) and [find missed artifacts](/find-missed-artifacts/) pages for what players report about recovering missed pickups.
+Valve publishes the categories, not the counts or the locations. Player guides count **8 Blades, 37 Artefacts, 30 Charms** (five of them Pierced Coins, which are the Theseus' Echoes) and **200 Resonance Points**; the chapter-by-chapter split is on [collectibles by chapter](/plague-tale-legacy-collectibles-by-chapter/). Blades, Artefacts and Charms can be cleaned up through Story Select after the credits; see the [Story Select cleanup guide](/story-select-cleanup/).
 
 Their unlock rates are worth reading together: Plunderer is more than twice as common as the other three. Blades sit on named landmarks that are hard to walk past, while Echoes, Charms and Relics are each cleared by only about 1 in 25 players.
 
@@ -95,22 +97,22 @@ Note that the two counter-style achievements, Sharp enough for you? and No holds
 
 ## Two easy ones that are pure exploration
 
-**Sea you later!** (28.8%) asks you to say hello to a turtle. **Theater enthusiast** (22.7%) asks you to watch the entire puppet show at the carnival — meaning the show has an end state you can sit through rather than skip. Both are single missable moments in specific locations, and both are more likely to be lost to impatience than to difficulty.
+**Sea you later!** (28.8%) asks you to say hello to a turtle. **Theater enthusiast** (22.7%) asks you to watch the entire puppet show at the carnival — meaning the show has an end state you can sit through rather than skip. Both are single missable moments in specific locations, and both are more likely to be lost to impatience than to difficulty. The [missable achievements guide](/missable-achievements-guide/) explains how to set up each one, plus Untouchable and Cannon fodder.
 
 ## What the hidden achievements tell you
 
-Nineteen names are published without requirements. Reading them as a set is still informative: **Resonance**, **Patera**, **Refraction**, **Fading Light** and **As One** cluster around the game's light-and-sound systems, while **Blood ties**, **Those before us**, **They were people** and **From hell it rose** read like chapter milestones. The steady percentage decline across them — 89.9% down to about 20% — is the shape you would expect from a linear story where each entry marks progress further in.
+Nineteen names are published without requirements. The steady percentage decline across them, from 89.9% down to about 20%, is the shape you would expect from a linear story where each entry marks progress further in.
 
-This page will not assign them to chapters. Valve deliberately withholds those descriptions to avoid story spoilers, and inferring them from the names would produce a checklist this site cannot stand behind.
+Thirteen of the hidden names are also the titles of Chapters 1 to 13, from Blood ties to As One; Chapter 14, What Remains, is the epilogue and has no achievement of its own. The remaining six (Unpredictable, They were people, Refraction, Close call, Baitfish, Excessive force) have no published requirement, and Valve withholds those descriptions to avoid story spoilers.
 
 ## How to read the unlock percentages
 
-The percentages are Steam's global figures across all accounts that own the game, read once on **2026-09-01**, five days after the 27 August 2026 release. They will drift. Early in a game's life, story achievements read lower than they eventually will, because a large share of owners have not finished yet — expect **A new beginning** to climb well past 26.3% over the coming months.
+The percentages are Steam's global figures across all accounts that own the game, read once on **2026-09-01**, five days after the 27 August 2026 release. They will drift. Early in a game's life, story achievements read lower than they eventually will, because a large share of owners have not finished yet — and that is what happened: by October 17, 2026, **A new beginning** had reached **60.5%**, Plunderer **17.7%**, In the name of my kin **9.5%**, Like a warrior **11.5%**, Sea you later! **32.0%** and Theater enthusiast **24.5%**. The table above keeps the September 1 snapshot so every row comes from the same day.
 
 Percentages are also PC-only. Console trophy rates are tracked separately by Sony and Microsoft and are not reflected here.
 
 ## The short version
 
-Thirty-six achievements. One story completion achievement at 26.3%. Four collectible sets — Blades, Theseus' Echoes, Charms, Relics — of which three are cleared by under 5% of players. Nine combat challenges that need deliberate setup, the hardest being a 4-kill Focus attack at 4.8%. Nineteen hidden entries whose requirements Valve does not publish, and which this page does not guess at.
+Thirty-six achievements. One story completion achievement at 26.3%. Four collectible sets — Blades, Theseus' Echoes, Charms, Relics — of which three are cleared by under 5% of players. Nine combat challenges that need deliberate setup, the hardest being a 4-kill Focus attack at 4.8%. Nineteen hidden entries whose requirements Valve does not publish.
 
 For the live list with your own progress, open the game's achievement panel or the Steam overlay; the [missable achievements guide](/missable-achievements-guide/) covers what players report about cleanup after the credits.

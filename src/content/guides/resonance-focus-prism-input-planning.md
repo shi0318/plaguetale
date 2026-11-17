@@ -1,44 +1,73 @@
 ---
-title: "Resonance Focus Attack and Prism Controls: A Practical Combat Setup"
-description: "Set up Focus Attack, Prism unlock, and Book navigation inputs in Resonance, then practice a controlled encounter without mixing combat and puzzle problems."
+title: "Resonance Focus Attack Rebind and Prism Controls: A Practical Setup"
+heading: "How to Rebind Focus Attack, Prism Unlock and Book Controls in Resonance"
+description: "Focus Attack, Prism unlock and Book navigation could not be rebound before the October 6 Resonance update. How to set them up now and check that they stick."
 category: "guide"
+keyword: "resonance plague tale legacy focus attack rebind"
 status: "official"
 order: 3
-updatedAt: "2026-11-01"
-cover: "/images/ptl-ss-melee-clash.jpg"
+updatedAt: "2026-11-16"
+cover: "/images/ptl-crop-weapon-parry.jpg"
 preRelease: false
 sourceKeys: []
 ---
 
-<figure><img src="/images/ptl-ss-melee-clash.jpg" alt="Resonance Focus Attack and Prism Controls gameplay illustration" width="1400" height="788" loading="lazy" decoding="async" /></figure>
+<figure>
+  <img src="/images/ptl-crop-weapon-parry.jpg" alt="Sophia parrying a strike in Resonance" width="1400" height="788" loading="lazy" decoding="async" />
+  <figcaption>A rebind that does not stick makes a good combat system feel random. The October update fixed three of them.</figcaption>
+</figure>
 
+Before the October 6 bug-fix update, three controls in Resonance could not be changed: **Book navigation** inputs, the **Focus Attack** input, and the **Prism unlock** input. The same update fixed a **joystick-swap preference** that was not saved after a relaunch. If combat felt wrong after you remapped your controller, the menu was the bug. On the updated build, rebind one action, test it once, and only then judge the fight.
 
-## Build the setup around the actions you use
-Resonance: A Plague Tale Legacy combines melee combat, exploration, environmental puzzles, and a narrative adventure with Sophia. Its October 6 bug-fix update addressed several control issues: players could not modify Book navigation inputs, change the Focus Attack input, or change the Prism unlock input. The same patch fixed a joystick-swap preference that did not persist after relaunch. These are useful corrections for a practical control setup, but they do not make every action interchangeable or turn a puzzle interaction into a combat command.
+## What the update fixed
 
-Start by deciding which physical inputs feel comfortable for the actions you actually need. A control scheme should let you react without searching across several keys or remembering an awkward combination in the middle of a fight. This guide treats the available settings as tools for consistency. It does not assign undocumented damage values to Focus Attack, invent a universal input sequence for every platform, or assume that a remapping problem explains every failed interaction in the game.
+| Control problem in the notes | What it looked like |
+| --- | --- |
+| Focus Attack input could not be changed | Focus Attack stayed on its old key after a remap |
+| Prism unlock input could not be changed | The Prism stayed on the default input |
+| Book navigation inputs could not be modified | Book controls ignored your layout |
+| Joystick-swap preference not saved after relaunch | Sticks felt reversed after a reboot |
 
-## Record the baseline before remapping
-Open the current controls menu and capture the existing assignments. Include ordinary movement and interaction controls alongside Focus Attack, Prism unlock, and Book navigation. Keep the platform and input device in mind: a keyboard label in another player's guide may not correspond to the prompt on your controller. Read the action names shown by your installed build rather than copying an entire layout from a screenshot without checking what each binding does.
+A launch install still has these bugs. Confirm the update is installed before changing anything.
 
-Change one troublesome assignment first. Apply the change through the game menu, return to play, and verify the action in a manageable situation. If another action now feels awkward, inspect the assignments again before changing more controls. The objective is a layout you can explain and reproduce. A long sequence of simultaneous remaps can create conflicts or confusion that are harder to diagnose than the original uncomfortable key. Keep a path back to your baseline until you have tested every essential action you changed.
+## Record your baseline first
 
-## Practice Focus Attack within a readable encounter
-Choose an encounter where you can understand the space and enemy approach without also solving an unfamiliar puzzle. Before engaging, identify a route that gives Sophia room to move and a point where you can observe the action prompt or the relevant ability state. Use the current on-screen information to determine when an action is available. A successful input test only needs to show that your chosen binding triggers the intended action under the conditions the game requires.
+Open the controls menu and note the current assignments, including movement and interaction alongside Focus Attack, Prism unlock, and Book navigation. Read the action names your installed build shows rather than copying a layout from another player's screenshot; a keyboard label in someone else's guide may not match your controller prompt. Keep a way back to this baseline until every action you changed has been tested.
 
-Do not turn that test into a claim that repeatedly pressing Focus Attack is always the best combat plan. Watch the enemy response, your position, and the actions still available after the attempt. If the result is different from what you expected, check the ability state and the current prompt before remapping again. A control can be working correctly while the action is unavailable at that moment. Distinguishing availability from input failure saves time and keeps you from replacing a comfortable layout unnecessarily.
+## Rebind one thing at a time
 
-## Use enemy behavior as a separate check
-The October patch also addressed enemies failing to react to Sophia's presence or attacks after a restart. That is a behavior issue, distinct from whether your button activates an attack. If an enemy remains unresponsive, note whether the encounter followed a restart or reload and whether the same behavior occurs after another clean load on the updated build. Do not interpret an unreactive enemy as proof that a new control layout has made combat easier or that the intended encounter requires no response.
+1. **Focus Attack first.** Leave parry and crouch where they are until this one sticks.
+2. **Leave the menu and test it on one guard.** If Focus Attack fires, the binding held.
+3. **Then Prism unlock**, if you need it on another input. Test it the same way.
+4. **Book navigation last**, and only if the Book is a tool you actually open.
+5. **Joystick swap:** set it, close the game, relaunch once, and check it stayed. If it held, stop touching it.
 
-Another fix concerns enemies surviving after being pushed off an edge. A push near a ledge can therefore behave differently from an older unpatched encounter. Test it only where the current fight and surroundings make the action sensible. Avoid building a whole route around a failed historical behavior or assuming any contact near a cliff must count as a successful push. For a focused check of that issue, use <a href="/resonance-ledge-shove-retest/">the ledge-shove retest guide</a> and keep its result separate from your control-remapping comparison.
+Do not put Focus Attack on the same input as parry; give them different buttons and test each. Changing five bindings at once creates conflicts that are harder to diagnose than the original awkward key.
 
-## Verify Prism and Book controls outside combat
-Once combat inputs feel predictable, test Prism unlock and Book navigation in their relevant interfaces. Use the current prompt and choose a safe place to read or navigate. The bug-fix list names these remapping problems separately, so test each assignment individually instead of declaring the entire layout fixed because Focus Attack works. Check forward and backward navigation where the interface offers them, then return to normal play and confirm that basic movement and interaction remain comfortable.
+## Practising Focus Attack
 
-If a puzzle object will not respond, identify the chapter and object before changing Prism inputs repeatedly. The October patch specifically fixed Leni's lens interaction in Chapter III and a Chapter XIV problem where the Book was unusable after the credits. Those are context-specific interaction issues, not evidence that every unresponsive object is waiting for another key assignment. Read the objective, inspect the available prompt, and verify your game is updated before treating a known progression problem as a personal mistake with the controls.
+Pick an encounter where you understand the space and the enemy approach, without an unfamiliar puzzle in the way. Watch the on-screen prompt or ability state to see when the action is available. A control can be working while the action is simply unavailable at that moment, so check availability before remapping again. Spend Focus Attack on the opening you meant to use it on, not on the first idle enemy.
 
-## Check persistence and keep one useful conclusion
-After the layout works during play, return to the menu normally, close the game, and relaunch. Recheck the assignments and any joystick-swap preference you changed. The update addressed persistence for that preference, so the relaunch comparison is useful if your controls previously reverted. Record whether the option remains selected and whether the physical input still feels correct. Keep both observations, because a visible setting and the behavior experienced during play are related but not identical pieces of evidence.
+A working binding does not change the fundamentals: if a second guard flanks you, turn to face them and parry. The [combat guide](/combat/) covers parry timing, flanks, and attack colour cues.
 
-Finish with one clear conclusion: a comfortable binding that works, an action whose availability you now understand, or a reproducible setting that still fails to persist. If you need to report the last case, include the platform, device, changed action, and relaunch sequence. Avoid attaching a vague claim that every combat system is broken. Continue with <a href="/combat/">the combat overview</a> for broader encounter planning and <a href="/light-puzzle-tips/">light-puzzle tips</a> when the obstacle is environmental. A stable layout is valuable because it lets you focus on those decisions without continually questioning the inputs beneath them.
+## Problems that are not your controls
+
+Several other October fixes can feel like a dead button:
+
+- **Missing Falchion.** The Falchion could disappear after installing the DLC. Open the inventory before blaming Focus Attack; see [the Falchion fix](/resonance-falchion-after-dlc/).
+- **Enemies not reacting after a restart.** A guard who ignores your attacks after a reload was a separate bug. A new binding will not make him flinch on the launch build.
+- **Ledge shoves.** Enemies who survived a push off an edge should now die. Keep that test separate from your control check; the [October combat fixes guide](/resonance-october-combat-bugfix-guide/) covers both.
+- **The Book after the credits.** In Chapter XIV the Book could become unusable after the credits. That is a post-credits bug, not a binding problem, so do not rebind Book navigation to fix it. See [the book after the credits](/resonance-book-after-credits/).
+- **Leni's lens in Chapter III.** An unresponsive lens was a trigger bug fixed in the same update, not a Prism binding issue. See the [lens checklist](/resonance-leni-lens-puzzle-checklist/).
+
+Difficulty and accessibility settings are not this fix either. A button that does not fire is not a damage problem, so lowering the difficulty will not help. Nor is a rebind a graphics problem; lowering the preset will not find a button. If a Nemesis door hitches, see the [October PC patch guide](/resonance-october-pc-patch-settings-guide/).
+
+## Checking Prism and Book controls
+
+Test Prism unlock and Book navigation in their own interfaces, in a safe place, one at a time. Check forward and backward navigation where the interface offers it, then return to normal play and confirm movement and interaction still feel right. If a puzzle object will not respond, identify the chapter and object before changing Prism inputs repeatedly; the general rules for the sphere are in the [Minoan sphere guide](/minoan-sphere-light-puzzle-guide/).
+
+## Confirm it sticks
+
+After the layout works in play, quit normally, close the game, relaunch, and recheck the assignments and the joystick-swap setting. Note both what the menu shows and how the input behaves in play, because those are related but not identical.
+
+End with one clear result: a binding that works, an action whose availability you now understand, or a setting that still fails to persist. If it is the last, report it with your platform, device, the action you changed, and the relaunch sequence.

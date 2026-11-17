@@ -1,19 +1,19 @@
 ---
 title: "Resonance: A Plague Tale Legacy Skills — Best Unlock Order"
-heading: "Which skill to buy first, and why"
-description: "Resonance skill guide: all six skills and their masteries, what Resonance Points cost, and the unlock order that makes the late chapters manageable."
+heading: "Resonance: A Plague Tale Legacy Skills, Mastery Branches and Unlock Order"
+description: "Resonance skill guide: all six skills and mastery branches, Echo's Return, Resonance Point costs, and the unlock order that makes the late chapters manageable."
 category: "skills"
 keyword: "plague tale legacy skills"
 status: "community"
-sourceKeys: []
+sourceKeys: ["steamAchievements"]
 preRelease: false
 order: 2
 draft: false
 cover: "/images/ptl-crop-weapon-parry.jpg"
-updatedAt: "2026-10-17"
+updatedAt: "2026-11-16"
 ---
 
-Sophia has **six skills**, each with **two masteries**, plus a free Focus Attack she gets from the story. Unlocking everything costs **165 Resonance Points** out of the **200** in the game, so you have a 35-point buffer — but only if you do not waste points early.
+Sophia has **six skills**, each with **two masteries**, plus a free Focus Attack she gets from the story. Unlocking everything costs **165 Resonance Points** out of the **200** in the game, so you have a 35-point buffer — but only if you do not waste points early. The Steam achievement **Like a warrior** ("Unlock the 6 mastery branches") confirms the six-branch structure.
 
 <figure>
   <img src="/images/ptl-crop-weapon-parry.jpg" alt="A sabre meeting a round shield in a camp-yard melee" width="1920" height="1080" loading="lazy" decoding="async" />
@@ -38,9 +38,21 @@ Each new skill branch costs more than the last, so the order you buy in decides 
 1. **Aegean Deflect → the red-attack parry mastery.** Buy this first and buy the mastery as soon as you can afford it. Every boss from Faro (Chapter 9) onward throws red attacks in volume, and Irene in Chapter 11 is built around them. This one purchase changes more fights than the other five skills combined.
 2. **Bullbreaker Kick.** Shielded soldiers and Brutes are the standard camp encounter. The kick breaks guard; the collision mastery turns a crowded room into free stun damage.
 3. **Hero's Step.** Two chained dodges with invulnerability is how you survive King Minos in Chapter 12, where Ariadne cannot parry red at all.
-4. **Echo's Return.** Worth it for **Skilled maneuverer** — stun three enemies at once — which 34.3% of Steam players have. Save it for a three-enemy camp rather than hunting it.
+4. **Echo's Return.** Worth it for the **Skilled maneuverer** achievement (stun three enemies at once). Save it for a three-enemy camp rather than hunting it.
 5. **Heroic Surge.** Good, not urgent. The extra health point rewards a playstyle you will already have by the late chapters.
 6. **Fated Cast.** Last. Throwables are useful but situational, and by the time you can afford this you have the points to spare.
+
+## When to change the order
+
+The list above is a default, not a rule. Use the first few encounters to see what is actually stopping you. If you keep getting hit from the side in crowded rooms, Bullbreaker Kick or Echo's Return moves up. If red attacks are ending your attempts, finish Aegean Deflect before anything else. If dodging is the problem, Hero's Step comes earlier.
+
+The important habit is not to spend every point before you understand the next chapter's demand. A mastery branch is a long-term choice; one upgrade does not turn Sophia into a different character. A short note helps: the skill you bought, the chapter you bought it in, and what changed in a repeatable fight.
+
+## Echo's Return in practice
+
+Echo's Return is the crowd-control skill. Sophia grabs a normal or yellow attacker and throws them into the group, stunning everyone they hit. It answers the yellow flash in the attack colour rule (normal swings are parried, yellow attacks can be parried for a counter or thrown, red attacks are dodged unless you own the Aegean Deflect mastery). One of its two upgrade paths covers red-attack handling.
+
+To learn it, save before a group encounter, use it once, and watch the target, Sophia's recovery, and the follow-up window. It pays off when three or more enemies are bunched together; in a one-on-one duel a parry is usually the better answer. The full colour rule is on the [combat guide](/combat/).
 
 ## Focus Attack is free
 
@@ -59,10 +71,10 @@ Charms are passive — there is no loadout screen, and duplicates stack:
 
 ## Resonance Points: the one real trap
 
-Points only save when you reach the **next checkpoint**. Die before it and you collect them again. They do **not** carry through Story Select, and reloading an earlier chapter resets you to the total you had then. You cannot farm them on a replay. With 200 in the game and 165 needed for **Like a warrior**, you can miss up to 35 — but not 50.
+Points only save when you reach the **next checkpoint**. Die before it and you collect them again. They do **not** carry through Story Select, and reloading an earlier chapter resets you to the total you had then. You cannot farm them on a replay. With 200 in the game and 165 needed for **Like a warrior**, you can miss up to 35 — but not 50. What a death does and does not reset is covered in the [Story Select and cleanup guide](/story-select-cleanup/).
 
 ## Related pages
 
 - [All bosses](/plague-tale-legacy-all-bosses/)
-- [Mastery branches](/plague-tale-legacy-mastery-branches/)
+- [Combat guide](/combat/)
 - [Collectibles by chapter](/plague-tale-legacy-collectibles-by-chapter/)

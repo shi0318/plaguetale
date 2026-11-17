@@ -3,15 +3,16 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import MediaFigure from '../../components/MediaFigure.astro';
 import { ASSETS } from '../../data/assets';
-import { CHAPTERS } from '../../data/chapter-guide';
+import { CHAPTERS, TOTALS } from '../../data/chapter-guide';
 
 const title = 'Resonance: A Plague Tale Legacy Walkthrough Guide';
 const description =
-  'Resonance walkthrough: fourteen chapters from Blood Ties to What Remains, with goals, combat notes, and collectible reminders.';
+  'Resonance walkthrough: all fourteen chapters from Blood Ties to What Remains, with collectible counts, Blade locations, boss fights, and patched chapter bugs.';
 const crumbs = [
   { name: 'Home', url: '/' },
   { name: 'Walkthrough', url: '/walkthrough/' },
 ];
+const bosses = CHAPTERS.filter((c) => c.boss);
 ---
 
 <Layout title={title} description={description} pageType="collection" breadcrumbs={crumbs}>
@@ -21,10 +22,73 @@ const crumbs = [
       <p class="section-kicker">Walkthrough</p>
       <h1 class="section-title">Resonance: A Plague Tale Legacy walkthrough</h1>
       <p class="mt-3 text-lg text-fog">
-        Fourteen chapters. Open a chapter for setting, goals, combat, and what to sweep before you leave.
+        Fourteen chapters, two eras, one island. Open a chapter for its collectibles, Blade, boss, and any bug
+        the October 6 update fixed there.
       </p>
     </header>
     <div class="mt-8"><MediaFigure {...ASSETS.islandOverlook} /></div>
+
+    <div class="prose-page mt-10 max-w-3xl">
+      <h2>How the campaign is structured</h2>
+      <p>
+        The story runs across {CHAPTERS.length} chapters. It opens in the plunderers’ camp in the Venice lagoon,
+        moves through Venice and its carnival, and spends most of its length on the Minotaur’s Island, cutting
+        between Sophia’s early 14th century and Theseus’s memories of the Minoan era. Steam reviewers report a
+        typical Normal playthrough of about ten hours; see <a href="/how-long-to-beat/">how long to beat</a>.
+      </p>
+      <p>
+        Across the chapters there are {TOTALS.blades} Blades, {TOTALS.artefacts} Artefacts, {TOTALS.charms} Charms
+        and 200 Resonance Points, plus {bosses.length} boss fights. Chapter 3 is the Artefact chapter with no
+        combat at all, Chapter 8 is a dream interlude with nothing to collect, and Chapter 14 is the epilogue.
+        The last Blade, Xiphos, is in Chapter 10 — nothing after Parallel Paths adds to the Blade tracker.
+      </p>
+
+      <h2>What you can fix later, and what you cannot</h2>
+      <p>
+        Blades, Artefacts and Charms all count in Story Select after the credits, and the chapter menu shows a
+        tracker for each, so none of them is permanently missable. Resonance Points are different: they save only
+        at the next checkpoint, do not carry through Story Select, and cannot be farmed on a replay. You need 165
+        of the 200 for every skill and mastery, so sweep dead ends on your first run. The full rules are on{' '}
+        <a href="/story-select-cleanup/">Story Select cleanup</a>.
+      </p>
+
+      <h2>Bosses by chapter</h2>
+      <p>
+        {bosses.map((c, i) => (
+          <>
+            {i > 0 && (i === bosses.length - 1 ? ', and ' : ', ')}
+            <a href={`/walkthrough/${c.slug}/`}>{c.boss!.name} (Chapter {c.number})</a>
+          </>
+        ))}
+        . Every duel turns on reading attack colours; the final fight is a mechanics puzzle instead. Full
+        strategies: <a href="/plague-tale-legacy-all-bosses/">all bosses</a>.
+      </p>
+
+      <h2>Chapter overview</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Chapter</th>
+            <th scope="col">Blades</th>
+            <th scope="col">Artefacts</th>
+            <th scope="col">Charms</th>
+            <th scope="col">Boss</th>
+          </tr>
+        </thead>
+        <tbody>
+          {CHAPTERS.map((ch) => (
+            <tr>
+              <td><a href={`/walkthrough/${ch.slug}/`}>{ch.number}. {ch.title}</a></td>
+              <td>{ch.counts.blades}</td>
+              <td>{ch.counts.artefacts}</td>
+              <td>{ch.counts.charms}</td>
+              <td>{ch.boss ? ch.boss.name : '—'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
     <ol class="mt-10 grid gap-4 md:grid-cols-2">
       {
         CHAPTERS.map((ch) => (
@@ -41,8 +105,8 @@ const crumbs = [
       }
     </ol>
     <p class="mt-8 text-sm text-fog">
-      Maps: <a href="/maps/" class="text-wheat underline">region list</a>. Collectibles:
-      <a href="/collectibles/" class="text-wheat underline">totals and chapter hints</a>.
+      Maps: <a href="/maps/" class="text-wheat underline">regions of the game</a>. Collectibles:
+      <a href="/plague-tale-legacy-collectibles-by-chapter/" class="text-wheat underline">counts by chapter</a>.
     </p>
   </div>
 </Layout>

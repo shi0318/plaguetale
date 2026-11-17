@@ -7,7 +7,10 @@ const GUIDES_DIR = new URL('../src/content/guides/', import.meta.url);
 // Reads updatedAt + status straight from frontmatter so the expectation follows the content.
 // Hardcoding slugs here made the test fail every time a newer guide was published.
 async function guideIndex() {
-  const files = (await readdir(GUIDES_DIR)).filter((f) => f.endsWith('.md'));
+  // Recursive: nested guides (characters/*.md) are listed on the hub too.
+  const files = (await readdir(GUIDES_DIR, { recursive: true }))
+    .map((f) => f.split(/[\\/]/).join('/'))
+    .filter((f) => f.endsWith('.md'));
   const entries = await Promise.all(
     files.map(async (file) => {
       const raw = await readFile(new URL(file, GUIDES_DIR), 'utf8');
@@ -35,7 +38,7 @@ test('guide hub promotes the two newest guides', async () => {
   const guides = await guideIndex();
   assert.ok(guides.length >= 2, 'expected at least two published guides');
 
-  const order = [...latest.matchAll(/href="\/([a-z0-9-]+)\/"/g)].map((m) => m[1]);
+  const order = [...latest.matchAll(/href="\/([a-z0-9/-]+)\/"/g)].map((m) => m[1]);
   assert.deepEqual(
     order.slice(0, 2),
     guides.slice(0, 2).map((g) => g.slug),

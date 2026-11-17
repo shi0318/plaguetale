@@ -3,15 +3,16 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import MediaFigure from '../../components/MediaFigure.astro';
 import { ASSETS } from '../../data/assets';
-import { WEAPONS } from '../../data/gear';
+import { CHAPTERS } from '../../data/chapter-guide';
 
 const title = 'Resonance: A Plague Tale Legacy Weapons';
 const description =
-  'Resonance: A Plague Tale Legacy weapons: Sophia’s melee blade, parries, the Minoan sphere, and eight Blades from the Heroes’ Graves.';
+  'Resonance: A Plague Tale Legacy weapons: the eight Blades and where each one is, the Heritage Pack Minoan Sword, the Grapnel, the Minoan sphere, and throwables.';
 const crumbs = [
   { name: 'Home', url: '/' },
   { name: 'Weapons', url: '/weapons/' },
 ];
+const bladeChapters = CHAPTERS.filter((c) => c.blade);
 ---
 
 <Layout title={title} description={description} pageType="collection" breadcrumbs={crumbs}>
@@ -21,28 +22,110 @@ const crumbs = [
       <p class="section-kicker">Loadout</p>
       <h1 class="section-title">Resonance: A Plague Tale Legacy weapons</h1>
       <p class="mt-3 text-lg text-fog">
-        Sophia fights in melee. The sling-first kit from Amicia’s games is not the default here. The
-        sphere is a light tool. The eight Heroes’ Graves blades are a collectible set.
+        Sophia fights in melee. Her swords are the eight Blades, collected one per chapter through Chapter 10;
+        the Grapnel, the Minoan sphere and throwables round out the kit.
       </p>
     </header>
     <div class="mt-8"><MediaFigure {...ASSETS.weaponBlade} /></div>
-    <ul class="mt-10 grid gap-4 md:grid-cols-2">
-      {
-        WEAPONS.map((w) => (
-          <li class="surface overflow-hidden p-0">
-            <img src={w.image} alt={w.imageAlt} width="960" height="540" loading="lazy" decoding="async" class="h-44 w-full object-cover" />
-            <div class="p-5">
-              <h2 class="text-lg font-black text-bone">{w.name}</h2>
-              <p class="mt-1 text-xs uppercase tracking-[0.12em] text-wheat">{w.type}</p>
-              <p class="mt-3 text-sm text-fog">{w.note}</p>
-            </div>
-          </li>
-        ))
-      }
-    </ul>
-    <p class="mt-6 text-sm text-fog">
-      Combat habits: <a href="/skills/" class="text-wheat underline">skills</a>. Grave blades list:
-      <a href="/collectibles/" class="text-wheat underline">collectibles</a>.
+
+    <div class="prose-page mt-10 max-w-3xl">
+      <h2>Melee first</h2>
+      <p>
+        The Steam description frames Resonance around dynamic, violent melee: agility, tricks, sharp reflexes,
+        perfected parries and powerful strikes. Fights are read through attack colours — parry a normal swing,
+        parry a yellow attack for a counter, dodge a red one unless you have the mastery that lets Sophia parry
+        red. The <a href="/combat/">combat guide</a> covers the rhythm; this page covers what you fight with.
+      </p>
+
+      <h2>The eight Blades</h2>
+      <p>
+        Blades come from the Heroes’ Graves, the bull-pillar crypts off the main route. The first two are handed
+        to you; the rest need a short detour, usually a light-alignment puzzle at a bull pillar. Chapters 11 to
+        14 have none, so the set is complete once you leave Parallel Paths.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Blade</th>
+            <th scope="col">Chapter</th>
+          </tr>
+        </thead>
+        <tbody>
+          {bladeChapters.map((c) => (
+            <tr>
+              <td>{c.blade!.name}</td>
+              <td><a href={`/walkthrough/${c.slug}/`}>{c.number}. {c.title}</a></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p>
+        Equip them from the Sophia menu, under your skills, alongside Charms. You can swap freely; there is no
+        upgrade tree to lose. Step-by-step locations are on{' '}
+        <a href="/plague-tale-legacy-all-blade-locations/">all eight Blade locations</a>.
+      </p>
+
+      <h2>Blade achievements</h2>
+      <ul>
+        <li><strong>Plunderer</strong> — collect all Blades from the Heroes’ Graves.</li>
+        <li>
+          <strong>Adaptable</strong> — get one kill with each Blade. Switch to a newly found sword before the next
+          camp fight and the list clears itself during the story.
+        </li>
+      </ul>
+      <p>
+        Neither is missable: Blades count in Story Select after the credits, and the chapter menu shows how many
+        you found in each chapter.
+      </p>
+
+      <h2>The Heritage Pack Minoan Sword</h2>
+      <p>
+        The Minoan Sword comes with the $3.99 Heritage Pack DLC. Every third hit lands a powerful strike that
+        stuns. It does not count toward Plunderer or Adaptable, so treat it as a convenience rather than a ninth
+        grave Blade. One related bug: the Falchion could disappear from the inventory after a DLC install — the
+        October update lists that as fixed. See <a href="/resonance-falchion-after-dlc/">Falchion missing after
+        the DLC</a>.
+      </p>
+
+      <h2>Grapnel</h2>
+      <p>
+        The Grapnel is picked up in Chapter 2, at the same barrel by the boat that gives you the Falchion. It is a
+        traversal tool first, but the game leans on it later: you Grapnel up to the bull statue for the Xiphos in
+        Chapter 10, and the final fight against Asterion uses it to break the statue’s cracked heart and mouth.
+      </p>
+
+      <h2>Minoan sphere</h2>
+      <p>
+        Sophia’s stolen Minoan sphere manipulates light. On this site it is treated as a puzzle and route tool,
+        not a damage weapon: it opens bull pillars (the Khopesh in Chapter 7 is behind one) and aligns coloured
+        lights on pillar gems. The <a href="/minoan-sphere-light-puzzle-guide/">Minoan sphere guide</a> covers the
+        puzzles.
+      </p>
+
+      <h2>Throwables and the environment</h2>
+      <p>
+        Throwables are pickups you find during fights. Bottles stun — shielded enemies can block them — and a
+        throwing knife kills an archer in one hit, according to a community achievement guide on Steam. Ledges
+        are a weapon too: enemies pushed down a drop die, and the October 6 update fixed enemies that survived
+        being pushed off an edge. Three achievements track this — Returning the favor, No holds barred and
+        Overboard — covered on the <a href="/resonance-overboard-throwable-achievements/">throwable achievements
+        guide</a>.
+      </p>
+
+      <h2>Focus attacks and critical strikes</h2>
+      <p>
+        Two named attack types show up in the achievement list: critical strikes (Sharp enough for you? asks for
+        25 critical-strike kills) and Focus attacks (Inherited brutality asks for four enemies killed at once with
+        one). Before the October bug-fix update the Focus Attack input could not be changed; the update lists that
+        lock as fixed. See{' '}
+        <a href="/resonance-focus-prism-input-planning/">Focus Attack and Prism controls</a>.
+      </p>
+    </div>
+
+    <p class="mt-8 text-sm text-fog">
+      Skills that change how these weapons play:{' '}
+      <a href="/plague-tale-legacy-skills-unlock-order/" class="text-wheat underline">skills unlock order</a>.
+      Every collectible set: <a href="/plague-tale-legacy-collectibles-by-chapter/" class="text-wheat underline">collectibles by chapter</a>.
     </p>
   </div>
 </Layout>

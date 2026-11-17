@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
-import { CHAPTERS } from '../../data/chapter-guide';
+import { CHAPTERS, TOTALS } from '../../data/chapter-guide';
 
 export function getStaticPaths() {
   return CHAPTERS.map((ch) => ({ params: { slug: ch.slug }, props: { ch } }));
@@ -9,7 +9,7 @@ export function getStaticPaths() {
 
 const { ch } = Astro.props;
 const title = `Chapter ${ch.number}: ${ch.title} — Resonance Walkthrough`;
-const description = `Resonance Chapter ${ch.number} ${ch.title} walkthrough: setting, goals, combat notes, and collectibles before you leave the chapter.`;
+const description = `Resonance Chapter ${ch.number} ${ch.title} walkthrough: collectible counts${ch.blade ? `, the ${ch.blade.name} location` : ''}${ch.boss ? `, the ${ch.boss.name} fight` : ''}, and what to do before you move on.`;
 const crumbs = [
   { name: 'Home', url: '/' },
   { name: 'Walkthrough', url: '/walkthrough/' },
@@ -18,13 +18,26 @@ const crumbs = [
 const idx = CHAPTERS.findIndex((c) => c.slug === ch.slug);
 const prev = CHAPTERS[idx - 1];
 const next = CHAPTERS[idx + 1];
+
+// Running totals: how much of each set the game has offered by the end of this chapter.
+const soFar = CHAPTERS.slice(0, idx + 1).reduce(
+  (acc, c) => ({
+    blades: acc.blades + c.counts.blades,
+    artefacts: acc.artefacts + c.counts.artefacts,
+    charms: acc.charms + c.counts.charms,
+  }),
+  { blades: 0, artefacts: 0, charms: 0 },
+);
+const total = ch.counts.blades + ch.counts.artefacts + ch.counts.charms;
+const plural = (n: number, one: string, many: string) => `${n} ${n === 1 ? one : many}`;
+const isLast = idx === CHAPTERS.length - 1;
 ---
 
 <Layout title={title} description={description} pageType="article" breadcrumbs={crumbs}>
   <div class="container py-10">
     <Breadcrumb items={crumbs} />
     <header class="mt-6 max-w-3xl">
-      <p class="section-kicker">Chapter {ch.number} of 14</p>
+      <p class="section-kicker">Chapter {ch.number} of {CHAPTERS.length}</p>
       <h1 class="section-title">Chapter {ch.number}: {ch.title}</h1>
       <p class="mt-3 text-lg text-fog">{ch.setting}</p>
     </header>
@@ -32,20 +45,152 @@ const next = CHAPTERS[idx + 1];
       <img src={ch.image} alt={ch.imageAlt} width="1920" height="1080" loading="lazy" decoding="async" class="w-full rounded object-cover" />
     </div>
     <article class="prose-page mt-10 max-w-3xl">
-      <h2>Goals</h2>
-      <ul>
-        {ch.goals.map((g) => <li>{g}</li>)}
-      </ul>
-      <h2>Combat</h2>
-      <p>{ch.combat}</p>
-      <h2>Collectibles in this chapter</h2>
+      <p>{ch.summary}</p>
+
+      <h2>At a glance</h2>
+      <table>
+        <tbody>
+          <tr>
+            <th scope="row">Collectibles</th>
+            <td>
+              {plural(ch.counts.blades, 'Blade', 'Blades')}, {plural(ch.counts.artefacts, 'Artefact', 'Artefacts')},{' '}
+              {plural(ch.counts.charms, 'Charm', 'Charms')}
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Blade</th>
+            <td>{ch.blade ? ch.blade.name : 'None in this chapter'}</td>
+          </tr>
+          <tr>
+            <th scope="row">Boss</th>
+            <td>{ch.boss ? ch.boss.name : 'No boss fight'}</td>
+          </tr>
+          <tr>
+            <th scope="row">Patched issues</th>
+            <td>{ch.fixes?.length ? 'Yes — see below' : 'None named for this chapter'}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Collectibles</h2>
       <p>{ch.collectibles}</p>
-      <p>
-        Full counters live on the <a href="/collectibles/">collectibles hub</a>. Skills if a fight is the problem:
-        <a href="/skills/">mastery branches</a>.
-      </p>
+      {
+        total > 0 ? (
+          <p>
+            By the end of Chapter {ch.number} the game has offered {soFar.blades} of {TOTALS.blades} Blades,{' '}
+            {soFar.artefacts} of {TOTALS.artefacts} Artefacts and {soFar.charms} of {TOTALS.charms} Charms. Check the
+            chapter tracker before the next chapter starts; if a number is short, the gap is in this chapter or an
+            earlier one. Resonance Points are not counted per chapter, so sweep dead ends for them as you go.
+          </p>
+        ) : (
+          <p>
+            Nothing here counts toward the {TOTALS.blades} Blades, {TOTALS.artefacts} Artefacts or {TOTALS.charms}{' '}
+            Charms. If a tracker is short, look in an earlier chapter.
+          </p>
+        )
+      }
+
+      {
+        ch.blade && (
+          <>
+            <h2>Where to find the {ch.blade.name}</h2>
+            <p>{ch.blade.where}</p>
+            <p>
+              Blades are equipped from the Sophia menu, under your skills. Getting one kill with each Blade unlocks
+              Adaptable, so swap to the new sword for the next fight. See{' '}
+              <a href="/plague-tale-legacy-all-blade-locations/">all eight Blade locations</a>.
+            </p>
+          </>
+        )
+      }
+
+      {
+        ch.boss && (
+          <>
+            <h2>Boss: {ch.boss.name}</h2>
+            {ch.boss.mechanicsFight ? (
+              <p>
+                This fight takes place {ch.boss.context}. Unlike the earlier duels, nothing here is parried: it is a
+                mechanics fight built around the Grapnel and a light-beam weapon.
+              </p>
+            ) : (
+              <p>
+                This fight takes place {ch.boss.context}. It is decided by reading attack colours — parry normal
+                swings, parry-and-counter yellow, dodge red — rather than by raw damage.
+              </p>
+            )}
+            <ul>
+              {ch.boss.tips.map((t) => <li>{t}</li>)}
+            </ul>
+            <p>
+              More detail: <a href={ch.boss.guide.href}>{ch.boss.guide.label}</a>.
+            </p>
+          </>
+        )
+      }
+
+      {
+        ch.notes.length > 0 && (
+          <>
+            <h2>Tips for this chapter</h2>
+            <ul>
+              {ch.notes.map((n) => <li>{n}</li>)}
+            </ul>
+          </>
+        )
+      }
+
+      {
+        ch.fixes && ch.fixes.length > 0 && (
+          <>
+            <h2>Known bug and fix</h2>
+            <ul>
+              {ch.fixes.map((f) => <li>{f}</li>)}
+            </ul>
+            <p>
+              Check that the update finished installing first; an older install will still show the original
+              problem. The full patch list is on the{' '}
+              <a href="/resonance-plague-tale-legacy-october-6-update/">October 6 bug-fix update</a> page.
+            </p>
+          </>
+        )
+      }
+
+      {
+        ch.achievements && ch.achievements.length > 0 && (
+          <>
+            <h2>Achievements</h2>
+            <ul>
+              {ch.achievements.map((a) => <li>{a}</li>)}
+            </ul>
+          </>
+        )
+      }
+
+      {
+        !isLast && (
+          <>
+            <h2>Before you move on</h2>
+            <p>
+              Missed Blades, Artefacts and Charms are not lost: they count in Story Select after the credits, and
+              the chapter menu shows a tracker for each. Resonance Points are the exception — they only save when
+              you reach the next checkpoint and do not carry through Story Select, so pick them up now.
+            </p>
+          </>
+        )
+      }
+
+      <h2>Related guides</h2>
+      <ul>
+        {ch.related.map((l) => (
+          <li>
+            <a href={l.href}>{l.label}</a>
+          </li>
+        ))}
+        <li><a href="/walkthrough/">All chapters</a></li>
+      </ul>
     </article>
-    <nav class="mt-10 flex flex-wrap gap-3 text-sm">
+    <nav class="mt-10 flex flex-wrap gap-3 text-sm" aria-label="Chapter navigation">
       {prev && (
         <a href={`/walkthrough/${prev.slug}/`} class="btn-secondary">
           ← Ch. {prev.number} {prev.title}

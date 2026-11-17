@@ -1,64 +1,74 @@
 ---
 title: "Resonance: A Plague Tale Legacy Missable Achievements Guide"
-heading: "Resonance: A Plague Tale Legacy Missable Achievements Guide — Story Select Cleanup"
-description: "Can you miss achievements in Resonance: A Plague Tale Legacy? This guide explains what is confirmed and how to check your list before Story Select cleanup."
+heading: "Resonance: A Plague Tale Legacy Missable Achievements and Story Select Cleanup"
+description: "Which Resonance: A Plague Tale Legacy achievements are easy to miss: the turtle, the puppet show, Untouchable, Cannon fodder, and how cleanup works."
 category: "guide"
 keyword: "plague tale legacy missable achievements"
 status: "community"
 order: 20
-updatedAt: "2026-09-16"
-sourceKeys: []
+updatedAt: "2026-11-16"
+sourceKeys: ["steamAchievements", "steamCommunity"]
 preRelease: false
 draft: false
 cover: "/images/ptl-light-puzzle.webp"
 ---
 
-If you are searching for a **Resonance: A Plague Tale Legacy missable achievements guide**, the careful answer is that a complete missable list is not confirmed in this project record. Steam lists Achievements for the released game, and player discussions mention Story Select, but there is no complete official table here that maps achievement names, conditions, or chapters.
+Resonance: A Plague Tale Legacy has **36** Steam achievements, and very few of them can be lost for good. The collectible sets come back through Story Select after the credits, and the chapter achievements unlock as you play. What players actually miss are the one-off moments: an animal you walk past, a show you leave early, or a combat setup the story never pushes you toward. This guide covers those, then explains the cleanup order.
 
-That means this page can help you avoid losing track of a first-run opportunity without inventing a checklist. It does not name achievements or promise that every locked entry can be earned through replay.
+<figure>
+  <img src="/images/ptl-light-puzzle.webp" alt="Sophia using light in a Minoan puzzle room" width="1600" height="900" loading="lazy" decoding="async" />
+  <figcaption>Most misses are lost to impatience, not difficulty.</figcaption>
+</figure>
 
-## Can you miss achievements in Resonance: A Plague Tale Legacy?
+## Can you miss achievements?
 
-It is not confirmed which achievements, if any, are missable. The available record does not establish an achievement count, hidden achievement names, unlock conditions, or chapter assignments. Do not treat an unverified list as proof that a particular action is required or permanently unavailable.
+Not permanently, in the sense of a choice that locks one out. Valve publishes requirement text for 17 of the 36; the other 19 are hidden. None of the published requirements depends on a story decision. Blades, Artefacts and Charms count in **Story Select** after the credits, so the collect-all achievements (Plunderer, Hoarder, Superstitious, In the name of my kin) can be finished on a replay.
 
-The game released on **August 27, 2026**, and Steam lists **Achievements** as a feature. Those two facts establish the platform feature and the release context; they do not supply a complete completion route.
+The exception is **Resonance Points**. They save only at the next checkpoint, do not carry through Story Select, and reloading an earlier chapter resets your total. With 200 in the game and 165 needed for **Like a warrior** (unlock all 6 mastery branches), sweep them as you go. The full rules are on [collectibles by chapter](/plague-tale-legacy-collectibles-by-chapter/).
 
-## What is confirmed about achievement cleanup?
+## Sea you later! (the turtle)
 
-There are three useful boundaries for planning:
+The requirement is exactly what Valve prints: **say hello to the turtle**. It is an interaction, not a combat or collection count, and the wording does not ask for more than one turtle. Approach slowly, wait for the prompt, and use the greeting rather than attacking, throwing something or walking past. A similar animal or a decorative object does not count.
 
-- Steam lists Achievements for **Resonance: A Plague Tale Legacy**.
-- Player discussion records mention a **Story Select** option.
-- The project record does not contain a complete official missable-achievement table with names, requirements, or chapter locations.
+The global unlock rate was **28.8%** on September 1, 2026 and **32.0%** on October 17. No official map pin is published. If you walked past it, note the scene and come back through Story Select.
 
-Story Select is therefore a reported place to investigate after a missed unlock, not a guarantee that every achievement condition can be replayed. Check what your released copy actually offers before relying on it for a full completion run.
+## Theater enthusiast (the puppet show)
 
-## A low-risk first-run tracking workflow
+**Watch the entire puppet show at the carnival.** Player guides place the carnival in **Chapter 2, Felons**. The trigger is the end of the show, so stay in the viewing area, do not skip, and do not start the next objective while the puppets are still moving. If it does not pop, reload and watch the whole performance without opening another interaction.
 
-Use a small note while playing so you can separate what you saw from what an online checklist assumes:
+It read **22.7%** on September 1 and **24.5%** on October 17, which puts it among the most-missed optional unlocks in the game for something with no difficulty at all.
 
-1. When you complete an optional-looking action, record the first-run condition in your own words. Include the chapter or scene label only if the game shows one.
-2. If an achievement notification appears, note the action immediately before it and copy any description that the game or Steam displays. Do not fill in a missing name or requirement from memory.
-3. After finishing the story, open the Steam achievement list and mark which entries are unlocked and which remain locked.
-4. For each locked entry, compare it with your notes and identify the earliest story moment you can reasonably revisit. Keep that as a hypothesis, not a confirmed chapter assignment.
-5. If Story Select is available in your copy, use it to revisit that suspected point and repeat the recorded action. Check the achievement list again before moving to another attempt.
+## Untouchable (six parries in a row)
 
-This process gives you a usable record without pretending that the project has a verified achievement database. It also prevents a vague memory of “I did that” from becoming a false completion claim.
+Valve's requirement is **successfully parry 6 attacks in a row**, and it sat at **20.3%** on September 1. It is a timing streak, not a kill count. Pick an encounter with one predictable attacker and room to reset, keep your eye on the attack animation rather than the health bar, and avoid a counterattack that ends the fight before the sixth parry. If a second enemy joins or a parry fails, back off and start the streak again. The [combat guide](/combat/) covers parry timing.
 
-## Resonance: A Plague Tale Legacy Story Select cleanup steps
+## Cannon fodder (the raging Brute)
 
-When an entry is still locked after the first playthrough, work in this order:
+**Lure a Brute into killing 1 soldier while in a rage** (33.7% on September 1). The pieces that matter are the Brute's rage state and who lands the final hit. Keep the soldier alive, get the Brute raging, then lead it so the soldier is in its path while you are not between the two. If the soldier dies to something else or the Brute is not enraged, reset the encounter; ordinary kills, a soldier killing the Brute, or the Brute killing you do not match the wording.
 
-1. Write down the locked entry exactly as it appears in your own list.
-2. Review your first-run note and choose the most likely story section, without assigning an unverified chapter number.
-3. Open Story Select if the option is present, then choose the relevant section shown by the game.
-4. Recreate the recorded condition as closely as possible.
-5. Return to the Steam achievement list and record whether the state changed.
+## Other combat setups worth planning
 
-If the unlock does not appear, record the result and stop short of declaring the achievement impossible or permanently missable. The available record does not define Story Select's full rules, prerequisite handling, or coverage of every achievement type.
+These are cumulative or need a deliberate setup, so they are easy to finish the story without:
 
-## What this guide does not claim
+- **Returning the favor**: kill an Archer with a throwing knife (50.5%).
+- **Sharp enough for you?**: 25 critical-strike kills (43.9%), cumulative.
+- **No holds barred**: stun 20 enemies with throwables (21.9%), cumulative.
+- **Skilled maneuverer**: stun 3 enemies at once with Echo's Return (21.5%).
+- **Overboard**: kill 20 enemies by pushing them down a drop (20.1%).
+- **Inherited brutality**: kill 4 enemies at once with a Focus attack (4.8%).
+- **Adaptable**: kill at least 1 enemy with each blade (4.0%).
 
-No exact achievement names, hidden descriptions, unlock conditions, count, or chapter-by-chapter locations are added here. The page also does not claim that one playthrough is required, that a particular choice locks an achievement, or that Story Select automatically preserves every prerequisite.
+All rates are from September 1, 2026. Dedicated plans are on the [Inherited brutality and Adaptable guide](/resonance-inherited-brutality-adaptable/) and the [Overboard and throwable achievements guide](/resonance-overboard-throwable-achievements/).
 
-The safest completion plan is to track first-time conditions, check the Steam list after the story, and use Story Select as a careful replay check when it is available. Until a complete table is confirmed, that is the honest answer to whether **Resonance: A Plague Tale Legacy** achievements can be missed.
+## A first-run tracking habit
+
+Keep a short note while you play. When an achievement pops, write down the action right before it. When you pass an optional moment such as an animal, a performance or a sealed side room, note the scene name the game shows. After the credits, open the Steam list, mark what is still locked, and match each locked entry to the earliest scene where you could set it up. That turns cleanup into a short list of chapter replays instead of a second full run.
+
+## Story Select cleanup order
+
+1. Finish the story on the current build. If a chapter blocker stopped you, install the October 6 bug-fix update first; it names Chapter III, XIII and XIV problems. See the [October 6 update](/resonance-plague-tale-legacy-october-6-update/).
+2. Open Story Select and load the chapter, not a new file.
+3. Recreate the condition, then check the Steam list again before moving on.
+4. Keep collectible counts separate: Blades, Charms, Artefacts and Resonance Points are four counters.
+
+Players report that Story Select does not make every unlock retroactive, so redo the exact step the achievement names rather than expecting an old action to count. The [Story Select cleanup guide](/story-select-cleanup/) has the full replay rules, and the [achievements guide](/achievements-guide/) lists all 36 with their requirements.

@@ -1,57 +1,72 @@
 ---
 title: "Resonance: A Plague Tale Legacy Platforms Guide"
 heading: "Resonance: A Plague Tale Legacy Platforms"
-description: "Resonance: A Plague Tale Legacy is officially confirmed for PC, PS5 and Xbox Series X|S. Game Pass and Switch status, each tagged by confirmation level."
+description: "Resonance: A Plague Tale Legacy is on PC, PS5 and Xbox Series X|S. Game Pass, Switch 2, the Zouna Engine, and the PS5 PSSR fix."
 category: "guide"
 keyword: "plague tale legacy platforms"
 status: "official"
 order: 3
-updatedAt: "2026-08-28"
+updatedAt: "2026-11-16"
 sourceKeys: ["steamNews", "steam", "focus"]
 cover: "/images/ptl-minoan-ruins.webp"
 ---
 
-Players want a straight answer on where they can play **Resonance: A Plague Tale Legacy**. Here is the platform breakdown, with every line tagged by how confirmed it actually is.
+**Resonance: A Plague Tale Legacy** is confirmed for three platforms: PC, PlayStation 5, and Xbox Series X|S. This page covers what each of them includes, along with the questions that keep coming up about Game Pass, Switch 2, the engine, and the PS5 image fix.
 
-## What platforms is Resonance: A Plague Tale Legacy confirmed on?
+<figure>
+  <img src="/images/ptl-ss-gold-chamber.jpg" alt="Sophia in a gold-ringed underground chamber looking toward a lit doorway" width="1920" height="1080" loading="lazy" decoding="async" />
+  <figcaption>Official Steam screenshot. The lighting comes from Asobo's in-house Zouna Engine.</figcaption>
+</figure>
 
-**Three: PC, PlayStation 5, and Xbox Series X|S.** This is answered directly in the official **Resonance FAQ** posted to the game's own Steam news hub:
+## Confirmed platforms
+
+The official **Resonance FAQ**, posted on the game's own Steam news hub, answers the question directly:
 
 > "Which platform will Resonance be on? Resonance: A Plague Tale Legacy will be available on **PC, Xbox Series X|S and PS5**!"
 
-That is a first-party statement, not inference. The Steam store page (App 2713000) covers the PC side specifically, listing Windows at **$49.99** with full controller support.
+The Steam store page (App 2713000) covers the PC side, listing Windows at **$49.99** with full controller support, HDR, and Family Sharing.
 
-| Platform | Status | What we know |
+| Platform | Status | What is known |
 | --- | --- | --- |
-| PC (Steam) | **Confirmed** | Listed on Steam for Windows, $49.99, full controller support. |
-| PlayStation 5 | **Confirmed** | Named in the official Resonance FAQ; console storefront details may vary by region. |
-| Xbox Series X\|S | **Confirmed** | Named in the official Resonance FAQ; console storefront details may vary by region. |
-| Game Pass | Unconfirmed | No official word. Requiem launched day one on Game Pass in 2022. |
-| Nintendo Switch / Switch 2 | Unconfirmed | No announcement. Requiem later reached cloud/Switch; unclear here. |
+| PC (Steam) | **Confirmed** | Windows, $49.99, full controller support |
+| PlayStation 5 | **Confirmed** | Named in the official FAQ; PSSR fix in the October 6 update |
+| Xbox Series X\|S | **Confirmed** | Named in the official FAQ |
+| Game Pass | Not announced | No first-party announcement |
+| Nintendo Switch / Switch 2 | Not announced | No storefront listing or date |
 
-An earlier version of this page listed PS5 and Xbox as unconfirmed. That was out of date — the FAQ had already answered it and we had not caught up. Corrected on 2026-07-31.
+An earlier version of this page listed PS5 and Xbox as unconfirmed. The FAQ had already answered it, and the page was corrected on July 31, 2026.
 
-## Is Resonance: A Plague Tale Legacy available on PS5 and Xbox?
+## PS5 and Xbox versions
 
-Yes, both are officially confirmed. For series context, this also matches how the previous entries shipped:
+Both consoles are confirmed, which matches how the earlier games shipped:
 
 - ***A Plague Tale: Innocence*** (2019) launched on PS4, Xbox One, and PC, with later PS5 and Xbox Series upgrades.
 - ***A Plague Tale: Requiem*** (2022) launched on PS5, Xbox Series X|S, and PC.
 
-What is *not* stated in the tracked FAQ is every per-platform detail: console pricing, edition parity, performance and quality modes, and install sizes. Those should be checked on the relevant live storefronts.
+The FAQ does not give every per-platform detail. Console pricing, edition parity, performance and quality modes, and install sizes have to be checked on the live PlayStation and Xbox storefronts for your region.
 
-## Is Resonance: A Plague Tale Legacy on Game Pass?
+## Is it on Game Pass?
 
-**Not confirmed.** Microsoft, Focus Entertainment, and Asobo Studio have made no Game Pass announcement for this game in the tracked material. For context, *A Plague Tale: Requiem* launched **day one on Xbox Game Pass** in October 2022, which is why the question comes up so often. That precedent does not confirm availability here.
+No Game Pass deal has been announced by Microsoft, Focus Entertainment, or Asobo Studio. The question comes up because *A Plague Tale: Requiem* launched **day one on Xbox Game Pass** in October 2022. That precedent does not apply automatically to a new game. A confirmed Xbox Series X|S release and a Game Pass deal are separate commitments, and only the first one exists.
 
-Note the asymmetry: an Xbox Series X|S release is confirmed, and Game Pass is not. Those are separate commitments, and the first does not imply the second.
+## Is there a Switch 2 version?
 
-## Will there be a Nintendo Switch version?
+No. There is no Nintendo listing, no date, and no performance note for Switch or Switch 2. Asobo has talked about Switch 2 in interviews only as a distant possibility. An engine interview is not a console announcement; a real Switch 2 version would come with a named storefront, a release date, and platform details. *Requiem* reached Switch through cloud streaming rather than a native port, which is another reason not to assume a native Resonance port.
 
-There is no Switch or Switch 2 announcement. *Requiem* eventually reached Switch via cloud streaming rather than a native port, so a Switch release for Resonance is uncertain and unconfirmed for now.
+The Steam listing sells the Windows version. If you want to play now, the versions that shipped on August 27, 2026 are PC, PS5, and Xbox Series X|S.
 
-## What to check on console storefronts
+## Which engine does it use?
 
-Console storefront SKUs, regional pricing, performance modes, and any Game Pass deal should be checked against current first-party listings. Everything above is either a first-party statement or clearly flagged as series-based inference.
+Asobo kept Resonance on the **Zouna Engine**, the in-house technology behind the earlier Plague Tale games. It is not an Unreal Engine 5 port. The visuals that Steam reviewers praise come from that engine on the Minotaur's Island. When this was checked in October 2026, the Steam reviews stood at Very Positive, 1,991 positive out of 2,159, and the Metacritic score was **84**.
 
-For the confirmed launch details we already have, see our [release date guide](/release-date/).
+Staying on Zouna does not change the series shake-up in this entry: there are no rat swarms, combat leans more on melee, and you play as Sophia rather than Amicia. The [story guide](/story/) covers how the prequel fits the timeline.
+
+## The PSSR and image fix
+
+The **October 6, 2026 bug-fix update** makes PSSR settings save correctly on PS5. The same update reduces stutter when approaching new Nemesis Areas, fixes 21:9 support, fixes AMD Anti-Lag not working when Frame Generation is disabled, and adds stability, combat, audio, accessibility, and localization fixes.
+
+If the image hitches or a setting seems to reset after a restart, install the update first and then re-open the display menu to confirm your choice stuck. A bug that has a patch note is a different problem from a GPU below the minimum spec. The [October 6 update page](/resonance-plague-tale-legacy-october-6-update/) has the full list, and the [PC requirements and settings guide](/pc-system-requirements/) covers PC tuning.
+
+## Where to check console details
+
+Check console SKUs, regional pricing, performance modes, and any subscription deal against the current first-party listings. The confirmed launch details are on the [release date page](/release-date/), and the PC install route is on the [download guide](/download/).

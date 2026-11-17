@@ -78,15 +78,17 @@ test('sitemap config records real dates for the static hubs changed in this pass
   const source = await readFile(projectFile('astro.config.mjs'), 'utf8');
 
   const expectedDates = {
-    '/': '2026-09-21',
-    '/guide/': '2026-09-23',
-    '/characters/': '2026-09-23',
-    '/collectibles/': '2026-09-21',
-    '/skills/': '2026-09-21',
-    '/walkthrough/': '2026-09-23',
+    '/': '2026-11-16',
+    '/guide/': '2026-11-16',
+    '/characters/': '2026-11-16',
+    '/collectibles/': '2026-11-16',
+    '/skills/': '2026-11-16',
+    '/walkthrough/': '2026-11-16',
     '/contact/': '2026-08-28',
-    '/privacy/': '2026-08-28',
-    '/about/': '2026-09-01',
+    '/privacy/': '2026-11-16',
+    '/about/': '2026-11-16',
+    '/terms/': '2026-11-16',
+    '/editorial/': '2026-11-16',
   };
 
   for (const [route, date] of Object.entries(expectedDates)) {
@@ -99,9 +101,6 @@ test('sitemap config records real dates for the static hubs changed in this pass
 
 test('extra-cast character pages do not badge adjectives as Steam community reports', async () => {
   const files = [
-    'src/content/guides/characters/ezra.md',
-    'src/content/guides/characters/irene.md',
-    'src/content/guides/characters/faro.md',
     'src/content/guides/characters/asterion.md',
   ];
 
@@ -133,8 +132,6 @@ test('guide pagination stays noindex and off the sitemap; chapter pages stay ind
   assert.match(sitemap, /\/walkthrough\//);
   assert.match(sitemap, /\/characters\//);
   assert.match(sitemap, /\/characters\/ariadne\//);
-  assert.match(sitemap, /\/characters\/ezra\//);
-  assert.match(sitemap, /\/characters\/irene\//);
   assert.match(sitemap, /\/characters\/faro\//);
   assert.match(sitemap, /\/characters\/asterion\//);
 });

@@ -36,7 +36,7 @@ Compare that with most Playable-rated titles, which usually fail two or three ch
 
 The glyph test is the one players most often notice and most rarely see passed. Asobo shipped native Steam Deck button prompts, which means the tutorial and every contextual prompt shows the control you are actually holding.
 
-For this game specifically that is worth real money. Sophia's combat is built on **parries and timed strikes** — the achievement list includes parrying six attacks in a row and killing enemies with a critical strike, so timing is a graded skill, not a flourish. Learning a parry window while mentally translating an Xbox icon into a Deck trigger is exactly the friction that makes timing-based combat feel unfair. That friction is absent here. See [combat and parry basics](/combat-parry-basics/) for the inputs themselves.
+For this game specifically that is worth real money. Sophia's combat is built on **parries and timed strikes** — the achievement list includes parrying six attacks in a row and killing enemies with a critical strike, so timing is a graded skill, not a flourish. Learning a parry window while mentally translating an Xbox icon into a Deck trigger is exactly the friction that makes timing-based combat feel unfair. That friction is absent here. See [combat and parry basics](/combat/) for the inputs themselves.
 
 ## The text problem, and what to do about it
 
@@ -46,7 +46,7 @@ The one warning is real, and it lands hardest in three places:
 - **Skill and mastery descriptions**, where you are comparing options rather than skimming.
 - **Collectible and document text**, which is the reading-heavy layer of the game.
 
-Two things genuinely help, and neither is a mod. First, the game ships **subtitle and accessibility options** — size, background, and colour controls are covered in the [HDR, subtitles and colour guide](/hdr-subtitles-color/), and raising subtitle size addresses the largest single share of the problem. Second, run at the Deck's native resolution rather than scaling down; the legibility warning gets worse the more you downscale to chase frames.
+Two things genuinely help, and neither is a mod. First, the game ships **subtitle and accessibility options** — size, background, and colour controls are covered in the [difficulty, accessibility and display options guide](/difficulty-accessibility/), and raising subtitle size addresses the largest single share of the problem. Second, run at the Deck's native resolution rather than scaling down; the legibility warning gets worse the more you downscale to chase frames.
 
 What will not help: lowering graphics presets. The performance test already passed, so you are not short on headroom, and dropping presets does nothing for font size.
 
@@ -66,7 +66,7 @@ Deck battery life is a fair worry for long games. This is not a long game.
 
 Across a sample of 500 Steam reviews, the median reviewer had **11.8 hours** logged when they posted, and their accounts now sit at a median of **13.5 hours**. The distribution is unusually tight: **54.4% of reviewers fall in the 10-to-20-hour band**, and only 0.6% are past 40 hours. That is the signature of a linear, chapter-based story game that people finish once — which is exactly what the [how long to beat guide](/how-long-to-beat/) describes.
 
-Practically, that means a full playthrough is roughly a dozen battery-sized sittings, and the game's chapter structure gives you natural stopping points rather than forcing you to hold a run. The [chapter count and story select guide](/chapter-count-story-select/) covers how the chapters are divided.
+Practically, that means a full playthrough is roughly a dozen battery-sized sittings, and the game's chapter structure gives you natural stopping points rather than forcing you to hold a run. The [length and chapter guide](/how-long-to-beat/) covers how the chapters are divided.
 
 ## Is it worth playing on Deck?
 
@@ -74,11 +74,11 @@ Yes, with one adjustment: **turn subtitle size up before you start.** Everything
 
 If you have a choice of hardware and you care about reading document and skill text comfortably, a desktop or Steam Machine is the better experience, and Valve's own ratings say so.
 
-## What this page does not claim
+## What the rating does not tell you
 
-- **No frame rate or battery-life figure.** Valve publishes a pass/fail on default-settings performance, not numbers, and this site has not benchmarked the Deck build.
-- **No settings preset recommendation.** The default configuration is the one that was tested.
-- **No Proton version, launch option, or workaround.** None is published in the compatibility report.
-- **No distinction between LCD and OLED Deck models.** The rating is per title, not per hardware revision.
+- **Frame rate or battery life.** Valve publishes a pass/fail on default-settings performance, not numbers.
+- **A settings preset.** Valve evaluates the default configuration.
+- **A Proton version, launch option, or workaround.** None is published in the compatibility report.
+- **LCD versus OLED.** The rating is per title, not per hardware revision.
 
-Compatibility categories were read on **September 2, 2026**, six days after the August 27 release. Valve re-tests titles after patches, so a text-size pass in a future update could move this to Verified. For the desktop picture see [PC performance settings](/pc-performance-settings/) and [PC system requirements](/pc-system-requirements/); for the platform list see [platforms](/platforms/).
+Compatibility categories were read on **September 2, 2026**, six days after the August 27 release. Valve re-tests titles after patches, so a text-size pass in a future update could move this to Verified. For the desktop picture see [PC requirements and settings](/pc-system-requirements/); for the platform list see [platforms](/platforms/).

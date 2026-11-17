@@ -1,8 +1,11 @@
+// Figures with their own profile page who are not in the official Steam store text.
+// Roles below come from Asobo's DEVBLOG #3 or from player walkthrough notes on this site
+// (plague-tale-legacy-all-bosses, resonance-king-minos-boss-guide); the status reflects that.
 export interface CastMember {
   slug: string;
   name: string;
   role: string;
-  status: 'official';
+  status: 'official' | 'community';
   fact: string;
   gap: string;
   image: string;
@@ -11,52 +14,32 @@ export interface CastMember {
 
 export const EXTRA_CAST: CastMember[] = [
   {
-    slug: 'irene',
-    name: 'Irene',
-    role: 'Name on this wiki’s extra roster',
-    status: 'official',
-    fact: 'Irene is listed here because the name circulates with Sophia’s camp-side cast. The tracked Steam store page and Steam news hub do not describe her role, equipment, or personality.',
-    gap: 'This wiki does not invent a temperament, skill list, or weapon for her.',
-    image: '/images/ptl-crop-irene-camp.jpg',
-    imageAlt: 'Camp still life — barrel, crate, and cookware on the cliff; camp-side texture, not a portrait of Irene',
-  },
-  {
-    slug: 'ezra',
-    name: 'Ezra',
-    role: 'Name on this wiki’s extra roster',
-    status: 'official',
-    fact: 'Ezra is listed here because the name circulates with Sophia’s camp-side cast. The tracked Steam store page and Steam news hub do not describe his role, equipment, or personality.',
-    gap: 'This wiki does not invent a navigator temperament, rumour skill, or unique weapon for him.',
-    image: '/images/ptl-crop-ezra-ships.jpg',
-    imageAlt: 'Bay, lookout, and wrecked ships — crossing texture, not a portrait of Ezra',
-  },
-  {
     slug: 'faro',
     name: 'Faro',
-    role: 'Name on this wiki’s extra roster',
-    status: 'official',
-    fact: 'Faro is listed here because the name circulates with Sophia’s camp-side cast. The tracked Steam store page and Steam news hub do not describe his role, equipment, or personality.',
-    gap: 'This wiki does not invent “muscle on the water,” a training relationship with Sophia, or a named relic blade.',
+    role: 'Chapter 9 boss, then ally',
+    status: 'community',
+    fact: 'Walkthrough notes place Faro as the palace-courtyard boss of Chapter 9, Night Has Come. Sophia refuses the killing blow and he joins her for the next two chapters.',
+    gap: 'He is not named in the Steam store text or Asobo’s devblogs.',
     image: '/images/ptl-ss-melee-clash.jpg',
-    imageAlt: 'Close melee in a camp yard — fight texture around the plunderer camp, not a portrait of Faro',
+    imageAlt: 'Close melee in a camp yard — fight texture, not a portrait of Faro',
   },
   {
     slug: 'asterion',
     name: 'Asterion',
-    role: 'Classical Minotaur name — not a first-party Resonance bio',
+    role: 'The Minotaur — Chapter 13 final boss',
     status: 'official',
-    fact: 'Asterion is the classical personal name attached to the Minotaur in Greek myth. Asobo’s DEVBLOG #3 retells Minos, the Minotaur, Daedalus, Theseus, and Ariadne. It does not name Asterion as a Resonance character.',
-    gap: 'This wiki does not treat the mythic name as a confirmed on-screen role, skill tree, or weapon slot.',
+    fact: 'Asterion is the classical personal name of the Minotaur. Asobo’s DEVBLOG #3 retells the Minotaur myth, and walkthrough notes list Asterion, the Minotaur, as the final boss in Chapter 13, As One.',
+    gap: 'Asobo’s posts call it the Minotaur; the name Asterion comes from myth and player notes.',
     image: '/images/ptl-ss-bull-statue.jpg',
     imageAlt: 'Colossal bull statue over a ritual court — the Minotaur’s island image',
   },
   {
     slug: 'ariadne',
     name: 'Ariadne',
-    role: 'Named in Asobo’s official myth summary',
+    role: 'Minos’s daughter — playable in the King Minos fight',
     status: 'official',
-    fact: 'DEVBLOG #3, “Into The Myth,” retells Ariadne as Minos’s daughter who gives Theseus a thread, then is abandoned. Asobo’s line is that Resonance begins the moment the thread vanishes.',
-    gap: 'The same post does not confirm that Ariadne appears as an on-screen ally, trainer, or playable character. Equipment is not published.',
+    fact: 'DEVBLOG #3, “Into The Myth,” retells Ariadne as Minos’s daughter who gives Theseus a thread, then is abandoned. Asobo’s line is that Resonance begins the moment the thread vanishes. Players report you control her in the Chapter 12 King Minos fight.',
+    gap: 'Her playable fight comes from player reports, not from the official posts.',
     image: '/images/ptl-ss-minoan-arena.jpg',
     imageAlt: 'Minoan arena duel — the court era of the myth Asobo retells, not a portrait of Ariadne',
   },

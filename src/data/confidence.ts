@@ -29,7 +29,7 @@ export const STATUS_META: Record<ConfidenceStatus, StatusMeta> = {
     label: 'Steam community reports',
     icon: '◌',
     classes: 'bg-wheat/15 text-wheat border-wheat/35',
-    description: 'A player-reported observation from recent Steam community reviews or discussions; it is not an official specification or independent hands-on claim by this site.',
+    description: 'Based on player reports from Steam reviews and discussions rather than an official specification. See the editorial policy for how these are handled.',
   },
   trailer: {
     label: 'Trailer / preview',

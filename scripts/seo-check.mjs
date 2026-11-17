@@ -24,8 +24,9 @@ const requiredPages = [
   '/about/',
   '/privacy/',
   '/contact/',
+  '/terms/',
+  '/editorial/',
   '/resonance-plague-tale-legacy-october-6-update/',
-  '/resonance-chapter-3-leni-lens-fix/',
 ];
 
 const requiredImages = [
@@ -38,7 +39,6 @@ const requiredImages = [
 ];
 const sourceHiddenPages = [
   '/resonance-plague-tale-legacy-october-6-update/',
-  '/resonance-chapter-3-leni-lens-fix/',
 ];
 
 const failures = [];

@@ -73,7 +73,7 @@ Keep the camera pointed at Minos during movement. Losing sight of the boss to ru
 
 ## How this differs from a full boss list
 
-The all-bosses guide covers six major encounters in brief. This page gives Chapter 12 its own focused plan: Ariadne cannot parry red attacks, phase one emphasizes red swings, and the flaming axe in phase two leaves dangerous ground. It does not add hidden attack names, timing numbers, or a damage requirement the game has not established here.
+The all-bosses guide covers six major encounters in brief. This page gives Chapter 12 its own focused plan: Ariadne cannot parry red attacks, phase one emphasizes red swings, and the flaming axe in phase two leaves dangerous ground.
 
 After the fight, return to your normal campaign plan. Sophia’s combat and mastery guides apply to her sections; King Minos is a specific memory encounter with different constraints. Keeping those two contexts separate makes it easier to understand why a reliable Sophia parry habit can fail in this room.
 
@@ -84,6 +84,6 @@ To beat King Minos in Resonance Chapter 12, dodge the red attacks as Ariadne, wa
 ## Related guides
 
 - [All Resonance bosses](/plague-tale-legacy-all-bosses/)
-- [Combat and parry basics](/combat-parry-basics/)
+- [Combat and parry guide](/combat/)
 - [Skills and unlock order](/plague-tale-legacy-skills-unlock-order/)
 - [Story Select cleanup](/story-select-cleanup/)

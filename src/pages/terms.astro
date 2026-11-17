@@ -1,0 +1,88 @@
+---
+// Terms of use — unofficial fan site, as-is content, trademarks, ads, contact.
+import Layout from '../layouts/Layout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import { SITE } from '../data/site';
+import { formatDate } from '../utils/dates';
+
+const TERMS_EFFECTIVE = '2026-11-16';
+
+const title = 'Terms of Use — Plague Tale Legacy Guide';
+const description =
+  'Terms of use for this unofficial Resonance: A Plague Tale Legacy fan guide: no affiliation, as-is content, trademarks, advertising, and contact.';
+
+const crumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Terms of Use', url: '/terms/' },
+];
+---
+
+<Layout title={title} description={description} pageType="article" breadcrumbs={crumbs}>
+  <article class="prose-page container max-w-3xl py-10">
+    <Breadcrumb items={crumbs} />
+
+    <h1 class="text-3xl font-black tracking-tight text-bone md:text-4xl">Terms of Use</h1>
+    <p>Effective: <time datetime={TERMS_EFFECTIVE}>{formatDate(TERMS_EFFECTIVE)}</time></p>
+
+    <p>
+      By using {SITE.name} ({SITE.url.replace('https://', '')}), you agree to these terms. If you do
+      not agree, please do not use the site.
+    </p>
+
+    <h2>Unofficial fan guide</h2>
+    <p>
+      This is an unofficial, fan-made guide to {SITE.fullTitle}. It is not affiliated with,
+      endorsed by, or sponsored by {SITE.developer} or {SITE.publisher}. Nothing on this site is an
+      official statement from either company.
+    </p>
+
+    <h2>Content is provided as is</h2>
+    <p>
+      Guides are written in good faith from official sources, Steam data, and player reports, as
+      described in our <a href="/editorial/">editorial policy</a>. We do not guarantee that any
+      page is complete, accurate, or current, and the content is provided "as is" without warranties
+      of any kind. Use it at your own discretion; we are not liable for any loss arising from its use.
+    </p>
+
+    <h2>Patches can change the game</h2>
+    <p>
+      Updates and patches can change mechanics, achievements, prices, platform details, and bug
+      behaviour. A page may describe the game as it was on the date shown on that page. If you find
+      something out of date, please tell us so we can correct it.
+    </p>
+
+    <h2>Trademarks and game assets</h2>
+    <p>
+      {SITE.fullTitle}, A Plague Tale, and related names, logos, screenshots, and artwork are
+      trademarks or copyrighted material of their respective owners, including {SITE.developer} and
+      {SITE.publisher}. They are used here for identification, commentary, and guide purposes. If you
+      are a rights holder and want material removed, contact us and we will act promptly.
+    </p>
+
+    <h2>Our own content</h2>
+    <p>
+      The text, tables, and layout written for this site are ours. You may link to any page and quote
+      short excerpts with attribution and a link. Please do not republish whole guides.
+    </p>
+
+    <h2>Advertising and third-party links</h2>
+    <p>
+      The site may show advertising, including ads served by Google AdSense, and links to third-party
+      sites such as Steam and official game channels. We do not control third-party sites or ads and
+      are not responsible for their content, products, or practices. How advertising cookies are used
+      is explained in our <a href="/privacy/">privacy policy</a>.
+    </p>
+
+    <h2>Changes to these terms</h2>
+    <p>
+      We may update these terms. The effective date at the top of this page shows when they last
+      changed.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions about these terms: <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>,
+      or see the <a href="/contact/">contact page</a>.
+    </p>
+  </article>
+</Layout>

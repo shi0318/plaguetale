@@ -1,40 +1,65 @@
 ---
-title: "Resonance: A Plague Tale Legacy Difficulty and Accessibility"
-heading: "Resonance: A Plague Tale Legacy Difficulty & Accessibility Guide"
-description: "Steam confirms adjustable difficulty and play without timed input in Resonance: A Plague Tale Legacy; this guide explains the safe scope of those features."
+title: "Resonance: A Plague Tale Legacy Difficulty, Accessibility & Options"
+heading: "Resonance: A Plague Tale Legacy Difficulty, Accessibility and Options"
+description: "Resonance: A Plague Tale Legacy options: adjustable difficulty, play without timed input, controller support, rebinding, HDR, and subtitles."
 category: "guide"
 keyword: "plague tale legacy difficulty"
 status: "official"
 order: 11
-updatedAt: "2026-08-28"
-sourceKeys: ["steam"]
+updatedAt: "2026-11-16"
+sourceKeys: ["steam", "steamNews"]
 preRelease: false
 draft: false
 cover: "/images/ptl-hero-banner.webp"
 ---
 
-**Resonance: A Plague Tale Legacy officially lists adjustable difficulty and the ability to play without timed input.** Those are the confirmed accessibility-relevant facts on the Steam listing checked after launch. The listing does not publish every option name or explain the effect of each setting, so this guide avoids inventing menu details.
+The Steam listing for **Resonance: A Plague Tale Legacy** confirms adjustable difficulty, a way to play without timed input, full controller support, and HDR. The October 6 update notes add a few more details on controls and accessibility. Here is what is confirmed for each option and what to look for in the menus.
 
-## Resonance: A Plague Tale Legacy difficulty answer
+<figure>
+  <img src="/images/ptl-sophia-combat.webp" alt="Sophia mid-fight with a blade" width="1920" height="1080" loading="lazy" decoding="async" />
+  <figcaption>Official Steam screenshot. Parries and strikes are where difficulty and timing options matter most.</figcaption>
+</figure>
 
-Adjustable difficulty means players are not limited to one fixed challenge level, but the supplied information does not give the names, count, or exact effects of the available settings. Choose from the options shown in your released copy and use the description presented by the game itself as the authority.
+## Difficulty settings
 
-Do not infer that one difficulty removes every challenge or changes the story. No such claim is supported here. The safe promise is only that Steam lists difficulty adjustment.
+Steam lists **adjustable difficulty**, so you are not locked into one challenge level. The listing does not name the levels, say how many there are, or describe exactly what each one changes, so use the descriptions the game shows when you pick a level. A difficulty choice does not change the story, and choosing a lower level does not mean every encounter plays out the same way.
 
-## Resonance: A Plague Tale Legacy no-timed-input option
+If parries are the sticking point, choose the level that gives you time to read enemy movement. The [combat guide](/combat/) covers the parry-and-strike rhythm that the challenge is built around.
 
-Steam also says the game is playable without timed input. That is important for players who find rapid timing requirements difficult or who prefer a less time-sensitive control experience. It should be described exactly at that level: a listed way to play without timed input, not a guarantee that all action or puzzle interactions become automatic.
+## Playing without timed input
 
-The setting’s exact placement and behavior are not documented in the supplied facts. Look for its wording in the game’s accessibility or control menus rather than relying on a guessed path.
+Steam also says the game can be **played without timed input**. That helps players who find quick timing demands hard, or who prefer controls that are less time-sensitive. The listing only states that this way to play exists. It does not say that every action or puzzle becomes automatic. Look for the option in the game's accessibility or control menus and read its in-game description.
 
-## Resonance: A Plague Tale Legacy comfortable setup
+Set difficulty and accessibility before a long session, then adjust when the game's own feedback shows you need to.
 
-Start by reviewing difficulty and accessibility before a long session. Pair the setting choice with the official controller and display options that your platform exposes, then adjust only when the game’s own feedback makes the need clear. For puzzle and combat scenes, allow yourself time to read prompts and learn the interaction language.
+## Controller support
 
-No specific color, subtitle, remapping, or assist option is confirmed by the evidence used here. Those should not be presented as available until an official source or the released menu documents them.
+Steam lists **Full Controller Support**, plus separate **DualShock** and **DualSense** support, so a controller works for the whole PC game. Connect the pad before you launch or change input settings, then follow the on-screen prompts. If a prompt shows a different button label from your pad, check Steam's controller layout and the game's control menu before assuming the input is broken.
 
-## Resonance: A Plague Tale Legacy evidence limits
+The tags do not cover every third-party pad, every operating-system setup, adaptive triggers, haptics, or wired versus wireless requirements, and no official button map is published. The single-player game also has no local co-op.
 
-The two confirmed points are adjustable difficulty and play without timed input. Everything beyond them—exact modes, timing behavior, menu location, and the effect on encounters—needs direct documentation. This page does not claim hands-on testing and does not turn general accessibility advice into a feature list.
+## Remapping controls
 
-The direct answer is clear: Steam lists both options, and players should verify their exact presentation in the released game.
+The October 6 update fixed three inputs that could not be changed: **book navigation**, **Focus Attack**, and the **Prism** unlock. On a patched build, those controls can be rebound. Change one control at a time, leave the menu, and check that the new binding works in play before you change the next one. The [Focus Attack rebind guide](/resonance-focus-prism-input-planning/) walks through that order.
+
+## HDR
+
+Steam marks **HDR available**. With a compatible display, look for HDR in the game's display settings and in your system settings. The listing does not name an HDR format, a calibration screen, a peak-brightness target, or a recommended picture profile, so results depend on your monitor or TV, the cable, and your operating-system settings. HDR is a display choice, and switching it on will not fix performance.
+
+The October 6 update also made PSSR settings save properly on PS5 and fixed 21:9 support. After updating, re-open the display menu and confirm your choices stuck. The [October PC patch guide](/resonance-october-pc-patch-settings-guide/) covers 21:9.
+
+## Subtitles and colour options
+
+The store listing does not list subtitle languages, caption size, speaker labels, colour-blind presets, colour filters, or contrast controls. That does not mean they are missing. It means the details sit in the game's language and accessibility menus, not in the listing. The October 6 update lists **accessibility, audio, and localization fixes** without itemising them, so check your subtitle, audio, and language settings after installing it.
+
+Do not count on an option just because an earlier Plague Tale game had it. If you are buying for a particular accessibility need, check the in-game menus or the platform's refund terms first.
+
+## Quick setup order
+
+1. Install the latest update, which includes the control and accessibility fixes.
+2. Choose a difficulty level, and switch on the no-timed-input option if you need it.
+3. Connect your controller and confirm the prompts match it.
+4. Rebind any controls one at a time and test each one.
+5. Set HDR and the aspect ratio, then confirm they stay set after a restart.
+
+For the full list of Steam features, see [Steam features](/steam-features-controller-cloud/). For hardware, see the [PC requirements and settings](/pc-system-requirements/).
