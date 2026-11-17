@@ -55,9 +55,11 @@ The standard edition lists at **USD 49.99** on Steam. Later checks of the US sto
 | Oct 19, 2026 | $49.99 | Discount value 0 |
 | Oct 20, 2026 | $49.99 | No discount |
 | Oct 25, 2026 | $49.99 | No discount shown; Very Positive, 90% of 497 English reviews in the last 30 days |
-| Oct 26, 2026 | $39.99 | Lower price on a later US check, possibly a temporary promotion; no discount label was recorded |
+| Oct 26, 2026 | $39.99 | Lower price; no discount label was recorded that day |
+| Nov 5, 2026 | $39.99 | Shown as 20% off the $49.99 list price |
+| Nov 16, 2026 | $49.99 | Back to full price, no discount |
 
-Two months after launch, a strong review score had not by itself produced a discount, and the October 26 figure is the only lower one recorded. Check the price on the day you buy. The free October 6 bug-fix update comes with the base game, with nothing extra to pay. A checkout total can also change with region, tax, or a later promotion; the figures here are the US listing.
+Two months after launch, a strong review score had not by itself produced a discount, and the only lower readings were $39.99 on October 26 and November 5, the second clearly labelled as a 20% discount. It was back to $49.99 on November 16. Check the price on the day you buy. The free October 6 bug-fix update comes with the base game, with nothing extra to pay. A checkout total can also change with region, tax, or a later promotion; the figures here are the US listing.
 
 What the price buys is the PC campaign: melee combat, the island, the Minoan sphere puzzles, 36 achievements, and Story Select after the credits. It is not a Switch 2 version, and it is not longer than the chapter list. See [how long to beat](/how-long-to-beat/) for the length reports.
 

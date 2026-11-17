@@ -37,6 +37,8 @@ Yes. Asobo Studio's prequel, published by Focus Entertainment, has held a **Very
 | Oct 20, 2026 | Very Positive | 5,676 of 6,117 positive (wider filter than the English counts) | $49.99, no discount |
 | Oct 25, 2026 | Very Positive | 1,653 English reviews (store-page filter); 90% of 497 in the last 30 days | $49.99, no discount shown |
 | Oct 26, 2026 | Very Positive | 1,655 English reviews; 90% of 475 in the last 30 days | $39.99 on a later US check |
+| Nov 5, 2026 | Very Positive | 92% of 1,728 English reviews; 89% of 476 in the last 30 days | $39.99, shown as 20% off $49.99 |
+| Nov 16, 2026 | Very Positive | 92% of 1,793 English reviews; 90% of 506 in the last 30 days | $49.99, no discount |
 
 The counts move with each check and do not all use the same filter. The October 20 figure uses a wider filter than the English counts around it; the October 25 and 26 figures come from the English store-page filter, which reports a smaller total than the mid-October English counts. Do not subtract one from another and call the difference a trend.
 
@@ -74,7 +76,7 @@ A Very Positive label tells you how the reviewing sample feels, not how your PC 
 
 - **Use the latest dated snapshot.** Do not paste an older Metacritic figure next to a newer Steam count and call both "current."
 - **Do not turn a review count into a length estimate.** The [length guide](/how-long-to-beat/) is the clock; 2,033 positive reviews is not a 30-hour game.
-- **Price does not change the shape of the game.** October checks showed **$49.99** with no discount until a later US check on October 26 found **$39.99**. A sale changes whether about ten hours at that price feels fair to you; it does not add rats or make it longer.
+- **Price does not change the shape of the game.** October checks showed **$49.99** with no discount until October 26 and November 5 found **$39.99**, which the November 5 store page labelled as 20% off. By November 16 it was back to $49.99. A sale changes whether about ten hours at that price feels fair to you; it does not add rats or make it longer.
 - **Separate a bug from a verdict.** If your complaint is stutter near a Nemesis area or a chapter blocker, install the October 6 update before deciding the reviews were wrong.
 
 For store details, platforms, and the current price history, see the [release date and price page](/release-date/). For why the rats are gone and what the story does instead, see the [story guide](/story/).
