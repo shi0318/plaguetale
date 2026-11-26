@@ -31,7 +31,7 @@ The Steam store page (App 2713000) covers the PC side, listing Windows at **$49.
 | PC (Steam) | **Confirmed** | Windows, $49.99, full controller support |
 | PlayStation 5 | **Confirmed** | Named in the official FAQ; PSSR fix in the October 6 update |
 | Xbox Series X\|S | **Confirmed** | Named in the official FAQ |
-| Game Pass | Not announced | No first-party announcement |
+| Game Pass | Available at launch | Check current plan and device access on Xbox |
 | Nintendo Switch / Switch 2 | Not announced | No storefront listing or date |
 
 An earlier version of this page listed PS5 and Xbox as unconfirmed. The FAQ had already answered it, and the page was corrected on July 31, 2026.
@@ -47,7 +47,7 @@ The FAQ does not give every per-platform detail. Console pricing, edition parity
 
 ## Is it on Game Pass?
 
-No Game Pass deal has been announced by Microsoft, Focus Entertainment, or Asobo Studio. The question comes up because *A Plague Tale: Requiem* launched **day one on Xbox Game Pass** in October 2022. That precedent does not apply automatically to a new game. A confirmed Xbox Series X|S release and a Game Pass deal are separate commitments, and only the first one exists.
+Focus confirmed that Resonance launched with Xbox Game Pass and supports Xbox Play Anywhere. Check current plan and device access in the Xbox storefront for your region. To resume the same Microsoft save between Xbox Series X|S and the Windows Xbox app, use the [Xbox Play Anywhere save-sync guide](/resonance-xbox-play-anywhere-save-sync/). [Focus Entertainment launch announcement](https://www.focus-entmt.com/en/news/resonance-a-plague-tale-legacy-is-now-available)
 
 ## Is there a Switch 2 version?
 
