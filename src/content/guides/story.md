@@ -41,7 +41,7 @@ The game shifts between two time periods:
 - **Sophia's Middle Ages** — her present-day journey.
 - **Ancient Minoan times** — where echoes of the past shape the battles of the present.
 
-The store text speaks of "the entwined destinies of two heroes linked by fate," connected through the **Macula's mysterious legacy**. Official Steam news identifies the Minoan-era hero as **Theseus** and says players experience trials through his eyes. The [Minotaur myth guide](/minotaur-myth-explained/) explains Asobo's line that Resonance begins the moment Ariadne's thread vanishes, and the [Theseus page](/characters/theseus/) covers his side of the story.
+The store text speaks of "the entwined destinies of two heroes linked by fate," connected through the **Macula's mysterious legacy**. Official Steam news identifies the Minoan-era hero as **Theseus** and says players experience trials through his eyes. The [Minotaur myth guide](/minotaur-myth-explained/) explains Asobo's line that Resonance begins the moment Ariadne's thread vanishes, and the [Theseus page](/characters/theseus/) covers his side of the story. The [Macula lore guide](/resonance-macula-asterion-sophia/) follows the November 26 answers about Sophia’s blood, Asterion and Ariadne’s visions.
 
 ## Daedalus and the light
 
